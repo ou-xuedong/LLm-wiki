@@ -196,6 +196,19 @@ bash ~/Desktop/AILab/sync.sh both   # 默认；先 pull 后 push
 | 知识库实体卡片 | `~/Desktop/AILab/知识库/wiki/` | 全员（仅通过 qmd） |
 | 类型层 | `~/Desktop/AILab/_shared/<类型>.md` | 对应类型项目（通过 L2 顶部 `@import`） |
 
+### 9.5 视觉化阅览层（MD → HTML 渲染，可选）
+
+主人想用浏览器视觉读所有 MD？跑：
+
+```bash
+cd ~/Desktop/AILab/_view && \
+  ~/Library/Python/3.9/bin/mkdocs serve --dev-addr=127.0.0.1:8765
+```
+
+浏览器访问 `http://127.0.0.1:8765/` ——MkDocs Material 主题，全文中文检索 + 暗黑模式 + 移动端响应式。
+
+`_view/` 已加 AILab 根 `.gitignore`，不进任何项目仓。方法论详见 `~/Desktop/AILab/知识库/wiki/insights/HTML优先输出范式_主人项目改造指引.md` §3.5「四模式辨析」。
+
 ## 10. 多终端协作纪律
 
 主人在不同 terminal、手机端按项目独立会话工作。每个会话只读三层 + 类型层：

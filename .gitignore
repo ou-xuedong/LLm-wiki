@@ -13,5 +13,9 @@
 # 一次性目录（迁移草稿）
 /_migration_draft/
 
+# MD 视觉化阅览层（mkdocs 工作区，本地起服务用，不进 git）
+# 内含到各项目的 symlink + mkdocs.yml + 自动生成的 site/
+/_view/
+
 # macOS
 .DS_Store
