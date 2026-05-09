@@ -2,9 +2,9 @@
 # AILab 位置感知同步脚本 v2
 # 用法: sync.sh [pull|push|both]   默认 both
 # 行为:
-#   - 在 AILab 根目录运行 → 同步 meta 仓 + 5 个子项目
-#   - 在某子项目内运行     → 仅同步该子项目
-#   - 不在 AILab 内        → 报错退出
+#   - 在 AILab 根目录或 $HOME 运行 → 同步 meta 仓 + 5 个子项目
+#   - 在某子项目内运行              → 仅同步该子项目
+#   - 其他位置                      → 报错退出
 
 set -e
 ACTION="${1:-both}"
@@ -12,10 +12,14 @@ AILAB="$HOME/Desktop/AILab"
 PWD_NOW="$(pwd -P)"
 
 # ── 决定同步范围 ──
-if [[ "$PWD_NOW" == "$AILAB" ]]; then
+if [[ "$PWD_NOW" == "$AILAB" || "$PWD_NOW" == "$HOME" ]]; then
     SCOPE=("." "知识库" "方向探索" "卟卟鸡投资决策" "亚马逊投流决策助手" "知识存储与自进化引擎")
     LABEL_DOT="meta"
-    echo "📍 在 AILab 根 → 同步 meta + 5 子项目"
+    if [[ "$PWD_NOW" == "$HOME" ]]; then
+        echo "📍 在家目录（视同 AILab 根）→ 同步 meta + 5 子项目"
+    else
+        echo "📍 在 AILab 根 → 同步 meta + 5 子项目"
+    fi
 elif [[ "$PWD_NOW" == "$AILAB"/* ]]; then
     PROJECT="${PWD_NOW#$AILAB/}"
     PROJECT="${PROJECT%%/*}"
@@ -23,7 +27,7 @@ elif [[ "$PWD_NOW" == "$AILAB"/* ]]; then
     LABEL_DOT=""
     echo "📍 在 $PROJECT → 仅同步该项目"
 else
-    echo "❌ 必须在 ~/Desktop/AILab/ 内运行（当前: $PWD_NOW）"
+    echo "❌ 必须在 ~/Desktop/AILab/ 或 \$HOME 内运行（当前: $PWD_NOW）"
     exit 1
 fi
 
