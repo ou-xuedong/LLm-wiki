@@ -22,6 +22,7 @@ files = [
     ("03", "03_数据与交互视角.md", "💾 数据与交互",     "⭐⭐⭐"),
     ("04", "04_技术落地与运维视角.md", "🛠️ 技术落地与运维", "⭐⭐"),
     ("05", "05_借鉴价值评估.md", "⭐ 借鉴价值评估",   "⭐⭐⭐"),
+    ("06", "06_应用场景与改造决策.md", "🛤️ 应用场景与改造决策", "⭐⭐⭐"),
 ]
 
 # 读所有 markdown
@@ -414,6 +415,7 @@ const views = [
   {{ id: '03', title: '💾 数据与交互视角', importance: '⭐⭐⭐' }},
   {{ id: '04', title: '🛠️ 技术落地与运维视角', importance: '⭐⭐' }},
   {{ id: '05', title: '⭐ 借鉴价值评估', importance: '⭐⭐⭐' }},
+  {{ id: '06', title: '🛤️ 应用场景与改造决策', importance: '⭐⭐⭐' }},
 ];
 
 const content = document.getElementById('content');
