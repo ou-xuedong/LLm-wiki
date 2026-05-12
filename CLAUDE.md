@@ -12,8 +12,9 @@
 | 知识存储与自进化引擎 | 产品研发型 | S1 末段（📐深度分析） | `_shared/产品研发型.md` |
 | 算力资源 | 产品研发型 | S1（📐深度分析） | `_shared/产品研发型.md` |
 | 知识库 | 工具运营型 | 持续运行 | `_shared/工具运营型.md` |
-| 卟卟鸡投资决策 | 工具运营型 | 持续运行 | `_shared/工具运营型.md` |
-| autoResearch实验室 | 工具运营型（未激活） | 待启用 | `_shared/工具运营型.md` |
+| 卟卟鸡投资决策 | 工具运营型 | 持续运行（**前身，待重构验收后归档**） | `_shared/工具运营型.md` |
+| 投资决策 | 工具运营型 | V0.1 骨架已建，技术面 + 仓位感知重构 | `_shared/工具运营型.md` |
+| autoResearch实验室 | 工具运营型 | 持续运行（v0.3 双向隔离已就绪，等首篇论文启动） | `_shared/工具运营型.md` |
 | 方向探索 | 孵化园（特殊） | S1 为主 | 不引用类型层（孵化期专属） |
 
 ### 0.2 毕业判定（孵化园 → 独立项目）
@@ -224,3 +225,18 @@ cd ~/Desktop/AILab/_view && \
 - 开工前必跑 `bash ~/Desktop/AILab/sync.sh pull`
 - 收工前若有改动，跑 `bash ~/Desktop/AILab/sync.sh push`（或主人偏好——奴婢自动提醒推送）
 - 跨项目讨论需切换会话；不要在 A 项目会话里改 B 项目文件
+
+## 11. 外部只读项目（物理放 AILab/ 下，但不属于主人工作流）
+
+**当前清单：**
+
+- `~/Desktop/AILab/丹丹知识库/` — 丹丹的学术研究仓（Mindfulness / IU / OCD 论文写作），独立 GitHub 远程
+
+**铁律（适用所有外部只读项目）：**
+
+1. **只允许 Read** — `Write` / `Edit` / `NotebookEdit` / `Bash` 写命令 **一律禁止**，这是别人的仓
+2. **不入 ailab-meta 主仓** — AILab 根 `.gitignore` 必须加该目录
+3. **不入 sync.sh** — sync.sh 的 hardcode SCOPE 不包含该目录，不会误推
+4. **刷新方式**：该目录下手动 `git pull`，或 `qmd update --collection <name>`（已配 update-cmd 自动 pull）
+5. **如要给主人建议**：输出到主人自己项目下（如笔记到方向探索/知识库），**禁止在外部仓内 Write**
+6. **qmd 检索**：默认 `exclude` 不污染主查询；显式查用 `qmd query -c <collection_name> "..."`

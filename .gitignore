@@ -17,5 +17,8 @@
 # 内含到各项目的 symlink + mkdocs.yml + 自动生成的 site/
 /_view/
 
+# 外部只读项目（丹丹的学术研究仓，独立 git，只读不改不推）
+/丹丹知识库/
+
 # macOS
 .DS_Store
