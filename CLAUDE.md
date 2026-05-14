@@ -36,7 +36,7 @@
 ```
 
 1. **理解意图**——判断主人想干什么（探索/深挖/评估/闲聊？）
-2. **qmd 检索**——查 `~/Desktop/AILab/知识库/wiki/` 获取相关情报；找到引用，找不到标"知识库无相关记录"
+2. **qmd 检索**——查 `~/Desktop/AILab/LLm-wiki/` 获取相关情报；找到引用，找不到标"知识库无相关记录"
 3. **自主分析**——结合情报 + 你的认知形成判断，**不能只做信息搬运工**
 4. **形成观点**——明确表达立场：看好/不看好、机会在哪、风险在哪
 5. **gstack 自检**——用八问（§4.2）挑战自己；通不过自检的观点不许出口
@@ -118,7 +118,7 @@
 
 ### 6.1 查询（任何项目都先查知识库）
 
-- 涉及公司/产品/人物/概念的研判，**必须先用 qmd 查询** `~/Desktop/AILab/知识库/wiki/`
+- 涉及公司/产品/人物/概念的研判，**必须先用 qmd 查询** `~/Desktop/AILab/LLm-wiki/`
 - qmd 是知识库**唯一检索入口**——铁律见 §9.2
 - 查到的情报必须标注来源文件路径，不可凭空编造
 
@@ -163,12 +163,12 @@
 
 **降级原则：**
 - gstack：思维底座，不可降级，必须装
-- qmd：缺则停止知识库检索并提示安装；主人拒装时奴婢用 Read/Grep 读 `~/Desktop/AILab/知识库/wiki/` 替代
+- qmd：缺则停止知识库检索并提示安装；主人拒装时奴婢用 Read/Grep 读 `~/Desktop/AILab/LLm-wiki/` 替代
 - superpowers：仅产品研发型项目在 S2 末进入 `writing-plans` 前必装；工具运营型项目不强求
 
 ### 9.2 qmd 检索铁律
 
-- **唯一检索原则**：检索 `~/Desktop/AILab/知识库/wiki/` 内容**必须且只能**用 qmd
+- **唯一检索原则**：检索 `~/Desktop/AILab/LLm-wiki/` 内容**必须且只能**用 qmd
 - **显式禁止**用 `grep`、`rg`、`find`、`cat`、`Grep` 工具、`Glob` 工具替代
 - 按已知路径直接 Read（如 `index.md`、`log.md`）不在此限
 - 用法：MCP 优先 `qmd mcp`；CLI fallback `qmd search "关键词"` / `qmd query "自然语言问题"`
@@ -194,7 +194,7 @@ bash ~/Desktop/AILab/sync.sh both   # 默认；先 pull 后 push
 | 五段矩阵框架 | `~/Desktop/AILab/方向探索/_playbook/生命周期框架.md` | 产品研发型 + 孵化园 |
 | 评估/PRD/决策日志模板 | `~/Desktop/AILab/方向探索/_playbook/*模板.md` | 产品研发型 + 孵化园 |
 | Skills 调用规范 | `~/Desktop/AILab/方向探索/_playbook/Skills调用规范.md` | 全员 |
-| 知识库实体卡片 | `~/Desktop/AILab/知识库/wiki/` | 全员（仅通过 qmd） |
+| 知识库实体卡片 | `~/Desktop/AILab/LLm-wiki/` | 全员（仅通过 qmd） |
 | 类型层 | `~/Desktop/AILab/_shared/<类型>.md` | 对应类型项目（通过 L2 顶部 `@import`） |
 
 ### 9.5 视觉化阅览层（MD → HTML 渲染，可选）
@@ -208,7 +208,7 @@ cd ~/Desktop/AILab/_view && \
 
 浏览器访问 `http://127.0.0.1:8765/` ——MkDocs Material 主题，全文中文检索 + 暗黑模式 + 移动端响应式。
 
-`_view/` 已加 AILab 根 `.gitignore`，不进任何项目仓。方法论详见 `~/Desktop/AILab/知识库/wiki/insights/HTML优先输出范式_主人项目改造指引.md` §3.5「四模式辨析」。
+`_view/` 已加 AILab 根 `.gitignore`，不进任何项目仓。方法论详见 `~/Desktop/AILab/LLm-wiki/queries/html优先输出范式_主人项目改造指引.md` §3.5「四模式辨析」。
 
 ## 10. 多终端协作纪律
 
