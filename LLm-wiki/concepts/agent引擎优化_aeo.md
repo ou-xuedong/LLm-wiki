@@ -16,9 +16,9 @@ confidence: low
 
 ## 关联
 
-**上位概念**：[[AI智能体消费入口]]
-**相关概念**：[[零点击消费]], [[超级个性化]], [[agent协商层]], [[亚马逊a9_cosmo算法]], [[ai智能体对平台经济的冲击]]
-**关键人物**：[[athenahq_生成式引擎优化]], [[perplexity_专业级ai搜索引擎]]
+**上位概念**：[[AI智能体消费入口|AI智能体消费入口]]
+**相关概念**：[[零点击消费|零点击消费]], [[超级个性化|超级个性化]], [[agent协商层|agent协商层]], [[亚马逊a9_cosmo算法|亚马逊a9_cosmo算法]], [[ai智能体对平台经济的冲击|ai智能体对平台经济的冲击]]
+**关键人物**：[[athenahq_生成式引擎优化|athenahq_生成式引擎优化]], [[perplexity_专业级ai搜索引擎|perplexity_专业级ai搜索引擎]]
 
 # 🧠 Agent引擎优化 (AEO)
 
@@ -40,7 +40,7 @@ confidence: low
 SEO (Google 排名) → ASO (App Store) → GEO (LLM 回答引用) → AEO (Agent 执行决策)
 ```
 
-- **GEO**：优化 LLM 生成回答中的品牌引用（[[athenahq_生成式引擎优化]] 代表）
+- **GEO**：优化 LLM 生成回答中的品牌引用（[[athenahq_生成式引擎优化|athenahq_生成式引擎优化]] 代表）
 - **AEO**：更进一步——不止被提及，还要被 Agent 在"执行层"选中
 - **核心技术抓手**：
   - 语料占位：在可被模型抓取的数据源中建立正面内容
@@ -54,12 +54,12 @@ SEO (Google 排名) → ASO (App Store) → GEO (LLM 回答引用) → AEO (Agen
 - **零售与电商**：商品数据结构化、Agent 可读 Listing
 - **B2B SaaS**：让 Agent 自动推荐 API 作为解决方案
 - **旅游与金融**：Agent 跨平台比价时的候选池占位
-- **主人方向相关**：亚马逊投流的长期演进——卖家优化目标从"给人看的页面"转为"给 Agent 看的证据"；[[亚马逊投流决策助手_跨境电商ai决策]] 的中长期护城河方向
+- **主人方向相关**：亚马逊投流的长期演进——卖家优化目标从"给人看的页面"转为"给 Agent 看的证据"；[[亚马逊投流决策助手_跨境电商ai决策|亚马逊投流决策助手_跨境电商ai决策]] 的中长期护城河方向
 
 ## 4. 代表性论文/项目
 
-- **[[athenahq_生成式引擎优化]]**：GEO 代表玩家
-- **[[perplexity_专业级ai搜索引擎]]**：被优化对象的代表 Agent 搜索引擎
+- **[[athenahq_生成式引擎优化|athenahq_生成式引擎优化]]**：GEO 代表玩家
+- **[[perplexity_专业级ai搜索引擎|perplexity_专业级ai搜索引擎]]**：被优化对象的代表 Agent 搜索引擎
 - **MCP 生态**：Anthropic MCP Server 清单、`mcp-use`
 - **schema.org / JSON-LD**：结构化标记事实标准
 - **相关开源**：`browser-use`（Agent 直接操作前端的 benchmark 环境）、Anthropic Computer Use

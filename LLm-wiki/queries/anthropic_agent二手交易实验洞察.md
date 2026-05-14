@@ -18,7 +18,7 @@ confidence: low
 
 ## 关联
 
-**相关概念**：[[agent协商层]], [[零点击消费]], [[service_as_a_software]], [[Anthropic自举飞轮_Claude Code开发Claude Code]]
+**相关概念**：[[agent协商层|agent协商层]], [[零点击消费|零点击消费]], [[service_as_a_software|service_as_a_software]], [[Anthropic|Anthropic自举飞轮_Claude Code开发Claude Code]]
 
 # 💡 Anthropic Agent 二手交易实验洞察（Project Deal）
 

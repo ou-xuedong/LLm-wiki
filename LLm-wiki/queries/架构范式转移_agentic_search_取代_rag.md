@@ -16,7 +16,7 @@ tags:
 
 ## 关联
 
-**相关概念**：[[agentic_search]], [[harness_工程]], [[上下文自动压缩]], [[prompt_cache]], [[sub-agent隔离机制]]
+**相关概念**：[[agentic_search|agentic_search]], [[harness_工程|harness_工程]], [[上下文自动压缩|上下文自动压缩]], [[prompt_cache|prompt_cache]], [[sub-agent隔离机制|sub-agent隔离机制]]
 
 # 💡 架构范式转移：Agentic Search 正在取代静态 RAG
 

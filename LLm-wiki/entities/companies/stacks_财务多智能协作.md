@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[temporal_agent编排引擎]], [[ramp_企业费控与报销智能审查]]
+**竞品**：[[temporal_agent编排引擎|temporal_agent编排引擎]], [[ramp_企业费控与报销智能审查|ramp_企业费控与报销智能审查]]
 
 # Stacks（财务多智能体协作平台）
 

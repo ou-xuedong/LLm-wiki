@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[perplexity_专业级ai搜索引擎]], [[google_gemini_多模态原生大模型基座]]
+**竞品**：[[perplexity_专业级ai搜索引擎|perplexity_专业级ai搜索引擎]], [[google_gemini_多模态原生大模型基座|google_gemini_多模态原生大模型基座]]
 
 # Gamma（AI 一键生成精美 PPT）
 

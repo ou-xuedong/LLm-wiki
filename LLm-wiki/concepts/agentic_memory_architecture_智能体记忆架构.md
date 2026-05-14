@@ -16,9 +16,9 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[context_window_and_memory_architecture_上下文窗口与记忆架构]]
-**相关概念**：[[context_window_and_memory_architecture_上下文窗口与记忆架构]], [[RAG_检索增强生成]], [[human-like_memory_类人记忆插件]], [[gbrain_ai记忆系统]], [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_loop_six_stage_六阶段记忆闭环]], [[memory_hierarchy_llm_agent_llm智能体分层记忆]], [[agent记忆系统设计三大支柱收束论]]
-**关键人物**：[[anthropic_直接操控计算机]], [[MemGPT]]
+**上位概念**：[[context_window_and_memory_architecture_上下文窗口与记忆架构|context_window_and_memory_architecture_上下文窗口与记忆架构]]
+**相关概念**：[[context_window_and_memory_architecture_上下文窗口与记忆架构|context_window_and_memory_architecture_上下文窗口与记忆架构]], [[RAG-检索增强生成|RAG_检索增强生成]], [[human-like_memory_类人记忆插件|human-like_memory_类人记忆插件]], [[gbrain_ai记忆系统|gbrain_ai记忆系统]], [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论|memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]], [[memory_hierarchy_llm_agent_llm智能体分层记忆|memory_hierarchy_llm_agent_llm智能体分层记忆]], [[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]]
+**关键人物**：[[anthropic_直接操控计算机|anthropic_直接操控计算机]], [[MemGPT|MemGPT]]
 
 # 🧠 智能体记忆架构（Agentic Memory Architecture）
 

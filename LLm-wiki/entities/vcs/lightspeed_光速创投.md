@@ -19,4 +19,4 @@ tags:
 - **代表案例**：xAI, Anduril。
 
 ## 近期动态与被投企业
-- 2026年近期投资 (AI/Agent领域): [[temporal_agent编排引擎]], [[stacks_财务多智能协作]], [[sycamore_企业agent调度]]
+- 2026年近期投资 (AI/Agent领域): [[temporal_agent编排引擎|temporal_agent编排引擎]], [[stacks_财务多智能协作|stacks_财务多智能协作]], [[sycamore_企业agent调度|sycamore_企业agent调度]]

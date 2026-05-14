@@ -17,8 +17,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[agentic_memory_architecture_智能体记忆架构]]
-**相关概念**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_loop_six_stage_六阶段记忆闭环]], [[agent记忆系统设计三大支柱收束论]], [[context_window_and_memory_architecture_上下文窗口与记忆架构]], [[human-like_memory_类人记忆插件]], [[gbrain_ai记忆系统]]
+**上位概念**：[[agentic_memory_architecture_智能体记忆架构|agentic_memory_architecture_智能体记忆架构]]
+**相关概念**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论|memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]], [[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]], [[context_window_and_memory_architecture_上下文窗口与记忆架构|context_window_and_memory_architecture_上下文窗口与记忆架构]], [[human-like_memory_类人记忆插件|human-like_memory_类人记忆插件]], [[gbrain_ai记忆系统|gbrain_ai记忆系统]]
 
 # 🧠 LLM 智能体分层记忆（Working / Episodic / Semantic + 机器人侧反哺）
 
@@ -116,19 +116,19 @@ PI 的 MEM 把长时记忆做成**自然语言摘要**，这比向量 embedding 
 
 | # | 陷阱 | 正解 |
 |---|---|---|
-| 1 | 分层但不分 budget（预算） | 三层共用一个 context，高频 L1 吃满了 L2/L3 就废了；必须**给每层独立预算上限**（详见 [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]] §3.3） |
-| 2 | consolidation（巩固）只从 L1 到 L2，没有从 L2 到 L3 | L2 越长越胖，**抽象层（L3）永远不成形**；必须有 L2→L3 的归纳通路（详见 [[memory_loop_six_stage_六阶段记忆闭环]] §2.6） |
+| 1 | 分层但不分 budget（预算） | 三层共用一个 context，高频 L1 吃满了 L2/L3 就废了；必须**给每层独立预算上限**（详见 [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论|memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]] §3.3） |
+| 2 | consolidation（巩固）只从 L1 到 L2，没有从 L2 到 L3 | L2 越长越胖，**抽象层（L3）永远不成形**；必须有 L2→L3 的归纳通路（详见 [[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]] §2.6） |
 | 3 | 三层的 query（查询）用同一个 embedding | 应该不同层用不同查询方式——**L1 按时间近度，L2 按语义相似，L3 按键直查** |
 
 ## 5. 代表性论文/项目（同主题映射）
 
-- **上位框架**：[[agentic_memory_architecture_智能体记忆架构]] 已有"Working/Episodic/Semantic 三层"基础认知；本卡补足"如何分预算 + 如何巩固 + 机器人侧反哺"
-- **同主题三件套**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]]（每次 retrieve 的判据）+ [[memory_loop_six_stage_六阶段记忆闭环]]（store/retrieve 的时机）+ 本卡（memory bank 内部如何组织）
-- **收束总览**：[[agent记忆系统设计三大支柱收束论]]
+- **上位框架**：[[agentic_memory_architecture_智能体记忆架构|agentic_memory_architecture_智能体记忆架构]] 已有"Working/Episodic/Semantic 三层"基础认知；本卡补足"如何分预算 + 如何巩固 + 机器人侧反哺"
+- **同主题三件套**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论|memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]]（每次 retrieve 的判据）+ [[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]]（store/retrieve 的时机）+ 本卡（memory bank 内部如何组织）
+- **收束总览**：[[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]]
 - **典型实现对照**：
-  - [[human-like_memory_类人记忆插件]] 的"三类记忆分而治之 Semantic/Episodic/Procedural"是这套分层在产品上的落地
-  - [[gbrain_ai记忆系统]] 的"已整理事实 + 时间线"是 L2/L3 的简化版
-  - [[context_window_and_memory_architecture_上下文窗口与记忆架构]] 提供了 L1 上下文窗口的物理边界讨论
+  - [[human-like_memory_类人记忆插件|human-like_memory_类人记忆插件]] 的"三类记忆分而治之 Semantic/Episodic/Procedural"是这套分层在产品上的落地
+  - [[gbrain_ai记忆系统|gbrain_ai记忆系统]] 的"已整理事实 + 时间线"是 L2/L3 的简化版
+  - [[context_window_and_memory_architecture_上下文窗口与记忆架构|context_window_and_memory_architecture_上下文窗口与记忆架构]] 提供了 L1 上下文窗口的物理边界讨论
 
 ## 6. 争议与开放问题
 

@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[lakera_ai安全防火墙]], [[wedge_安全可观测性_ai_和大模型系统的安]]
+**竞品**：[[lakera_ai安全防火墙|lakera_ai安全防火墙]], [[wedge_安全可观测性_ai_和大模型系统的安|wedge_安全可观测性_ai_和大模型系统的安]]
 
 # Hex Security（AI 持续网络安全检测）
 

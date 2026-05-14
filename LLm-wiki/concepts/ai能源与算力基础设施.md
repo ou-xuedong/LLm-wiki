@@ -16,8 +16,8 @@ confidence: high
 
 ## 关联
 
-**相关概念**：[[软件护城河瓦解]], [[零点击消费]]
-**关键人物**：[[ben_horowitz_a16z_联合创始人]], [[sam_altman_openai_ceo]]
+**相关概念**：[[软件护城河瓦解|软件护城河瓦解]], [[零点击消费|零点击消费]]
+**关键人物**：[[ben_horowitz_a16z_联合创始人|ben_horowitz_a16z_联合创始人]], [[sam_altman_openai_ceo|sam_altman_openai_ceo]]
 
 # ⚡ AI 能源与算力基础设施
 

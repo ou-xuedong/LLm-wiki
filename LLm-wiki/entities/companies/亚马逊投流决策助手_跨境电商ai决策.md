@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Xnurta_Amazon广告AI Agent]], [[Linkfox_跨境电商AI工具]], [[Helium_10_亚马逊卖家工具]], [[ppc_entourage_amazonppc工具]], [[perpetua_电商广告平台]]
+**竞品**：[[Agent|Xnurta_Amazon广告AI Agent]], [[Linkfox-跨境电商AI工具|Linkfox_跨境电商AI工具]], [[Helium-10-亚马逊卖家工具|Helium_10_亚马逊卖家工具]], [[ppc_entourage_amazonppc工具|ppc_entourage_amazonppc工具]], [[perpetua_电商广告平台|perpetua_电商广告平台]]
 
 # 🎯 亚马逊投流决策助手
 
@@ -29,7 +29,7 @@ tags:
 
 ## 2. 护城河 (Moat)
 - **决策轨迹捕获**：唯一记录"为何做出该决策"的完整推理轨迹，形成可复用的机器资产。
-- **人机主体颠倒（哲学护城河）**：与 [[Xnurta_Amazon广告AI Agent]] 等"AI 跑、人监督（Human-on-the-loop）"路线对立——主人项目是"人想、AI 学（Human-in-the-loop）"。决策日志记录的是 **AI 干了什么**，决策轨迹捕获的是 **人想了什么**——两者数据资产价值方向完全不同：前者用于 AI 审计，后者作为未来品牌 Agent 的训练语料。该路径选择动了 Xnurta 类竞品的商业模式根基，结构上不可被同时具备。
+- **人机主体颠倒（哲学护城河）**：与 [[Agent|Xnurta_Amazon广告AI Agent]] 等"AI 跑、人监督（Human-on-the-loop）"路线对立——主人项目是"人想、AI 学（Human-in-the-loop）"。决策日志记录的是 **AI 干了什么**，决策轨迹捕获的是 **人想了什么**——两者数据资产价值方向完全不同：前者用于 AI 审计，后者作为未来品牌 Agent 的训练语料。该路径选择动了 Xnurta 类竞品的商业模式根基，结构上不可被同时具备。
 - **用户资源壁垒**：直接绑定一线卖家（林总猫砂盘、海燕游戏手柄），能近距离炼化真实场景。Xnurta 这类大体量玩家无法陪 SMB 玩共建。
 - **亚马逊垂直深度**：聚焦亚马逊单平台 + A9/COSMO + EBM 消费决策模型耦合。Xnurta 多平台分散（亚马逊+Walmart+Google+Twitch+Fire TV）摊薄垂直深度。
 - **演进性设计**：产品随运营知识与 AI 时代同步成长，从辅助决策 → 半自主 Agent → 适应 Agent 购物。
@@ -43,5 +43,5 @@ tags:
 - **价格被夹击**：$99-299/月被 Xnurta 的 Explore $99/月（首月 $1）从下、Lead $750/月从上双向夹击。
 
 ## 4. 重大事件与动态
-- [2026-04-17] 方向启动，进入初步探索阶段。关联[[system_of_decision]]概念与[[linkfox与跨境电商ai产品破局洞察]]。
-- [2026-04-27] 完成与 [[Xnurta_Amazon广告AI Agent]] 全维度对比研究，确认 🔴 高威胁等级；五看 §3 竞品矩阵新增 Xnurta；护城河补充"人机主体颠倒"哲学维度；客群冲突已成立（不是长期问题）。详见 [[跨境电商ai决策助手破局洞察]] 与 `方向探索/亚马逊投流决策助手/S1_方向探索/讨论记录/2026-04-27_Xnurta对比研究.md`。
+- [2026-04-17] 方向启动，进入初步探索阶段。关联[[system_of_decision|system_of_decision]]概念与[[linkfox与跨境电商ai产品破局洞察|linkfox与跨境电商ai产品破局洞察]]。
+- [2026-04-27] 完成与 [[Agent|Xnurta_Amazon广告AI Agent]] 全维度对比研究，确认 🔴 高威胁等级；五看 §3 竞品矩阵新增 Xnurta；护城河补充"人机主体颠倒"哲学维度；客群冲突已成立（不是长期问题）。详见 [[跨境电商ai决策助手破局洞察|跨境电商ai决策助手破局洞察]] 与 `方向探索/亚马逊投流决策助手/S1_方向探索/讨论记录/2026-04-27_Xnurta对比研究.md`。

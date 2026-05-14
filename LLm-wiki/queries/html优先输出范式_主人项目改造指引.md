@@ -18,7 +18,7 @@ confidence: high
 
 ## 关联
 
-**相关概念**：[[unix编程艺术_ai时代高质量产品设计课程]], [[Software_3.0_自然语言编程范式]], [[agentic_engineering_调度智能体的工程范式]]
+**相关概念**：[[unix编程艺术_ai时代高质量产品设计课程|unix编程艺术_ai时代高质量产品设计课程]], [[Software-3.0-自然语言编程范式|Software_3.0_自然语言编程范式]], [[agentic_engineering_调度智能体的工程范式|agentic_engineering_调度智能体的工程范式]]
 
 # 💡 HTML 优先输出范式 · 主人项目改造指引
 
@@ -309,7 +309,7 @@ confidence: high
 
 ### 启动改造的提示词
 ```
-请按 [[html优先输出范式_主人项目改造指引]] 的 Playbook，对 {项目名} 项目做 HTML 化改造：
+请按 [[html优先输出范式_主人项目改造指引|html优先输出范式_主人项目改造指引]] 的 Playbook，对 {项目名} 项目做 HTML 化改造：
 1. 先勘查现有产物
 2. 按 §2 分层模型贴标签
 3. 推荐试点首发产物

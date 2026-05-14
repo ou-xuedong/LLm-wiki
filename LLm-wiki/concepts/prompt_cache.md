@@ -16,8 +16,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[harness_工程]]
-**相关概念**：[[harness_工程]], [[上下文自动压缩]], [[sub-agent隔离机制]]
+**上位概念**：[[harness_工程|harness_工程]]
+**相关概念**：[[harness_工程|harness_工程]], [[上下文自动压缩|上下文自动压缩]], [[sub-agent隔离机制|sub-agent隔离机制]]
 
 # ⚡ Prompt Cache（提示词缓存策略）
 

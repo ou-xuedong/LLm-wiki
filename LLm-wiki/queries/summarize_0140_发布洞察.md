@@ -17,7 +17,7 @@ confidence: low
 
 ## 关联
 
-**相关概念**：[[Agent]], [[零点击消费]]
+**相关概念**：[[Agent|Agent]], [[零点击消费|零点击消费]]
 
 # 💡 OpenClaw ClawSweeper：AI 管 AI 的维护新范式
 

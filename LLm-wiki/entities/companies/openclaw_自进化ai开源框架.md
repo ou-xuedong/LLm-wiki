@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Anthropic]], [[SpaceX]], [[zeelinclaw_多智能体商业平台]]
+**竞品**：[[Anthropic|Anthropic]], [[SpaceX|SpaceX]], [[zeelinclaw_多智能体商业平台|zeelinclaw_多智能体商业平台]]
 
 # 🏢 OpenClaw（自进化AI开源框架）
 

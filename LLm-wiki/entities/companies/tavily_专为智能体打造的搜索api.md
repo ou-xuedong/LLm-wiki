@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[exa_ai原生的神经搜索]], [[perplexity_专业级ai搜索引擎]]
+**竞品**：[[exa_ai原生的神经搜索|exa_ai原生的神经搜索]], [[perplexity_专业级ai搜索引擎|perplexity_专业级ai搜索引擎]]
 
 # Tavily
 

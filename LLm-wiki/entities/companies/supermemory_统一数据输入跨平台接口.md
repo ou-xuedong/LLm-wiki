@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[google_notebooklm_海量文档交叉索引_播客生成_智能笔记]], [[cohere_企业级隐私安全大模型]]
+**竞品**：[[google_notebooklm_海量文档交叉索引_播客生成_智能笔记|google_notebooklm_海量文档交叉索引_播客生成_智能笔记]], [[cohere_企业级隐私安全大模型|cohere_企业级隐私安全大模型]]
 
 # SuperMemory（个人第二大脑）
 

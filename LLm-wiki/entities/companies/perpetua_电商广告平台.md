@@ -16,7 +16,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[ppc_entourage_amazonppc工具]], [[Xnurta_Amazon广告AI_Agent]], [[Linkfox_跨境电商AI]], [[Helium10_亚马逊卖家工具]], [[Jungle_Scout_亚马逊数据分析]], [[Teikametrics_电商广告平台]], [[Skai_多渠道广告平台]]
+**竞品**：[[ppc_entourage_amazonppc工具|ppc_entourage_amazonppc工具]], [[xnurta_amazon广告ai-agent|Xnurta_Amazon广告AI_Agent]], [[Linkfox-跨境电商AI|Linkfox_跨境电商AI]], [[Helium10-亚马逊卖家工具|Helium10_亚马逊卖家工具]], [[Jungle-Scout-亚马逊数据分析|Jungle_Scout_亚马逊数据分析]], [[Teikametrics-电商广告平台|Teikametrics_电商广告平台]], [[Skai-多渠道广告平台|Skai_多渠道广告平台]]
 
 # Perpetua 电商广告平台
 
@@ -311,7 +311,7 @@ API 调用特征：
 
 ## 8. 竞品对比
 
-| 维度 | Perpetua | [[Teikametrics_电商广告平台]] | [[Skai_多渠道广告平台]] |
+| 维度 | Perpetua | [[Teikametrics-电商广告平台|Teikametrics_电商广告平台]] | [[Skai-多渠道广告平台|Skai_多渠道广告平台]] |
 |------|----------|-------------------------------|--------------------------|
 | AI 程度 | **高度自动化**（强化学习） | 中等（规则引擎+ML） | 中等（规则引擎） |
 | 全渠道 | 专注 Amazon + Walmart | Amazon + eBay | 多平台（含 Google/Meta/TikTok） |

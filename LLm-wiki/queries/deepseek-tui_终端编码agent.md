@@ -32,7 +32,7 @@ DeepSeek-TUI 是一个在终端运行的 DeepSeek 模型编码 Agent，将 DeepS
 
 ## 行动建议
 - 对于追求极致效率的 CLI 开发者，DeepSeek-TUI 提供了一种轻量级替代方案
-- 可作为 [[Cursor]] / [[Claude Code]] 之外的补充工具链
+- 可作为 [[Cursor|Cursor]] / [[Claude-Code|Claude Code]] 之外的补充工具链
 
 ## 信息来源
 - https://github.com/Hmbown/DeepSeek-TUI

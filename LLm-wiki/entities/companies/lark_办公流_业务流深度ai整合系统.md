@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[gamma_beautiful_ai_一键生成精美ppt]], [[uplimit_ai员工技能提升与培训]]
+**竞品**：[[gamma_beautiful_ai_一键生成精美ppt|gamma_beautiful_ai_一键生成精美ppt]], [[uplimit_ai员工技能提升与培训|uplimit_ai员工技能提升与培训]]
 
 # Lark（飞书海外版）
 

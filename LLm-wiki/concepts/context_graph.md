@@ -15,8 +15,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[Knowledge_Graph]]
-**相关概念**：[[system_of_decision]]
+**上位概念**：[[Knowledge-Graph|Knowledge_Graph]]
+**相关概念**：[[system_of_decision|system_of_decision]]
 
 # 🧠 Context_Graph
 

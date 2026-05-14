@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**相关概念**：[[ai作为高配实习生_角色分工方法论]], OKR, 竞品分析, 季度路线图
+**相关概念**：[[ai作为高配实习生_角色分工方法论|ai作为高配实习生_角色分工方法论]], OKR, 竞品分析, 季度路线图
 
 # 💡 Claude Code 季度规划工作流：4 角色分工法
 
@@ -74,4 +74,4 @@ tags:
 
 ## 信息来源
 
-- [[sinkris_产品总监_quarterlyplanningkol]]《产品总监的季度规划怎么做？我的 Claude Code 工作流全公开》（2026-04-30）
+- [[sinkris_产品总监_quarterlyplanningkol|sinkris_产品总监_quarterlyplanningkol]]《产品总监的季度规划怎么做？我的 Claude Code 工作流全公开》（2026-04-30）

@@ -15,16 +15,16 @@ confidence: high
 
 ## 关联
 
-**相关概念**：[[system_of_decision]], [[context_graph]], [[System_of_Record]]
+**相关概念**：[[system_of_decision|system_of_decision]], [[context_graph|context_graph]], [[System-of-Record|System_of_Record]]
 
 # 💡 企业AI的核心壁垒在于捕捉决策轨迹
 
 ## 核心结论
-企业 AI 行业最容易被低估的是：**企业内部那些每天都在发生、却从未被真正记录下来的决策与判断过程。**未来的护城河不是大模型能力，而是能否构建捕捉这类信息的“决策型记录系统”（[[system_of_decision]]），形成专属的 [[context_graph]]。
+企业 AI 行业最容易被低估的是：**企业内部那些每天都在发生、却从未被真正记录下来的决策与判断过程。**未来的护城河不是大模型能力，而是能否构建捕捉这类信息的“决策型记录系统”（[[system_of_decision|system_of_decision]]），形成专属的 [[context_graph|context_graph]]。
 
 ## 详细分析
 - **消费互联网的启示**：Netflix、TikTok 靠“捕捉行为 → 学习 → 改进”实现了复利资产。
-- **B端系统的缺陷**：传统的 [[System_of_Record]]（如 Salesforce）处在“读路径 (Read Path)”中，只记录最终结果。
+- **B端系统的缺陷**：传统的 [[System-of-Record|System_of_Record]]（如 Salesforce）处在“读路径 (Read Path)”中，只记录最终结果。
 - **新时代的机会**：新一代系统级 Agent 能够介入“写路径 (Write Path)”。当模型给出初稿提案，人类（销售、运营）去修改、批注时，就强迫人类把脑子里的“直觉、经验、潜规则”变为了结构化信号。这些数据一旦复利累积，企业就拥有了属于自己的、无法被大厂直接 Copy 的核心竞争力。
 
 ## 数据与证据

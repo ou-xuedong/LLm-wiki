@@ -13,3 +13,10 @@
 - Domain: 个人全量知识库
 - Structure: SCHEMA.md, index.md, log.md, raw/{articles,papers,transcripts,assets}, entities/, concepts/, comparisons/, queries/, summaries/
 - 标签体系：投资、创业、技术、健康、生活、人物、组织、概念、记录
+
+## [2026-05-14] lint | 首次全量维护
+- 执行：坏链修复(255→0)、stub补页(115)、index重建(428页)、sha256修复、taxonomy扩展
+- 孤儿页: 182（预期，迁移后遗症，无需处理）
+- 超长页面: 5个（需人工拆分，见lint报告）
+- 更新：index.md、SCHEMA.md、raw/articles/机智流-从SFT到继续预训练-2026.md
+

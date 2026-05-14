@@ -16,7 +16,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[cognigy_自动化语音ai客服台]], [[alter_智能体安全_零信任身份验证和访问控制]], [[fragment_人类ai协作操作系统]]
+**竞品**：[[cognigy_自动化语音ai客服台|cognigy_自动化语音ai客服台]], [[alter_智能体安全_零信任身份验证和访问控制|alter_智能体安全_零信任身份验证和访问控制]], [[fragment_人类ai协作操作系统|fragment_人类ai协作操作系统]]
 **投资方**：a16z
 
 # Sierra（对话式 AI 客户体验平台）

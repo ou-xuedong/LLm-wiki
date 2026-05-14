@@ -18,7 +18,7 @@ tags:
 
 ## 关联
 
-**相关概念**：[[亚马逊a9_cosmo算法]], [[agent引擎优化_aeo]], [[亚马逊vc全托管商业模式]]
+**相关概念**：[[亚马逊a9_cosmo算法|亚马逊a9_cosmo算法]], [[agent引擎优化_aeo|agent引擎优化_aeo]], [[亚马逊vc全托管商业模式|亚马逊vc全托管商业模式]]
 
 # 💡 Gemini3 Listing智能体搭建：Rufus级爆款文案工作流
 

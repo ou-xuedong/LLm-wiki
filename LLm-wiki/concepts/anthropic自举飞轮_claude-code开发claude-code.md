@@ -16,7 +16,7 @@ tags:
 
 ## 关联
 
-**相关概念**：[[agent协商层]], [[service_as_a_software]]
+**相关概念**：[[agent协商层|agent协商层]], [[service_as_a_software|service_as_a_software]]
 
 # Anthropic 自举飞轮（Claude Code 开发 Claude Code）
 

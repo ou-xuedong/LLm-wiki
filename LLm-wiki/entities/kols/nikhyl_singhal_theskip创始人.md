@@ -14,8 +14,8 @@ tags:
 
 ## 关联
 
-**所属**：[[The Skip]], [[Lenny's Podcast]]
-**专长**：[[产品经理转型]], [[AI时代职场]], [[构建者思维]]
+**所属**：[[The-Skip|The Skip]], [[Lenny's-Podcast|Lenny's Podcast]]
+**专长**：[[产品经理转型]], [[AI时代职场|AI时代职场]], [[构建者思维|构建者思维]]
 
 # 👤 Nikhyl Singhal（尼基尔·辛格尔）
 

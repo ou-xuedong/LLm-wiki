@@ -16,15 +16,15 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[判断力_judgment]], [[ai作为高配实习生_角色分工方法论]]
-**相关概念**：[[vibe_coding_凭感觉接受llm输出的编程模式]], [[ralph_loop_ai编程死循环模式]], [[sub-agent隔离机制]], [[superpowers_ai编程纪律工具]], [[openspec_ai开发规范框架]], [[Anthropic自举飞轮_Claude Code开发Claude Code]]
-**关键人物**：[[andrej_karpathy_大牛_ai大牛]], [[boris_cherny_知名工程师]], [[geoffrey_huntley_独立工程师_ralphloop发明者]]
+**上位概念**：[[判断力_judgment|判断力_judgment]], [[ai作为高配实习生_角色分工方法论|ai作为高配实习生_角色分工方法论]]
+**相关概念**：[[vibe_coding_凭感觉接受llm输出的编程模式|vibe_coding_凭感觉接受llm输出的编程模式]], [[ralph_loop_ai编程死循环模式|ralph_loop_ai编程死循环模式]], [[sub-agent隔离机制|sub-agent隔离机制]], [[superpowers_ai编程纪律工具|superpowers_ai编程纪律工具]], [[openspec_ai开发规范框架|openspec_ai开发规范框架]], [[Anthropic|Anthropic自举飞轮_Claude Code开发Claude Code]]
+**关键人物**：[[andrej_karpathy_大牛_ai大牛|andrej_karpathy_大牛_ai大牛]], [[boris_cherny_知名工程师|boris_cherny_知名工程师]], [[geoffrey_huntley_独立工程师_ralphloop发明者|geoffrey_huntley_独立工程师_ralphloop发明者]]
 
 # 🧠 Agentic Engineering（调度智能体的工程范式）
 
 ## 1. 定义与核心原理
 
-由 [[andrej_karpathy_大牛_ai大牛]] 在 2026 年 Sequoia AI Ascent 上正式提出，作为 [[vibe_coding_凭感觉接受llm输出的编程模式]] 的进化版：
+由 [[andrej_karpathy_大牛_ai大牛|andrej_karpathy_大牛_ai大牛]] 在 2026 年 Sequoia AI Ascent 上正式提出，作为 [[vibe_coding_凭感觉接受llm输出的编程模式|vibe_coding_凭感觉接受llm输出的编程模式]] 的进化版：
 
 > "Agentic engineering—'agentic' because the new default is that you are not writing the code directly 99% of the time, you are orchestrating agents who do and acting as oversight."  
 > — [karpathy.bearblog.dev/sequoia-ascent-2026](https://karpathy.bearblog.dev/sequoia-ascent-2026/)
@@ -43,15 +43,15 @@ confidence: high
 
 | 流派 | 代表人物 | 标志 |
 |---|---|---|
-| **多并行 + 闸门式** | [[boris_cherny_知名工程师]] | 5 worktree × 5 Claude session × 手机 + `/loop` `/go` `/simplify` skill 链路 |
-| **YOLO + 隔离式** | [[andrej_karpathy_大牛_ai大牛]] | git worktree 隔离 + `--dangerously-skip-permissions` + 语音口述 |
-| **笨循环 + 状态文件式** | [[geoffrey_huntley_独立工程师_ralphloop发明者]] | [[ralph_loop_ai编程死循环模式]] + fix_plan.md/progress.md |
+| **多并行 + 闸门式** | [[boris_cherny_知名工程师|boris_cherny_知名工程师]] | 5 worktree × 5 Claude session × 手机 + `/loop` `/go` `/simplify` skill 链路 |
+| **YOLO + 隔离式** | [[andrej_karpathy_大牛_ai大牛|andrej_karpathy_大牛_ai大牛]] | git worktree 隔离 + `--dangerously-skip-permissions` + 语音口述 |
+| **笨循环 + 状态文件式** | [[geoffrey_huntley_独立工程师_ralphloop发明者|geoffrey_huntley_独立工程师_ralphloop发明者]] | [[ralph_loop_ai编程死循环模式|ralph_loop_ai编程死循环模式]] + fix_plan.md/progress.md |
 
 ### 2.2 关键基础设施
 
 - **git worktree**：同一仓库多个独立工作目录，每个 worktree 跑一个 agent，互不干扰，主分支不污染
 - **YOLO 模式**：`--dangerously-skip-permissions` 命令行参数，跳过所有确认让 agent 全自动跑——必须配合 worktree 隔离才安全
-- **CLAUDE.md / PROMPT.md**：项目根目录维护的"宪法"，每次新会话都基于同一套上下文（参考 [[openspec_ai开发规范框架]]）
+- **CLAUDE.md / PROMPT.md**：项目根目录维护的"宪法"，每次新会话都基于同一套上下文（参考 [[openspec_ai开发规范框架|openspec_ai开发规范框架]]）
 - **skill 体系**：自创复合命令（如 Boris 的 `/go`：verify→simplify→PR）强制 agent 走可验证步骤
 - **MCP（Model Context Protocol，模型上下文协议）**：让 agent 直接连数据库、行情、文档等外部资源，减少手工搬数据
 
@@ -67,9 +67,9 @@ confidence: high
 ## 3. 行业应用场景
 
 - **个人开发者**：Boris 一天 150 个 PR、Geoffrey 一夜 6 个 repo——同一个时间块内的产出量级跃升
-- **企业研发流程**：Anthropic 内部"pretty much 100%" 代码 AI 生成；OpenAI 类似（[[Anthropic自举飞轮_Claude Code开发Claude Code]]）
+- **企业研发流程**：Anthropic 内部"pretty much 100%" 代码 AI 生成；OpenAI 类似（[[Anthropic|Anthropic自举飞轮_Claude Code开发Claude Code]]）
 - **量化与交易**：CLAUDE.md 写交易系统记忆 + Claude Code 自动复盘 + 多 worktree 跑不同策略变体
-- **PM/产品**：把 PRD 替换为可点原型 + agent 自动产出文档反推（参考 [[判断力_judgment]]、[[ai作为高配实习生_角色分工方法论]]）
+- **PM/产品**：把 PRD 替换为可点原型 + agent 自动产出文档反推（参考 [[判断力_judgment|判断力_judgment]]、[[ai作为高配实习生_角色分工方法论|ai作为高配实习生_角色分工方法论]]）
 
 ## 4. 代表性论文/项目
 
@@ -81,6 +81,6 @@ confidence: high
 ## 5. 争议与开放问题
 
 - **"放手"与"理解"的分寸**：Karpathy 名言"You can outsource your thinking, but you can't outsource your understanding"——agentic engineering 落地的最大挑战不是工具栈而是分寸感
-- **新人成长路径断裂**：基层工程师如果一开始就在 agentic 模式下工作，是否会失去"读懂代码"的能力？这关系到行业人才结构（与 [[判断力_judgment]] 直接关联）
+- **新人成长路径断裂**：基层工程师如果一开始就在 agentic 模式下工作，是否会失去"读懂代码"的能力？这关系到行业人才结构（与 [[判断力_judgment|判断力_judgment]] 直接关联）
 - **责任归属**：agent 写错代码上线引发事故，责任在 agent、闸门人、还是 spec 编写者？目前业界尚无定论
 - **企业适用性**：Anthropic/OpenAI 这类前沿公司的"100%" 数据是否能复刻到传统软件公司？工具链、文化、合规约束都是变量

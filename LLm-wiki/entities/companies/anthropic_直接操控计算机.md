@@ -18,8 +18,8 @@ confidence: high
 
 ## 关联
 
-**相关概念**：[[Anthropic自举飞轮_Claude Code开发Claude Code]], [[anthropic研究预览与常青发布机制]], [[长期利益信托_long-term_benefit_trust]], [[上下文窗口与记忆架构]], [[智能体记忆架构]]
-**竞品**：[[google_gemini_多模态原生大模型基座]], [[OpenAI]]
+**相关概念**：[[Anthropic|Anthropic自举飞轮_Claude Code开发Claude Code]], [[anthropic研究预览与常青发布机制|anthropic研究预览与常青发布机制]], [[长期利益信托_long-term_benefit_trust|长期利益信托_long-term_benefit_trust]], [[上下文窗口与记忆架构|上下文窗口与记忆架构]], [[智能体记忆架构|智能体记忆架构]]
+**竞品**：[[google_gemini_多模态原生大模型基座|google_gemini_多模态原生大模型基座]], [[OpenAI|OpenAI]]
 
 # Anthropic
 

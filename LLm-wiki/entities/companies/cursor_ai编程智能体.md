@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[GitHub_Copilot]], [[Devin]]
+**竞品**：[[GitHub-Copilot|GitHub_Copilot]], [[Devin|Devin]]
 
 # Cursor
 

@@ -24,7 +24,7 @@ confidence: high
 
 ## 1. 定义与核心原理
 
-Software 3.0 由 [[andrej_karpathy_大牛_ai大牛]] 在 2026 年 Sequoia AI Ascent 上系统阐述，是继 Software 1.0（手写代码）和 Software 2.0（神经网络从数据学习）之后的第三波软件开发范式：
+Software 3.0 由 [[andrej_karpathy_大牛_ai大牛|andrej_karpathy_大牛_ai大牛]] 在 2026 年 Sequoia AI Ascent 上系统阐述，是继 Software 1.0（手写代码）和 Software 2.0（神经网络从数据学习）之后的第三波软件开发范式：
 
 | 范式 | 核心机制 | 开发者角色 |
 |------|----------|------------|
@@ -46,7 +46,7 @@ Software 3.0 由 [[andrej_karpathy_大牛_ai大牛]] 在 2026 年 Sequoia AI Asc
 
 - **强基础模型**：GPT-4o、Claude 3.5/3.7、Sonnet 等具备超长上下文和复杂推理能力
 - **Code Interpreter / Tool Use**：模型能执行代码、调用 API、操作文件系统
-- **Multi-turn 对话**：任务在多轮迭代中逐步精确化（参考 [[agentic_engineering_调度智能体的工程范式]]）
+- **Multi-turn 对话**：任务在多轮迭代中逐步精确化（参考 [[agentic_engineering_调度智能体的工程范式|agentic_engineering_调度智能体的工程范式]]）
 
 ### 2.3 与前身的关键区别
 
@@ -55,8 +55,8 @@ Software 3.0 由 [[andrej_karpathy_大牛_ai大牛]] 在 2026 年 Sequoia AI Asc
 
 ## 3. 行业应用场景
 
-- **Vibe Coding**（见 [[vibe_coding_凭感觉接受llm输出的编程模式]]）：Software 3.0 的早期形态，非结构化prompt → 快速代码
-- **Agentic Engineering**（见 [[agentic_engineering_调度智能体的工程范式]]）：Software 3.0 的纪律化形态，spec + evaluation loop → 可验证的自主工作流
+- **Vibe Coding**（见 [[vibe_coding_凭感觉接受llm输出的编程模式|vibe_coding_凭感觉接受llm输出的编程模式]]）：Software 3.0 的早期形态，非结构化prompt → 快速代码
+- **Agentic Engineering**（见 [[agentic_engineering_调度智能体的工程范式|agentic_engineering_调度智能体的工程范式]]）：Software 3.0 的纪律化形态，spec + evaluation loop → 可验证的自主工作流
 - **No-code/Low-code 平台**：自然语言描述 → 可用应用的最后一公里
 - **AI Native IDE**：Cursor、Windsurf、Copilot 等工具将自然语言→代码转换嵌入编辑器核心
 

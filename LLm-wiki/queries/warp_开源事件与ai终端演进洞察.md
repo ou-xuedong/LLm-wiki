@@ -16,7 +16,7 @@ confidence: low
 
 ## 关联
 
-**相关概念**：[[agent引擎优化_aeo]], [[agent协商层]]
+**相关概念**：[[agent引擎优化_aeo|agent引擎优化_aeo]], [[agent协商层|agent协商层]]
 
 # 💡 Warp 开源事件与 AI 终端演进洞察
 

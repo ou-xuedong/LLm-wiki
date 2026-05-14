@@ -16,8 +16,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[agentic_memory_architecture_智能体记忆架构]]
-**相关概念**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_hierarchy_llm_agent_llm智能体分层记忆]], [[agent记忆系统设计三大支柱收束论]], [[hermes_agent]], [[gbrain_ai记忆系统]], [[Anthropic自举飞轮_Claude Code开发Claude Code]], [[自进化AI_RSI]]
+**上位概念**：[[agentic_memory_architecture_智能体记忆架构|agentic_memory_architecture_智能体记忆架构]]
+**相关概念**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论|memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_hierarchy_llm_agent_llm智能体分层记忆|memory_hierarchy_llm_agent_llm智能体分层记忆]], [[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]], [[hermes_agent|hermes_agent]], [[gbrain_ai记忆系统|gbrain_ai记忆系统]], [[Anthropic|Anthropic自举飞轮_Claude Code开发Claude Code]], [[自进化AI-RSI|自进化AI_RSI]]
 
 # 🧠 六阶段记忆闭环（observe → store → retrieve → ground → act → improve）
 
@@ -55,11 +55,11 @@ confidence: high
 | **long-term memory（长时记忆）** | 跨任务有用的摘要 |
 | **skill library（技能库）** | 技能/成功模式（Voyager 的贡献） |
 
-具体分层结构详见 [[memory_hierarchy_llm_agent_llm智能体分层记忆]]。
+具体分层结构详见 [[memory_hierarchy_llm_agent_llm智能体分层记忆|memory_hierarchy_llm_agent_llm智能体分层记忆]]。
 
 ### 2.3 retrieve（召回）
 
-就是 [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]] 讲的 **selective router**（选择性路由器）——按当前任务定向召回，而非 cosine top-k。
+就是 [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论|memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]] 讲的 **selective router**（选择性路由器）——按当前任务定向召回，而非 cosine top-k。
 
 ### 2.4 ground（锚定）
 
@@ -117,10 +117,10 @@ improve : 用户说"完美，但 replicas 我现在想要 5"
 
 ## 5. 与同类概念的关系
 
-- **同主题三件套**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]]（retrieve 时的判据）+ [[memory_hierarchy_llm_agent_llm智能体分层记忆]]（store/retrieve 的对象）+ 本卡（阶段与时机）
-- **收束总览**：[[agent记忆系统设计三大支柱收束论]]
-- **类似闭环理念**：[[Anthropic自举飞轮_Claude Code开发Claude Code]] 是 Anthropic 内部的"开发→反馈→改进"自举闭环；[[自进化AI_RSI]] 是把 improve 这一步做到极致的递归自我提升
-- **关联典型实现**：[[hermes_agent]]（improve 阶段的反馈驱动迭代）、[[gbrain_ai记忆系统]]（梦境循环 = consolidation 巩固机制）
+- **同主题三件套**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论|memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]]（retrieve 时的判据）+ [[memory_hierarchy_llm_agent_llm智能体分层记忆|memory_hierarchy_llm_agent_llm智能体分层记忆]]（store/retrieve 的对象）+ 本卡（阶段与时机）
+- **收束总览**：[[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]]
+- **类似闭环理念**：[[Anthropic|Anthropic自举飞轮_Claude Code开发Claude Code]] 是 Anthropic 内部的"开发→反馈→改进"自举闭环；[[自进化AI-RSI|自进化AI_RSI]] 是把 improve 这一步做到极致的递归自我提升
+- **关联典型实现**：[[hermes_agent|hermes_agent]]（improve 阶段的反馈驱动迭代）、[[gbrain_ai记忆系统|gbrain_ai记忆系统]]（梦境循环 = consolidation 巩固机制）
 
 ## 6. 争议与开放问题
 

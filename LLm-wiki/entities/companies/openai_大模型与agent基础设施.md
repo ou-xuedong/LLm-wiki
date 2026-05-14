@@ -16,7 +16,7 @@ confidence: high
 
 ## 关联
 
-**竞品**：[[anthropic_直接操控计算机]], [[google_gemini_多模态原生大模型基座]], [[cohere_企业级隐私安全大模型]]
+**竞品**：[[anthropic_直接操控计算机|anthropic_直接操控计算机]], [[google_gemini_多模态原生大模型基座|google_gemini_多模态原生大模型基座]], [[cohere_企业级隐私安全大模型|cohere_企业级隐私安全大模型]]
 
 # 🏢 OpenAI
 

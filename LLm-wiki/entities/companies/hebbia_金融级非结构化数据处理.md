@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[operand_ai业务信息检索引擎]], [[perplexity_专业级ai搜索引擎]]
+**竞品**：[[operand_ai业务信息检索引擎|operand_ai业务信息检索引擎]], [[perplexity_专业级ai搜索引擎|perplexity_专业级ai搜索引擎]]
 
 # Hebbia
 

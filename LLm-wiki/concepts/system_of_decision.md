@@ -15,8 +15,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[Enterprise_Software]]
-**相关概念**：[[context_graph]], [[System_of_Record]], [[亚马逊投流决策助手]]
+**上位概念**：[[Enterprise-Software|Enterprise_Software]]
+**相关概念**：[[context_graph|context_graph]], [[System-of-Record|System_of_Record]], [[亚马逊投流决策助手|亚马逊投流决策助手]]
 
 # 🧠 System_of_Decision
 
@@ -30,7 +30,7 @@ confidence: high
 ## 3. 行业应用场景
 - 复杂商务谈判审批（折扣为何设定为20%）。
 - 医疗诊断与异常升级（为何不走常规流程）。
-- 跨境电商/广告投流等经验密集型运营决策（如[[亚马逊投流决策助手]]）。
+- 跨境电商/广告投流等经验密集型运营决策（如[[亚马逊投流决策助手|亚马逊投流决策助手]]）。
 
 ## 4. 代表性论文/项目
 - 暂无特定开源项目，属于新一代 SaaS 的理念高地。

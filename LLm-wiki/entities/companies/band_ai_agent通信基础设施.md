@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[AgentMail_智能体通信]], [[sapiom_lava_agent自动调用各api产生的微小_高]]
+**竞品**：[[AgentMail-智能体通信|AgentMail_智能体通信]], [[sapiom_lava_agent自动调用各api产生的微小_高|sapiom_lava_agent自动调用各api产生的微小_高]]
 
 # BAND（AI Agent 通信与交互基础设施）
 

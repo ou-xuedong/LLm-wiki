@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[claw_mart_ai预制件交易市场]], [[temporal_agent编排引擎]]
+**竞品**：[[claw_mart_ai预制件交易市场|claw_mart_ai预制件交易市场]], [[temporal_agent编排引擎|temporal_agent编排引擎]]
 
 # EvoMap（AI Agent 自我进化基础设施）
 

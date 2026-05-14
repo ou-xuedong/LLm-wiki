@@ -14,9 +14,9 @@ tags:
 
 ## 关联
 
-**上位概念**：[[Agent Infra]]
-**相关概念**：[[context_graph]], [[MCP]], [[human-like_memory_类人记忆插件]], [[memory_loop_six_stage_六阶段记忆闭环]], [[agent记忆系统设计三大支柱收束论]]
-**关键人物**：[[Garry Tan]], [[OpenClaw]]
+**上位概念**：[[Agent|Agent Infra]]
+**相关概念**：[[context_graph|context_graph]], [[MCP|MCP]], [[human-like_memory_类人记忆插件|human-like_memory_类人记忆插件]], [[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]], [[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]]
+**关键人物**：[[Garry-Tan|Garry Tan]], [[OpenClaw|OpenClaw]]
 
 # 🧠 GBrain_AI记忆系统
 

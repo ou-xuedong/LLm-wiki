@@ -16,8 +16,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[agentic_search]]
-**相关概念**：[[agentic_search]], [[上下文自动压缩]], [[prompt_cache]], [[sub-agent隔离机制]], [[上下文图谱]]
+**上位概念**：[[agentic_search|agentic_search]]
+**相关概念**：[[agentic_search|agentic_search]], [[上下文自动压缩|上下文自动压缩]], [[prompt_cache|prompt_cache]], [[sub-agent隔离机制|sub-agent隔离机制]], [[上下文图谱|上下文图谱]]
 
 # 🔧 Harness 工程（Harness Engineering）
 

@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[sandstone_企业内控agent]], [[temporal_agent编排引擎]]
+**竞品**：[[sandstone_企业内控agent|sandstone_企业内控agent]], [[temporal_agent编排引擎|temporal_agent编排引擎]]
 
 # Sycamore（企业 Agent 安全调度平台）
 

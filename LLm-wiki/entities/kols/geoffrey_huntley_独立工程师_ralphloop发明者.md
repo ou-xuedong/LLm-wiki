@@ -15,9 +15,9 @@ tags:
 
 ## 关联
 
-**所属**：[[anthropic_直接操控计算机]]
-**专长**：[[ralph_loop_ai编程死循环模式]], [[agentic_engineering_调度智能体的工程范式]], [[sub-agent隔离机制]]
-**相关 KOL**：[[boris_cherny_知名工程师]], [[andrej_karpathy_大牛_ai大牛]]
+**所属**：[[anthropic_直接操控计算机|anthropic_直接操控计算机]]
+**专长**：[[ralph_loop_ai编程死循环模式|ralph_loop_ai编程死循环模式]], [[agentic_engineering_调度智能体的工程范式|agentic_engineering_调度智能体的工程范式]], [[sub-agent隔离机制|sub-agent隔离机制]]
+**相关 KOL**：[[boris_cherny_知名工程师|boris_cherny_知名工程师]], [[andrej_karpathy_大牛_ai大牛|andrej_karpathy_大牛_ai大牛]]
 
 # 👤 Geoffrey Huntley（独立工程师 · Ralph Wiggum Loop 发明者）
 
@@ -35,7 +35,7 @@ tags:
 
 ## 2. 代表作与里程碑
 
-- **[[ralph_loop_ai编程死循环模式]]** — 用 `while :; do cat PROMPT.md | claude-code ; done` 单行命令跑通 AI 自动编程的工程范式（命名灵感来自《辛普森一家》傻乎乎重复同一句话的 Ralph Wiggum）
+- **[[ralph_loop_ai编程死循环模式|ralph_loop_ai编程死循环模式]]** — 用 `while :; do cat PROMPT.md | claude-code ; done` 单行命令跑通 AI 自动编程的工程范式（命名灵感来自《辛普森一家》傻乎乎重复同一句话的 Ralph Wiggum）
 - **CURSED 编程语言** — 基于 LLVM（Low Level Virtual Machine，底层虚拟机）的全新生产级语言，Ralph Loop 跑了约 3 个月无人值守
 - **Y Combinator hackathon 案例** — 用 Ralph 一夜跑完 6 个仓库
 - **`how-to-ralph-wiggum` 公开模板**：https://github.com/ghuntley/how-to-ralph-wiggum
@@ -48,7 +48,7 @@ tags:
 
 ## 4. 近期动态
 
-- 2026-05-07: 摄入「程序员线 KOL 调研」专题——Geoffrey 与 [[boris_cherny_知名工程师]]、[[andrej_karpathy_大牛_ai大牛]] 同列"调度型程序员"代表，详见 [[ralph_loop_ai编程死循环模式]]
+- 2026-05-07: 摄入「程序员线 KOL 调研」专题——Geoffrey 与 [[boris_cherny_知名工程师|boris_cherny_知名工程师]]、[[andrej_karpathy_大牛_ai大牛|andrej_karpathy_大牛_ai大牛]] 同列"调度型程序员"代表，详见 [[ralph_loop_ai编程死循环模式|ralph_loop_ai编程死循环模式]]
 - 2025-11 至今：持续在 ghuntley.com 公开 Ralph Loop 实战案例与成本数据
 - 历史：曾就职 Sourcegraph、Gitpod，澳洲资深独立工程师身份
 

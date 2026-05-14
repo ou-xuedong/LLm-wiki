@@ -15,7 +15,7 @@ confidence: high
 
 ## 关联
 
-**竞品**：[[sycamore_企业agent调度]], [[sandstone_企业内控agent]]
+**竞品**：[[sycamore_企业agent调度|sycamore_企业agent调度]], [[sandstone_企业内控agent|sandstone_企业内控agent]]
 
 # Temporal
 

@@ -15,8 +15,8 @@ tags:
 
 ## 关联
 
-**所属**：[[OpenClaw]], [[PSPDFKit]]
-**专长**：Agent工具, [[OpenClaw]]生态
+**所属**：[[OpenClaw|OpenClaw]], [[PSPDFKit|PSPDFKit]]
+**专长**：Agent工具, [[OpenClaw|OpenClaw]]生态
 
 # Peter Steinberger (彼得·斯坦伯格)
 - **所属阵营/立场**：工业界 / 极客开发者与 AI 产品评测派 (PSPDFKit 创始人，现 OpenClaw)

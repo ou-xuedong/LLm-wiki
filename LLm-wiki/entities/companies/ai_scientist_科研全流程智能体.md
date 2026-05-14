@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[perplexity_专业级ai搜索引擎]], [[google_notebooklm_海量文档交叉索引_播客生成_智能笔记]]
+**竞品**：[[perplexity_专业级ai搜索引擎|perplexity_专业级ai搜索引擎]], [[google_notebooklm_海量文档交叉索引_播客生成_智能笔记|google_notebooklm_海量文档交叉索引_播客生成_智能笔记]]
 
 # 🏢 AI Scientist（科研全流程智能体）
 

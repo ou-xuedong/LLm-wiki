@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[openclaw_自进化ai开源框架]], [[manus_通用浏览器agent]], [[cursor_ai编程智能体]]
+**竞品**：[[openclaw_自进化ai开源框架|openclaw_自进化ai开源框架]], [[manus_通用浏览器agent|manus_通用浏览器agent]], [[cursor_ai编程智能体|cursor_ai编程智能体]]
 
 # 🏢 ZeeLinClaw（多智能体商业平台）
 

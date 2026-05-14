@@ -16,8 +16,8 @@ tags:
 
 ## 关联
 
-**相关概念**：[[Retail_Media]], [[ROAS优化]]
-**竞品**：[[Xnurta_Amazon广告AI_Agent]], [[perpetua_电商广告平台]], [[ppc_entourage_amazonppc工具]], [[亚马逊投流决策助手_跨境电商ai决策]]
+**相关概念**：[[Retail-Media|Retail_Media]], [[ROAS优化|ROAS优化]]
+**竞品**：[[xnurta_amazon广告ai-agent|Xnurta_Amazon广告AI_Agent]], [[perpetua_电商广告平台|perpetua_电商广告平台]], [[ppc_entourage_amazonppc工具|ppc_entourage_amazonppc工具]], [[亚马逊投流决策助手_跨境电商ai决策|亚马逊投流决策助手_跨境电商ai决策]]
 
 # 🏢 Adspert（Amazon PPC 广告优化 · 2024-12 被 Mirakl 收购）
 

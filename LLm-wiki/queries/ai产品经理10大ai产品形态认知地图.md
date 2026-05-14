@@ -16,7 +16,7 @@ tags:
 
 ## 关联
 
-**相关概念**：[[harness_工程]], [[agentic_search]], [[零索引搜索]], [[混合双索引]]
+**相关概念**：[[harness_工程|harness_工程]], [[agentic_search|agentic_search]], [[零索引搜索|零索引搜索]], [[混合双索引|混合双索引]]
 
 # 💡 AI产品经理10大AI产品形态认知地图
 

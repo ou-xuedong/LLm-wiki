@@ -15,9 +15,9 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[OpenCode_铁三角]]
-**相关概念**：[[openspec_ai开发规范框架]], [[superpowers_ai编程纪律工具]]
-**关键人物**：[[OpenCode]]
+**上位概念**：[[OpenCode-铁三角|OpenCode_铁三角]]
+**相关概念**：[[openspec_ai开发规范框架|openspec_ai开发规范框架]], [[superpowers_ai编程纪律工具|superpowers_ai编程纪律工具]]
+**关键人物**：[[OpenCode|OpenCode]]
 
 # 🧠 OMO（Online-Merge-Offline 沉淀模型）
 

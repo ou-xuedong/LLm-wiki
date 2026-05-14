@@ -16,8 +16,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[agentic_memory_architecture_智能体记忆架构]]
-**相关概念**：[[memory_loop_six_stage_六阶段记忆闭环]], [[memory_hierarchy_llm_agent_llm智能体分层记忆]], [[agent记忆系统设计三大支柱收束论]], [[context_window_and_memory_architecture_上下文窗口与记忆架构]], [[human-like_memory_类人记忆插件]], [[prompt_cache]], [[上下文自动压缩]]
+**上位概念**：[[agentic_memory_architecture_智能体记忆架构|agentic_memory_architecture_智能体记忆架构]]
+**相关概念**：[[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]], [[memory_hierarchy_llm_agent_llm智能体分层记忆|memory_hierarchy_llm_agent_llm智能体分层记忆]], [[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]], [[context_window_and_memory_architecture_上下文窗口与记忆架构|context_window_and_memory_architecture_上下文窗口与记忆架构]], [[human-like_memory_类人记忆插件|human-like_memory_类人记忆插件]], [[prompt_cache|prompt_cache]], [[上下文自动压缩|上下文自动压缩]]
 
 # 🧠 记忆三约束三元悖论（Selective / Grounded / Efficient）
 
@@ -117,11 +117,11 @@ def memory_step(current_state, task, memory_bank, budget):
 
 ## 5. 代表性论文/项目（同主题映射）
 
-- **上位框架**：[[agentic_memory_architecture_智能体记忆架构]]——本卡是其"如何设计 retrieve"的具体判据
-- **同主题三件套**：[[memory_loop_six_stage_六阶段记忆闭环]]（定义"何时 retrieve 何时 store"）+ [[memory_hierarchy_llm_agent_llm智能体分层记忆]]（定义"memory bank 内部如何组织"）+ 本卡（定义"retrieve 那一刻的判据"）
-- **收束总览**：[[agent记忆系统设计三大支柱收束论]]
-- **典型实现**：[[human-like_memory_类人记忆插件]] 的"三类记忆分而治之 + 程序性精确匹配"是本约束在产品上的体现
-- **预算约束工程化**：[[prompt_cache]]、[[上下文自动压缩]] 是 Efficient 约束的具体技术
+- **上位框架**：[[agentic_memory_architecture_智能体记忆架构|agentic_memory_architecture_智能体记忆架构]]——本卡是其"如何设计 retrieve"的具体判据
+- **同主题三件套**：[[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]]（定义"何时 retrieve 何时 store"）+ [[memory_hierarchy_llm_agent_llm智能体分层记忆|memory_hierarchy_llm_agent_llm智能体分层记忆]]（定义"memory bank 内部如何组织"）+ 本卡（定义"retrieve 那一刻的判据"）
+- **收束总览**：[[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]]
+- **典型实现**：[[human-like_memory_类人记忆插件|human-like_memory_类人记忆插件]] 的"三类记忆分而治之 + 程序性精确匹配"是本约束在产品上的体现
+- **预算约束工程化**：[[prompt_cache|prompt_cache]]、[[上下文自动压缩|上下文自动压缩]] 是 Efficient 约束的具体技术
 
 ## 6. 争议与开放问题
 
@@ -131,4 +131,4 @@ def memory_step(current_state, task, memory_bank, budget):
 
 ## 7. 信息来源
 
-主人 2026-05-09 体系化整理。本卡是"Agent 记忆系统设计三大支柱"之一，配套 [[memory_loop_six_stage_六阶段记忆闭环]] + [[memory_hierarchy_llm_agent_llm智能体分层记忆]] + [[agent记忆系统设计三大支柱收束论]] 共同构成完整设计判据。
+主人 2026-05-09 体系化整理。本卡是"Agent 记忆系统设计三大支柱"之一，配套 [[memory_loop_six_stage_六阶段记忆闭环|memory_loop_six_stage_六阶段记忆闭环]] + [[memory_hierarchy_llm_agent_llm智能体分层记忆|memory_hierarchy_llm_agent_llm智能体分层记忆]] + [[agent记忆系统设计三大支柱收束论|agent记忆系统设计三大支柱收束论]] 共同构成完整设计判据。
