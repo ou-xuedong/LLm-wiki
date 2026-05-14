@@ -1,0 +1,2165 @@
+[
+  {
+    "section": "kols",
+    "slug": "andrej_karpathy_大牛_ai大牛",
+    "title": "Andrej",
+    "path": "entities/kols/andrej_karpathy_大牛_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "ben_horowitz_a16z_联合创始人",
+    "title": "Ben",
+    "path": "entities/kols/ben_horowitz_a16z_联合创始人.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "boris_cherny_知名工程师",
+    "title": "Boris",
+    "path": "entities/kols/boris_cherny_知名工程师.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "cat_wu_claude_code产品负责人",
+    "title": "Cat",
+    "path": "entities/kols/cat_wu_claude_code产品负责人.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "clement_delangue_ai大牛",
+    "title": "Clement",
+    "path": "entities/kols/clement_delangue_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "dario_amodei_anthropic_ceo",
+    "title": "Dario",
+    "path": "entities/kols/dario_amodei_anthropic_ceo.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "demis_hassabis_deepmind联合创始人兼ceo",
+    "title": "Demis",
+    "path": "entities/kols/demis_hassabis_deepmind联合创始人兼ceo.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "elon_musk_xai",
+    "title": "Elon",
+    "path": "entities/kols/elon_musk_xai.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "francois_chollet_大牛_ai大牛",
+    "title": "Francois",
+    "path": "entities/kols/francois_chollet_大牛_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "geoffrey_huntley_独立工程师_ralphloop发明者",
+    "title": "Geoffrey",
+    "path": "entities/kols/geoffrey_huntley_独立工程师_ralphloop发明者.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "greg_brockman_openai_总裁兼联合创始人",
+    "title": "Greg",
+    "path": "entities/kols/greg_brockman_openai_总裁兼联合创始人.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "harrison_chase_ai大牛",
+    "title": "Harrison",
+    "path": "entities/kols/harrison_chase_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "ilya_sutskever_大牛_ai大牛",
+    "title": "Ilya",
+    "path": "entities/kols/ilya_sutskever_大牛_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "jack_dorsey_block_ceo",
+    "title": "Jack",
+    "path": "entities/kols/jack_dorsey_block_ceo.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "jensen_huang_nvidia_ceo",
+    "title": "Jensen",
+    "path": "entities/kols/jensen_huang_nvidia_ceo.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "jim_fan_大牛_ai大牛",
+    "title": "Jim",
+    "path": "entities/kols/jim_fan_大牛_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "lilian_weng_ai大牛",
+    "title": "Lilian",
+    "path": "entities/kols/lilian_weng_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "nikhyl_singhal_theskip创始人",
+    "title": "Nikhyl",
+    "path": "entities/kols/nikhyl_singhal_theskip创始人.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "peter_steinberger_pspdfkit_创始人",
+    "title": "Peter",
+    "path": "entities/kols/peter_steinberger_pspdfkit_创始人.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "sam_altman_openai_ceo",
+    "title": "Sam",
+    "path": "entities/kols/sam_altman_openai_ceo.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "sinkris_产品总监_quarterlyplanningkol",
+    "title": "SinKris",
+    "path": "entities/kols/sinkris_产品总监_quarterlyplanningkol.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "yann_lecun_大牛_ai大牛",
+    "title": "Yann",
+    "path": "entities/kols/yann_lecun_大牛_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "何静_hejing_北航副教授",
+    "title": "何静",
+    "path": "entities/kols/何静_hejing_北航副教授.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "智能体ai_公众号",
+    "title": "智能体AI",
+    "path": "entities/kols/智能体ai_公众号.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "李沐_ai大牛",
+    "title": "李沐",
+    "path": "entities/kols/李沐_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "林亚杰_厦门半仓科技_vc操盘手",
+    "title": "林亚杰",
+    "path": "entities/kols/林亚杰_厦门半仓科技_vc操盘手.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "梁文锋_deepseek_创始人",
+    "title": "梁文锋",
+    "path": "entities/kols/梁文锋_deepseek_创始人.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "沈阳_shenyang_清华跨学科学者",
+    "title": "沈阳",
+    "path": "entities/kols/沈阳_shenyang_清华跨学科学者.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "玄姐_玄姐聊agi",
+    "title": "玄姐",
+    "path": "entities/kols/玄姐_玄姐聊agi.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "贾扬清_ai大牛",
+    "title": "贾扬清",
+    "path": "entities/kols/贾扬清_ai大牛.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "赛博禅心_金色传说大聪明_ai深度分析kol",
+    "title": "赛博禅心",
+    "path": "entities/kols/赛博禅心_金色传说大聪明_ai深度分析kol.md",
+    "type": "kols"
+  },
+  {
+    "section": "kols",
+    "slug": "陈琦_深圳大学心理学院_计算精神病学家",
+    "title": "陈琦",
+    "path": "entities/kols/陈琦_深圳大学心理学院_计算精神病学家.md",
+    "type": "kols"
+  },
+  {
+    "section": "companies",
+    "slug": "10x_science_蛋白质发现_ai_原生下一代蛋白质表",
+    "title": "10x",
+    "path": "entities/companies/10x_science_蛋白质发现_ai_原生下一代蛋白质表.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "ai_scientist_科研全流程智能体",
+    "title": "AI",
+    "path": "entities/companies/ai_scientist_科研全流程智能体.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "ai_startup_cursor_in_talks_to_raise_2_billion_fun",
+    "title": "AI",
+    "path": "entities/companies/ai_startup_cursor_in_talks_to_raise_2_billion_fun.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "aaru_品牌测试_市场预测_生成极其逼真的定向人",
+    "title": "Aaru",
+    "path": "entities/companies/aaru_品牌测试_市场预测_生成极其逼真的定向人.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "adspert_amazon_ppc_ad_optimization",
+    "title": "Adspert",
+    "path": "entities/companies/adspert_amazon_ppc_ad_optimization.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "aegis_安全可观测性_ai_和大模型系统的安",
+    "title": "Aegis",
+    "path": "entities/companies/aegis_安全可观测性_ai_和大模型系统的安.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "agentmail_智能体通信_为_ai_智能体提供原生",
+    "title": "AgentMail",
+    "path": "entities/companies/agentmail_智能体通信_为_ai_智能体提供原生.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "alter_智能体安全_零信任身份验证和访问控制",
+    "title": "Alter",
+    "path": "entities/companies/alter_智能体安全_零信任身份验证和访问控制.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "anthropic_直接操控计算机",
+    "title": "Anthropic",
+    "path": "entities/companies/anthropic_直接操控计算机.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "april_人机交互_为人类终端用户开发智能体",
+    "title": "April",
+    "path": "entities/companies/april_人机交互_为人类终端用户开发智能体.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "athenahq_生成式引擎优化",
+    "title": "AthenaHQ",
+    "path": "entities/companies/athenahq_生成式引擎优化.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "band_ai_agent通信基础设施",
+    "title": "BAND",
+    "path": "entities/companies/band_ai_agent通信基础设施.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "beacon_health_医疗健康_ai_面向初级保健场景的",
+    "title": "Beacon",
+    "path": "entities/companies/beacon_health_医疗健康_ai_面向初级保健场景的.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "block_金融科技与去中心化",
+    "title": "Block",
+    "path": "entities/companies/block_金融科技与去中心化.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "buddy_ai_ai虚拟语音辅导员",
+    "title": "Buddy",
+    "path": "entities/companies/buddy_ai_ai虚拟语音辅导员.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "c47martini_film_生成式媒体_协作制片工具_支持实时多",
+    "title": "C47martini",
+    "path": "entities/companies/c47martini_film_生成式媒体_协作制片工具_支持实时多.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "cadence_11x_ai驱动crm系统",
+    "title": "Cadence",
+    "path": "entities/companies/cadence_11x_ai驱动crm系统.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "character_ai_虚拟角色与陪伴",
+    "title": "Character",
+    "path": "entities/companies/character_ai_虚拟角色与陪伴.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "claw_mart_ai预制件交易市场",
+    "title": "Claw",
+    "path": "entities/companies/claw_mart_ai预制件交易市场.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "clawspan_个人ai首席运营官",
+    "title": "Clawspan",
+    "path": "entities/companies/clawspan_个人ai首席运营官.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "clay_bavor_sierra_对话式ai客服支持",
+    "title": "Clay",
+    "path": "entities/companies/clay_bavor_sierra_对话式ai客服支持.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "clay_gtm平台",
+    "title": "Clay",
+    "path": "entities/companies/clay_gtm平台.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "cognigy_自动化语音ai客服台",
+    "title": "Cognigy",
+    "path": "entities/companies/cognigy_自动化语音ai客服台.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "cohere_企业级隐私安全大模型",
+    "title": "Cohere",
+    "path": "entities/companies/cohere_企业级隐私安全大模型.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "concourse_自动系统架构师",
+    "title": "Concourse",
+    "path": "entities/companies/concourse_自动系统架构师.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "convergence_ai_记忆技能跨模态代理",
+    "title": "Convergence",
+    "path": "entities/companies/convergence_ai_记忆技能跨模态代理.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "corelayer_运维监控_ai_智能体监控生产环境并",
+    "title": "Corelayer",
+    "path": "entities/companies/corelayer_运维监控_ai_智能体监控生产环境并.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "cursor_ai编程智能体",
+    "title": "Cursor",
+    "path": "entities/companies/cursor_ai编程智能体.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "deepaware_数据中心_利用强化学习优化数据中心运",
+    "title": "DeepAware",
+    "path": "entities/companies/deepaware_数据中心_利用强化学习优化数据中心运.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "diguarobot_具身智能",
+    "title": "DiguaRobot",
+    "path": "entities/companies/diguarobot_具身智能.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "ditto_动态销售演示",
+    "title": "Ditto",
+    "path": "entities/companies/ditto_动态销售演示.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "embedder_硬件工程_针对固件开发与管理的_ai",
+    "title": "Embedder",
+    "path": "entities/companies/embedder_硬件工程_针对固件开发与管理的_ai.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "encore_ai商品与服务定价",
+    "title": "Encore",
+    "path": "entities/companies/encore_ai商品与服务定价.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "evomap_ai智能体自我进化基础设施",
+    "title": "EvoMap",
+    "path": "entities/companies/evomap_ai智能体自我进化基础设施.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "exa_ai原生的神经搜索",
+    "title": "Exa",
+    "path": "entities/companies/exa_ai原生的神经搜索.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "fitbit前高管项目_家庭健康设备的ai化与家庭照护_慢性病检",
+    "title": "Fitbit前高管项目",
+    "path": "entities/companies/fitbit前高管项目_家庭健康设备的ai化与家庭照护_慢性病检.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "flai_销售自动化_汽车经销商线索的_ai",
+    "title": "Flai",
+    "path": "entities/companies/flai_销售自动化_汽车经销商线索的_ai.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "fragment_人类ai协作操作系统",
+    "title": "Fragment",
+    "path": "entities/companies/fragment_人类ai协作操作系统.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "full_list_of_israeli_high-tech_funding_rounds_in_2",
+    "title": "Full",
+    "path": "entities/companies/full_list_of_israeli_high-tech_funding_rounds_in_2.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "fundamental_vr_ai_临床医学虚拟现实训练_多模态数据处理分析",
+    "title": "Fundamental",
+    "path": "entities/companies/fundamental_vr_ai_临床医学虚拟现实训练_多模态数据处理分析.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "gigr_playad__54_million_pre-seed_secured_to_bu",
+    "title": "GIGR",
+    "path": "entities/companies/gigr_playad__54_million_pre-seed_secured_to_bu.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "gamma_beautiful_ai_一键生成精美ppt",
+    "title": "Gamma",
+    "path": "entities/companies/gamma_beautiful_ai_一键生成精美ppt.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "generative-ai-startup-co-founder",
+    "title": "Generative-AI-Startup-Co-Founder",
+    "path": "entities/companies/generative-ai-startup-co-founder.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "google_gemini_多模态原生大模型基座",
+    "title": "Google",
+    "path": "entities/companies/google_gemini_多模态原生大模型基座.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "google_notebooklm_海量文档交叉索引_播客生成_智能笔记",
+    "title": "Google",
+    "path": "entities/companies/google_notebooklm_海量文档交叉索引_播客生成_智能笔记.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "grok_实时获取全网新鲜数据",
+    "title": "Grok",
+    "path": "entities/companies/grok_实时获取全网新鲜数据.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "harvey_垂直法律agent",
+    "title": "Harvey",
+    "path": "entities/companies/harvey_垂直法律agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "hebbia_金融级非结构化数据处理",
+    "title": "Hebbia",
+    "path": "entities/companies/hebbia_金融级非结构化数据处理.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "hex_security_网络安全_利用_ai_智能体持续对系",
+    "title": "Hex",
+    "path": "entities/companies/hex_security_网络安全_利用_ai_智能体持续对系.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "hyprnote_隐私记录_开源的端侧_本地部署_ai",
+    "title": "Hyprnote",
+    "path": "entities/companies/hyprnote_隐私记录_开源的端侧_本地部署_ai.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "juicebox_contrario_扫描全网高尖端人才",
+    "title": "Juicebox",
+    "path": "entities/companies/juicebox_contrario_扫描全网高尖端人才.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "kimi_国产大模型",
+    "title": "Kimi",
+    "path": "entities/companies/kimi_国产大模型.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "kimpton_投资研究_ai_原生投资研究与分析平台",
+    "title": "Kimpton",
+    "path": "entities/companies/kimpton_投资研究_ai_原生投资研究与分析平台.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "kristin_isaac_ceo_and_co-founder_at_strudel__int",
+    "title": "Kristin",
+    "path": "entities/companies/kristin_isaac_ceo_and_co-founder_at_strudel__int.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "lakera_ai安全防火墙",
+    "title": "Lakera",
+    "path": "entities/companies/lakera_ai安全防火墙.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "lark_办公流_业务流深度ai整合系统",
+    "title": "Lark",
+    "path": "entities/companies/lark_办公流_业务流深度ai整合系统.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "leadbay_全网高质量潜客商机探测",
+    "title": "LeadBay",
+    "path": "entities/companies/leadbay_全网高质量潜客商机探测.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "legalon_智能合同审查",
+    "title": "LegalOn",
+    "path": "entities/companies/legalon_智能合同审查.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "linewise_教育界一线风控",
+    "title": "LineWise",
+    "path": "entities/companies/linewise_教育界一线风控.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "linkedin_ai_职场招聘与简历改写",
+    "title": "LinkedIn",
+    "path": "entities/companies/linkedin_ai_职场招聘与简历改写.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "listenlabs_研发前期的海量用户访谈录音整理_情绪分析",
+    "title": "ListenLabs",
+    "path": "entities/companies/listenlabs_研发前期的海量用户访谈录音整理_情绪分析.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "locus_ai_基于位置的地图营销",
+    "title": "Locus",
+    "path": "entities/companies/locus_ai_基于位置的地图营销.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "luel_ai_训练数据_真实世界人类交互数据",
+    "title": "Luel",
+    "path": "entities/companies/luel_ai_训练数据_真实世界人类交互数据.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "manus_通用浏览器agent",
+    "title": "Manus",
+    "path": "entities/companies/manus_通用浏览器agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "mckinsey_麦肯锡_全球管理咨询",
+    "title": "McKinsey",
+    "path": "entities/companies/mckinsey_麦肯锡_全球管理咨询.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "mindrianos_ai创新联合创始人",
+    "title": "MindrianOS",
+    "path": "entities/companies/mindrianos_ai创新联合创始人.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "mindverse_情感交互agent",
+    "title": "Mindverse",
+    "path": "entities/companies/mindverse_情感交互agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "moengage_app客户流失预测_自动化定向触达与召回挽留",
+    "title": "MoEngage",
+    "path": "entities/companies/moengage_app客户流失预测_自动化定向触达与召回挽留.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "mosaic_节点式视频内容管理",
+    "title": "Mosaic",
+    "path": "entities/companies/mosaic_节点式视频内容管理.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "myhairai_植发图片训练_毛囊级精确诊断",
+    "title": "MyHairAI",
+    "path": "entities/companies/myhairai_植发图片训练_毛囊级精确诊断.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "netstock_restockai_进销存库存预测",
+    "title": "NetStock",
+    "path": "entities/companies/netstock_restockai_进销存库存预测.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "oki_短剧分发与买量agent",
+    "title": "Oki",
+    "path": "entities/companies/oki_短剧分发与买量agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "onlook_从设计到前端代码直出与对接",
+    "title": "Onlook",
+    "path": "entities/companies/onlook_从设计到前端代码直出与对接.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "openai_大模型与agent基础设施",
+    "title": "OpenAI",
+    "path": "entities/companies/openai_大模型与agent基础设施.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "openclaw_自进化ai开源框架",
+    "title": "OpenClaw",
+    "path": "entities/companies/openclaw_自进化ai开源框架.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "operand_ai业务信息检索引擎",
+    "title": "Operand",
+    "path": "entities/companies/operand_ai业务信息检索引擎.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "orthogonal_硬件vibe编程",
+    "title": "Orthogonal",
+    "path": "entities/companies/orthogonal_硬件vibe编程.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "ppc_entourage_amazonppc工具",
+    "title": "PPC",
+    "path": "entities/companies/ppc_entourage_amazonppc工具.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "pace_财税与金融_企业会计自动化平台",
+    "title": "Pace",
+    "path": "entities/companies/pace_财税与金融_企业会计自动化平台.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "paid_ai_ai计算员工绩效与薪酬体系",
+    "title": "Paid",
+    "path": "entities/companies/paid_ai_ai计算员工绩效与薪酬体系.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "parsewise_cleanlab_极大提升清洗数据",
+    "title": "Parsewise",
+    "path": "entities/companies/parsewise_cleanlab_极大提升清洗数据.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "peppr_ai_动态ai知识库",
+    "title": "Peppr",
+    "path": "entities/companies/peppr_ai_动态ai知识库.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "perpetua_电商广告平台",
+    "title": "Perpetua",
+    "path": "entities/companies/perpetua_电商广告平台.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "perplexity_专业级ai搜索引擎",
+    "title": "Perplexity",
+    "path": "entities/companies/perplexity_专业级ai搜索引擎.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "phia_c端情感陪伴与情绪价值提供_多平台虚拟社交",
+    "title": "Phia",
+    "path": "entities/companies/phia_c端情感陪伴与情绪价值提供_多平台虚拟社交.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "pickme_pickleai_垃圾邮件商机抓取",
+    "title": "PickMe",
+    "path": "entities/companies/pickme_pickleai_垃圾邮件商机抓取.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "plexe_机器学习研发_生产力基元工具",
+    "title": "Plexe",
+    "path": "entities/companies/plexe_机器学习研发_生产力基元工具.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "prism_机器学习研发_生产力基元工具",
+    "title": "Prism",
+    "path": "entities/companies/prism_机器学习研发_生产力基元工具.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "promptless_动态文档生成",
+    "title": "PromptLess",
+    "path": "entities/companies/promptless_动态文档生成.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "ramp_企业费控与报销智能审查",
+    "title": "Ramp",
+    "path": "entities/companies/ramp_企业费控与报销智能审查.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "roli_发光交互实体乐器",
+    "title": "Roli",
+    "path": "entities/companies/roli_发光交互实体乐器.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "rox_roxi_b2b大客户销售跟进_决策链梳理与订单预测",
+    "title": "Rox",
+    "path": "entities/companies/rox_roxi_b2b大客户销售跟进_决策链梳理与订单预测.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "rulebase_hr合规扫描工具",
+    "title": "Rulebase",
+    "path": "entities/companies/rulebase_hr合规扫描工具.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "sandstone_企业内控agent",
+    "title": "Sandstone",
+    "path": "entities/companies/sandstone_企业内控agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "sapiom_lava_agent自动调用各api产生的微小_高",
+    "title": "Sapiom",
+    "path": "entities/companies/sapiom_lava_agent自动调用各api产生的微小_高.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "serval_企业it自动化运维",
+    "title": "Serval",
+    "path": "entities/companies/serval_企业it自动化运维.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "shofoshofo_ai_视频训练集_海量短视频数据索引",
+    "title": "Shofoshofo",
+    "path": "entities/companies/shofoshofo_ai_视频训练集_海量短视频数据索引.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "sierra_对话式ai客服支持",
+    "title": "Sierra",
+    "path": "entities/companies/sierra_对话式ai客服支持.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "spang_ai_针对广告_saas推广的落地页_千人千",
+    "title": "Spang",
+    "path": "entities/companies/spang_ai_针对广告_saas推广的落地页_千人千.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "spotpay_财税与金融_简化全球金融流程的跨境支付",
+    "title": "SpotPay",
+    "path": "entities/companies/spotpay_财税与金融_简化全球金融流程的跨境支付.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "stacks_财务多智能协作",
+    "title": "Stacks",
+    "path": "entities/companies/stacks_财务多智能协作.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "stickerbox_虚拟形象带入现实贴纸_玩具",
+    "title": "Stickerbox",
+    "path": "entities/companies/stickerbox_虚拟形象带入现实贴纸_玩具.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "stilta_法律科技_专为专利律师设计的_ai",
+    "title": "Stilta",
+    "path": "entities/companies/stilta_法律科技_专为专利律师设计的_ai.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "strand_ai_生物大模型_构建多模态患者数据集",
+    "title": "Strand",
+    "path": "entities/companies/strand_ai_生物大模型_构建多模态患者数据集.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "supermemory_统一数据输入跨平台接口",
+    "title": "SuperMemory",
+    "path": "entities/companies/supermemory_统一数据输入跨平台接口.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "sycamore_企业agent调度",
+    "title": "Sycamore",
+    "path": "entities/companies/sycamore_企业agent调度.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "tamlabs_小众群体陪伴agent",
+    "title": "TamLabs",
+    "path": "entities/companies/tamlabs_小众群体陪伴agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "tavily_专为智能体打造的搜索api",
+    "title": "Tavily",
+    "path": "entities/companies/tavily_专为智能体打造的搜索api.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "temporal_agent编排引擎",
+    "title": "Temporal",
+    "path": "entities/companies/temporal_agent编排引擎.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "tencent_and_alibaba_in_talks_to_invest_in_deepseek",
+    "title": "Tencent",
+    "path": "entities/companies/tencent_and_alibaba_in_talks_to_invest_in_deepseek.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "tessa_线上视频学习跟进rpa",
+    "title": "Tessa",
+    "path": "entities/companies/tessa_线上视频学习跟进rpa.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "the_16_largest_global_startup_funding_rounds_of_ma",
+    "title": "The",
+    "path": "entities/companies/the_16_largest_global_startup_funding_rounds_of_ma.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "thrive_ai_health_极度私人健康顾问大模型",
+    "title": "Thrive",
+    "path": "entities/companies/thrive_ai_health_极度私人健康顾问大模型.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "uplimit_ai员工技能提升与培训",
+    "title": "Uplimit",
+    "path": "entities/companies/uplimit_ai员工技能提升与培训.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "vantel_熟人私域社群自动话术生成",
+    "title": "Vantel",
+    "path": "entities/companies/vantel_熟人私域社群自动话术生成.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "viven_老员工离职的ai脑机复刻",
+    "title": "Viven",
+    "path": "entities/companies/viven_老员工离职的ai脑机复刻.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "walmart_sparky_ai购物助手",
+    "title": "Walmart",
+    "path": "entities/companies/walmart_sparky_ai购物助手.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "warp_ai终端工具",
+    "title": "Warp",
+    "path": "entities/companies/warp_ai终端工具.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "weave_机器代码与人效能分配",
+    "title": "Weave",
+    "path": "entities/companies/weave_机器代码与人效能分配.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "wedge_安全可观测性_ai_和大模型系统的安",
+    "title": "Wedge",
+    "path": "entities/companies/wedge_安全可观测性_ai_和大模型系统的安.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "whatfix_数字应用向导_dap龙头",
+    "title": "Whatfix",
+    "path": "entities/companies/whatfix_数字应用向导_dap龙头.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "xnurta_amazon广告ai-agent",
+    "title": "Xnurta",
+    "path": "entities/companies/xnurta_amazon广告ai-agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "yc某老牌saas重构_传统行业老旧系统的自然语言操作与自动化流",
+    "title": "YC某老牌SaaS重构",
+    "path": "entities/companies/yc某老牌saas重构_传统行业老旧系统的自然语言操作与自动化流.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "yoodli_线上会议_面试_公开演讲的实时模拟_思维",
+    "title": "Yoodli",
+    "path": "entities/companies/yoodli_线上会议_面试_公开演讲的实时模拟_思维.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "zeelinclaw_多智能体商业平台",
+    "title": "ZeeLinClaw",
+    "path": "entities/companies/zeelinclaw_多智能体商业平台.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "zip_全球复杂采购流程自动化",
+    "title": "Zip",
+    "path": "entities/companies/zip_全球复杂采购流程自动化.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "ai-startup-cofounder",
+    "title": "ai-startup-cofounder",
+    "path": "entities/companies/ai-startup-cofounder.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "employee-number-two",
+    "title": "employee-number-two",
+    "path": "entities/companies/employee-number-two.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "illumex_数据标准化平台",
+    "title": "illumex",
+    "path": "entities/companies/illumex_数据标准化平台.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "mcp_use_模型通信协议_mcp_智能体的基础设施",
+    "title": "mcp",
+    "path": "entities/companies/mcp_use_模型通信协议_mcp_智能体的基础设施.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "ramain_rpa_自动化_机器视觉与超高速操作",
+    "title": "ramAIn",
+    "path": "entities/companies/ramain_rpa_自动化_机器视觉与超高速操作.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "亚马逊投流决策助手_跨境电商ai决策",
+    "title": "亚马逊投流决策助手",
+    "path": "entities/companies/亚马逊投流决策助手_跨境电商ai决策.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "优时科技_具身智能",
+    "title": "优时科技",
+    "path": "entities/companies/优时科技_具身智能.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "可验证_ai_计算层_opengradient_950_万美元a16z_crypto_等参投_-",
+    "title": "可验证",
+    "path": "entities/companies/可验证_ai_计算层_opengradient_950_万美元a16z_crypto_等参投_-.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "宇树科技_人形机器人",
+    "title": "宇树科技",
+    "path": "entities/companies/宇树科技_人形机器人.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "星识科技_智能影像",
+    "title": "星识科技",
+    "path": "entities/companies/星识科技_智能影像.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "智灵剧幕_jumu",
+    "title": "智灵剧幕",
+    "path": "entities/companies/智灵剧幕_jumu.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "林总_跨境贸易_猫砂盘",
+    "title": "林总",
+    "path": "entities/companies/林总_跨境贸易_猫砂盘.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "海燕_游戏手柄_跨境",
+    "title": "海燕",
+    "path": "entities/companies/海燕_游戏手柄_跨境.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "深言科技ai_战争模拟沙盘_军事训练_实时多兵种协同轨",
+    "title": "深言科技AI",
+    "path": "entities/companies/深言科技ai_战争模拟沙盘_军事训练_实时多兵种协同轨.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "生成式协作agent_人与机器无缝切换的agent",
+    "title": "生成式协作Agent",
+    "path": "entities/companies/生成式协作agent_人与机器无缝切换的agent.md",
+    "type": "companies"
+  },
+  {
+    "section": "companies",
+    "slug": "直播预测市场平台_pumpcade_100_万美元_pre-seed_轮pumpfun_领投_",
+    "title": "直播预测市场平台",
+    "path": "entities/companies/直播预测市场平台_pumpcade_100_万美元_pre-seed_轮pumpfun_领投_.md",
+    "type": "companies"
+  },
+  {
+    "section": "vcs",
+    "slug": "agent_fund_首批专注agent基金",
+    "title": "Agent",
+    "path": "entities/vcs/agent_fund_首批专注agent基金.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "cmc_ai创意基金_生成式ai创意cvc",
+    "title": "CMC",
+    "path": "entities/vcs/cmc_ai创意基金_生成式ai创意cvc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "can_ai_kill_the_venture_capitalist__-_wi",
+    "title": "Can",
+    "path": "entities/vcs/can_ai_kill_the_venture_capitalist__-_wi.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "lightspeed_光速创投",
+    "title": "Lightspeed",
+    "path": "entities/vcs/lightspeed_光速创投.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "paradigm_进军ai的加密vc",
+    "title": "Paradigm",
+    "path": "entities/vcs/paradigm_进军ai的加密vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "q1_2026_shatters_venture_funding_records",
+    "title": "Q1",
+    "path": "entities/vcs/q1_2026_shatters_venture_funding_records.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "sequoia_capital_全球顶级vc",
+    "title": "Sequoia",
+    "path": "entities/vcs/sequoia_capital_全球顶级vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "situational_awareness_all_in_ai对冲基金",
+    "title": "Situational",
+    "path": "entities/vcs/situational_awareness_all_in_ai对冲基金.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "sofi_agiq_etf_agentic_ai主题etf",
+    "title": "SoFi",
+    "path": "entities/vcs/sofi_agiq_etf_agentic_ai主题etf.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "softbank_软银愿景基金",
+    "title": "SoftBank",
+    "path": "entities/vcs/softbank_软银愿景基金.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "the_ai_investing_landscape__insights_fro",
+    "title": "The",
+    "path": "entities/vcs/the_ai_investing_landscape__insights_fro.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "venture_capital_hits_300b_quarter_-_sta",
+    "title": "Venture",
+    "path": "entities/vcs/venture_capital_hits_300b_quarter_-_sta.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "y_combinator",
+    "title": "Y",
+    "path": "entities/vcs/y_combinator.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "y_combinator_顶级孵化器",
+    "title": "Y",
+    "path": "entities/vcs/y_combinator_顶级孵化器.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "a16z_最活跃ai综合vc",
+    "title": "a16z",
+    "path": "entities/vcs/a16z_最活跃ai综合vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "上海人工智能cvc_政府引导大模型基金",
+    "title": "上海人工智能CVC",
+    "path": "entities/vcs/上海人工智能cvc_政府引导大模型基金.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "创世伙伴创投_非共识早期vc",
+    "title": "创世伙伴创投",
+    "path": "entities/vcs/创世伙伴创投_非共识早期vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "创新工场_vc加ai模式先驱",
+    "title": "创新工场",
+    "path": "entities/vcs/创新工场_vc加ai模式先驱.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "北极光创投_产业腹地综合vc",
+    "title": "北极光创投",
+    "path": "entities/vcs/北极光创投_产业腹地综合vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "华创资本_非共识早期vc",
+    "title": "华创资本",
+    "path": "entities/vcs/华创资本_非共识早期vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "启明创投_深耕硬科技综合vc",
+    "title": "启明创投",
+    "path": "entities/vcs/启明创投_深耕硬科技综合vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "峰瑞资本_应用落地早期vc",
+    "title": "峰瑞资本",
+    "path": "entities/vcs/峰瑞资本_应用落地早期vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "愉悦资本_出行与消费综合vc",
+    "title": "愉悦资本",
+    "path": "entities/vcs/愉悦资本_出行与消费综合vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "明势创投_ai原生应用早期vc",
+    "title": "明势创投",
+    "path": "entities/vcs/明势创投_ai原生应用早期vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "智谱_ai_z基金_大模型生态cvc",
+    "title": "智谱",
+    "path": "entities/vcs/智谱_ai_z基金_大模型生态cvc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "深业云从ai基金_具身智能cvc",
+    "title": "深业云从AI基金",
+    "path": "entities/vcs/深业云从ai基金_具身智能cvc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "源码资本_前沿科技早期vc",
+    "title": "源码资本",
+    "path": "entities/vcs/源码资本_前沿科技早期vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "真格基金_前沿应用早期vc",
+    "title": "真格基金",
+    "path": "entities/vcs/真格基金_前沿应用早期vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "红杉中国_头部综合vc",
+    "title": "红杉中国",
+    "path": "entities/vcs/红杉中国_头部综合vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "蓝驰创投_ai应用早期vc",
+    "title": "蓝驰创投",
+    "path": "entities/vcs/蓝驰创投_ai应用早期vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "讯飞创投_科大讯飞cvc",
+    "title": "讯飞创投",
+    "path": "entities/vcs/讯飞创投_科大讯飞cvc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "追创创投_追觅科技cvc",
+    "title": "追创创投",
+    "path": "entities/vcs/追创创投_追觅科技cvc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "锦秋基金_字节系极客ai基金",
+    "title": "锦秋基金",
+    "path": "entities/vcs/锦秋基金_字节系极客ai基金.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "高榕创投_产业融合综合vc",
+    "title": "高榕创投",
+    "path": "entities/vcs/高榕创投_产业融合综合vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "vcs",
+    "slug": "高瓴创投_头部综合vc",
+    "title": "高瓴创投",
+    "path": "entities/vcs/高瓴创投_头部综合vc.md",
+    "type": "vcs"
+  },
+  {
+    "section": "events",
+    "slug": "consensus-miami-easya-hackathon_ai创业黑客松",
+    "title": "Consensus Miami EasyA Hackathon",
+    "path": "entities/events/consensus-miami-easya-hackathon_ai创业黑客松.md",
+    "type": "events"
+  },
+  {
+    "section": "events",
+    "slug": "yc_summer_2025",
+    "title": "YC",
+    "path": "entities/events/yc_summer_2025.md",
+    "type": "events"
+  },
+  {
+    "section": "events",
+    "slug": "a16z_speedrun_2026",
+    "title": "a16z",
+    "path": "entities/events/a16z_speedrun_2026.md",
+    "type": "events"
+  },
+  {
+    "section": "events",
+    "slug": "追觅硅谷瞬息全宇宙科技展_2026",
+    "title": "追觅硅谷瞬息全宇宙科技展",
+    "path": "entities/events/追觅硅谷瞬息全宇宙科技展_2026.md",
+    "type": "events"
+  },
+  {
+    "section": "events",
+    "slug": "锦秋会_scale_with_ai",
+    "title": "锦秋会",
+    "path": "entities/events/锦秋会_scale_with_ai.md",
+    "type": "events"
+  },
+  {
+    "section": "concepts",
+    "slug": "ai产品形态",
+    "title": "AI产品形态",
+    "path": "concepts/ai产品形态.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "ai作为高配实习生_角色分工方法论",
+    "title": "AI作为高配实习生",
+    "path": "concepts/ai作为高配实习生_角色分工方法论.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "ai能源与算力基础设施",
+    "title": "AI能源与算力基础设施",
+    "path": "concepts/ai能源与算力基础设施.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "arc-agi",
+    "title": "ARC-AGI",
+    "path": "concepts/arc-agi.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "agentic_engineering_调度智能体的工程范式",
+    "title": "Agentic",
+    "path": "concepts/agentic_engineering_调度智能体的工程范式.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "agentic_memory_architecture_智能体记忆架构",
+    "title": "Agentic",
+    "path": "concepts/agentic_memory_architecture_智能体记忆架构.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "agentic_search",
+    "title": "Agentic",
+    "path": "concepts/agentic_search.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "agent协商层",
+    "title": "Agent协商层",
+    "path": "concepts/agent协商层.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "agent引擎优化_aeo",
+    "title": "Agent引擎优化",
+    "path": "concepts/agent引擎优化_aeo.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "anthropic研究预览与常青发布机制",
+    "title": "Anthropic研究预览与常青发布机制",
+    "path": "concepts/anthropic研究预览与常青发布机制.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "anthropic自举飞轮_claude-code开发claude-code",
+    "title": "Anthropic自举飞轮",
+    "path": "concepts/anthropic自举飞轮_claude-code开发claude-code.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "cialdini影响力六原则",
+    "title": "Cialdini影响力六原则",
+    "path": "concepts/cialdini影响力六原则.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "context_graph",
+    "title": "Context",
+    "path": "concepts/context_graph.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "context_window_and_memory_architecture_上下文窗口与记忆架构",
+    "title": "Context",
+    "path": "concepts/context_window_and_memory_architecture_上下文窗口与记忆架构.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "ebm消费决策模型",
+    "title": "EBM消费决策模型",
+    "path": "concepts/ebm消费决策模型.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "fbm行为模型",
+    "title": "FBM行为模型",
+    "path": "concepts/fbm行为模型.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "gbrain_ai记忆系统",
+    "title": "GBrain",
+    "path": "concepts/gbrain_ai记忆系统.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "harness_工程",
+    "title": "Harness",
+    "path": "concepts/harness_工程.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "hermes_agent",
+    "title": "Hermes",
+    "path": "concepts/hermes_agent.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "human-like_memory_类人记忆插件",
+    "title": "Human-like",
+    "path": "concepts/human-like_memory_类人记忆插件.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "jagged_intelligence_ai能力不均衡现象",
+    "title": "Jagged",
+    "path": "concepts/jagged_intelligence_ai能力不均衡现象.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "memory_hierarchy_llm_agent_llm智能体分层记忆",
+    "title": "Memory",
+    "path": "concepts/memory_hierarchy_llm_agent_llm智能体分层记忆.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "memory_loop_six_stage_六阶段记忆闭环",
+    "title": "Memory",
+    "path": "concepts/memory_loop_six_stage_六阶段记忆闭环.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论",
+    "title": "Memory",
+    "path": "concepts/memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "omo_在线合并离线沉淀",
+    "title": "OMO",
+    "path": "concepts/omo_在线合并离线沉淀.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "openspec_ai开发规范框架",
+    "title": "OpenSpec",
+    "path": "concepts/openspec_ai开发规范框架.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "prompt_cache",
+    "title": "Prompt",
+    "path": "concepts/prompt_cache.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "ralph_loop_ai编程死循环模式",
+    "title": "Ralph",
+    "path": "concepts/ralph_loop_ai编程死循环模式.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "ssi",
+    "title": "SSI",
+    "path": "concepts/ssi.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "service_as_a_software",
+    "title": "Service",
+    "path": "concepts/service_as_a_software.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "software_30_自然语言编程范式",
+    "title": "Software",
+    "path": "concepts/software_30_自然语言编程范式.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "sub-agent隔离机制",
+    "title": "Sub-agent隔离机制",
+    "path": "concepts/sub-agent隔离机制.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "superpowers_ai编程纪律工具",
+    "title": "Superpowers",
+    "path": "concepts/superpowers_ai编程纪律工具.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "system_of_decision",
+    "title": "System",
+    "path": "concepts/system_of_decision.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "unix编程艺术",
+    "title": "Unix编程艺术",
+    "path": "concepts/unix编程艺术.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "vibe_coding_凭感觉接受llm输出的编程模式",
+    "title": "Vibe",
+    "path": "concepts/vibe_coding_凭感觉接受llm输出的编程模式.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "gstack_ai工程框架",
+    "title": "gstack",
+    "path": "concepts/gstack_ai工程框架.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "上下文自动压缩",
+    "title": "上下文自动压缩",
+    "path": "concepts/上下文自动压缩.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "亚马逊a9_cosmo算法",
+    "title": "亚马逊A9",
+    "path": "concepts/亚马逊a9_cosmo算法.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "亚马逊vc全托管商业模式",
+    "title": "亚马逊VC全托管商业模式",
+    "path": "concepts/亚马逊vc全托管商业模式.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "判断力_judgment",
+    "title": "判断力",
+    "path": "concepts/判断力_judgment.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "计算精神病学",
+    "title": "计算精神病学",
+    "path": "concepts/计算精神病学.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "认知灵活性",
+    "title": "认知灵活性",
+    "path": "concepts/认知灵活性.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "超级个性化",
+    "title": "超级个性化",
+    "path": "concepts/超级个性化.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "软件民主化_编程成为通用技能",
+    "title": "软件民主化",
+    "path": "concepts/软件民主化_编程成为通用技能.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "长期利益信托_long-term_benefit_trust",
+    "title": "长期利益信托",
+    "path": "concepts/长期利益信托_long-term_benefit_trust.md",
+    "type": "concept"
+  },
+  {
+    "section": "concepts",
+    "slug": "零点击消费",
+    "title": "零点击消费",
+    "path": "concepts/零点击消费.md",
+    "type": "concept"
+  },
+  {
+    "section": "queries",
+    "slug": "2026-03-28_ai日报关键信号洞察",
+    "title": "2026-03-28",
+    "path": "queries/2026-03-28_ai日报关键信号洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai不会取代工程师_需求释放论",
+    "title": "AI不会取代工程师",
+    "path": "queries/ai不会取代工程师_需求释放论.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai产品经理10大ai产品形态认知地图",
+    "title": "AI产品经理10大AI产品形态认知地图",
+    "path": "queries/ai产品经理10大ai产品形态认知地图.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai原住民崛起_2026届硬核成就洞察",
+    "title": "AI原住民崛起",
+    "path": "queries/ai原住民崛起_2026届硬核成就洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai开始接管年轻人精神自留地_情绪价值生意",
+    "title": "AI开始接管年轻人精神自留地",
+    "path": "queries/ai开始接管年轻人精神自留地_情绪价值生意.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai时代pm角色重构_构建者崛起洞察",
+    "title": "AI时代PM角色重构",
+    "path": "queries/ai时代pm角色重构_构建者崛起洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai时代竞争规则重写_ben_horowitz闭门会洞察",
+    "title": "AI时代竞争规则重写",
+    "path": "queries/ai时代竞争规则重写_ben_horowitz闭门会洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai智能体对平台经济的冲击",
+    "title": "AI智能体对平台经济的冲击",
+    "path": "queries/ai智能体对平台经济的冲击.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ai独角兽商业化元年_新一代创业组织崛起",
+    "title": "AI独角兽商业化元年",
+    "path": "queries/ai独角兽商业化元年_新一代创业组织崛起.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "agent_经济微观机制洞察",
+    "title": "Agent",
+    "path": "queries/agent_经济微观机制洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "agent技能分发与商业交易闭环",
+    "title": "Agent技能分发与商业交易闭环",
+    "path": "queries/agent技能分发与商业交易闭环.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "agent记忆系统设计三大支柱收束论",
+    "title": "Agent记忆系统设计三大支柱收束论",
+    "path": "queries/agent记忆系统设计三大支柱收束论.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "alexandr_wang_is_now_leading_metas_ai_dream_team_will_mark",
+    "title": "Alexandr",
+    "path": "queries/alexandr_wang_is_now_leading_metas_ai_dream_team_will_mark.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "anthropic_agent二手交易实验洞察",
+    "title": "Anthropic",
+    "path": "queries/anthropic_agent二手交易实验洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "anthropic内省适配器_ai自我坦白安全审计革命",
+    "title": "Anthropic内省适配器",
+    "path": "queries/anthropic内省适配器_ai自我坦白安全审计革命.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "claude_code_20个神级技能分类清单",
+    "title": "Claude",
+    "path": "queries/claude_code_20个神级技能分类清单.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "claude_code季度规划工作流_产品方法论",
+    "title": "Claude",
+    "path": "queries/claude_code季度规划工作流_产品方法论.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "deepseek-tui_终端编码agent",
+    "title": "DeepSeek-TUI",
+    "path": "queries/deepseek-tui_终端编码agent.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "gemini3_listing智能体搭建",
+    "title": "Gemini3",
+    "path": "queries/gemini3_listing智能体搭建.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "google_to_invest_up_to_40_billion_in_ai_rival_anthropic_-_r",
+    "title": "Google",
+    "path": "queries/google_to_invest_up_to_40_billion_in_ai_rival_anthropic_-_r.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "html优先输出范式_主人项目改造指引",
+    "title": "HTML优先输出范式",
+    "path": "queries/html优先输出范式_主人项目改造指引.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "linkfox与跨境电商ai产品破局洞察",
+    "title": "Linkfox与跨境电商AI产品破局洞察",
+    "path": "queries/linkfox与跨境电商ai产品破局洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "salesforce_2025节假日ai购物数据",
+    "title": "Salesforce",
+    "path": "queries/salesforce_2025节假日ai购物数据.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "sequoia_ai_ascent_2026_boris访谈洞察",
+    "title": "Sequoia",
+    "path": "queries/sequoia_ai_ascent_2026_boris访谈洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "summarize_0140_发布洞察",
+    "title": "Summarize",
+    "path": "queries/summarize_0140_发布洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "techcrunch_disrupt_2025_side_events_schedule__women_in_tech",
+    "title": "TechCrunch",
+    "path": "queries/techcrunch_disrupt_2025_side_events_schedule__women_in_tech.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "ui-tars-desktop_字节跳动多模态agent技术栈",
+    "title": "UI-TARS-desktop",
+    "path": "queries/ui-tars-desktop_字节跳动多模态agent技术栈.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "unix编程艺术_ai时代高质量产品设计课程",
+    "title": "Unix编程艺术",
+    "path": "queries/unix编程艺术_ai时代高质量产品设计课程.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "vc_recent_ai_agent_trends",
+    "title": "VC",
+    "path": "queries/vc_recent_ai_agent_trends.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "warp_开源事件与ai终端演进洞察",
+    "title": "Warp",
+    "path": "queries/warp_开源事件与ai终端演进洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "yc_w26_s25_ai_startups",
+    "title": "YC",
+    "path": "queries/yc_w26_s25_ai_startups.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "agent-skills_工程技能库",
+    "title": "agent-skills",
+    "path": "queries/agent-skills_工程技能库.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "agentmemory_ai编程agent持久记忆方案",
+    "title": "agentmemory",
+    "path": "queries/agentmemory_ai编程agent持久记忆方案.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "chrome-devtools-mcp_chrome开发者工具agent集成",
+    "title": "chrome-devtools-mcp",
+    "path": "queries/chrome-devtools-mcp_chrome开发者工具agent集成.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "hello-agents_datawhale智能体教程",
+    "title": "hello-agents",
+    "path": "queries/hello-agents_datawhale智能体教程.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "rowboat_开源ai同事记忆助手",
+    "title": "rowboat",
+    "path": "queries/rowboat_开源ai同事记忆助手.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "从层级到智能的组织重构",
+    "title": "从层级到智能的组织重构",
+    "path": "queries/从层级到智能的组织重构.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "企业ai的核心壁垒在于捕捉决策轨迹",
+    "title": "企业AI的核心壁垒在于捕捉决策轨迹",
+    "path": "queries/企业ai的核心壁垒在于捕捉决策轨迹.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "哈萨比斯agi2030_信息即宇宙本质_红杉专访洞察",
+    "title": "哈萨比斯AGI2030",
+    "path": "queries/哈萨比斯agi2030_信息即宇宙本质_红杉专访洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "小红书成立dots-ai部门_加速ai转型",
+    "title": "小红书成立Dots AI部门",
+    "path": "queries/小红书成立dots-ai部门_加速ai转型.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "架构范式转移_agentic_search_取代_rag",
+    "title": "架构范式转移",
+    "path": "queries/架构范式转移_agentic_search_取代_rag.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "清华沈阳团队四大颠覆判断",
+    "title": "清华沈阳团队四大颠覆判断",
+    "path": "queries/清华沈阳团队四大颠覆判断.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "跨境电商ai决策助手破局洞察",
+    "title": "跨境电商AI决策助手破局洞察",
+    "path": "queries/跨境电商ai决策助手破局洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "软件护城河瓦解",
+    "title": "软件护城河瓦解",
+    "path": "queries/软件护城河瓦解.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "追觅硅谷瞬息全宇宙科技展_2026洞察",
+    "title": "追觅硅谷瞬息全宇宙科技展",
+    "path": "queries/追觅硅谷瞬息全宇宙科技展_2026洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "锦秋基金500家ai公司数据实锤_2023年后ai公司不一样了",
+    "title": "锦秋基金500家AI公司数据实锤",
+    "path": "queries/锦秋基金500家ai公司数据实锤_2023年后ai公司不一样了.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "锦秋基金融资即品牌洞察",
+    "title": "锦秋基金融资即品牌洞察",
+    "path": "queries/锦秋基金融资即品牌洞察.md",
+    "type": "query"
+  },
+  {
+    "section": "queries",
+    "slug": "麦肯锡ai医疗报告_2026_agent全面爆发",
+    "title": "麦肯锡AI医疗报告",
+    "path": "queries/麦肯锡ai医疗报告_2026_agent全面爆发.md",
+    "type": "query"
+  }
+]
