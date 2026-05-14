@@ -17,7 +17,7 @@ confidence: high
 
 **上位概念**：[[AGI能力评估]]
 **相关概念**：[[Test-Time_Adaptation]], [[OpenAI_o3]], [[流体智力]]
-**关键人物**：[[Francois_Chollet_大牛_AI大牛]]
+**关键人物**：[[francois_chollet_大牛_ai大牛]]
 
 # 🧠 ARC-AGI (Abstraction and Reasoning Corpus)
 

@@ -16,7 +16,7 @@ confidence: high
 ## 关联
 
 **上位概念**：[[OpenCode_铁三角]]
-**相关概念**：[[OpenSpec_AI开发规范框架]], [[OMO_在线合并离线沉淀]]
+**相关概念**：[[openspec_ai开发规范框架]], [[omo_在线合并离线沉淀]]
 **关键人物**：[[OpenCode]]
 
 # 🧠 Superpowers（AI 编程纪律工具）

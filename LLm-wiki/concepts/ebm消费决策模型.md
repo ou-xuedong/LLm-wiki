@@ -16,7 +16,7 @@ confidence: high
 ## 关联
 
 **上位概念**：[[消费心理学]]
-**相关概念**：[[FBM行为模型]], [[Cialdini影响力六原则]], [[亚马逊A9_COSMO算法]], [[System_of_Decision]]
+**相关概念**：[[fbm行为模型]], [[cialdini影响力六原则]], [[亚马逊a9_cosmo算法]], [[system_of_decision]]
 
 # 🧠 EBM消费决策模型
 

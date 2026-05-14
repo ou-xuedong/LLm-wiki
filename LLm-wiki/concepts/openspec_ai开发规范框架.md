@@ -16,7 +16,7 @@ confidence: high
 ## 关联
 
 **上位概念**：[[OpenCode_铁三角]]
-**相关概念**：[[Superpowers_AI编程纪律工具]], [[OMO_在线合并离线沉淀]]
+**相关概念**：[[superpowers_ai编程纪律工具]], [[omo_在线合并离线沉淀]]
 **关键人物**：[[OpenCode]]
 
 # 🧠 OpenSpec（AI 开发显式约束框架）

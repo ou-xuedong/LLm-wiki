@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[SuperMemory_统一数据输入跨平台接口]], [[Perplexity_专业级AI搜索引擎]]
+**竞品**：[[supermemory_统一数据输入跨平台接口]], [[perplexity_专业级ai搜索引擎]]
 
 # Google NotebookLM
 

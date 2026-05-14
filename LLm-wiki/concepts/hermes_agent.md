@@ -16,7 +16,7 @@ confidence: low
 ## 关联
 
 **上位概念**：[[Agent Infra]]
-**相关概念**：[[OpenClaw]], [[GBrain_AI记忆系统]], [[Human-like_Memory_类人记忆插件]]
+**相关概念**：[[OpenClaw]], [[gbrain_ai记忆系统]], [[human-like_memory_类人记忆插件]]
 **关键人物**：[[Nous Research]]
 
 # 🧠 Hermes Agent

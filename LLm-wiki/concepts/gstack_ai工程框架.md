@@ -16,7 +16,7 @@ tags:
 ## 关联
 
 **上位概念**：[[Agent Infra]]
-**相关概念**：[[GBrain_AI记忆系统]], [[OpenClaw]]
+**相关概念**：[[gbrain_ai记忆系统]], [[OpenClaw]]
 **关键人物**：[[Garry Tan]]
 
 # 🧠 gstack (AI工程框架)

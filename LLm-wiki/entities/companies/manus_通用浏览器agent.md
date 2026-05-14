@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Character_AI_虚拟角色与陪伴]], [[Perplexity_专业级AI搜索引擎]]
+**竞品**：[[character_ai_虚拟角色与陪伴]], [[perplexity_专业级ai搜索引擎]]
 
 # Manus（已被 Meta 收购）
 

@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Anthropic_直接操控计算机]], [[OpenAI_大模型与Agent基础设施]], [[Google_Gemini_多模态原生大模型基座]]
+**竞品**：[[anthropic_直接操控计算机]], [[openai_大模型与agent基础设施]], [[google_gemini_多模态原生大模型基座]]
 
 # 🏢 Kimi (月之暗面)
 

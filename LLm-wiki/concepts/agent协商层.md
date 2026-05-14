@@ -17,8 +17,8 @@ confidence: low
 ## 关联
 
 **上位概念**：[[AI智能体消费入口]]
-**相关概念**：[[零点击消费]], [[Agent引擎优化_AEO]], [[AI智能体对平台经济的冲击]], [[超级个性化]]
-**关键人物**：[[Sapiom_Lava_Agent自动调用各API产生的微小_高]], [[Zip_全球复杂采购流程自动化]]
+**相关概念**：[[零点击消费]], [[agent引擎优化_aeo]], [[ai智能体对平台经济的冲击]], [[超级个性化]]
+**关键人物**：[[sapiom_lava_agent自动调用各api产生的微小_高]], [[zip_全球复杂采购流程自动化]]
 
 # 🧠 Agent协商层
 
@@ -36,23 +36,23 @@ confidence: low
 
 - **协议层**：Anthropic MCP、Google A2A 协议、x402（Agent 支付协议）正在成型
 - **谈判引擎**：博弈论 + LLM 规划（多轮 Nash 讨价还价、BATNA 建模）
-- **结算层**：传统支付 + Stablecoin + Agent 专属钱包（参考 [[Sapiom_Lava_Agent自动调用各API产生的微小_高]]）
+- **结算层**：传统支付 + Stablecoin + Agent 专属钱包（参考 [[sapiom_lava_agent自动调用各api产生的微小_高]]）
 - **多 Agent 编排**：AutoGen、CrewAI、AG2 等多 Agent 框架作为基础
 - **身份与信任**：可验证凭证（Verifiable Credentials）、Agent-DID
 
 ## 3. 行业应用场景
 
 - **B2C 电商**：买方 Agent 为用户议价、拼团、锁优惠券、自动退换
-- **企业采购**：采购 Agent 跨供应商自动招标（参考 [[Zip_全球复杂采购流程自动化]]）
+- **企业采购**：采购 Agent 跨供应商自动招标（参考 [[zip_全球复杂采购流程自动化]]）
 - **SaaS 订阅**：Agent 自动比较费率、续订或迁移（挑战 CLV 模型）
-- **亚马逊生态长线**：卖家开始需要运营"品牌 Agent"与买方 Agent 对接，取代单纯运营 Listing（[[亚马逊投流决策助手_跨境电商AI决策]] 的终极演化形态）
+- **亚马逊生态长线**：卖家开始需要运营"品牌 Agent"与买方 Agent 对接，取代单纯运营 Listing（[[亚马逊投流决策助手_跨境电商ai决策]] 的终极演化形态）
 
 ## 4. 代表性论文/项目
 
 - **Anthropic MCP / Google A2A**：协议层候选
 - **x402 / Coinbase Agent Kit / Sapiom**：Agent 支付与结算基础设施
 - **CrewAI / AutoGen / AG2**：多 Agent 协作底座
-- **[[Perplexity_专业级AI搜索引擎]] / OpenAI Operator**：具备初步"协商雏形"的买方 Agent
+- **[[perplexity_专业级ai搜索引擎]] / OpenAI Operator**：具备初步"协商雏形"的买方 Agent
 - **学术参考**：Automated Negotiation (Jennings et al.)、Agentic Commerce 系列论文
 
 ## 5. 争议与开放问题

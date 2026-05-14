@@ -16,7 +16,7 @@ confidence: high
 
 ## 关联
 
-**竞品**：[[Anthropic_直接操控计算机]], [[Cohere_企业级隐私安全大模型]]
+**竞品**：[[anthropic_直接操控计算机]], [[cohere_企业级隐私安全大模型]]
 
 # Google Gemini
 

@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Tavily_专为智能体打造的搜索API]], [[Perplexity_专业级AI搜索引擎]], [[Google_NotebookLM_海量文档交叉索引_播客生成_智能笔记]]
+**竞品**：[[tavily_专为智能体打造的搜索api]], [[perplexity_专业级ai搜索引擎]], [[google_notebooklm_海量文档交叉索引_播客生成_智能笔记]]
 
 # Exa
 

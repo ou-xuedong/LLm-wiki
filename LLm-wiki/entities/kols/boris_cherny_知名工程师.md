@@ -34,7 +34,7 @@ tags:
 - **内置 `routines`** — 云端版周期任务（关电脑也能跑，由 GitHub event/webhook/cron 触发）
   - Boris 实际用例：CI 错误自动修复 + rebase、CI 健康监控 + flaky test 自动修、Tweet 抓取 + 30 分钟聚类分析
 - 团队级 skill：`/commit-push-pr` `/techdebt` `/babysit` `/slack-feedback` `/post-merge-sweeper` `/pr-pruner`
-- 详见 [[Agentic_Engineering_调度智能体的工程范式]]
+- 详见 [[agentic_engineering_调度智能体的工程范式]]
 
 ### 3. 宏观判断（Sequoia AI Ascent 2026 访谈）
 - **"编程问题已被解决"**：早在 2025 年 10 月或 11 月，模型已达到可以编写 100% 代码的临界点

@@ -16,7 +16,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[PPC_Entourage_AmazonPPC工具]], [[Xnurta_Amazon广告AI_Agent]], [[Linkfox_跨境电商AI]], [[Helium10_亚马逊卖家工具]], [[Jungle_Scout_亚马逊数据分析]], [[Teikametrics_电商广告平台]], [[Skai_多渠道广告平台]]
+**竞品**：[[ppc_entourage_amazonppc工具]], [[Xnurta_Amazon广告AI_Agent]], [[Linkfox_跨境电商AI]], [[Helium10_亚马逊卖家工具]], [[Jungle_Scout_亚马逊数据分析]], [[Teikametrics_电商广告平台]], [[Skai_多渠道广告平台]]
 
 # Perpetua 电商广告平台
 

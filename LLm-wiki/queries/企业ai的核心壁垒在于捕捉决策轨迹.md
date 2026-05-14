@@ -15,12 +15,12 @@ confidence: high
 
 ## 关联
 
-**相关概念**：[[System_of_Decision]], [[Context_Graph]], [[System_of_Record]]
+**相关概念**：[[system_of_decision]], [[context_graph]], [[System_of_Record]]
 
 # 💡 企业AI的核心壁垒在于捕捉决策轨迹
 
 ## 核心结论
-企业 AI 行业最容易被低估的是：**企业内部那些每天都在发生、却从未被真正记录下来的决策与判断过程。**未来的护城河不是大模型能力，而是能否构建捕捉这类信息的“决策型记录系统”（[[System_of_Decision]]），形成专属的 [[Context_Graph]]。
+企业 AI 行业最容易被低估的是：**企业内部那些每天都在发生、却从未被真正记录下来的决策与判断过程。**未来的护城河不是大模型能力，而是能否构建捕捉这类信息的“决策型记录系统”（[[system_of_decision]]），形成专属的 [[context_graph]]。
 
 ## 详细分析
 - **消费互联网的启示**：Netflix、TikTok 靠“捕捉行为 → 学习 → 改进”实现了复利资产。

@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**相关概念**：[[Anthropic研究预览与常青发布机制]], [[Anthropic自举飞轮_Claude Code开发Claude Code]]
+**相关概念**：[[anthropic研究预览与常青发布机制]], [[Anthropic自举飞轮_Claude Code开发Claude Code]]
 
 # Cat Wu (Cat Wu)
 - **职位**：Claude Code 产品负责人（Product Lead, Claude Code），Anthropic

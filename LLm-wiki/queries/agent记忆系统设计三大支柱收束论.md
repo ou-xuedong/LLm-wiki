@@ -16,7 +16,7 @@ confidence: high
 
 ## 关联
 
-**相关概念**：[[Memory_Trilemma_Selective_Grounded_Efficient_记忆三约束三元悖论]], [[Memory_Loop_Six_Stage_六阶段记忆闭环]], [[Memory_Hierarchy_LLM_Agent_LLM智能体分层记忆]], [[Agentic_Memory_Architecture_智能体记忆架构]], [[Context_Window_and_Memory_Architecture_上下文窗口与记忆架构]], [[Human-like_Memory_类人记忆插件]], [[GBrain_AI记忆系统]], [[Hermes_Agent]]
+**相关概念**：[[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_loop_six_stage_六阶段记忆闭环]], [[memory_hierarchy_llm_agent_llm智能体分层记忆]], [[agentic_memory_architecture_智能体记忆架构]], [[context_window_and_memory_architecture_上下文窗口与记忆架构]], [[human-like_memory_类人记忆插件]], [[gbrain_ai记忆系统]], [[hermes_agent]]
 
 # 💡 Agent 记忆系统设计三大支柱：收束论
 
@@ -26,9 +26,9 @@ LLM Agent 记忆系统的完整设计，由**三件事拼成一套**——三约
 
 | 支柱 | 回答的问题 | 对其他支柱的关系 |
 |---|---|---|
-| [[Memory_Hierarchy_LLM_Agent_LLM智能体分层记忆]] | memory bank（记忆库）**内部应该怎么组织**？ | 定义了 store 和 retrieve 的**对象** |
-| [[Memory_Loop_Six_Stage_六阶段记忆闭环]] | 系统应该有**哪些阶段、阶段间的数据流**？ | 定义了 store 和 retrieve 的**时机和后续动作** |
-| [[Memory_Trilemma_Selective_Grounded_Efficient_记忆三约束三元悖论]] | 每一次 retrieve（召回）时**应该怎么做**？ | 定义了 retrieve 时的**判据** |
+| [[memory_hierarchy_llm_agent_llm智能体分层记忆]] | memory bank（记忆库）**内部应该怎么组织**？ | 定义了 store 和 retrieve 的**对象** |
+| [[memory_loop_six_stage_六阶段记忆闭环]] | 系统应该有**哪些阶段、阶段间的数据流**？ | 定义了 store 和 retrieve 的**时机和后续动作** |
+| [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]] | 每一次 retrieve（召回）时**应该怎么做**？ | 定义了 retrieve 时的**判据** |
 
 > **三者合起来才是一个完整的 Agent memory system（智能体记忆系统）。**
 
@@ -83,9 +83,9 @@ LLM Agent 记忆系统的完整设计，由**三件事拼成一套**——三约
 | MemGPT / Letta | 🟡 部分（OS 虚存类比） | ❌ | ❌ | ❌ | ❌ | 🟡 |
 | Voyager（Minecraft） | 🟡（skill library） | ❌ | ✅ | 🟡 | ❌ | ❌ |
 | Generative Agents（斯坦福） | 🟡 | 🟡 | ✅ | 🟡 | ❌ | ❌ |
-| [[Human-like_Memory_类人记忆插件]] | ✅ Semantic/Episodic/Procedural | ❌ | 🟡 | ✅（按类型分通道） | 🟡 | ✅ 分层加载省 token |
-| [[GBrain_AI记忆系统]] | 🟡 已整理事实+时间线 | 🟡 | ✅ 梦境循环（consolidation） | 🟡 RRF 多查询 | 🟡 | ❌ |
-| [[Hermes_Agent]] | 🟡 | ❌ | 🟡 反馈驱动 | 🟡 | ❌ | ❌ |
+| [[human-like_memory_类人记忆插件]] | ✅ Semantic/Episodic/Procedural | ❌ | 🟡 | ✅（按类型分通道） | 🟡 | ✅ 分层加载省 token |
+| [[gbrain_ai记忆系统]] | 🟡 已整理事实+时间线 | 🟡 | ✅ 梦境循环（consolidation） | 🟡 RRF 多查询 | 🟡 | ❌ |
+| [[hermes_agent]] | 🟡 | ❌ | 🟡 反馈驱动 | 🟡 | ❌ | ❌ |
 
 **没有一个项目把三大支柱全做齐**——这正是设计自有 Agent 记忆系统（如方向探索 `自进化（知识存储 & 自进化引擎）` 项目）的设计机会窗。
 
@@ -99,7 +99,7 @@ LLM Agent 记忆系统的完整设计，由**三件事拼成一套**——三约
 - "记忆分层"、"工作记忆"、"长时记忆"、"巩固"、"睡眠期"
 - "RAG 改进"、"向量检索局限"、"top-k 拼 prompt"
 - 主人讨论方向探索 `自进化`（知识存储 & 自进化引擎）项目时
-- 主人讨论 [[卟卟鸡投资决策]] / [[亚马逊投流决策助手_跨境电商AI决策]] 等项目接入记忆层时
+- 主人讨论 [[卟卟鸡投资决策]] / [[亚马逊投流决策助手_跨境电商ai决策]] 等项目接入记忆层时
 
 ### 召回后的展开姿势（按场景区分）
 
@@ -112,9 +112,9 @@ LLM Agent 记忆系统的完整设计，由**三件事拼成一套**——三约
 
 ### 与已有方法论的协同
 
-- 与 [[Memory_Trilemma_Selective_Grounded_Efficient_记忆三约束三元悖论]] §3「关键设计决策 ABC」配合 → 落到 router 训练 / grounding 表达 / 预算分法的具体决策
-- 与 [[Memory_Loop_Six_Stage_六阶段记忆闭环]] §2.6「improve 三机制」配合 → memory rewrite / consolidation / skill distillation 的具体动作
-- 与 [[Memory_Hierarchy_LLM_Agent_LLM智能体分层记忆]] §3「机器人侧三大反哺」配合 → 启发是否应借鉴 PI MEM 的语言摘要/可学压缩/跨层 attention
+- 与 [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]] §3「关键设计决策 ABC」配合 → 落到 router 训练 / grounding 表达 / 预算分法的具体决策
+- 与 [[memory_loop_six_stage_六阶段记忆闭环]] §2.6「improve 三机制」配合 → memory rewrite / consolidation / skill distillation 的具体动作
+- 与 [[memory_hierarchy_llm_agent_llm智能体分层记忆]] §3「机器人侧三大反哺」配合 → 启发是否应借鉴 PI MEM 的语言摘要/可学压缩/跨层 attention
 
 ## 信息来源
 

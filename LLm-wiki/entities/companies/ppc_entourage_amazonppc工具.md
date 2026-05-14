@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Perpetua_电商广告平台]], [[Xnurta_Amazon广告AI_Agent]], [[Linkfox_跨境电商AI]], [[Helium10_亚马逊卖家工具]]
+**竞品**：[[perpetua_电商广告平台]], [[Xnurta_Amazon广告AI_Agent]], [[Linkfox_跨境电商AI]], [[Helium10_亚马逊卖家工具]]
 
 # PPC Entourage Amazon PPC 工具
 

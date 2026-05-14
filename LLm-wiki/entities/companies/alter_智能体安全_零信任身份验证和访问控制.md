@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Lakera_AI安全防火墙]], [[Sandstone_企业内控Agent]]
+**竞品**：[[lakera_ai安全防火墙]], [[sandstone_企业内控agent]]
 
 # Alter（AI Agent 零信任身份与访问控制）
 

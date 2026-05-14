@@ -14,7 +14,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Sandstone_企业内控Agent]], [[LegalOn_智能合同审查]]
+**竞品**：[[sandstone_企业内控agent]], [[legalon_智能合同审查]]
 
 # Harvey
 

@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**竞品**：[[Macy_Ask_Macy_s_AI购物助手]], [[Perplexity_专业级AI搜索引擎]]
+**竞品**：[[Macy_Ask_Macy_s_AI购物助手]], [[perplexity_专业级ai搜索引擎]]
 
 # 🏢 Walmart Sparky (AI购物助手)
 

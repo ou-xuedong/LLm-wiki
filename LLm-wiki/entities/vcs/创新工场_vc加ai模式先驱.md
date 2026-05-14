@@ -18,4 +18,4 @@ tags:
 主打“VC+AI”模式，重点投资及孵化 AI 项目。
 
 ## 近期动态与被投企业
-- 2026年近期投资 (AI/Agent领域): [[Mindverse_情感交互Agent]]
+- 2026年近期投资 (AI/Agent领域): [[mindverse_情感交互agent]]

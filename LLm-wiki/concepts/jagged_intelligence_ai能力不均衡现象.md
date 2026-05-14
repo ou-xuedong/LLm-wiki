@@ -23,7 +23,7 @@ tags:
 
 ## 1. 定义与核心原理
 
-Jagged Intelligence 由 [[Andrej_Karpathy_大牛_AI大牛]] 在 2026 年 Sequoia AI Ascent 演讲中提出，描述当前 AI 系统（尤其是 LLM）的一个根本性特征：
+Jagged Intelligence 由 [[andrej_karpathy_大牛_ai大牛]] 在 2026 年 Sequoia AI Ascent 演讲中提出，描述当前 AI 系统（尤其是 LLM）的一个根本性特征：
 
 > **AI 的能力是"锯齿状"的——在某些领域表现超人类，在相邻领域却意外地差，中间没有平滑过渡。**
 
@@ -47,11 +47,11 @@ Jagged Intelligence 由 [[Andrej_Karpathy_大牛_AI大牛]] 在 2026 年 Sequoia
 
 ### 2.2 在 Agentic Engineering 中的意义
 
-[[Agentic_Engineering_调度智能体的工程范式]] 的关键前提：只有把任务落在 AI"可验证区间"，agentic 工作流才能可靠运行。
+[[agentic_engineering_调度智能体的工程范式]] 的关键前提：只有把任务落在 AI"可验证区间"，agentic 工作流才能可靠运行。
 
 Karpathy 的核心结论：**越是可验证的任务，AI 越强；越是模糊开放的任务，AI 越需要人类守着。**
 
-这对[[判断力_Judgment]]的要求：工程师必须知道当前任务的 Jaggness——即知道 AI 在哪个区段可靠、哪个区段不可靠，并在不可靠处加大人工监督强度。
+这对[[判断力_judgment]]的要求：工程师必须知道当前任务的 Jaggness——即知道 AI 在哪个区段可靠、哪个区段不可靠，并在不可靠处加大人工监督强度。
 
 ## 3. 行业应用场景
 

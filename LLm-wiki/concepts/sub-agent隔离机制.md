@@ -16,8 +16,8 @@ confidence: high
 
 ## 关联
 
-**上位概念**：[[Harness_工程]]
-**相关概念**：[[Harness_工程]], [[上下文自动压缩]], [[Agentic_Search]]
+**上位概念**：[[harness_工程]]
+**相关概念**：[[harness_工程]], [[上下文自动压缩]], [[agentic_search]]
 
 # 🔒 Sub-agent 隔离机制（Agent Isolation）
 

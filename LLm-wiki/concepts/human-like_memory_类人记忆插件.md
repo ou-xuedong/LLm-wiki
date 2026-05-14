@@ -16,9 +16,9 @@ tags:
 
 ## 关联
 
-**上位概念**：[[Agentic_Memory_Architecture_智能体记忆架构]]
-**相关概念**：[[OpenClaw_自进化AI开源框架]], [[Hermes_Agent]], [[GBrain_AI记忆系统]], [[Context_Window_and_Memory_Architecture_上下文窗口与记忆架构]], [[Agent记忆系统设计三大支柱收束论]]
-**关键人物**：[[OpenClaw_自进化AI开源框架]]
+**上位概念**：[[agentic_memory_architecture_智能体记忆架构]]
+**相关概念**：[[openclaw_自进化ai开源框架]], [[hermes_agent]], [[gbrain_ai记忆系统]], [[context_window_and_memory_architecture_上下文窗口与记忆架构]], [[agent记忆系统设计三大支柱收束论]]
+**关键人物**：[[openclaw_自进化ai开源框架]]
 
 # 🧠 Human-like Memory（类人记忆插件）
 
@@ -28,7 +28,7 @@ tags:
 
 ## 1. 定义与核心原理
 
-**Human-like Memory** 是由 [[OpenClaw_自进化AI开源框架]] 团队孵化、现已演进为**框架中立**的 Agent 长期记忆服务。其前身是 OpenClaw 内置的 "HumanLike OpenClaw plugin"（在产品自述中明确称为 "the historical HumanLike OpenClaw plugin"），现已抽离为独立服务，同时支持 OpenClaw 插件、[[Hermes_Agent]] native memory provider、通用 REST API 三种集成形态。
+**Human-like Memory** 是由 [[openclaw_自进化ai开源框架]] 团队孵化、现已演进为**框架中立**的 Agent 长期记忆服务。其前身是 OpenClaw 内置的 "HumanLike OpenClaw plugin"（在产品自述中明确称为 "the historical HumanLike OpenClaw plugin"），现已抽离为独立服务，同时支持 OpenClaw 插件、[[hermes_agent]] native memory provider、通用 REST API 三种集成形态。
 
 **核心原理（认知科学第一性原理）**：人脑并非用单一机制存储所有记忆——回忆"我是谁"、"昨天发生了什么"、"如何骑自行车"调用的是三套不同的脑系统。把这一切扁平化到向量库做语义相似检索，会同时损害**精确性**与**成本效率**。Human-like Memory 把记忆按类型分而治之，每类配套不同的检索范式，从根上解决"数据越多召回越糊"的传统问题。
 
@@ -58,8 +58,8 @@ tags:
 
 | 形态 | 适用场景 | 关键路径 |
 |---|---|---|
-| **OpenClaw Plugin / Skill** | 已在跑 [[OpenClaw_自进化AI开源框架]] 的团队 | 装插件 → 配 API Key → 切换默认 memory slot 为 `human-like-mem` |
-| **Hermes Agent native provider** | [[Hermes_Agent]] 用户 | 装 provider → 链接到 `~/.hermes/hermes-agent/plugins/memory/humanlike` → 切换 `memory.provider: humanlike` |
+| **OpenClaw Plugin / Skill** | 已在跑 [[openclaw_自进化ai开源框架]] 的团队 | 装插件 → 配 API Key → 切换默认 memory slot 为 `human-like-mem` |
+| **Hermes Agent native provider** | [[hermes_agent]] 用户 | 装 provider → 链接到 `~/.hermes/hermes-agent/plugins/memory/humanlike` → 切换 `memory.provider: humanlike` |
 | **通用 REST API** | 任意应用 / 自研 Agent / 第三方平台 | API Key + 两个核心端点：`Search Memory`（自然语言查询召回）+ `Add Memory`（对话消息批量存储） |
 
 ### 2.4 关键 API 端点（通用 REST）
@@ -85,7 +85,7 @@ tags:
 
 ### 4.1 LoCoMo Benchmark 战绩
 
-> **同等评测条件下（GPT-4.1 mini 统一打分），Human-like Memory 比 [[OpenClaw_自进化AI开源框架]] Native Memory：准确率/完成率更高 + Total Token 消耗显著更低，整体性能提升 +35%**
+> **同等评测条件下（GPT-4.1 mini 统一打分），Human-like Memory 比 [[openclaw_自进化ai开源框架]] Native Memory：准确率/完成率更高 + Total Token 消耗显著更低，整体性能提升 +35%**
 
 匿名化对比主流系统（A–I 标签横跨多个 long-memory benchmark），Overall 分数稳居前列。
 
@@ -102,11 +102,11 @@ tags:
 ## 5. 代表性项目与生态位
 
 - **本体**：[Human-like Memory 官网](https://human-like.me) / Humanlike Server
-- **孵化方**：[[OpenClaw_自进化AI开源框架]]
-- **同生态产品**：[[Hermes_Agent]]（Nous Research 出品 · native provider 集成）
+- **孵化方**：[[openclaw_自进化ai开源框架]]
+- **同生态产品**：[[hermes_agent]]（Nous Research 出品 · native provider 集成）
 - **横向竞品/参照**：
-  - [[GBrain_AI记忆系统]]（YC 总裁 Garry Tan 开源 · "梦境循环" + 三层混合搜索 · 偏个人本地）
-  - **MemGPT**（OS 虚拟内存范式 · 已在 [[Agentic_Memory_Architecture_智能体记忆架构]] 中收录）
+  - [[gbrain_ai记忆系统]]（YC 总裁 Garry Tan 开源 · "梦境循环" + 三层混合搜索 · 偏个人本地）
+  - **MemGPT**（OS 虚拟内存范式 · 已在 [[agentic_memory_architecture_智能体记忆架构]] 中收录）
   - **Mem0 / Letta** 等记忆即服务方案
 
 ---
@@ -116,7 +116,7 @@ tags:
 - **三类记忆的边界判定** — Episodic 与 Semantic 之间的"巩固时机"如何确定？模型自决 vs 规则驱动 vs 用户标注？
 - **精确匹配的可扩展性** — 程序性记忆走 exact match 在 SOP 数量爆炸时如何保证检索性能？
 - **跨 Agent 共享 vs 隐私** — `agent_id / scenario` 让多 Agent 共享同一记忆池成为可能，但权限边界如何审计？
-- **与 [[OpenClaw_自进化AI开源框架]] 的边界关系** — 现产品定位"框架中立"，但 LoCoMo 直接对比 OpenClaw Native，长期是独立竞品还是 OpenClaw 生态护城河延伸？
+- **与 [[openclaw_自进化ai开源框架]] 的边界关系** — 现产品定位"框架中立"，但 LoCoMo 直接对比 OpenClaw Native，长期是独立竞品还是 OpenClaw 生态护城河延伸？
 - **依赖 LLM 抽取的成本** — Add Memory 需要 LLM 提取结构化记忆，自身 token 成本如何与"省 token"主张平衡？
 
 ---

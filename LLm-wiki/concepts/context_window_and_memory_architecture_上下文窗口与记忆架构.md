@@ -17,8 +17,8 @@ confidence: high
 ## 关联
 
 **上位概念**：[[LLM基础架构]]
-**相关概念**：[[Agentic_Memory_Architecture_智能体记忆架构]], [[RAG_检索增强生成]], [[上下文窗口与记忆架构]], [[Memory_Trilemma_Selective_Grounded_Efficient_记忆三约束三元悖论]], [[Memory_Hierarchy_LLM_Agent_LLM智能体分层记忆]]
-**关键人物**：[[Anthropic_直接操控计算机]], [[Kimi_国产大模型]], [[Google_Gemini_多模态原生大模型基座]]
+**相关概念**：[[agentic_memory_architecture_智能体记忆架构]], [[RAG_检索增强生成]], [[上下文窗口与记忆架构]], [[memory_trilemma_selective_grounded_efficient_记忆三约束三元悖论]], [[memory_hierarchy_llm_agent_llm智能体分层记忆]]
+**关键人物**：[[anthropic_直接操控计算机]], [[kimi_国产大模型]], [[google_gemini_多模态原生大模型基座]]
 
 # 🧠 上下文窗口与记忆架构
 

@@ -16,8 +16,8 @@ confidence: high
 
 ## 关联
 
-**相关概念**：[[Harness_工程]], [[Agentic_Search]], [[Agent协商层]], [[System_of_Decision]]
-**关键人物**：[[智能体AI_公众号]]
+**相关概念**：[[harness_工程]], [[agentic_search]], [[agent协商层]], [[system_of_decision]]
+**关键人物**：[[智能体ai_公众号]]
 
 # 🧠 AI产品形态
 

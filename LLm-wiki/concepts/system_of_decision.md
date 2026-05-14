@@ -16,7 +16,7 @@ confidence: high
 ## 关联
 
 **上位概念**：[[Enterprise_Software]]
-**相关概念**：[[Context_Graph]], [[System_of_Record]], [[亚马逊投流决策助手]]
+**相关概念**：[[context_graph]], [[System_of_Record]], [[亚马逊投流决策助手]]
 
 # 🧠 System_of_Decision
 

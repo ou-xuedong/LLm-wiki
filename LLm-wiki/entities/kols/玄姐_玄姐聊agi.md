@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**专长**：[[Agentic_Search]], [[Harness_工程]], [[RAG_检索增强生成]], [[AI架构]]
+**专长**：[[agentic_search]], [[harness_工程]], [[RAG_检索增强生成]], [[AI架构]]
 
 # 👤 玄姐（玄姐聊 AGI）
 

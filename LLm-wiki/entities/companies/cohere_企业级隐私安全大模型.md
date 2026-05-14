@@ -16,7 +16,7 @@ confidence: high
 
 ## 关联
 
-**竞品**：[[Google_Gemini_多模态原生大模型基座]], [[Anthropic_直接操控计算机]]
+**竞品**：[[google_gemini_多模态原生大模型基座]], [[anthropic_直接操控计算机]]
 
 # Cohere
 

@@ -15,7 +15,7 @@ tags:
 
 ## 关联
 
-**相关概念**：[[长期利益信托_Long-Term_Benefit_Trust]], [[Anthropic研究预览与常青发布机制]]
+**相关概念**：[[长期利益信托_long-term_benefit_trust]], [[anthropic研究预览与常青发布机制]]
 
 # Dario Amodei (达里奥·阿莫代伊)
 - **所属阵营/立场**：工业界 / AI 安全与可控大模型派 (Anthropic CEO)

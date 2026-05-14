@@ -15,8 +15,8 @@ tags:
 
 ## 关联
 
-**竞品**：[[Cursor_AI编程智能体]], [[Claude_Code]], [[Xnurta_Amazon广告AI_Agent]]
-**投资方**：[[Sam_Altman_OpenAI_CEO]]
+**竞品**：[[cursor_ai编程智能体]], [[Claude_Code]], [[Xnurta_Amazon广告AI_Agent]]
+**投资方**：[[sam_altman_openai_ceo]]
 
 # 🏢 Warp (AI 终端 / Agent 开发环境)
 
@@ -43,7 +43,7 @@ Warp 是一款基于 Rust 编写的现代化终端，定位为"Agentic 开发环
 ## 4. 重大事件与动态
 - [2026-05-01] **全面开源**：GitHub 开源（AGPL），15 小时斩获 3.5 万 Star，OpenAI 成为创始赞助商，GPT 系列驱动 Warp 代理管理工作流
 - [2026-05-01] 新增支持 Kimi、MiniMax、Qwen（通义千问）等开源模型，上线"自动（开放）"模型路由
-- [2026-04-29] 开源事件引发社区讨论（详见 [[Warp_开源事件与AI终端演进洞察]]）
+- [2026-04-29] 开源事件引发社区讨论（详见 [[warp_开源事件与ai终端演进洞察]]）
 - [2025-06] Warp 2.0 发布，向 Agentic 开发环境转型
 
 ## 5. 与主人方向的关联
