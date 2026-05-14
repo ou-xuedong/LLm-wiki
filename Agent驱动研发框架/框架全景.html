@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent 驱动研发框架 · 全景 v0.1</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .arrow::after { content: "↓"; display: block; text-align: center; color: #94a3b8; font-size: 1.25rem; margin: 4px 0; }
+  @media (min-width: 640px) {
+    .arrow-h::after { content: "→"; }
+  }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-10">
+
+  <!-- Hero -->
+  <header class="border-b pb-6">
+    <div class="flex flex-wrap items-center gap-2 mb-3">
+      <span class="px-2.5 py-1 text-xs font-medium bg-indigo-100 text-indigo-700 rounded">v0.1 草案</span>
+      <span class="px-2.5 py-1 text-xs font-medium bg-orange-100 text-orange-700 rounded">方案讨论已收口</span>
+      <span class="text-xs text-slate-500">2026-05-14</span>
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-3">Agent 驱动研发框架</h1>
+    <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+      AILab 体系的研发执行框架。被业务项目读取，让"需求 → PRD → 研发 → 测试 → 上线"形成可追踪、可迭代、人在环的自动化流水线。
+    </p>
+  </header>
+
+  <!-- 一句话定位 -->
+  <section class="bg-gradient-to-r from-indigo-50 to-orange-50 rounded-xl p-5 border border-indigo-100">
+    <div class="text-xs text-indigo-700 font-medium mb-2">核心定位</div>
+    <p class="text-base sm:text-lg leading-relaxed">
+      主人新方向通过 <span class="font-medium text-indigo-700">S1（gstack 八问）</span>站住后 → 进入本框架的<span class="font-medium">"需求池"</span> →
+      全自动跑五环节 → <span class="font-medium text-red-600">唯一硬卡点：主人合入上线确认</span> → 上线后 4A 活文档自增。
+    </p>
+  </section>
+
+  <!-- 核心定位 4 卡片 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">🎯 四个关键定位</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="bg-white rounded-lg border p-4">
+        <div class="text-xs text-slate-500 mb-1">性质</div>
+        <div class="font-medium mb-1">基础规则框架</div>
+        <div class="text-sm text-slate-600">被业务项目 @import 加载，与 <code class="text-xs bg-slate-100 px-1 rounded">_shared/产品研发型.md</code> 同性质</div>
+      </div>
+      <div class="bg-white rounded-lg border p-4">
+        <div class="text-xs text-slate-500 mb-1">覆盖范围</div>
+        <div class="font-medium mb-1">S2 末 → S5 需求迭代循环</div>
+        <div class="text-sm text-slate-600">S1 方向探索仍走 gstack 八问，不被本框架接管</div>
+      </div>
+      <div class="bg-white rounded-lg border p-4">
+        <div class="text-xs text-slate-500 mb-1">核心锚点</div>
+        <div class="font-medium mb-1">4A 架构 = 活文档</div>
+        <div class="text-sm text-slate-600">业务 / 应用 / 数据 / 技术，每条需求合入后自动增量</div>
+      </div>
+      <div class="bg-red-50 rounded-lg border border-red-200 p-4">
+        <div class="text-xs text-red-600 mb-1">主人介入</div>
+        <div class="font-medium text-red-900 mb-1">唯一硬卡点 = 合入上线</div>
+        <div class="text-sm text-red-700">环 1-5 全自动；环 6 主人确认才合入</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 六环节流程 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">🔄 六环节流程</h2>
+    <div class="bg-white rounded-lg border p-5">
+      <div class="grid grid-cols-2 sm:grid-cols-6 gap-2 text-sm">
+        <div class="text-center p-3 bg-slate-100 rounded">
+          <div class="text-xs text-slate-500">环 1</div>
+          <div class="font-medium mt-1">需求分析</div>
+          <div class="text-xs text-green-600 mt-1">🟢 全自动</div>
+        </div>
+        <div class="text-center p-3 bg-slate-100 rounded">
+          <div class="text-xs text-slate-500">环 2</div>
+          <div class="font-medium mt-1">PRD 设计</div>
+          <div class="text-xs text-green-600 mt-1">🟢 全自动</div>
+        </div>
+        <div class="text-center p-3 bg-slate-100 rounded">
+          <div class="text-xs text-slate-500">环 3</div>
+          <div class="font-medium mt-1">4A 增量</div>
+          <div class="text-xs text-green-600 mt-1">🟢 全自动</div>
+        </div>
+        <div class="text-center p-3 bg-slate-100 rounded">
+          <div class="text-xs text-slate-500">环 4</div>
+          <div class="font-medium mt-1">研发实施</div>
+          <div class="text-xs text-green-600 mt-1">🟢 全自动</div>
+        </div>
+        <div class="text-center p-3 bg-slate-100 rounded">
+          <div class="text-xs text-slate-500">环 5</div>
+          <div class="font-medium mt-1">测试验证</div>
+          <div class="text-xs text-green-600 mt-1">🟢 全自动</div>
+        </div>
+        <div class="text-center p-3 bg-red-100 rounded border-2 border-red-300">
+          <div class="text-xs text-red-600 font-medium">环 6 🔴</div>
+          <div class="font-medium text-red-900 mt-1">合入上线</div>
+          <div class="text-xs text-red-600 mt-1">主人确认</div>
+        </div>
+      </div>
+      <p class="text-xs text-slate-500 mt-4 text-center leading-relaxed">
+        需求池 → 分析 → PRD → 4A → 研发 → 测试 → <span class="text-red-600 font-medium">主人合入</span> → 上线
+      </p>
+    </div>
+  </section>
+
+  <!-- 需求追踪链 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">📋 需求 ID 追踪链</h2>
+    <div class="bg-white rounded-lg border p-5">
+      <p class="text-sm text-slate-600 mb-3">
+        每条需求一个唯一 ID（如 <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded">R-2026-001</code>），所有产物用 ID 串起——<span class="font-medium">可追溯、可下钻、可维护</span>。
+      </p>
+<pre class="bg-slate-900 text-slate-100 text-xs sm:text-sm p-4 rounded overflow-x-auto"><code>需求池/R-2026-001_用户登录/
+├ 0_需求卡.md          # 原始需求
+├ 1_分析报告.md         # 环 1 产出
+├ 2_PRD.md / .html      # 环 2 产出
+├ 3_4A增量.md           # 环 3 产出
+├ 4_代码.md             # 环 4 产出（git 链接）
+├ 5_测试报告.html        # 环 5 产出
+├ 6_合入确认.md          # 🔴 主人改 status
+└ status.yaml          # 当前状态</code></pre>
+    </div>
+  </section>
+
+  <!-- 4A 活文档 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">🏗️ 4A 架构（活文档）</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="bg-white rounded-lg border p-4 text-center">
+        <div class="text-3xl mb-2">🏢</div>
+        <div class="font-medium">业务架构 BA</div>
+        <div class="text-xs text-slate-500 mt-2">业务流程图<br>角色 / 业务能力</div>
+      </div>
+      <div class="bg-white rounded-lg border p-4 text-center">
+        <div class="text-3xl mb-2">📱</div>
+        <div class="font-medium">应用架构 AA</div>
+        <div class="text-xs text-slate-500 mt-2">产品架构图<br>功能特性清单</div>
+      </div>
+      <div class="bg-white rounded-lg border p-4 text-center">
+        <div class="text-3xl mb-2">💾</div>
+        <div class="font-medium">数据架构 DA</div>
+        <div class="text-xs text-slate-500 mt-2">数据架构图<br>数据流转图</div>
+      </div>
+      <div class="bg-white rounded-lg border p-4 text-center">
+        <div class="text-3xl mb-2">⚙️</div>
+        <div class="font-medium">技术架构 TA</div>
+        <div class="text-xs text-slate-500 mt-2">技术栈<br>部署架构</div>
+      </div>
+    </div>
+    <p class="text-xs sm:text-sm text-slate-500 mt-3 leading-relaxed">
+      💡 每条需求合入后，4A 增量自动并入主架构图。<span class="font-medium text-slate-700">4A 永远是最新版，不是一次性产物</span>——这是与传统 PRD/架构文档的关键区别。
+    </p>
+  </section>
+
+  <!-- 主人手机入口 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">📱 主人手机入口</h2>
+    <div class="bg-white rounded-lg border p-5">
+      <p class="text-sm text-slate-600 mb-4">
+        业务项目接入框架后，主人的两个核心入口（都是 HTML、手机能看）：
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="border-l-4 border-indigo-500 pl-4 py-2">
+          <div class="font-medium mb-1">📋 需求池/看板.html</div>
+          <div class="text-sm text-slate-600 leading-relaxed">所有需求一页列表，点开任一条<span class="font-medium">下钻看全链路</span>（分析 → PRD → 代码 → 测试）</div>
+        </div>
+        <div class="border-l-4 border-orange-500 pl-4 py-2">
+          <div class="font-medium mb-1">🏗️ 4A架构/全景.html</div>
+          <div class="text-sm text-slate-600 leading-relaxed">业务 / 应用 / 数据 / 技术 四张图<span class="font-medium">实时呈现项目当前架构</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 框架目录结构 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">📦 v0.1 框架目录结构</h2>
+    <div class="bg-white rounded-lg border p-5">
+<pre class="text-xs sm:text-sm text-slate-700 overflow-x-auto"><code>~/Desktop/AILab/Agent驱动研发框架/
+├ README.md / CLAUDE.md / 框架全景.html
+├ 1_流程定义/        ← 六环节流程 + 状态机 + 合入契约
+├ 2_4A架构模板/      ← 业务/应用/数据/技术 + 投资决策实例
+├ 3_产物模板/        ← 需求卡/分析/PRD/4A增量/测试/合入确认
+├ 4_Agent协议/       ← 5 个 Agent 的 prompt + IO 契约
+├ 5_HTML渲染层/      ← 设计系统 + 看板 + 合入报告 + 4A 全景模板
+└ 6_接入指南/        ← 如何接入 + 与 S1-S5 关系 + 标准动作</code></pre>
+    </div>
+  </section>
+
+  <!-- 与现有体系关系 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">🔗 与现有体系的关系</h2>
+    <div class="bg-white rounded-lg border overflow-hidden">
+      <table class="w-full text-sm">
+        <thead class="bg-slate-100">
+          <tr>
+            <th class="text-left p-3 font-medium">现有体系</th>
+            <th class="text-left p-3 font-medium">本框架的关系</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="p-3 font-medium">S1-S5 五段矩阵</td><td class="p-3 text-slate-600">仅覆盖 S2 末 → S5；S1 不动</td></tr>
+          <tr><td class="p-3 font-medium">gstack 思维底座</td><td class="p-3 text-slate-600">不动，新方向先过八问</td></tr>
+          <tr><td class="p-3 font-medium">superpowers</td><td class="p-3 text-slate-600">研发 Agent 通过 TDD / 调试 / worktrees 落地</td></tr>
+          <tr><td class="p-3 font-medium">Playwright Agents</td><td class="p-3 text-slate-600">测试 Agent 通过 Planner / Generator / Healer 三件套落地</td></tr>
+          <tr><td class="p-3 font-medium">HTML 优先输出范式 v1.0</td><td class="p-3 text-slate-600">完全兼容，本框架是其落地实例</td></tr>
+          <tr><td class="p-3 font-medium">mkdocs（_view/）</td><td class="p-3 text-slate-600">持续渲染层，本框架接入项目自动得</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- v0.1 MVP 范围 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">🎯 v0.1 MVP 范围</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+        <div class="font-medium text-green-900 mb-2">✅ 范围内</div>
+        <ul class="text-sm text-green-900 space-y-1.5 list-disc pl-5">
+          <li>框架目录结构</li>
+          <li>六环节流程文档</li>
+          <li>4A 架构模板（4 份）+ 投资决策实例</li>
+          <li>产物模板（6 份）</li>
+          <li>Agent 协议（5 份 MD prompt + IO 契约）</li>
+          <li>HTML 渲染层模板</li>
+          <li>接入指南（3 份）</li>
+        </ul>
+      </div>
+      <div class="bg-slate-100 border border-slate-200 rounded-lg p-4">
+        <div class="font-medium text-slate-700 mb-2">❌ 不在范围（v0.2+）</div>
+        <ul class="text-sm text-slate-700 space-y-1.5 list-disc pl-5">
+          <li>Agent 自动编排引擎</li>
+          <li>Playwright Agents 实际接入</li>
+          <li>跨项目需求路由</li>
+          <li>skill 化封装</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 下一步打磨 -->
+  <section>
+    <h2 class="text-xl font-semibold mb-4">⏭️ 下次会话打磨计划</h2>
+    <div class="bg-amber-50 border border-amber-200 rounded-lg p-5">
+      <ol class="text-sm text-amber-900 space-y-2 list-decimal pl-5 leading-relaxed">
+        <li>4A 架构模板细化（业务 / 应用 / 数据 / 技术 各一份字段 + 示意图）</li>
+        <li>需求看板 HTML 原型设计（含下钻交互）</li>
+        <li>合入确认报告 HTML 原型设计（需求 / PRD / diff / 测试 / 4A 五位一体）</li>
+        <li>Agent 协议细化（5 个 Agent 的 prompt + IO 契约）</li>
+        <li>需求状态机 + 合入确认契约</li>
+        <li>接入指南三份</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t pt-6 text-xs text-slate-500">
+    <div class="flex flex-wrap justify-between gap-2">
+      <div>奴婢小昭 × 主人 · 2026-05-14 议定</div>
+      <div>完整方案：<a href="方案设计.md" class="text-indigo-600 hover:underline">方案设计.md</a></div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
