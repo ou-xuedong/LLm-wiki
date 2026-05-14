@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLm-wiki 使用指南</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --yellow: #d29922;
+    --red: #f85149;
+    --purple: #bc8cff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; }
+  .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  h1 { font-size: 1.8rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; }
+  h2 { font-size: 1.25rem; color: var(--text); margin: 2rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 1.05rem; color: var(--accent); margin: 1.2rem 0 0.5rem; }
+  p { margin: 0.6rem 0; }
+  ul, ol { margin: 0.6rem 0; padding-left: 1.5rem; }
+  li { margin: 0.3rem 0; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; margin: 1rem 0; }
+  .card h3 { margin-top: 0; }
+  .tag { display: inline-block; background: rgba(88,166,255,0.15); color: var(--accent); border: 1px solid rgba(88,166,255,0.3); border-radius: 20px; padding: 2px 10px; font-size: 0.78rem; margin: 2px; }
+  .tag-green { background: rgba(63,185,80,0.15); color: var(--green); border-color: rgba(63,185,80,0.3); }
+  .tag-yellow { background: rgba(210,153,34,0.15); color: var(--yellow); border-color: rgba(210,153,34,0.3); }
+  .tag-purple { background: rgba(188,140,255,0.15); color: var(--purple); border-color: rgba(188,140,255,0.3); }
+  code { background: rgba(88,166,255,0.1); color: var(--accent); padding: 2px 6px; border-radius: 4px; font-size: 0.88em; font-family: 'SF Mono', Consolas, monospace; }
+  pre { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+  pre code { background: none; padding: 0; font-size: 0.85rem; color: var(--text); }
+  .dir-tree { font-family: 'SF Mono', Consolas, monospace; font-size: 0.82rem; color: var(--muted); margin: 0.8rem 0; }
+  .dir-tree .dir { color: var(--accent); }
+  .dir-tree .file { color: var(--text); }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  th { background: var(--surface); text-align: left; padding: 0.6rem 1rem; border: 1px solid var(--border); color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  td { padding: 0.6rem 1rem; border: 1px solid var(--border); }
+  tr:hover td { background: rgba(88,166,255,0.05); }
+  .status-ok { color: var(--green); font-weight: 600; }
+  .status-warn { color: var(--yellow); font-weight: 600; }
+  .status-err { color: var(--red); font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; text-align: center; }
+  .nav { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
+  .nav a { color: var(--accent); text-decoration: none; font-size: 0.88rem; }
+  .nav a:hover { text-decoration: underline; }
+  .callout { border-left: 3px solid var(--accent); padding: 0.8rem 1rem; background: rgba(88,166,255,0.06); margin: 1rem 0; border-radius: 0 6px 6px 0; }
+  .callout-green { border-left-color: var(--green); background: rgba(63,185,80,0.06); }
+  .callout-yellow { border-left-color: var(--yellow); background: rgba(210,153,34,0.06); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>LLm-wiki 使用指南</h1>
+  <div class="subtitle">路径 ~/Desktop/AILab/LLm-wiki/ &nbsp;|&nbsp; 生成时间 2026-05-14</div>
+</header>
+
+<div class="nav">
+  <a href="#structure">目录结构</a>
+  <a href="#schema">Schema 规范</a>
+  <a href="#frontmatter">Frontmatter</a>
+  <a href="#wikilinks">Wikilinks</a>
+  <a href="#workflow">日常工作流</a>
+  <a href="#qmd">qmd 检索</a>
+</div>
+
+<section id="structure">
+<h2>📁 目录结构</h2>
+
+<div class="dir-tree">
+<div><span class="dir">LLm-wiki/</span></div>
+<div style="padding-left:1.5rem"><span class="dir">raw/</span> &nbsp;&nbsp;# 原始资料（不可改）</div>
+<div style="padding-left:2rem"><span class="file">articles/</span> &nbsp;&nbsp;Web 文章</div>
+<div style="padding-left:2rem"><span class="file">papers/</span> &nbsp;&nbsp;学术论文</div>
+<div style="padding-left:2rem"><span class="file">transcripts/</span> &nbsp;&nbsp;访谈/会议记录</div>
+<div style="padding-left:2rem"><span class="file">assets/</span> &nbsp;&nbsp;图片/图表</div>
+<div style="padding-left:1.5rem"><span class="dir">entities/</span> &nbsp;&nbsp;# 实体（人/公司/机构/事件）</div>
+<div style="padding-left:2rem"><span class="file">kols/</span> &nbsp;&nbsp;32 个 · 意见领袖</div>
+<div style="padding-left:2rem"><span class="file">companies/</span> &nbsp;&nbsp;142 个 · 公司/产品</div>
+<div style="padding-left:2rem"><span class="file">vcs/</span> &nbsp;&nbsp;35 个 · 投资机构</div>
+<div style="padding-left:2rem"><span class="file">events/</span> &nbsp;&nbsp;5 个 · 行业事件</div>
+<div style="padding-left:1.5rem"><span class="dir">concepts/</span> &nbsp;&nbsp;47 个 · 概念/技术/范式</div>
+<div style="padding-left:1.5rem"><span class="dir">queries/</span> &nbsp;&nbsp;48 个 · 深度洞察（insights）</div>
+<div style="padding-left:1.5rem"><span class="file">SCHEMA.md</span> &nbsp;&nbsp;# 规范定义</div>
+<div style="padding-left:1.5rem"><span class="file">index.md</span> &nbsp;&nbsp;# 内容总索引</div>
+<div style="padding-left:1.5rem"><span class="file">log.md</span> &nbsp;&nbsp;# 操作日志</div>
+</div>
+
+<div class="callout callout-green">
+  <strong>总文件数：309 个</strong> &nbsp;KOLs 32 · Companies 142 · VCs 35 · Events 5 · Concepts 47 · Queries 48
+</div>
+</section>
+
+<section id="schema">
+<h2>📐 Schema 规范</h2>
+
+<p>Wiki 遵循 <code>SCHEMA.md</code> 定义的 AI/创业情报领域规范。核心要点：</p>
+
+<table>
+  <tr><th>规范项</th><th>要求</th></tr>
+  <tr><td>文件命名</td><td>全部小写，中划线分隔，无空格</td></tr>
+  <tr><td>Wikilinks</td><td>每个页面至少 2 个 outbound links</td></tr>
+  <tr><td>Tags</td><td>必须含 <code>type</code> 标签（kols/vc/company/concept/query/event）</td></tr>
+  <tr><td>Confidence</td><td>高/中/低，反映信息可信度</td></tr>
+  <tr><td> Provenance</td><td>综合 3+ 来源时加 <code>^[raw/articles/...]</code> 标注</td></tr>
+  <tr><td>冲突处理</td><td>新旧矛盾 → 保留双方，标 <code>contested: true</code></td></tr>
+</table>
+</section>
+
+<section id="frontmatter">
+<h2>📋 Frontmatter 必填字段</h2>
+
+<pre><code>---
+title: 页面标题
+created: YYYY-MM-DD          # 首次创建日期
+updated: YYYY-MM-DD          # 最近更新日期
+type: kols | company | vc | event | concept | query | comparison
+tags:
+  - #领域标签
+  - #类型标签
+# 可选：
+confidence: high | medium | low
+sources: [raw/articles/xxx.md]
+contested: true
+contradictions: [other-slug]
+---</code></pre>
+
+<div class="callout">
+  <strong>Tag 体系：</strong>
+  <span class="tag">#kols</span><span class="tag">#vc</span><span class="tag">#company</span><span class="tag">#event</span>
+  <span class="tag">#agent</span><span class="tag">#memory</span><span class="tag">#rag</span><span class="tag">#inference</span>
+  <span class="tag">#ecommerce</span><span class="tag">#amazon</span><span class="tag">#framework</span>
+  <span class="tag">#methodology</span><span class="tag">#principle</span>
+</div>
+</section>
+
+<section id="wikilinks">
+<h2>🔗 Wikilinks 用法</h2>
+
+<h3>同目录引用</h3>
+<pre><code>[[target-page]]
+[[target-page|显示文字]]</code></pre>
+
+<h3>跨目录引用</h3>
+<pre><code>[[entities/kols/sam-altman|Sam Altman]]
+[[concepts/agentic-engineering]]
+[[queries/2026-03-28_ai日报关键信号洞察]]</code></pre>
+
+<div class="card">
+  <h3>Relations 字段展开规则</h3>
+  <p>旧知识库的 <code>relations.*</code> 字段自动展开为正文中的 <code>## 关联</code> 段落，用 <code>**标签**</code> 格式呈现：</p>
+  <pre><code>## 关联
+
+**所属**：[[cursor-ai编程智能体]], [[openai-大模型]]
+**专长**：[[vibe-coding]], [[agentic-engineering]]
+**相关 KOL**：[[andrej-karpathy]], [[geoffrey-huntley]]</code></pre>
+</div>
+</section>
+
+<section id="workflow">
+<h2>🔄 日常工作流</h2>
+
+<div class="card">
+  <h3>新增情报</h3>
+  <ol>
+    <li>摄入原始材料到 <code>raw/articles/</code>（不改原始文件）</li>
+    <li>创建/更新 <code>entities/</code>、<code>concepts/</code> 或 <code>queries/</code> 中的 wiki 页面</li>
+    <li>使用 <code>[[wikilinks]]</code> 关联相关页面</li>
+    <li>更新 <code>index.md</code> 中的对应 section</li>
+    <li>追加 <code>log.md</code>（格式：<code>## [YYYY-MM-DD] action | subject</code>）</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h3>更新现有页面</h3>
+  <ol>
+    <li>新信息与旧内容冲突 → 保留旧内容，追加新内容</li>
+    <li>添加 <code>contested: true</code> + <code>contradictions: [other-slug]</code></li>
+    <li>报告给用户（lint 环节）</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h3>归档</h3>
+  <p>内容完全被取代时 → 移入 <code>_archive/</code>，从 <code>index.md</code> 移除，不删除（保留证据）</p>
+</div>
+</section>
+
+<section id="qmd">
+<h2">🔍 qmd 检索</h2>
+
+<div class="callout">
+  检索 wiki 内容 <strong>必须且只能</strong>用 qmd CLI。禁止用 grep/find/Glob 替代。
+</div>
+
+<h3>安装 qmd（如未安装）</h3>
+<pre><code>npm install -g @tobi/qmd</code></pre>
+
+<h3>配置 qmd 指向新 wiki</h3>
+<pre><code># 在 ~/.hermes/.env 中配置：
+WIKI_PATH=/Users/ouxuedong/Desktop/AILab/LLm-wiki
+
+# 或通过 qmd CLI：
+qmd init --path ~/Desktop/AILab/LLm-wiki</code></pre>
+
+<h3>检索命令</h3>
+<table>
+  <tr><th>操作</th><th>命令</th></tr>
+  <tr><td>关键词搜索</td><td><code>qmd search "关键词"</code></td></tr>
+  <tr><td>自然语言问答</td><td><code>qmd query "Sam Altman 最近有什么动态"</code></td></tr>
+  <tr><td>MCP 模式</td><td>通过 MCP 工具调用 qmd（优先）</td></tr>
+</table>
+</section>
+
+<section id="mcp">
+<h2>🛠 qmd MCP 工具注册</h2>
+
+<p>已在 <code>~/.hermes/.env</code> 中配置：</p>
+<pre><code>WIKI_PATH=/Users/ouxuedong/Desktop/AILab/LLm-wiki</code></pre>
+
+<p>重启 Hermes Agent 后，MCP 工具 <code>qmd_mcp</code> 自动可用，支持：</p>
+<ul>
+  <li><code>qmd_search</code> — 关键词全文搜索</li>
+  <li><code>qmd_query</code> — 自然语言问答检索</li>
+  <li><code>qmd_list</code> — 列出所有 wiki 页面</li>
+</ul>
+
+<div class="callout callout-yellow">
+  qmd MCP 工具的 <code>wiki-path</code> 参数默认为 <code>WIKI_PATH</code> 环境变量，无需每次传入。
+</div>
+</section>
+
+<footer>
+  LLm-wiki 使用指南 &nbsp;|&nbsp; ~/Desktop/AILab/LLm-wiki/ &nbsp;|&nbsp; Hermes Agent 内置 skill
+</footer>
+
+</div>
+</body>
+</html>

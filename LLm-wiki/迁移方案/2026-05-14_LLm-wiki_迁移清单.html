@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLm-wiki 迁移清单</title>
+<style>
+:root { --bg:#0d1117; --surface:#161b22; --border:#30363d; --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --green:#3fb950; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; font-size:14px; line-height:1.6; }
+.container { max-width:900px; margin:0 auto; padding:1.5rem; }
+header { border-bottom:1px solid var(--border); padding-bottom:1rem; margin-bottom:1.5rem; }
+h1 { font-size:1.6rem; color:var(--accent); margin-bottom:0.4rem; }
+.subtitle { color:var(--muted); font-size:0.85rem; }
+.stats { display:flex; gap:1.5rem; margin:1rem 0; flex-wrap:wrap; }
+.stat { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:0.8rem 1.2rem; min-width:100px; }
+.stat-num { font-size:1.6rem; font-weight:700; color:var(--accent); }
+.stat-label { font-size:0.78rem; color:var(--muted); }
+h2 { font-size:1.1rem; color:var(--text); margin:1.8rem 0 0.6rem; padding-bottom:0.3rem; border-bottom:1px solid var(--border); }
+.section { margin:1.5rem 0; }
+.count-badge { display:inline-block; background:rgba(88,166,255,0.15); color:var(--accent); border-radius:12px; padding:2px 8px; font-size:0.75rem; margin-left:6px; }
+.item-list { display:grid; gap:4px; }
+.item { background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:0.5rem 0.8rem; display:flex; align-items:baseline; gap:0.5rem; }
+.item:hover { border-color:var(--accent); }
+.item-title { color:var(--text); font-size:0.88rem; flex:1; }
+.item-path { color:var(--muted); font-size:0.75rem; font-family:monospace; }
+.tag { display:inline-block; width:6px; height:6px; border-radius:50%; }
+.tag-kols { background:#bc8cff; } .tag-companies { background:#58a6ff; } .tag-vcs { background:#3fb950; }
+.tag-events { background:#d29922; } .tag-concepts { background:#f0883e; } .tag-queries { background:#f85149; }
+footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.8rem; text-align:center; }
+.ok { color:var(--green); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>LLm-wiki 迁移清单</h1>
+<div class="subtitle">~/Desktop/AILab/LLm-wiki/ &nbsp;|&nbsp; 迁移完成 &nbsp;|&nbsp; 2026-05-14</div>
+</header>
+<div class="stats">
+<div class="stat"><div class="stat-num">309</div><div class="stat-label">总文件数</div></div>
+<div class="stat"><div class="stat-num" style="color:#bc8cff">32</div><div class="stat-label">KOLs</div></div>
+<div class="stat"><div class="stat-num" style="color:#58a6ff">142</div><div class="stat-label">Companies</div></div>
+<div class="stat"><div class="stat-num" style="color:#3fb950">35</div><div class="stat-label">VCs</div></div>
+<div class="stat"><div class="stat-num" style="color:#d29922">5</div><div class="stat-label">Events</div></div>
+<div class="stat"><div class="stat-num" style="color:#f0883e">0</div><div class="stat-label">Concepts</div></div>
+<div class="stat"><div class="stat-num" style="color:#f85149">0</div><div class="stat-label">Queries</div></div>
+</div>
+<div class="section">
+<h2><span class="tag tag-kols"></span> KOLs <span class="count-badge">32</span></h2>
+<div class="item-list">
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Andrej</span><span class="item-path">entities/kols/andrej_karpathy_大牛_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Ben</span><span class="item-path">entities/kols/ben_horowitz_a16z_联合创始人.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Boris</span><span class="item-path">entities/kols/boris_cherny_知名工程师.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Cat</span><span class="item-path">entities/kols/cat_wu_claude_code产品负责人.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Clement</span><span class="item-path">entities/kols/clement_delangue_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Dario</span><span class="item-path">entities/kols/dario_amodei_anthropic_ceo.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Demis</span><span class="item-path">entities/kols/demis_hassabis_deepmind联合创始人兼ceo.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Elon</span><span class="item-path">entities/kols/elon_musk_xai.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Francois</span><span class="item-path">entities/kols/francois_chollet_大牛_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Geoffrey</span><span class="item-path">entities/kols/geoffrey_huntley_独立工程师_ralphloop发明者.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Greg</span><span class="item-path">entities/kols/greg_brockman_openai_总裁兼联合创始人.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Harrison</span><span class="item-path">entities/kols/harrison_chase_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Ilya</span><span class="item-path">entities/kols/ilya_sutskever_大牛_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Jack</span><span class="item-path">entities/kols/jack_dorsey_block_ceo.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Jensen</span><span class="item-path">entities/kols/jensen_huang_nvidia_ceo.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Jim</span><span class="item-path">entities/kols/jim_fan_大牛_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Lilian</span><span class="item-path">entities/kols/lilian_weng_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Nikhyl</span><span class="item-path">entities/kols/nikhyl_singhal_theskip创始人.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Peter</span><span class="item-path">entities/kols/peter_steinberger_pspdfkit_创始人.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Sam</span><span class="item-path">entities/kols/sam_altman_openai_ceo.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">SinKris</span><span class="item-path">entities/kols/sinkris_产品总监_quarterlyplanningkol.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">Yann</span><span class="item-path">entities/kols/yann_lecun_大牛_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">何静</span><span class="item-path">entities/kols/何静_hejing_北航副教授.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">智能体AI</span><span class="item-path">entities/kols/智能体ai_公众号.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">李沐</span><span class="item-path">entities/kols/李沐_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">林亚杰</span><span class="item-path">entities/kols/林亚杰_厦门半仓科技_vc操盘手.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">梁文锋</span><span class="item-path">entities/kols/梁文锋_deepseek_创始人.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">沈阳</span><span class="item-path">entities/kols/沈阳_shenyang_清华跨学科学者.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">玄姐</span><span class="item-path">entities/kols/玄姐_玄姐聊agi.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">贾扬清</span><span class="item-path">entities/kols/贾扬清_ai大牛.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">赛博禅心</span><span class="item-path">entities/kols/赛博禅心_金色传说大聪明_ai深度分析kol.md</span></div>
+<div class="item"><span class="tag tag-kols"></span><span class="item-title">陈琦</span><span class="item-path">entities/kols/陈琦_深圳大学心理学院_计算精神病学家.md</span></div>
+</div>
+<h2><span class="tag tag-companies"></span> Companies <span class="count-badge">142</span></h2>
+<div class="item-list">
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">10x</span><span class="item-path">entities/companies/10x_science_蛋白质发现_ai_原生下一代蛋白质表.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">AI</span><span class="item-path">entities/companies/ai_scientist_科研全流程智能体.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">AI</span><span class="item-path">entities/companies/ai_startup_cursor_in_talks_to_raise_2_billion_fun.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Aaru</span><span class="item-path">entities/companies/aaru_品牌测试_市场预测_生成极其逼真的定向人.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Adspert</span><span class="item-path">entities/companies/adspert_amazon_ppc_ad_optimization.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Aegis</span><span class="item-path">entities/companies/aegis_安全可观测性_ai_和大模型系统的安.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">AgentMail</span><span class="item-path">entities/companies/agentmail_智能体通信_为_ai_智能体提供原生.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Alter</span><span class="item-path">entities/companies/alter_智能体安全_零信任身份验证和访问控制.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Anthropic</span><span class="item-path">entities/companies/anthropic_直接操控计算机.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">April</span><span class="item-path">entities/companies/april_人机交互_为人类终端用户开发智能体.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">AthenaHQ</span><span class="item-path">entities/companies/athenahq_生成式引擎优化.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">BAND</span><span class="item-path">entities/companies/band_ai_agent通信基础设施.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Beacon</span><span class="item-path">entities/companies/beacon_health_医疗健康_ai_面向初级保健场景的.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Block</span><span class="item-path">entities/companies/block_金融科技与去中心化.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Buddy</span><span class="item-path">entities/companies/buddy_ai_ai虚拟语音辅导员.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">C47martini</span><span class="item-path">entities/companies/c47martini_film_生成式媒体_协作制片工具_支持实时多.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Cadence</span><span class="item-path">entities/companies/cadence_11x_ai驱动crm系统.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Character</span><span class="item-path">entities/companies/character_ai_虚拟角色与陪伴.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Claw</span><span class="item-path">entities/companies/claw_mart_ai预制件交易市场.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Clawspan</span><span class="item-path">entities/companies/clawspan_个人ai首席运营官.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Clay</span><span class="item-path">entities/companies/clay_bavor_sierra_对话式ai客服支持.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Clay</span><span class="item-path">entities/companies/clay_gtm平台.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Cognigy</span><span class="item-path">entities/companies/cognigy_自动化语音ai客服台.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Cohere</span><span class="item-path">entities/companies/cohere_企业级隐私安全大模型.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Concourse</span><span class="item-path">entities/companies/concourse_自动系统架构师.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Convergence</span><span class="item-path">entities/companies/convergence_ai_记忆技能跨模态代理.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Corelayer</span><span class="item-path">entities/companies/corelayer_运维监控_ai_智能体监控生产环境并.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Cursor</span><span class="item-path">entities/companies/cursor_ai编程智能体.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">DeepAware</span><span class="item-path">entities/companies/deepaware_数据中心_利用强化学习优化数据中心运.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">DiguaRobot</span><span class="item-path">entities/companies/diguarobot_具身智能.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Ditto</span><span class="item-path">entities/companies/ditto_动态销售演示.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Embedder</span><span class="item-path">entities/companies/embedder_硬件工程_针对固件开发与管理的_ai.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Encore</span><span class="item-path">entities/companies/encore_ai商品与服务定价.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">EvoMap</span><span class="item-path">entities/companies/evomap_ai智能体自我进化基础设施.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Exa</span><span class="item-path">entities/companies/exa_ai原生的神经搜索.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Fitbit前高管项目</span><span class="item-path">entities/companies/fitbit前高管项目_家庭健康设备的ai化与家庭照护_慢性病检.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Flai</span><span class="item-path">entities/companies/flai_销售自动化_汽车经销商线索的_ai.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Fragment</span><span class="item-path">entities/companies/fragment_人类ai协作操作系统.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Full</span><span class="item-path">entities/companies/full_list_of_israeli_high-tech_funding_rounds_in_2.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Fundamental</span><span class="item-path">entities/companies/fundamental_vr_ai_临床医学虚拟现实训练_多模态数据处理分析.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">GIGR</span><span class="item-path">entities/companies/gigr_playad__54_million_pre-seed_secured_to_bu.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Gamma</span><span class="item-path">entities/companies/gamma_beautiful_ai_一键生成精美ppt.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Generative-AI-Startup-Co-Founder</span><span class="item-path">entities/companies/generative-ai-startup-co-founder.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Google</span><span class="item-path">entities/companies/google_gemini_多模态原生大模型基座.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Google</span><span class="item-path">entities/companies/google_notebooklm_海量文档交叉索引_播客生成_智能笔记.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Grok</span><span class="item-path">entities/companies/grok_实时获取全网新鲜数据.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Harvey</span><span class="item-path">entities/companies/harvey_垂直法律agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Hebbia</span><span class="item-path">entities/companies/hebbia_金融级非结构化数据处理.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Hex</span><span class="item-path">entities/companies/hex_security_网络安全_利用_ai_智能体持续对系.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Hyprnote</span><span class="item-path">entities/companies/hyprnote_隐私记录_开源的端侧_本地部署_ai.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Juicebox</span><span class="item-path">entities/companies/juicebox_contrario_扫描全网高尖端人才.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Kimi</span><span class="item-path">entities/companies/kimi_国产大模型.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Kimpton</span><span class="item-path">entities/companies/kimpton_投资研究_ai_原生投资研究与分析平台.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Kristin</span><span class="item-path">entities/companies/kristin_isaac_ceo_and_co-founder_at_strudel__int.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Lakera</span><span class="item-path">entities/companies/lakera_ai安全防火墙.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Lark</span><span class="item-path">entities/companies/lark_办公流_业务流深度ai整合系统.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">LeadBay</span><span class="item-path">entities/companies/leadbay_全网高质量潜客商机探测.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">LegalOn</span><span class="item-path">entities/companies/legalon_智能合同审查.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">LineWise</span><span class="item-path">entities/companies/linewise_教育界一线风控.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">LinkedIn</span><span class="item-path">entities/companies/linkedin_ai_职场招聘与简历改写.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">ListenLabs</span><span class="item-path">entities/companies/listenlabs_研发前期的海量用户访谈录音整理_情绪分析.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Locus</span><span class="item-path">entities/companies/locus_ai_基于位置的地图营销.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Luel</span><span class="item-path">entities/companies/luel_ai_训练数据_真实世界人类交互数据.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Manus</span><span class="item-path">entities/companies/manus_通用浏览器agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">McKinsey</span><span class="item-path">entities/companies/mckinsey_麦肯锡_全球管理咨询.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">MindrianOS</span><span class="item-path">entities/companies/mindrianos_ai创新联合创始人.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Mindverse</span><span class="item-path">entities/companies/mindverse_情感交互agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">MoEngage</span><span class="item-path">entities/companies/moengage_app客户流失预测_自动化定向触达与召回挽留.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Mosaic</span><span class="item-path">entities/companies/mosaic_节点式视频内容管理.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">MyHairAI</span><span class="item-path">entities/companies/myhairai_植发图片训练_毛囊级精确诊断.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">NetStock</span><span class="item-path">entities/companies/netstock_restockai_进销存库存预测.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Oki</span><span class="item-path">entities/companies/oki_短剧分发与买量agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Onlook</span><span class="item-path">entities/companies/onlook_从设计到前端代码直出与对接.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">OpenAI</span><span class="item-path">entities/companies/openai_大模型与agent基础设施.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">OpenClaw</span><span class="item-path">entities/companies/openclaw_自进化ai开源框架.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Operand</span><span class="item-path">entities/companies/operand_ai业务信息检索引擎.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Orthogonal</span><span class="item-path">entities/companies/orthogonal_硬件vibe编程.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">PPC</span><span class="item-path">entities/companies/ppc_entourage_amazonppc工具.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Pace</span><span class="item-path">entities/companies/pace_财税与金融_企业会计自动化平台.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Paid</span><span class="item-path">entities/companies/paid_ai_ai计算员工绩效与薪酬体系.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Parsewise</span><span class="item-path">entities/companies/parsewise_cleanlab_极大提升清洗数据.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Peppr</span><span class="item-path">entities/companies/peppr_ai_动态ai知识库.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Perpetua</span><span class="item-path">entities/companies/perpetua_电商广告平台.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Perplexity</span><span class="item-path">entities/companies/perplexity_专业级ai搜索引擎.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Phia</span><span class="item-path">entities/companies/phia_c端情感陪伴与情绪价值提供_多平台虚拟社交.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">PickMe</span><span class="item-path">entities/companies/pickme_pickleai_垃圾邮件商机抓取.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Plexe</span><span class="item-path">entities/companies/plexe_机器学习研发_生产力基元工具.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Prism</span><span class="item-path">entities/companies/prism_机器学习研发_生产力基元工具.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">PromptLess</span><span class="item-path">entities/companies/promptless_动态文档生成.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Ramp</span><span class="item-path">entities/companies/ramp_企业费控与报销智能审查.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Roli</span><span class="item-path">entities/companies/roli_发光交互实体乐器.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Rox</span><span class="item-path">entities/companies/rox_roxi_b2b大客户销售跟进_决策链梳理与订单预测.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Rulebase</span><span class="item-path">entities/companies/rulebase_hr合规扫描工具.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Sandstone</span><span class="item-path">entities/companies/sandstone_企业内控agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Sapiom</span><span class="item-path">entities/companies/sapiom_lava_agent自动调用各api产生的微小_高.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Serval</span><span class="item-path">entities/companies/serval_企业it自动化运维.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Shofoshofo</span><span class="item-path">entities/companies/shofoshofo_ai_视频训练集_海量短视频数据索引.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Sierra</span><span class="item-path">entities/companies/sierra_对话式ai客服支持.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Spang</span><span class="item-path">entities/companies/spang_ai_针对广告_saas推广的落地页_千人千.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">SpotPay</span><span class="item-path">entities/companies/spotpay_财税与金融_简化全球金融流程的跨境支付.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Stacks</span><span class="item-path">entities/companies/stacks_财务多智能协作.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Stickerbox</span><span class="item-path">entities/companies/stickerbox_虚拟形象带入现实贴纸_玩具.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Stilta</span><span class="item-path">entities/companies/stilta_法律科技_专为专利律师设计的_ai.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Strand</span><span class="item-path">entities/companies/strand_ai_生物大模型_构建多模态患者数据集.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">SuperMemory</span><span class="item-path">entities/companies/supermemory_统一数据输入跨平台接口.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Sycamore</span><span class="item-path">entities/companies/sycamore_企业agent调度.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">TamLabs</span><span class="item-path">entities/companies/tamlabs_小众群体陪伴agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Tavily</span><span class="item-path">entities/companies/tavily_专为智能体打造的搜索api.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Temporal</span><span class="item-path">entities/companies/temporal_agent编排引擎.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Tencent</span><span class="item-path">entities/companies/tencent_and_alibaba_in_talks_to_invest_in_deepseek.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Tessa</span><span class="item-path">entities/companies/tessa_线上视频学习跟进rpa.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">The</span><span class="item-path">entities/companies/the_16_largest_global_startup_funding_rounds_of_ma.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Thrive</span><span class="item-path">entities/companies/thrive_ai_health_极度私人健康顾问大模型.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Uplimit</span><span class="item-path">entities/companies/uplimit_ai员工技能提升与培训.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Vantel</span><span class="item-path">entities/companies/vantel_熟人私域社群自动话术生成.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Viven</span><span class="item-path">entities/companies/viven_老员工离职的ai脑机复刻.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Walmart</span><span class="item-path">entities/companies/walmart_sparky_ai购物助手.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Warp</span><span class="item-path">entities/companies/warp_ai终端工具.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Weave</span><span class="item-path">entities/companies/weave_机器代码与人效能分配.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Wedge</span><span class="item-path">entities/companies/wedge_安全可观测性_ai_和大模型系统的安.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Whatfix</span><span class="item-path">entities/companies/whatfix_数字应用向导_dap龙头.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Xnurta</span><span class="item-path">entities/companies/xnurta_amazon广告ai-agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">YC某老牌SaaS重构</span><span class="item-path">entities/companies/yc某老牌saas重构_传统行业老旧系统的自然语言操作与自动化流.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Yoodli</span><span class="item-path">entities/companies/yoodli_线上会议_面试_公开演讲的实时模拟_思维.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">ZeeLinClaw</span><span class="item-path">entities/companies/zeelinclaw_多智能体商业平台.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">Zip</span><span class="item-path">entities/companies/zip_全球复杂采购流程自动化.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">ai-startup-cofounder</span><span class="item-path">entities/companies/ai-startup-cofounder.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">employee-number-two</span><span class="item-path">entities/companies/employee-number-two.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">illumex</span><span class="item-path">entities/companies/illumex_数据标准化平台.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">mcp</span><span class="item-path">entities/companies/mcp_use_模型通信协议_mcp_智能体的基础设施.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">ramAIn</span><span class="item-path">entities/companies/ramain_rpa_自动化_机器视觉与超高速操作.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">亚马逊投流决策助手</span><span class="item-path">entities/companies/亚马逊投流决策助手_跨境电商ai决策.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">优时科技</span><span class="item-path">entities/companies/优时科技_具身智能.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">可验证</span><span class="item-path">entities/companies/可验证_ai_计算层_opengradient_950_万美元a16z_crypto_等参投_-.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">宇树科技</span><span class="item-path">entities/companies/宇树科技_人形机器人.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">星识科技</span><span class="item-path">entities/companies/星识科技_智能影像.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">智灵剧幕</span><span class="item-path">entities/companies/智灵剧幕_jumu.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">林总</span><span class="item-path">entities/companies/林总_跨境贸易_猫砂盘.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">海燕</span><span class="item-path">entities/companies/海燕_游戏手柄_跨境.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">深言科技AI</span><span class="item-path">entities/companies/深言科技ai_战争模拟沙盘_军事训练_实时多兵种协同轨.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">生成式协作Agent</span><span class="item-path">entities/companies/生成式协作agent_人与机器无缝切换的agent.md</span></div>
+<div class="item"><span class="tag tag-companies"></span><span class="item-title">直播预测市场平台</span><span class="item-path">entities/companies/直播预测市场平台_pumpcade_100_万美元_pre-seed_轮pumpfun_领投_.md</span></div>
+</div>
+<h2><span class="tag tag-vcs"></span> VCs <span class="count-badge">35</span></h2>
+<div class="item-list">
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Agent</span><span class="item-path">entities/vcs/agent_fund_首批专注agent基金.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">CMC</span><span class="item-path">entities/vcs/cmc_ai创意基金_生成式ai创意cvc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Can</span><span class="item-path">entities/vcs/can_ai_kill_the_venture_capitalist__-_wi.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Lightspeed</span><span class="item-path">entities/vcs/lightspeed_光速创投.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Paradigm</span><span class="item-path">entities/vcs/paradigm_进军ai的加密vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Q1</span><span class="item-path">entities/vcs/q1_2026_shatters_venture_funding_records.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Sequoia</span><span class="item-path">entities/vcs/sequoia_capital_全球顶级vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Situational</span><span class="item-path">entities/vcs/situational_awareness_all_in_ai对冲基金.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">SoFi</span><span class="item-path">entities/vcs/sofi_agiq_etf_agentic_ai主题etf.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">SoftBank</span><span class="item-path">entities/vcs/softbank_软银愿景基金.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">The</span><span class="item-path">entities/vcs/the_ai_investing_landscape__insights_fro.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Venture</span><span class="item-path">entities/vcs/venture_capital_hits_300b_quarter_-_sta.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Y</span><span class="item-path">entities/vcs/y_combinator.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">Y</span><span class="item-path">entities/vcs/y_combinator_顶级孵化器.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">a16z</span><span class="item-path">entities/vcs/a16z_最活跃ai综合vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">上海人工智能CVC</span><span class="item-path">entities/vcs/上海人工智能cvc_政府引导大模型基金.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">创世伙伴创投</span><span class="item-path">entities/vcs/创世伙伴创投_非共识早期vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">创新工场</span><span class="item-path">entities/vcs/创新工场_vc加ai模式先驱.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">北极光创投</span><span class="item-path">entities/vcs/北极光创投_产业腹地综合vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">华创资本</span><span class="item-path">entities/vcs/华创资本_非共识早期vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">启明创投</span><span class="item-path">entities/vcs/启明创投_深耕硬科技综合vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">峰瑞资本</span><span class="item-path">entities/vcs/峰瑞资本_应用落地早期vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">愉悦资本</span><span class="item-path">entities/vcs/愉悦资本_出行与消费综合vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">明势创投</span><span class="item-path">entities/vcs/明势创投_ai原生应用早期vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">智谱</span><span class="item-path">entities/vcs/智谱_ai_z基金_大模型生态cvc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">深业云从AI基金</span><span class="item-path">entities/vcs/深业云从ai基金_具身智能cvc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">源码资本</span><span class="item-path">entities/vcs/源码资本_前沿科技早期vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">真格基金</span><span class="item-path">entities/vcs/真格基金_前沿应用早期vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">红杉中国</span><span class="item-path">entities/vcs/红杉中国_头部综合vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">蓝驰创投</span><span class="item-path">entities/vcs/蓝驰创投_ai应用早期vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">讯飞创投</span><span class="item-path">entities/vcs/讯飞创投_科大讯飞cvc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">追创创投</span><span class="item-path">entities/vcs/追创创投_追觅科技cvc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">锦秋基金</span><span class="item-path">entities/vcs/锦秋基金_字节系极客ai基金.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">高榕创投</span><span class="item-path">entities/vcs/高榕创投_产业融合综合vc.md</span></div>
+<div class="item"><span class="tag tag-vcs"></span><span class="item-title">高瓴创投</span><span class="item-path">entities/vcs/高瓴创投_头部综合vc.md</span></div>
+</div>
+<h2><span class="tag tag-events"></span> Events <span class="count-badge">5</span></h2>
+<div class="item-list">
+<div class="item"><span class="tag tag-events"></span><span class="item-title">Consensus Miami EasyA Hackathon</span><span class="item-path">entities/events/consensus-miami-easya-hackathon_ai创业黑客松.md</span></div>
+<div class="item"><span class="tag tag-events"></span><span class="item-title">YC</span><span class="item-path">entities/events/yc_summer_2025.md</span></div>
+<div class="item"><span class="tag tag-events"></span><span class="item-title">a16z</span><span class="item-path">entities/events/a16z_speedrun_2026.md</span></div>
+<div class="item"><span class="tag tag-events"></span><span class="item-title">追觅硅谷瞬息全宇宙科技展</span><span class="item-path">entities/events/追觅硅谷瞬息全宇宙科技展_2026.md</span></div>
+<div class="item"><span class="tag tag-events"></span><span class="item-title">锦秋会</span><span class="item-path">entities/events/锦秋会_scale_with_ai.md</span></div>
+</div>
+</div>
+<footer>
+<span class="ok">✅ 309/309 文件迁移成功</span> &nbsp;|&nbsp; 旧路径已停用 &nbsp;|&nbsp; 新系统已激活
+</footer>
+</div>
+</body>
+</html>
