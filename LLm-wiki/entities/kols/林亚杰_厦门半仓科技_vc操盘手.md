@@ -3,6 +3,7 @@ title: 林亚杰
 created: 2026-04-27
 updated: 2026-04-27
 type: kols
+kol_domain: vc
 tags:
   - #KOL
   - #亚马逊

@@ -3,6 +3,7 @@ title: Nikhyl
 created: 2026-04-25
 updated: 2026-04-25
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #产品管理
@@ -46,6 +47,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: C3 AI CTO Nikhil Krishnan on Moving Government AI From Hype to Mission Impact MeriTalk
+- 2026-05-15: Q&A: Nikhil Kolar, vp Microsoft AI scales its ‘click-to-sign’ publisher AI content marketplace Digiday
+- 2026-05-15: AI is transformative for the reinsurance industry: Swiss Re’s Nikhil da Victoria Lobo Reinsurance News
+- 2026-05-15: C3 AI CTO Nikhil Krishnan on Moving Government AI From Hype to Mission Impact MeriTalk
+- 2026-05-15: Q&A: Nikhil Kolar, vp Microsoft AI scales its ‘click-to-sign’ publisher AI content marketplace Digiday
+- 2026-05-15: AI is transformative for the reinsurance industry: Swiss Re’s Nikhil da Victoria Lobo Reinsurance News
+- 2026-05-15: C3 AI CTO Nikhil Krishnan on Moving Government AI From Hype to Mission Impact MeriTalk
+- 2026-05-15: Q&A: Nikhil Kolar, vp Microsoft AI scales its ‘click-to-sign’ publisher AI content marketplace Digiday
+- 2026-05-15: AI is transformative for the reinsurance industry: Swiss Re’s Nikhil da Victoria Lobo Reinsurance News
 - 2026-04-25: =0||w[1]===e){ft=!1;break}ft&&l++;var et=t(o.startTime,i),lt=s(o.duration),at=t(o.connectStart,i),vt=o.secureConnectionS
 - 2026-04-24 (Twitter): Nikhyl Singhal@nikhyl·Sep 12, 2024 New Skip Podcast: "Founder Mode" isn't just for founders! I chatt
 - 2026-04-24 (Twitter): Nikhyl Singhal@nikhyl·Jun 6, 2023Is this a good offer? When you start a new job, everyone wants to k

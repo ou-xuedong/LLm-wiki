@@ -3,6 +3,7 @@ title: Elon
 created: 2026-05-10
 updated: 2026-05-10
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -17,6 +18,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: OpenAI Trial Heads to Jury After Lawyers Make Final Case The New York TimesThe Elon Musk v Sam Altman battle is a distra
+- 2026-05-15: OpenAI Considers Legal Action Against Apple in Strained Relationship The New York Times
+- 2026-05-15: Worries about AI’s risks to humanity loom over the trial pitting Musk against OpenAI’s leaders AP News
+- 2026-05-15: The Elon Musk v Sam Altman battle is a distraction | Karen Hao The GuardianElon Musk said control of OpenAI should go to
+- 2026-05-15: OpenAI Considers Legal Action Against Apple in Strained Relationship The New York Times
+- 2026-05-15: Forget Grok. Musk's AI Edge Is Infrastructure, Not Software Bloomberg.com
+- 2026-05-15: OpenAI Trial Live Updates: Closing Arguments Begin in Elon Musk vs. Sam Altman Case The New York TimesOpenAI’s Sam Altma
+- 2026-05-15: Elon Musk’s Grok Is Losing Ground in AI Race WSJ
+- 2026-05-15: Elon Musk’s Attempts at AI Are Falling Apart Futurism
 - 2026-05-10: Claude, brought to you by Elon Musk Business Insider
 - 2026-05-10: Elon Musk Is Dissolving His AI Company. It’s All About the SpaceX IPO. Barron's
 - 2026-05-10: Tesla earnings rise, but AI expenses add up for Elon Musk Axios

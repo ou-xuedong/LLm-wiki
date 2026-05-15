@@ -3,6 +3,7 @@ title: 何静
 created: 2026-04-30
 updated: 2026-04-30
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #AI科研

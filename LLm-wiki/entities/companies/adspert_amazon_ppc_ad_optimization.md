@@ -17,7 +17,7 @@ tags:
 ## 关联
 
 **相关概念**：[[Retail-Media|Retail_Media]], [[ROAS优化|ROAS优化]]
-**竞品**：[[xnurta_amazon广告ai-agent|Xnurta_Amazon广告AI_Agent]], [[perpetua_电商广告平台|perpetua_电商广告平台]], [[ppc_entourage_amazonppc工具|ppc_entourage_amazonppc工具]], [[亚马逊投流决策助手_跨境电商ai决策|亚马逊投流决策助手_跨境电商ai决策]]
+**竞品**：[[xnurta_amazon广告ai-agent|Xnurta_Amazon广告AI_Agent]], [[perpetua_电商广告平台|perpetua_电商广告平台]], [[ppc_entourage_amazonppc工具|ppc_entourage_amazonppc工具]], [[投流决策助手_跨境电商ai决策|投流决策助手_跨境电商ai决策]]
 
 # 🏢 Adspert（Amazon PPC 广告优化 · 2024-12 被 Mirakl 收购）
 
@@ -47,7 +47,7 @@ tags:
 
 ## 4. sasa 实际使用反馈
 
-> 来源：`~/Desktop/AILab/方向探索/亚马逊投流决策助手/痛点分析总结.docx`
+> 来源：`~/Desktop/AILab/方向探索/投流决策助手/痛点分析总结.docx`
 
 - sasa 团队**在用 Adspert**，并且**说好用**——是 sasa 访谈中**唯一被明确表态正面的外部工具**
 - sasa 将其归类为"类别四：广告投放&自动化（花钱效率）"，用途为"解决广告不可控/人工太慢"
@@ -59,7 +59,7 @@ tags:
 - [2024-12-10] 被 Mirakl 收购（TechCrunch、ChannelX 报道）
 - [2024-12-10] Adspert CEO Stephanie Richter 表示"将 Adspert 的 AI 广告软件推向全球舞台"
 
-## 6. 与主人方向「亚马逊投流决策助手」的关系
+## 6. 与主人方向「投流决策助手」的关系
 
 | 维度 | Adspert | 主人项目 |
 |------|---------|---------|

@@ -3,6 +3,7 @@ title: Lilian
 created: 2026-04-25
 updated: 2026-04-25
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -18,6 +19,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: Apple Recruits Google Veteran Lilian Rincon to Lead AI Product Marketing MLQ.ai
+- 2026-05-15: Former Google VP to lead Apple's AI product marketing AppleInsider
+- 2026-05-15: Apple hires Google exec to lead AI marketing Axios
+- 2026-05-15: Apple Recruits Google Veteran Lilian Rincon to Lead AI Product Marketing MLQ.ai
+- 2026-05-15: Former Google VP to lead Apple's AI product marketing AppleInsider
+- 2026-05-15: Apple hires Google exec to lead AI marketing Axios
+- 2026-05-15: Apple Recruits Google Veteran Lilian Rincon to Lead AI Product Marketing MLQ.ai
+- 2026-05-15: Former Google VP to lead Apple's AI product marketing AppleInsider
+- 2026-05-15: Apple hires Google exec to lead AI marketing Axios
 - 2026-04-25: =0||w[1]===e){ft=!1;break}ft&&l++;var et=t(o.startTime,i),lt=s(o.duration),at=t(o.connectStart,i),vt=o.secureConnectionS
 - 2026-04-25: May 16, 2018&nbsp;&#0183;&#32;In a new policy from my company (non-native English, but English is the corporate language
 - 2026-04-24 (Twitter): Lilian Weng@lilianweng·Oct 2, 2025GPUs are expensive and setting up the infrastructure to make GPUs 

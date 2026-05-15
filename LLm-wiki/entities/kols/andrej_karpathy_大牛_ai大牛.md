@@ -3,6 +3,7 @@ title: Andrej
 created: 2026-05-10
 updated: 2026-05-10
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #agentic_engineering
@@ -64,6 +65,15 @@ tags:
 - "Agency > Intelligence" — [@karpathy 2025-02-25](https://x.com/karpathy)
 
 ## 近期动态
+- 2026-05-15: Andrej Karpathy, Tesla's AI director announces his departure Not a Tesla App
+- 2026-05-15: “Enough with the Walls of Text” — Andrej Karpathy’s Simple Lifehack: Just Ask AI for HTML quasa.io
+- 2026-05-15: The man who coined the term 'vibe coding' says code written by AI can still be 'awkward' and 'gross' Business Insider
+- 2026-05-15: Andrej Karpathy, Tesla's AI director announces his departure Not a Tesla App
+- 2026-05-15: “Enough with the Walls of Text” — Andrej Karpathy’s Simple Lifehack: Just Ask AI for HTML quasa.io
+- 2026-05-15: The man who coined the term 'vibe coding' says code written by AI can still be 'awkward' and 'gross' Business Insider
+- 2026-05-15: Andrej Karpathy, Tesla's AI director announces his departure Not a Tesla App
+- 2026-05-15: “Enough with the Walls of Text” — Andrej Karpathy’s Simple Lifehack: Just Ask AI for HTML quasa.io
+- 2026-05-15: The man who coined the term 'vibe coding' says code written by AI can still be 'awkward' and 'gross' Business Insider
 - 2026-05-10: [2026-05-05] Comment: karpathy/nanochat — Question: Normalization blends positional information?: Yeah
 - 2026-05-10: [2026-05-05] Push: karpathy/nanochat — (无 commit 信息)
 - 2026-05-10: [2026-04-14] Push: karpathy/nanochat — (无 commit 信息)

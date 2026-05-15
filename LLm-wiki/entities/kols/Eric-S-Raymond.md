@@ -2,7 +2,8 @@
 title: Eric_S_Raymond
 created: 2026-05-14
 updated: 2026-05-14
-type: entity
+type: kols
+kol_domain: ai
 tags: [ai, kol]
 sources: []
 confidence: medium

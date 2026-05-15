@@ -3,6 +3,7 @@ title: Sam
 created: 2026-05-10
 updated: 2026-05-10
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -17,6 +18,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: Global activation of 'Sam' ushers in a new era of AI intelligence for FCM Travel customers The Manila Times
+- 2026-05-15: FCM Travel Unveils Sam AI Ecosystem Globally, Transforming Corporate Travel Management with Advanced Artificial Intellig
+- 2026-05-15: Mira Murati tells the court that she couldn’t trust Sam Altman’s words The Verge
+- 2026-05-15: Live Updates: Sam Altman Testifies That Elon Musk Wanted Control of OpenAI The New York Times
+- 2026-05-15: FCM Travel Unveils Sam AI Ecosystem Globally, Transforming Corporate Travel Management with Advanced Artificial Intellig
+- 2026-05-15: Sam Altman Frets That Frontier AI Models Are Acting Strange, Asking for Favors Futurism
+- 2026-05-15: Global activation of 'Sam' ushers in a new era of AI intelligence for FCM Travel customers The Manila Times
+- 2026-05-15: FCM Travel Unveils Sam AI Ecosystem Globally, Transforming Corporate Travel Management with Advanced Artificial Intellig
+- 2026-05-15: Mira Murati tells the court that she couldn’t trust Sam Altman’s words The Verge
 - 2026-05-10: OpenAI CEO Sam Altman is worried about the ‘rate of change that’s happening’ now thanks to ChatGPT Fortune
 - 2026-05-10: Meet Marc Toberoff, Elon Musk’s Hollywood-Loving Lawyer Facing Off Against Sam Altman Vanity Fair
 - 2026-05-10: Can Sam Altman Be Trusted with the Future? The New Yorker

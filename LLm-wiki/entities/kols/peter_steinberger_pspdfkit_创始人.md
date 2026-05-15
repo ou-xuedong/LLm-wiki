@@ -3,6 +3,7 @@ title: Peter
 created: 2026-04-27
 updated: 2026-04-27
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #AI产品
@@ -40,3 +41,16 @@ Peter 是从 PSPDFKit 创始人转型为 OpenClaw 核心贡献者的典型硅谷
 - [2026-04-27] 发布 Summarize 0.14.0，新增 GPT-5.5 `--fast` 模式、本地 PDF 提取、Reddit .json 提取
 - [2026-04-24] OpenClaw 相关动态更新（来源：Twitter @steipete）
 - [2026-02-16] 宣布加入 OpenAI，专注将 agents 带给所有人
+
+
+## 近期动态
+- 2026-05-15: AI-powered bank founded by Peter Thiel protégé wants to replace humans with code — will it work? New York Post
+- 2026-05-15: Peter Thiel-Backed Startup Bets Its AI Can Boost Hiring WSJ
+- 2026-05-15: Peter Jackson Says ‘I Don’t Dislike’ AI in Film, Explains Not Directing Next ‘Lord of the Rings’ Movie and Claims AI Deb
+- 2026-05-15: AI-powered bank founded by Peter Thiel protégé wants to replace humans with code — will it work? New York Post
+- 2026-05-15: Peter Thiel-Backed Startup Bets Its AI Can Boost Hiring WSJ
+- 2026-05-15: Peter Jackson Says ‘I Don’t Dislike’ AI in Film, Explains Not Directing Next ‘Lord of the Rings’ Movie and Claims AI Deb
+
+- 2026-05-15: Peter Thiel-Backed Startup Bets Its AI Can Boost Hiring WSJ
+- 2026-05-15: Peter Jackson Says ‘I Don’t Dislike’ AI in Film, Explains Not Directing Next ‘Lord of the Rings’ Movie and Claims AI Deb
+- 2026-05-15: AI-powered bank founded by Peter Thiel protégé wants to replace humans with code — will it work? New York Post

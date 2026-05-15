@@ -3,6 +3,7 @@ title: Ilya
 created: 2026-04-24
 updated: 2026-04-24
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -21,6 +22,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: After Failed Attempt To Acquire Ilya Sutskever's $32B AI Startup, Meta Poaches Its Top Boss: Report MSN
+- 2026-05-15: Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’ WIRED
+- 2026-05-15: Ilya Sutskever Testifies He Holds $7 Billion OpenAI Stake—Second New Billionaire Revealed In Musk-Altman Trial Forbes
+- 2026-05-15: After Failed Attempt To Acquire Ilya Sutskever's $32B AI Startup, Meta Poaches Its Top Boss: Report MSN
+- 2026-05-15: Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’ WIRED
+- 2026-05-15: Ilya Sutskever Testifies He Holds $7 Billion OpenAI Stake—Second New Billionaire Revealed In Musk-Altman Trial Forbes
+- 2026-05-15: After Failed Attempt To Acquire Ilya Sutskever's $32B AI Startup, Meta Poaches Its Top Boss: Report MSN
+- 2026-05-15: Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’ WIRED
+- 2026-05-15: Ilya Sutskever Testifies He Holds $7 Billion OpenAI Stake—Second New Billionaire Revealed In Musk-Altman Trial Forbes
 - 2026-04-24 (Twitter): Ilya Sutskever@ilyasut·Oct 14, 2025truly the greatest day ever8321K16K1.8M
 - 2026-04-24 (Twitter): Ilya Sutskever@ilyasut·Sep 4, 2025a revolutionary breakthrough if i've ever seen oneQuoteAlps@alpays
 - 2026-04-24 (Twitter): Ilya Sutskever@ilyasut·Nov 20, 2023I deeply regret my participation in the board's actions. I never 

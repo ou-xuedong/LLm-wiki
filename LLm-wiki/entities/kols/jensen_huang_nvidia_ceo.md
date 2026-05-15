@@ -3,6 +3,7 @@ title: Jensen
 created: 2026-04-06
 updated: 2026-04-06
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---

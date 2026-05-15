@@ -3,6 +3,7 @@ title: Jim
 created: 2026-04-24
 updated: 2026-04-24
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -22,6 +23,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: Cerebras is the hot new AI chipmaker. Here's Jim Cramer's advice on the stock CNBC
+- 2026-05-15: Jim Cramer Makes Major Revelation About HubSpot (HUBS) & Agentic AI Yahoo Finance
+- 2026-05-15: Affirm (AFRM) Is Doing The Right Thing With AI, Says Jim Cramer Insider Monkey
+- 2026-05-15: Cerebras is the hot new AI chipmaker. Here's Jim Cramer's advice on the stock CNBC
+- 2026-05-15: Jim Cramer Makes Major Revelation About HubSpot (HUBS) & Agentic AI Yahoo Finance
+- 2026-05-15: Affirm (AFRM) Is Doing The Right Thing With AI, Says Jim Cramer Insider Monkey
+- 2026-05-15: Cerebras is the hot new AI chipmaker. Here's Jim Cramer's advice on the stock CNBC
+- 2026-05-15: Jim Cramer Makes Major Revelation About HubSpot (HUBS) & Agentic AI Yahoo Finance
+- 2026-05-15: Affirm (AFRM) Is Doing The Right Thing With AI, Says Jim Cramer Insider Monkey
 - 2026-04-24 (Twitter): PinnedJim Fan@DrJimFan·Feb 4 ArticleThe Second Pre-training ParadigmNext word prediction was the fir
 - 2026-04-24 (Twitter): Jim Fan@DrJimFan·Jan 20, 2025We are living in a timeline where a non-US company is keeping the origi
 - 2026-04-24 (Twitter): PinnedJim Fan@DrJimFan·Feb 4 ArticleThe Second Pre-training ParadigmNext word prediction was the fir

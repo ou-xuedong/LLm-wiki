@@ -2,7 +2,8 @@
 title: 奇绩创坛_前沿应用早期VC
 created: 2026-05-14
 updated: 2026-05-14
-type: entity
+type: kols
+kol_domain: vc
 tags: [ai, 投资人]
 sources: []
 confidence: medium

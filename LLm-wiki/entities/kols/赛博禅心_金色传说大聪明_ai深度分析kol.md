@@ -3,6 +3,7 @@ title: 赛博禅心
 created: 2026-04-27
 updated: 2026-04-27
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #AI深度分析

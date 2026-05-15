@@ -161,7 +161,7 @@ confidence: high
 **关键论断**："**代码 diff 是空间信息，Markdown 把它压平了，HTML 能把它还原回来**"。
 
 **对位主人项目**：
-- 产品研发型 S3 Code Review（亚马逊投流 / 算力 / 知识自进化引擎）
+- 产品研发型 S3 Code Review（投流决策助手 / 算力 / 知识自进化引擎）
 - 替代 GitHub 默认 diff 视图——给主人评审 + 给团队成员浏览
 - 已纳入 `_shared/产品研发型.md` §1.5.1 的 S3 行"Sprint 末评审 HTML / 架构图 HTML 快照"
 

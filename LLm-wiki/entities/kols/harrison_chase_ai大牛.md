@@ -3,6 +3,7 @@ title: Harrison
 created: 2026-05-10
 updated: 2026-05-10
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -18,6 +19,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: A provocative proposal asks the FDA to let some AI devices on the market without review statnews.com
+- 2026-05-15: Harrison.ai Continues to Grow Open Platform Ecosystem, Welcomes Four New AI Partners Business Wire
+- 2026-05-15: Harrison.ai receives US FDA clearance for acute infarct triage on non-contrast CT Brain imaging solution NeuroNews Inter
+- 2026-05-15: A provocative proposal asks the FDA to let some AI devices on the market without review statnews.com
+- 2026-05-15: Harrison.ai Continues to Grow Open Platform Ecosystem, Welcomes Four New AI Partners Business Wire
+- 2026-05-15: Harrison.ai receives US FDA clearance for acute infarct triage on non-contrast CT Brain imaging solution NeuroNews Inter
+- 2026-05-15: A provocative proposal asks the FDA to let some AI devices on the market without review statnews.com
+- 2026-05-15: Harrison.ai Continues to Grow Open Platform Ecosystem, Welcomes Four New AI Partners Business Wire
+- 2026-05-15: Harrison.ai receives US FDA clearance for acute infarct triage on non-contrast CT Brain imaging solution NeuroNews Inter
 - 2026-05-10: LangChain’s Harrison Chase on Building the Orchestration Layer for AI Agents Sequoia Capital
 - 2026-05-10: LangChain's CEO argues that better models alone won't get your AI agent to production Venturebeat
 - 2026-05-10: Exclusive: Early AI darling LangChain is now a unicorn with a fresh $125 million in funding Fortune

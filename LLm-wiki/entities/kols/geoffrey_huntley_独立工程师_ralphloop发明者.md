@@ -3,6 +3,7 @@ title: Geoffrey
 created: 2026-05-07
 updated: 2026-05-07
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #AI编程
@@ -58,3 +59,16 @@ tags:
 2. [github.com/ghuntley/how-to-ralph-wiggum](https://github.com/ghuntley/how-to-ralph-wiggum) — 可执行 repo + 多项目脚手架
 3. [ghuntley.com/six-month-recap](https://ghuntley.com/six-month-recap/) — 半年实践复盘
 4. [Dev Interrupted #256 播客](https://www.youtube.com/watch?v=C1YNGy6qusg) — 亲口讲为何笨循环跑赢复杂框架
+
+
+## 近期动态
+- 2026-05-15: Geoffrey Pohanka Frames AI as Systemic Risk or Bogeyman Let's Data Science
+- 2026-05-15: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
+- 2026-05-15: 'Godfather Of AI' Geoffrey Hinton Said AI Would Replace Radiologists—A Decade Later, Demand Is Surging, Salaries Are Soa
+- 2026-05-15: Geoffrey Pohanka Frames AI as Systemic Risk or Bogeyman Let's Data Science
+- 2026-05-15: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
+- 2026-05-15: 'Godfather Of AI' Geoffrey Hinton Said AI Would Replace Radiologists—A Decade Later, Demand Is Surging, Salaries Are Soa
+
+- 2026-05-15: Geoffrey Pohanka Frames AI as Systemic Risk or Bogeyman Let's Data Science
+- 2026-05-15: AI Godfather Geoffrey Hinton Calls For Brakes On Runaway AI Development Eurasia Review
+- 2026-05-15: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit

@@ -3,6 +3,7 @@ title: Boris
 created: 2026-05-14
 updated: 2026-05-14
 type: kols
+kol_domain: ai
 tags:
 ---
 
@@ -49,6 +50,15 @@ tags:
 - 随着模型能力提升，以下安全机制的必要性降低：prompt injection 防护、静态命令验证、permission mode、human-in-the-loop 干预
 
 ## 近期动态
+- 2026-05-15: Boris FX Continuum Pairs AI Precision and Advanced Creative Controls SHOOTonline
+- 2026-05-15: Claude Code's creator says his setup involves thousands of AI sub-agents doing 'deeper work' overnight Business Insider
+- 2026-05-15: Salesforce and Hugging Face execs co-found Sustainable AI Group Trellis Group (formerly GreenBiz)
+- 2026-05-15: Boris FX Continuum Pairs AI Precision and Advanced Creative Controls SHOOTonline
+- 2026-05-15: Claude Code's creator says his setup involves thousands of AI sub-agents doing 'deeper work' overnight Business Insider
+- 2026-05-15: Salesforce and Hugging Face execs co-found Sustainable AI Group Trellis Group (formerly GreenBiz)
+- 2026-05-15: Boris FX Continuum Pairs AI Precision and Advanced Creative Controls SHOOTonline
+- 2026-05-15: Claude Code's creator says his setup involves thousands of AI sub-agents doing 'deeper work' overnight Business Insider
+- 2026-05-15: Salesforce and Hugging Face execs co-found Sustainable AI Group Trellis Group (formerly GreenBiz)
 - 2026-05-10: Claude Code's creator is sick of the phrase 'vibe coding.' Suggest your alternative here. Business Insider
 - 2026-05-10: Anthropic's Boris Cherny once again reminds 'software engineering' is dead; says: At Anthropic, there's n The Times of I
 - 2026-05-10: Anthropic's Boris Cherny: Coding is Solved, What's Next? StartupHub.ai

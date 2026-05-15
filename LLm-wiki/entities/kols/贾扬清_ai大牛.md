@@ -3,6 +3,7 @@ title: 贾扬清
 created: 2026-04-25
 updated: 2026-04-25
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---

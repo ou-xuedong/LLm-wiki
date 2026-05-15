@@ -3,6 +3,7 @@ title: Clement
 created: 2026-05-10
 updated: 2026-05-10
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -18,6 +19,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: College Students, Professors are Making Their Own AI Rules. They Don't Always Agree KQED
+- 2026-05-15: For Cyprien Clément-Delmas, with the Rise of AI, Reality and Authenticity Have Become Even More Valuable Little Black Bo
+- 2026-05-15: Diana Clement: How AI can and can't help you with your finances NZ Herald
+- 2026-05-15: College Students, Professors are Making Their Own AI Rules. They Don't Always Agree KQED
+- 2026-05-15: For Cyprien Clément-Delmas, with the Rise of AI, Reality and Authenticity Have Become Even More Valuable Little Black Bo
+- 2026-05-15: How One Art Shipping Company Is Pairing A.I.-Driven Efficiencies With Hands-On Human Attention observer.com
+- 2026-05-15: College Students, Professors are Making Their Own AI Rules. They Don't Always Agree KQED
+- 2026-05-15: For Cyprien Clément-Delmas, with the Rise of AI, Reality and Authenticity Have Become Even More Valuable Little Black Bo
+- 2026-05-15: Diana Clement: How AI can and can't help you with your finances NZ Herald
 - 2026-05-10: Hugging Face CEO says we’re in an ‘LLM bubble,’ not an AI bubble TechCrunch
 - 2026-05-10: Why open-source AI became an American national priority Venturebeat
 - 2026-05-10: DeepSeek releases first open AI model with gold-level scores at maths olympiad South China Morning Post

@@ -3,6 +3,7 @@ title: Greg
 created: 2026-05-10
 updated: 2026-05-10
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -17,6 +18,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: Beware what you tell your AI chatbot. It’s not a shrink – it’s a snitch | Arwa Mahdawi The Guardian
+- 2026-05-15: AL Interview: Greg Lambert – The Realities of Legal AI Adoption Artificial Lawyer
+- 2026-05-15: Greg Brockman’s Rough Day The Information
+- 2026-05-15: Beware what you tell your AI chatbot. It’s not a shrink – it’s a snitch | Arwa Mahdawi The Guardian
+- 2026-05-15: AL Interview: Greg Lambert – The Realities of Legal AI Adoption Artificial Lawyer
+- 2026-05-15: Greg Brockman’s Rough Day The Information
+- 2026-05-15: Beware what you tell your AI chatbot. It’s not a shrink – it’s a snitch | Arwa Mahdawi The Guardian
+- 2026-05-15: Greg Brockman’s Rough Day The Information
+- 2026-05-15: OpenAI President Greg Brockman on GPT-5.5 “Spud,” AI Model Moats, and a 'Compute Powered Economy' Big Technology | Alex 
 - 2026-05-10: Greg Brockman says his stake in OpenAI is worth nearly $30 billion Business Insider
 - 2026-05-10: OpenAI president Greg Brockman explains how the company allocates GPUs internally: 'pain and suffering' Business Insider
 - 2026-05-10: Elon Musk Wanted OpenAI to Go Commercial, Company President Says The New York Times

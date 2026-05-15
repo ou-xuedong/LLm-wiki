@@ -1,5 +1,5 @@
 ---
-title: 亚马逊投流决策助手
+title: 投流决策助手
 created: 2026-04-27
 updated: 2026-04-27
 type: companies
@@ -9,14 +9,14 @@ tags:
   - #SaaS
 ---
 
-# 亚马逊投流决策助手
+# 投流决策助手
 
 
 ## 关联
 
 **竞品**：[[Agent|Xnurta_Amazon广告AI Agent]], [[Linkfox-跨境电商AI工具|Linkfox_跨境电商AI工具]], [[Helium-10-亚马逊卖家工具|Helium_10_亚马逊卖家工具]], [[ppc_entourage_amazonppc工具|ppc_entourage_amazonppc工具]], [[perpetua_电商广告平台|perpetua_电商广告平台]]
 
-# 🎯 亚马逊投流决策助手
+# 🎯 投流决策助手
 
 ## 1. 核心定位与业务模式
 为资深亚马逊运营人员提供 AI 驱动的投流决策建议，核心是**捕获隐性决策经验**，形成可进化、可复用的 System of Decision。从辅助决策起步，逐步演化为半自主 Agent，适应 AI 时代购物决策变化。
@@ -44,4 +44,4 @@ tags:
 
 ## 4. 重大事件与动态
 - [2026-04-17] 方向启动，进入初步探索阶段。关联[[system_of_decision|system_of_decision]]概念与[[linkfox与跨境电商ai产品破局洞察|linkfox与跨境电商ai产品破局洞察]]。
-- [2026-04-27] 完成与 [[Agent|Xnurta_Amazon广告AI Agent]] 全维度对比研究，确认 🔴 高威胁等级；五看 §3 竞品矩阵新增 Xnurta；护城河补充"人机主体颠倒"哲学维度；客群冲突已成立（不是长期问题）。详见 [[跨境电商ai决策助手破局洞察|跨境电商ai决策助手破局洞察]] 与 `方向探索/亚马逊投流决策助手/S1_方向探索/讨论记录/2026-04-27_Xnurta对比研究.md`。
+- [2026-04-27] 完成与 [[Agent|Xnurta_Amazon广告AI Agent]] 全维度对比研究，确认 🔴 高威胁等级；五看 §3 竞品矩阵新增 Xnurta；护城河补充"人机主体颠倒"哲学维度；客群冲突已成立（不是长期问题）。详见 [[跨境电商ai决策助手破局洞察|跨境电商ai决策助手破局洞察]] 与 `方向探索/投流决策助手/S1_方向探索/讨论记录/2026-04-27_Xnurta对比研究.md`。

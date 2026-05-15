@@ -3,6 +3,7 @@ title: Francois
 created: 2026-04-24
 updated: 2026-04-24
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -22,6 +23,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: CGI names Tim Hurlebaus as CEO amid AI challenges The Globe and Mail
+- 2026-05-15: Toyota reveals grand AI vision for vehicles and beyond WardsAuto
+- 2026-05-15: A top AI researcher explains the limitations of current models Fast Company
+- 2026-05-15: CGI names Tim Hurlebaus as CEO amid AI challenges The Globe and Mail
+- 2026-05-15: Toyota reveals grand AI vision for vehicles and beyond WardsAuto
+- 2026-05-15: Hitting the 'GenAI wall': Where generative AI stops working, and what it means for your talent strategy Fortune
+- 2026-05-15: CGI names Tim Hurlebaus as CEO amid AI challenges The Globe and Mail
+- 2026-05-15: Toyota reveals grand AI vision for vehicles and beyond WardsAuto
+- 2026-05-15: ﻿Rethink ﻿Responsibility in the Age of AI MIT Sloan Management Review
 - 2026-04-24 (Twitter): PinnedFrançois Chollet@fchollet·Mar 26ARC-AGI-3 is out now! We've designed the benchmark to evaluate
 - 2026-04-24 (Twitter): François Chollet@fchollet·Oct 31, 2025Replying to @guy_dar1There is no AI approach that can do what 
 - 2026-04-24 (Twitter): PinnedFrançois Chollet@fchollet·Mar 26ARC-AGI-3 is out now! We've designed the benchmark to evaluate

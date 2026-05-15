@@ -18,5 +18,20 @@
 - 执行：坏链修复(255→0)、stub补页(115)、index重建(428页)、sha256修复、taxonomy扩展
 - 孤儿页: 182（预期，迁移后遗症，无需处理）
 - 超长页面: 5个（需人工拆分，见lint报告）
-- 更新：index.md、SCHEMA.md、raw/articles/机智流-从SFT到继续预训练-2026.md
+
+## [2026-05-15] ingest | 全自动开发！一战封神！GLM5.1（数字游牧人/B站）
+- 新增 raw：`raw/transcripts/数字游牧人-glm5.1全自动开发-2026-04-08.md`（字幕全文）
+- 更新 entity：`entities/vcs/智谱_ai_z基金_大模型生态cvc.md`（GLM-5.1产品信息）
+
+## [2026-05-15] ingest | 数字游牧人·GLM5全自动开发系统（BV1zZcYz1EMy）
+- 新增 raw：`raw/transcripts/数字游牧人-glm5全自动开发系统-2026-02-12.md`（字幕全文）
+- 主题：10小时全自动开发，task.json+progress.txt+cloud.md三文件循环
+
+## [2026-05-15] ingest | 数字游牧人·ClaudeCode保姆级速成（BV1kX546QEjG）
+- 新增 raw：`raw/transcripts/数字游牧人-保姆级ClaudeCode速成-2026-05-11.md`（字幕全文）
+- 主题：Claude Code=Harness层，Kimi K2.6性价比最优，MCP/Skills/Context管理
+
+## [2026-05-15] ingest | 数字游牧人·如何用AI深度学会任何领域（BV1Sh516SEx1）
+- 新增 raw：`raw/transcripts/数字游牧人-如何用AI深度学会任何领域-2026-05-13.md`（字幕全文）
+- 主题：豆包专家模式五步调研法，Harness思维，任务切分替代长提示词
 

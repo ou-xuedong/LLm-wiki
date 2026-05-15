@@ -3,6 +3,7 @@ title: 玄姐
 created: 2026-05-01
 updated: 2026-05-01
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #AI架构

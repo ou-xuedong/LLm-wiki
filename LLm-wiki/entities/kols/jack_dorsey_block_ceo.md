@@ -3,6 +3,7 @@ title: Jack
 created: 2026-04-09
 updated: 2026-04-09
 type: kols
+kol_domain: ai
 tags:
   - #人物
   - #硅谷

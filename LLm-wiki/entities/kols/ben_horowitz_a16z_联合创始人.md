@@ -3,6 +3,7 @@ title: Ben
 created: 2026-04-22
 updated: 2026-04-22
 type: kols
+kol_domain: vc
 tags:
   - #VC
   - #AI

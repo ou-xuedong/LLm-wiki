@@ -3,6 +3,7 @@ title: Demis
 created: 2026-05-07
 updated: 2026-05-07
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #AI科学家

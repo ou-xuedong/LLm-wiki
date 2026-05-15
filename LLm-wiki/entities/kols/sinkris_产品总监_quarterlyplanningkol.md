@@ -3,6 +3,7 @@ title: SinKris
 created: 2026-04-30
 updated: 2026-04-30
 type: kols
+kol_domain: ai
 tags:
   - #KOL
   - #产品管理

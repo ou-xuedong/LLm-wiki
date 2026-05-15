@@ -3,6 +3,7 @@ title: Yann
 created: 2026-04-24
 updated: 2026-04-24
 type: kols
+kol_domain: ai
 tags:
   - #KOL
 ---
@@ -21,6 +22,15 @@ tags:
 
 
 ## 近期动态
+- 2026-05-15: Yann Lecun Is Optimistic That AI Will Lead to a Better World Time Magazine
+- 2026-05-15: AI godfather Yann LeCun's advice on college, work and breaking through AI hype Axios
+- 2026-05-15: In lecture at Brown, Yann LeCun discusses a new approach to AI Brown University
+- 2026-05-15: Yann Lecun Is Optimistic That AI Will Lead to a Better World Time Magazine
+- 2026-05-15: AI godfather Yann LeCun's advice on college, work and breaking through AI hype Axios
+- 2026-05-15: In lecture at Brown, Yann LeCun discusses a new approach to AI Brown University
+- 2026-05-15: Yann Lecun Is Optimistic That AI Will Lead to a Better World Time Magazine
+- 2026-05-15: AI godfather Yann LeCun's advice on college, work and breaking through AI hype Axios
+- 2026-05-15: In lecture at Brown, Yann LeCun discusses a new approach to AI Brown University
 - 2026-04-24 (Twitter): Yann LeCun@ylecun·Jan 25, 2025To people who think "China is surpassing the US in AI" the correct tho
 - 2026-04-24 (Twitter): PinnedYann LeCun@ylecun·Nov 30, 2024I do not write posts on X. I tweet links to posts on other platf
 - 2026-04-24 (Twitter): PinnedYann LeCun@ylecun·Nov 30, 2024I do not write posts on X. I tweet links to posts on other platf
