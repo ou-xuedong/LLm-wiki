@@ -13,7 +13,7 @@ PWD_NOW="$(pwd -P)"
 
 # ── 决定同步范围 ──
 if [[ "$PWD_NOW" == "$AILAB" || "$PWD_NOW" == "$HOME" ]]; then
-    SCOPE=("." "知识库" "方向探索" "卟卟鸡投资决策" "投资决策" "投流决策助手" "知识存储与自进化引擎" "autoResearch实验室")
+    SCOPE=("." "LLm-wiki" "方向探索" "卟卟鸡投资决策" "投资决策" "投流决策助手" "知识存储与自进化引擎" "autoResearch实验室")
     LABEL_DOT="meta"
     if [[ "$PWD_NOW" == "$HOME" ]]; then
         echo "📍 在家目录（视同 AILab 根）→ 同步 meta + 7 子项目"
