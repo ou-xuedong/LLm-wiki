@@ -22,6 +22,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’ WIRED
+- 2026-05-17: Ilya Sutskever Testifies He Holds $7 Billion OpenAI Stake—Second New Billionaire Revealed In Musk-Altman Trial Forbes
+- 2026-05-17: Ex-OpenAI exec Sutskever says he spent a year gathering proof of alleged Altman dishonesty Reuters
 - 2026-05-15: After Failed Attempt To Acquire Ilya Sutskever's $32B AI Startup, Meta Poaches Its Top Boss: Report MSN
 - 2026-05-15: Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’ WIRED
 - 2026-05-15: Ilya Sutskever Testifies He Holds $7 Billion OpenAI Stake—Second New Billionaire Revealed In Musk-Altman Trial Forbes

@@ -44,6 +44,9 @@ Peter 是从 PSPDFKit 创始人转型为 OpenClaw 核心贡献者的典型硅谷
 
 
 ## 近期动态
+- 2026-05-17: For $1.3 million a month, OpenClaw founder Peter Steinberger runs 100 AI agents that code, review PRs, and find bugs the
+- 2026-05-17: Peter Jackson Talks Upcoming Projects, AI's Role in Filmmaking: "It's Just a Tool Like Any Other" The Hollywood Reporter
+- 2026-05-17: Peter Thiel-Backed Startup Bets Its AI Can Boost Hiring WSJ
 - 2026-05-15: AI-powered bank founded by Peter Thiel protégé wants to replace humans with code — will it work? New York Post
 - 2026-05-15: Peter Thiel-Backed Startup Bets Its AI Can Boost Hiring WSJ
 - 2026-05-15: Peter Jackson Says ‘I Don’t Dislike’ AI in Film, Explains Not Directing Next ‘Lord of the Rings’ Movie and Claims AI Deb

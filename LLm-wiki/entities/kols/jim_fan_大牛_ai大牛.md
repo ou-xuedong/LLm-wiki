@@ -23,6 +23,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: Jim Cramer says it's time to trim this volatile AI chipmaker CNBC
+- 2026-05-17: Billionaire Jim Goodnight Built An Analytics Profit Machine. AI Is Forcing Its Reinvention Forbes
+- 2026-05-17: Jim Cramer Says Buy 2 Artificial Intelligence (AI) Stocks Down 24% and 46% Before They Soar Yahoo Finance
 - 2026-05-15: Cerebras is the hot new AI chipmaker. Here's Jim Cramer's advice on the stock CNBC
 - 2026-05-15: Jim Cramer Makes Major Revelation About HubSpot (HUBS) & Agentic AI Yahoo Finance
 - 2026-05-15: Affirm (AFRM) Is Doing The Right Thing With AI, Says Jim Cramer Insider Monkey

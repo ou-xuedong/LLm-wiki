@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目研发流程 · 特性卡演示</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .lane-card { transition: all 0.2s; }
+    .lane-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .stage-pill { position: relative; }
+    .stage-pill:not(:last-child)::after {
+      content: ""; position: absolute; right: -8px; top: 50%; transform: translateY(-50%);
+      width: 0; height: 0; border-left: 8px solid currentColor; border-top: 6px solid transparent; border-bottom: 6px solid transparent;
+    }
+    .pulse-red { animation: pulse-red 2s infinite; }
+    @keyframes pulse-red {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5); }
+      50% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- ===== 顶栏 ===== -->
+<header class="bg-white border-b border-slate-200 sticky top-0 z-10">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <h1 class="text-lg font-semibold">📋 项目研发流程</h1>
+      <span class="text-xs text-slate-400">L1 总览看板 · 演示版</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <select class="text-sm border border-slate-300 rounded px-3 py-1.5">
+        <option>📁 投资决策（当前）</option>
+        <option>📁 投流决策助手</option>
+        <option>📁 知识存储与自进化引擎</option>
+      </select>
+      <button class="bg-blue-600 text-white text-sm px-4 py-1.5 rounded hover:bg-blue-700">+ 新建卡</button>
+      <button class="bg-emerald-600 text-white text-sm px-4 py-1.5 rounded hover:bg-emerald-700">▶ 推一轮</button>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 py-6 space-y-6">
+
+  <!-- ===== 项目阶段进度条 ===== -->
+  <section class="bg-white rounded-lg border border-slate-200 p-5">
+    <div class="flex items-center justify-between mb-3">
+      <div>
+        <h2 class="font-semibold text-slate-800">投资决策 · S3 研发落地</h2>
+        <p class="text-xs text-slate-500 mt-0.5">📐深度分析 · 守稳型 · 启动于 2026-04-15</p>
+      </div>
+      <div class="text-xs text-slate-500">last action: 2026-05-14 14:32 / Agent 自动推进 #003</div>
+    </div>
+    <div class="flex items-center gap-2 text-xs">
+      <span class="stage-pill bg-emerald-500 text-white px-3 py-1.5 rounded">S1 方向探索 ✓</span>
+      <span class="stage-pill bg-emerald-500 text-white px-3 py-1.5 rounded">S2 产品设计 ✓</span>
+      <span class="stage-pill bg-blue-600 text-white px-3 py-1.5 rounded font-semibold">S3 研发落地 ●</span>
+      <span class="bg-slate-200 text-slate-500 px-3 py-1.5 rounded">S4 上线交付</span>
+      <span class="bg-slate-200 text-slate-500 px-3 py-1.5 rounded">S5 持续迭代</span>
+    </div>
+  </section>
+
+  <!-- ===== 待审 gates 通知区 ===== -->
+  <section class="bg-red-50 border border-red-200 rounded-lg p-4">
+    <div class="flex items-start gap-3">
+      <div class="text-2xl">🚨</div>
+      <div class="flex-1">
+        <h3 class="font-semibold text-red-900 mb-2">3 个 gate 待审</h3>
+        <div class="space-y-2 text-sm">
+          <div class="flex items-center justify-between bg-white rounded px-3 py-2 border border-red-100">
+            <div>
+              <span class="inline-block w-2 h-2 rounded-full bg-red-500 mr-2 pulse-red"></span>
+              <span class="font-medium">🔴 硬人审 ·</span>
+              卡 #FC-002 ETF 扫描 — 实现完成，请审代码 review
+            </div>
+            <div class="flex gap-2">
+              <button class="text-xs bg-emerald-600 text-white px-3 py-1 rounded">✓ 放行</button>
+              <button class="text-xs bg-amber-500 text-white px-3 py-1 rounded">↩ 打回</button>
+              <button class="text-xs bg-slate-600 text-white px-3 py-1 rounded">🚚 拉走</button>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-white rounded px-3 py-2 border border-red-100">
+            <div>
+              <span class="inline-block w-2 h-2 rounded-full bg-red-500 mr-2"></span>
+              <span class="font-medium">🔴 硬人审 ·</span>
+              新需求 — "周月日三周期共振判断" 入池审批
+            </div>
+            <div class="flex gap-2">
+              <button class="text-xs bg-emerald-600 text-white px-3 py-1 rounded">✓ 入池</button>
+              <button class="text-xs bg-red-500 text-white px-3 py-1 rounded">✗ 拒绝</button>
+            </div>
+          </div>
+          <div class="flex items-center justify-between bg-white rounded px-3 py-2 border border-amber-200">
+            <div>
+              <span class="inline-block w-2 h-2 rounded-full bg-amber-500 mr-2"></span>
+              <span class="font-medium">🟡 软人审 ·</span>
+              卡 #FC-001 MACD 底背离 — 测试用例已生成，<span class="text-amber-700">3h 47min 后自动放行</span>
+            </div>
+            <div class="flex gap-2">
+              <button class="text-xs bg-emerald-600 text-white px-3 py-1 rounded">✓ 立即放行</button>
+              <button class="text-xs bg-amber-500 text-white px-3 py-1 rounded">↩ 介入</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Epic 1: 技术面分析体系 ===== -->
+  <section class="bg-white rounded-lg border border-slate-200 overflow-hidden">
+    <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex items-center justify-between">
+      <div>
+        <h2 class="font-semibold text-slate-800">📚 Epic 1 · 技术面分析体系</h2>
+        <p class="text-xs text-slate-500 mt-0.5">4 张卡 · 1 已完成 · 1 测试中 · 1 实现中 · 1 草案 · 进度 25%</p>
+      </div>
+      <div class="w-32 bg-slate-200 rounded-full h-2 overflow-hidden">
+        <div class="bg-emerald-500 h-2" style="width: 25%"></div>
+      </div>
+    </div>
+
+    <!-- 6 状态泳道 -->
+    <div class="grid grid-cols-6 gap-2 p-3 text-xs">
+      <!-- Lane: proposed -->
+      <div>
+        <div class="text-center text-slate-500 font-medium mb-2">📥 proposed</div>
+        <div class="lane-card bg-slate-50 border border-slate-200 rounded p-2 cursor-pointer">
+          <div class="font-mono text-slate-400 text-[10px]">#FC-003</div>
+          <div class="font-medium text-slate-800 mt-0.5 leading-snug">周月日三周期共振</div>
+          <div class="mt-1.5 flex gap-1">
+            <span class="bg-red-100 text-red-700 px-1.5 py-0.5 rounded text-[10px]">P0</span>
+            <span class="bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded text-[10px]">~6h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lane: designing -->
+      <div>
+        <div class="text-center text-slate-500 font-medium mb-2">📐 designing</div>
+        <div class="text-center text-slate-300 text-[10px] py-4">—</div>
+      </div>
+
+      <!-- Lane: implementing -->
+      <div>
+        <div class="text-center text-blue-600 font-medium mb-2">⚙️ implementing</div>
+        <div class="lane-card bg-blue-50 border border-blue-200 rounded p-2 cursor-pointer">
+          <div class="font-mono text-blue-400 text-[10px]">#FC-004</div>
+          <div class="font-medium text-slate-800 mt-0.5 leading-snug">MACD 顶背离识别</div>
+          <div class="mt-1.5 flex gap-1 flex-wrap">
+            <span class="bg-yellow-100 text-yellow-700 px-1.5 py-0.5 rounded text-[10px]">P1</span>
+            <span class="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded text-[10px]">~5h</span>
+            <span class="bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded text-[10px]">依 #001</span>
+          </div>
+          <div class="mt-1 text-[10px] text-slate-500">⏱ Agent 编码中 · 38% (2/5 验收)</div>
+        </div>
+      </div>
+
+      <!-- Lane: testing -->
+      <div>
+        <div class="text-center text-amber-600 font-medium mb-2">🧪 testing</div>
+        <div class="lane-card bg-amber-50 border border-amber-300 rounded p-2 cursor-pointer ring-2 ring-amber-300">
+          <div class="font-mono text-amber-500 text-[10px]">#FC-001</div>
+          <div class="font-medium text-slate-800 mt-0.5 leading-snug">MACD 底背离识别</div>
+          <div class="mt-1.5 flex gap-1 flex-wrap">
+            <span class="bg-red-100 text-red-700 px-1.5 py-0.5 rounded text-[10px]">P0</span>
+            <span class="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded text-[10px]">~6h</span>
+          </div>
+          <div class="mt-1 text-[10px] text-amber-700 font-medium">🟡 软 gate 待审 (3h47m)</div>
+        </div>
+      </div>
+
+      <!-- Lane: reviewing -->
+      <div>
+        <div class="text-center text-red-600 font-medium mb-2">👀 reviewing</div>
+        <div class="lane-card bg-red-50 border border-red-300 rounded p-2 cursor-pointer ring-2 ring-red-300 pulse-red">
+          <div class="font-mono text-red-400 text-[10px]">#FC-002</div>
+          <div class="font-medium text-slate-800 mt-0.5 leading-snug">ETF 列表底背离批量扫描</div>
+          <div class="mt-1.5 flex gap-1 flex-wrap">
+            <span class="bg-red-100 text-red-700 px-1.5 py-0.5 rounded text-[10px]">P0</span>
+            <span class="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded text-[10px]">~4h</span>
+            <span class="bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded text-[10px]">依 #001</span>
+          </div>
+          <div class="mt-1 text-[10px] text-red-700 font-medium">🔴 硬 gate 待审</div>
+        </div>
+      </div>
+
+      <!-- Lane: shipped -->
+      <div>
+        <div class="text-center text-emerald-600 font-medium mb-2">🚀 shipped</div>
+        <div class="lane-card bg-emerald-50 border border-emerald-200 rounded p-2 cursor-pointer">
+          <div class="font-mono text-emerald-400 text-[10px]">#FC-000</div>
+          <div class="font-medium text-slate-800 mt-0.5 leading-snug">MACD 三线计算（基础）</div>
+          <div class="mt-1.5 flex gap-1 flex-wrap">
+            <span class="bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded text-[10px]">✓ 2026-05-12</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Epic 2: 仓位决策（折叠示意） ===== -->
+  <section class="bg-white rounded-lg border border-slate-200">
+    <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex items-center justify-between">
+      <div>
+        <h2 class="font-semibold text-slate-800">📚 Epic 2 · 仓位决策</h2>
+        <p class="text-xs text-slate-500 mt-0.5">5 张卡 · 全部 proposed · 进度 0% · 等 Epic 1 完成解锁</p>
+      </div>
+      <div class="w-32 bg-slate-200 rounded-full h-2 overflow-hidden">
+        <div class="bg-slate-400 h-2" style="width: 0%"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 单卡详情：FC-001 MACD 底背离识别 ===== -->
+  <section class="bg-white rounded-lg border-2 border-amber-300 overflow-hidden">
+    <div class="bg-gradient-to-r from-amber-100 to-orange-50 px-5 py-4 border-b border-amber-200">
+      <div class="flex items-center justify-between">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-sm text-slate-500">#FC-001</span>
+            <span class="bg-red-100 text-red-700 text-xs px-2 py-0.5 rounded font-medium">P0</span>
+            <span class="bg-amber-200 text-amber-800 text-xs px-2 py-0.5 rounded font-medium">🧪 testing</span>
+          </div>
+          <h2 class="text-xl font-semibold mt-1">MACD 底背离识别（日线，单标的）</h2>
+          <p class="text-sm text-slate-500 mt-1">Epic: 技术面分析体系 · 估时 ~6h · 实际 4h32m · 创建 2026-05-13</p>
+        </div>
+        <div class="flex gap-2">
+          <button class="bg-emerald-600 text-white text-sm px-4 py-2 rounded hover:bg-emerald-700">✓ 放行进入 reviewing</button>
+          <button class="bg-slate-600 text-white text-sm px-3 py-2 rounded hover:bg-slate-700" title="生成 context bundle，复制到新 Claude 窗口或派发 worktree subagent">🚚 拉走</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 四段内容 -->
+    <div class="divide-y divide-slate-100">
+
+      <!-- 【需求段】 -->
+      <div class="p-5">
+        <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2">
+          <span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs">需求段</span>
+          <span class="text-slate-400 text-xs">来源：主人交易风格 / MEMORY 记录</span>
+        </h3>
+        <div class="bg-slate-50 rounded p-4 text-sm space-y-3">
+          <div>
+            <div class="font-medium text-slate-700">🎭 角色 / 场景</div>
+            <p class="text-slate-600 mt-1 leading-relaxed">主人在每日盘后扫描自选 ETF 池，希望系统自动标出当前在日线级别出现 MACD 底背离信号的标的，作为潜在加仓候选清单。</p>
+          </div>
+          <div>
+            <div class="font-medium text-slate-700">✅ 验收标准（≤5 条）</div>
+            <ol class="list-decimal list-inside text-slate-600 mt-1 space-y-1 leading-relaxed">
+              <li>输入：标的代码 + 日线 K 线数据（含至少 60 根）</li>
+              <li>输出：True/False + 置信度（0-1）+ 命中的两个低点日期</li>
+              <li>识别规则：价格创新低 + MACD 柱状图低点抬高 + DIF 抬高</li>
+              <li>已知样例可全部正确识别（提供 5 条历史正样本 + 3 条负样本）</li>
+              <li>单标的判定 ≤ 200ms</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 【产品段】 -->
+      <div class="p-5">
+        <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2">
+          <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">产品段</span>
+          <span class="text-slate-400 text-xs">特性描述 + 数据流</span>
+        </h3>
+        <div class="bg-slate-50 rounded p-4 text-sm space-y-3">
+          <div>
+            <div class="font-medium text-slate-700">📝 特性描述</div>
+            <p class="text-slate-600 mt-1 leading-relaxed">一个纯函数 <code class="bg-slate-200 px-1.5 py-0.5 rounded font-mono text-xs">detect_macd_bottom_divergence(kline_df) → DivergenceResult</code>，无副作用，单一职责，供上层 ETF 扫描卡调用。</p>
+          </div>
+          <div>
+            <div class="font-medium text-slate-700">🔁 数据流</div>
+            <div class="bg-white border border-slate-200 rounded p-3 mt-1 font-mono text-xs leading-relaxed">
+              K 线 DataFrame<br>
+              &nbsp;&nbsp;↓ 计算 MACD（DIF / DEA / 柱状图）<br>
+              &nbsp;&nbsp;↓ 找最近两个相邻价格低点<br>
+              &nbsp;&nbsp;↓ 比较低点价格 vs MACD 值<br>
+              &nbsp;&nbsp;↓ 输出判定 + 置信度
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 【技术段】 -->
+      <div class="p-5">
+        <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2">
+          <span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded text-xs">技术段</span>
+          <span class="text-slate-400 text-xs">方案 + 接口契约</span>
+        </h3>
+        <div class="bg-slate-50 rounded p-4 text-sm space-y-3">
+          <div>
+            <div class="font-medium text-slate-700">🏗 实现方案</div>
+            <ul class="list-disc list-inside text-slate-600 mt-1 space-y-1">
+              <li>语言：Python 3.11，依赖 pandas + numpy（已在项目 deps）</li>
+              <li>位置：<code class="bg-slate-200 px-1.5 py-0.5 rounded font-mono text-xs">src/signals/macd_divergence.py</code></li>
+              <li>MACD 计算复用 <code class="bg-slate-200 px-1.5 py-0.5 rounded font-mono text-xs">#FC-000</code> 已交付的 <code class="bg-slate-200 px-1.5 py-0.5 rounded font-mono text-xs">calc_macd()</code></li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-medium text-slate-700">📜 接口契约</div>
+            <pre class="bg-slate-900 text-slate-100 rounded p-3 mt-1 text-xs overflow-x-auto"><code>def detect_macd_bottom_divergence(
+    kline: pd.DataFrame,        # 含 date/close 列，>= 60 行
+    lookback: int = 60,          # 回溯天数
+    min_gap_days: int = 5,       # 两低点最小间隔
+) -&gt; DivergenceResult:
+    """
+    返回 DivergenceResult(
+        detected: bool,
+        confidence: float,       # 0~1
+        low_point_a: date,       # 较早低点
+        low_point_b: date,       # 较新低点（必须是新低）
+        rationale: str,
+    )
+    """</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 【测试段】 -->
+      <div class="p-5">
+        <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2">
+          <span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded text-xs">测试段</span>
+          <span class="text-slate-400 text-xs">🤖 Agent 自动生成 · 已执行</span>
+        </h3>
+        <div class="bg-slate-50 rounded p-4 text-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="font-medium text-slate-700">🧪 测试用例（8 条）</div>
+            <div class="text-xs">
+              <span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">7 通过</span>
+              <span class="bg-red-100 text-red-700 px-2 py-0.5 rounded ml-1">1 失败</span>
+            </div>
+          </div>
+          <table class="w-full text-xs">
+            <thead class="bg-slate-200 text-slate-700">
+              <tr><th class="text-left px-2 py-1.5">编号</th><th class="text-left px-2 py-1.5">用例</th><th class="text-left px-2 py-1.5">期望</th><th class="text-left px-2 py-1.5">结果</th></tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr><td class="px-2 py-1.5 font-mono">T01</td><td class="px-2 py-1.5">510300 · 2024-02 底背离样本</td><td class="px-2 py-1.5">detected=True</td><td class="px-2 py-1.5 text-emerald-700">✓</td></tr>
+              <tr><td class="px-2 py-1.5 font-mono">T02</td><td class="px-2 py-1.5">512170 · 2024-09 底背离样本</td><td class="px-2 py-1.5">detected=True, conf≥0.7</td><td class="px-2 py-1.5 text-emerald-700">✓</td></tr>
+              <tr><td class="px-2 py-1.5 font-mono">T03</td><td class="px-2 py-1.5">588000 · 单边下跌负样本</td><td class="px-2 py-1.5">detected=False</td><td class="px-2 py-1.5 text-emerald-700">✓</td></tr>
+              <tr class="bg-red-50"><td class="px-2 py-1.5 font-mono">T04</td><td class="px-2 py-1.5">512880 · 横盘震荡边界</td><td class="px-2 py-1.5">detected=False</td><td class="px-2 py-1.5 text-red-700">✗ 误报</td></tr>
+              <tr><td class="px-2 py-1.5 font-mono">T05-T08</td><td class="px-2 py-1.5">性能 + 边界（数据不足 / 含 NaN / 短窗口）</td><td class="px-2 py-1.5">见详情</td><td class="px-2 py-1.5 text-emerald-700">✓ ✓ ✓ ✓</td></tr>
+            </tbody>
+          </table>
+          <div class="bg-amber-100 border border-amber-300 rounded p-3 text-amber-900 text-xs leading-relaxed">
+            <span class="font-semibold">⚠️ Agent 自动诊断：</span>T04 误报因横盘行情下 MACD 柱接近 0 时浮点误差导致"假抬高"。建议加阈值过滤 <code class="bg-amber-200 px-1 rounded">abs(macd_hist) &gt; 0.01</code>。
+            <div class="mt-2">
+              <button class="bg-amber-600 text-white px-3 py-1 rounded">让 Agent 自动修复</button>
+              <button class="bg-slate-600 text-white px-3 py-1 rounded ml-1">主人手动介入</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 干预日志 + 上下文包 -->
+      <div class="p-5 bg-slate-50">
+        <div class="grid grid-cols-2 gap-4 text-xs">
+          <div>
+            <h4 class="font-semibold text-slate-700 mb-2">📝 干预日志</h4>
+            <ul class="space-y-1 text-slate-600">
+              <li>05-13 09:12 · Agent · 创建（PRD §3.2 切包）</li>
+              <li>05-13 10:30 · 主人 · 验收标准 #4 加入历史样本要求</li>
+              <li>05-13 14:08 · Agent · designing → implementing</li>
+              <li>05-14 11:45 · Agent · 实现完成，进入 testing</li>
+              <li>05-14 14:32 · Agent · 自动生成 8 测试用例 · 执行 · 1 失败</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-slate-700 mb-2">🔗 上下文包（context bundle）</h4>
+            <ul class="space-y-1 text-slate-600">
+              <li>📄 PRD 引用：投资决策/S2/PRD_v0.3.md §3.2</li>
+              <li>📄 依赖：#FC-000（MACD 三线计算，已交付）</li>
+              <li>📄 知识库链接：[[MACD技术指标]] / [[底背离]]</li>
+              <li>📄 历史样本：data/samples/macd_div_*.csv</li>
+              <li>📄 触发主人记忆：user_trading_style.md</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 单卡示意：FC-002 ETF 扫描（紧凑版） ===== -->
+  <section class="bg-white rounded-lg border border-red-300 overflow-hidden">
+    <div class="bg-gradient-to-r from-red-50 to-pink-50 px-5 py-3 border-b border-red-200 flex items-center justify-between">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-sm text-slate-500">#FC-002</span>
+          <span class="bg-red-100 text-red-700 text-xs px-2 py-0.5 rounded font-medium">P0</span>
+          <span class="bg-red-200 text-red-800 text-xs px-2 py-0.5 rounded font-medium pulse-red">👀 reviewing · 🔴 待审</span>
+        </div>
+        <h2 class="text-lg font-semibold mt-1">ETF 列表底背离批量扫描</h2>
+      </div>
+      <div class="flex gap-2">
+        <button class="bg-emerald-600 text-white text-sm px-4 py-2 rounded">✓ 通过 review · 进入 shipped</button>
+        <button class="bg-amber-500 text-white text-sm px-3 py-2 rounded">↩ 打回</button>
+        <button class="bg-slate-600 text-white text-sm px-3 py-2 rounded">🚚 拉走</button>
+      </div>
+    </div>
+    <div class="p-5 text-sm text-slate-600">
+      <div class="grid grid-cols-4 gap-4">
+        <div><div class="text-xs text-slate-400">验收</div><div class="font-medium text-slate-800">5/5 ✓</div></div>
+        <div><div class="text-xs text-slate-400">测试</div><div class="font-medium text-emerald-700">12/12 ✓</div></div>
+        <div><div class="text-xs text-slate-400">实际工时</div><div class="font-medium text-slate-800">3h 14m</div></div>
+        <div><div class="text-xs text-slate-400">依赖</div><div class="font-medium text-slate-800">#FC-001 ✓</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 拉走协议演示 ===== -->
+  <section class="bg-slate-900 text-slate-100 rounded-lg p-5">
+    <h3 class="font-semibold mb-3 flex items-center gap-2">
+      <span class="text-2xl">🚚</span> "拉走"协议演示（主人点拉走按钮后生成的 pull_request.md）
+    </h3>
+    <pre class="bg-black/40 rounded p-4 text-xs overflow-x-auto leading-relaxed"><code># Pull Request: #FC-001 MACD 底背离识别
+# Generated at: 2026-05-14 15:00
+# Reason: 主人手动拉走给新 Agent 接手
+
+## 当前状态
+- 阶段：testing（软 gate 待审）
+- 进度：实现完成 / 8 测试 7 通过 1 失败
+
+## 完整上下文（自包含）
+- 需求段：[详见上方]
+- 产品段：[详见上方]
+- 技术段：实现于 src/signals/macd_divergence.py（v1.2）
+- 测试段：T04 误报需修复（建议见 Agent 诊断）
+
+## 接手指令
+新 Agent 你好。请基于上述上下文：
+1. 修复 T04 误报（建议加阈值 abs(macd_hist) > 0.01）
+2. 重跑 8 个测试用例
+3. 全通过后把卡状态推到 reviewing，并触发硬 gate 等主人审
+
+## 依赖 / 引用文件
+- 投资决策/S2/PRD_v0.3.md §3.2
+- 投资决策/src/signals/macd_base.py（已交付的 #FC-000）
+- 投资决策/data/samples/macd_div_*.csv（历史样本）
+
+## 完成后回写
+请将修复结果追加到原卡的"干预日志"段，并更新 _meta.yaml 状态。</code></pre>
+    <p class="text-xs text-slate-400 mt-3">→ 主人复制此 MD 粘贴到任意新 Claude 窗口，Agent 立刻接手；或直接 dispatch worktree subagent 自动跑。</p>
+  </section>
+
+</main>
+
+<footer class="max-w-7xl mx-auto px-6 py-6 text-xs text-slate-400 border-t border-slate-200 mt-8">
+  📋 项目研发流程 · 特性卡演示版 · 2026-05-14 · 仅作方案 mockup，非最终方法论文件
+</footer>
+
+</body>
+</html>

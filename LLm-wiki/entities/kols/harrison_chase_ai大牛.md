@@ -19,6 +19,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: Q&A with entrepreneur Harrison Painter on AI, marketing and feeling claustrophobic Indianapolis Business Journal
+- 2026-05-17: Harrison.ai Welcomes Four New AI Partners to Its Open Platform Ecosystem Medical Product Outsourcing
+- 2026-05-17: A provocative proposal asks the FDA to let some AI devices on the market without review statnews.com
 - 2026-05-15: A provocative proposal asks the FDA to let some AI devices on the market without review statnews.com
 - 2026-05-15: Harrison.ai Continues to Grow Open Platform Ecosystem, Welcomes Four New AI Partners Business Wire
 - 2026-05-15: Harrison.ai receives US FDA clearance for acute infarct triage on non-contrast CT Brain imaging solution NeuroNews Inter

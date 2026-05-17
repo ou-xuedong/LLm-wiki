@@ -62,6 +62,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: Chasing Utopia review — this might be the most terrifying film of the year The Times
+- 2026-05-17: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
+- 2026-05-17: AI Godfather Geoffrey Hinton Calls For Brakes On Runaway AI Development Eurasia Review
 - 2026-05-15: Geoffrey Pohanka Frames AI as Systemic Risk or Bogeyman Let's Data Science
 - 2026-05-15: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
 - 2026-05-15: 'Godfather Of AI' Geoffrey Hinton Said AI Would Replace Radiologists—A Decade Later, Demand Is Surging, Salaries Are Soa

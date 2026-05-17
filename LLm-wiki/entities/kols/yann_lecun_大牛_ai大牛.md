@@ -22,6 +22,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: Yann Lecun Is Optimistic That AI Will Lead to a Better World Time Magazine
+- 2026-05-17: AI godfather Yann LeCun's advice on college, work and breaking through AI hype Axios
+- 2026-05-17: In lecture at Brown, Yann LeCun discusses a new approach to AI Brown University
 - 2026-05-15: Yann Lecun Is Optimistic That AI Will Lead to a Better World Time Magazine
 - 2026-05-15: AI godfather Yann LeCun's advice on college, work and breaking through AI hype Axios
 - 2026-05-15: In lecture at Brown, Yann LeCun discusses a new approach to AI Brown University

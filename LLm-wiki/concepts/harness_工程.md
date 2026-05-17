@@ -86,7 +86,31 @@ Harness 工程的核心竞争点：**Context is King**。
 - Agentic Search：上下文管理决定 Token 成本
 - 记忆系统：结构化分层记忆（短期/长期/主动压缩）
 
-## 6. 三条本质规律
+## 6. Anthropic的Harness演进（2026年新动态）
+
+### Agent设计哲学根本转变
+
+| 旧范式（LangChain等） | 新范式（Anthropic） |
+|----------------------|---------------------|
+| 大量rule-based逻辑控制 | 充分信任模型 |
+| 用规则兜底模型能力 | 把Harness做到极简 |
+| 本质是不信任模型能力 | 模型能力决定一切 |
+
+> 核心转变：**从"用规则控制AI"到"充分信任AI"**，Harness的角色从控制者变为极简基础设施。
+
+### Managed Agents：Harness产品化
+
+Anthropic推出Managed Agents，是**第一次把Harness做成托管型产品**：
+
+- 开发者定义agent只需指定：模型、工具、指令
+- 放入Anthropic托管环境，通过session执行任务、通过events回传状态
+- 商业模式结构性转变：从API公司→**Agent云/Agent OS**
+- 用户既可以让Claude Code在本地跑，也可以在云端环境中运行
+- Session管理与状态留在Anthropic，**用户粘性远高于单纯API调用**
+
+这一转变验证了Harness工程的核心命题：**模型能力在指数级增长，产品必须承接新能力，必须面向AGI设计，而非面向当下工作流的固化形态。**
+
+## 7. 三条本质规律
 
 **规律一**：AI产品的上限由模型能力决定，不是产品设计能力。
 - 模型能做什么，产品边界就在哪里

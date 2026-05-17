@@ -47,6 +47,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: C3 AI CTO Nikhil Krishnan on Moving Government AI From Hype to Mission Impact MeriTalk
+- 2026-05-17: Q&A: Nikhil Kolar, vp Microsoft AI scales its ‘click-to-sign’ publisher AI content marketplace Digiday
+- 2026-05-17: Nikhil Kamath bets on voice AI as the next frontier of human connection and India's sovereignty Storyboard18
 - 2026-05-15: C3 AI CTO Nikhil Krishnan on Moving Government AI From Hype to Mission Impact MeriTalk
 - 2026-05-15: Q&A: Nikhil Kolar, vp Microsoft AI scales its ‘click-to-sign’ publisher AI content marketplace Digiday
 - 2026-05-15: AI is transformative for the reinsurance industry: Swiss Re’s Nikhil da Victoria Lobo Reinsurance News

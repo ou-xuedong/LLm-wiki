@@ -1,0 +1,63 @@
+site_name: AILab · MD 阅览
+site_description: 主人 AILab 项目矩阵的 MD 视觉化阅览
+docs_dir: docs
+
+# 排除非 UTF-8 文件 + 原始资料 / 评测报告等
+exclude_docs: |
+  **/raw/**
+  **/_oneshot/**
+  **/site/**
+  **/.git/**
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到暗色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到亮色
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: zh
+
+extra:
+  generator: false

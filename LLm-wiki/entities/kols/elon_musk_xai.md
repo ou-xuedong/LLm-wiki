@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: He’s king of the AI boom. Why do former colleagues say he can’t be trusted? The Washington PostMusk accused of 'selectiv
+- 2026-05-17: Elon Musk’s SpaceXAI has been bleeding staff since its merger TechCrunch
+- 2026-05-17: Elon Musk’s Grok Is Losing Ground in AI Race WSJ
 - 2026-05-15: OpenAI Trial Heads to Jury After Lawyers Make Final Case The New York TimesThe Elon Musk v Sam Altman battle is a distra
 - 2026-05-15: OpenAI Considers Legal Action Against Apple in Strained Relationship The New York Times
 - 2026-05-15: Worries about AI’s risks to humanity loom over the trial pitting Musk against OpenAI’s leaders AP News

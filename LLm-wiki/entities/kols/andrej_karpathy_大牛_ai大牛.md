@@ -65,6 +65,9 @@ tags:
 - "Agency > Intelligence" — [@karpathy 2025-02-25](https://x.com/karpathy)
 
 ## 近期动态
+- 2026-05-17: Andrej Karpathy, Tesla's AI director announces his departure Not a Tesla App
+- 2026-05-17: Brett Caughran: Following Andrej Karpathy insights helpful for investing and finance AI Traders Union
+- 2026-05-17: “Enough with the Walls of Text” — Andrej Karpathy’s Simple Lifehack: Just Ask AI for HTML quasa.io
 - 2026-05-15: Andrej Karpathy, Tesla's AI director announces his departure Not a Tesla App
 - 2026-05-15: “Enough with the Walls of Text” — Andrej Karpathy’s Simple Lifehack: Just Ask AI for HTML quasa.io
 - 2026-05-15: The man who coined the term 'vibe coding' says code written by AI can still be 'awkward' and 'gross' Business Insider

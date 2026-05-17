@@ -23,6 +23,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: CGI names Tim Hurlebaus as CEO amid AI challenges The Globe and Mail
+- 2026-05-17: Toyota reveals grand AI vision for vehicles and beyond WardsAuto
+- 2026-05-17: A top AI researcher explains the limitations of current models Fast Company
 - 2026-05-15: CGI names Tim Hurlebaus as CEO amid AI challenges The Globe and Mail
 - 2026-05-15: Toyota reveals grand AI vision for vehicles and beyond WardsAuto
 - 2026-05-15: A top AI researcher explains the limitations of current models Fast Company

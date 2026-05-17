@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: Anthropic urges Uncle Sam to kneecap China's AI ambitions before 2028 The Register
+- 2026-05-17: Sam Altman May Control Our Future—Can He Be Trusted? The New Yorker
+- 2026-05-17: Sam Altman asked GPT-5.5 to plan its own launch party. Its requests were 'beautiful' but 'strange.' Business Insider
 - 2026-05-15: Global activation of 'Sam' ushers in a new era of AI intelligence for FCM Travel customers The Manila Times
 - 2026-05-15: FCM Travel Unveils Sam AI Ecosystem Globally, Transforming Corporate Travel Management with Advanced Artificial Intellig
 - 2026-05-15: Mira Murati tells the court that she couldn’t trust Sam Altman’s words The Verge

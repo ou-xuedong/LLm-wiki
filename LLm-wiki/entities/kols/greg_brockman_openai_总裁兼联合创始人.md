@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-17: OpenAI co-founder Greg Brockman takes charge of product strategy TechCrunch
+- 2026-05-17: Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shake-Up WIRED
+- 2026-05-17: Greg Holmes on Why Modern AI Demands a New FinOps Discipline Technology Magazine
 - 2026-05-15: Beware what you tell your AI chatbot. It’s not a shrink – it’s a snitch | Arwa Mahdawi The Guardian
 - 2026-05-15: AL Interview: Greg Lambert – The Realities of Legal AI Adoption Artificial Lawyer
 - 2026-05-15: Greg Brockman’s Rough Day The Information
