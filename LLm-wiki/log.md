@@ -5,7 +5,7 @@
 > 操作类型：init、ingest、update、query、lint、create、archive、delete
 > 文件超过 500 条时轮换：renamed to log-YYYY.md, start fresh.
 
-## [2026-05-14] ingest | 机智流《从SFT到继续预训练》
+## [2026-05-19] cron_refresh | 资本对接洞察自动刷新：新建 3（第四届中国AIGC产业峰会_2026、首届人工智能邀请赛颁奖暨2026_OPC创业大赛启动、番茄小说推动AI动漫上院线）；更新 1（Sierra_对话式AI客服支持）。跳过 22 条（RSS标题切片/GitHub repo handle/信息不足/假阳性.git匹配）。
 - 新增 raw：`raw/articles/机智流-从SFT到继续预训练-2026.md`
 - 新增 entity：`entities/kols/李剑锋_机智流_大模型微调讲师.md`
 - 新增 concept：`concepts/继续预训练_continued-pretraining.md`

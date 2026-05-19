@@ -19,6 +19,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-19: College Students, Professors are Making Their Own AI Rules. They Don't Always Agree KQED
+- 2026-05-19: For Cyprien Clément-Delmas, with the Rise of AI, Reality and Authenticity Have Become Even More Valuable Little Black Bo
+- 2026-05-19: How One Art Shipping Company Is Pairing A.I.-Driven Efficiencies With Hands-On Human Attention observer.com
 - 2026-05-17: College Students, Professors are Making Their Own AI Rules. They Don't Always Agree KQED
 - 2026-05-17: For Cyprien Clément-Delmas, with the Rise of AI, Reality and Authenticity Have Become Even More Valuable Little Black Bo
 - 2026-05-17: How One Art Shipping Company Is Pairing A.I.-Driven Efficiencies With Hands-On Human Attention observer.com

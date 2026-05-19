@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-19: Jury Rejects Musk’s Claims Against OpenAI WSJJury dismisses all claims in Elon Musk’s lawsuit against OpenAI CEO Sam Alt
+- 2026-05-19: Elon Musk Offered to Pay Employees for Their Tax Returns, You Can Probably Guess What Happened Next Gizmodo
+- 2026-05-19: Elon Musk loses US lawsuit against OpenAI Al Jazeera
 - 2026-05-17: He’s king of the AI boom. Why do former colleagues say he can’t be trusted? The Washington PostMusk accused of 'selectiv
 - 2026-05-17: Elon Musk’s SpaceXAI has been bleeding staff since its merger TechCrunch
 - 2026-05-17: Elon Musk’s Grok Is Losing Ground in AI Race WSJ

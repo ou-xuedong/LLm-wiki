@@ -62,6 +62,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-19: Time to apply the brakes to runaway AI, says pioneer UN News
+- 2026-05-19: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
+- 2026-05-19: AI: The Promise and the Peril with Sen. Bernie Sanders and Geoffrey Hinton Institute of Politics and Public Service
 - 2026-05-17: Chasing Utopia review — this might be the most terrifying film of the year The Times
 - 2026-05-17: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
 - 2026-05-17: AI Godfather Geoffrey Hinton Calls For Brakes On Runaway AI Development Eurasia Review

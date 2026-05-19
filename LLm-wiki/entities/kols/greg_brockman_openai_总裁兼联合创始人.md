@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-19: Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shake-Up WIRED
+- 2026-05-19: OpenAI co-founder Greg Brockman takes charge of product strategy TechCrunch
+- 2026-05-19: Warren Buffett's Successor, Greg Abel, Just Sold 16 Stocks, but Piled Into an AI Titan That's Now a Top-5 Position for B
 - 2026-05-17: OpenAI co-founder Greg Brockman takes charge of product strategy TechCrunch
 - 2026-05-17: Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shake-Up WIRED
 - 2026-05-17: Greg Holmes on Why Modern AI Demands a New FinOps Discipline Technology Magazine

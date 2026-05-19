@@ -1,7 +1,7 @@
 # Wiki Index
 
 > 内容目录。所有 wiki 页面按类型列出，附一行摘要。
-> Last updated: 2026-05-15 | Total pages: 431
+> Last updated: 2026-05-19 | Total pages: 434
 
 ## Entities（实体）
 
@@ -46,6 +46,9 @@
 - [[cohere_企业级隐私安全大模型]] - Cohere
 - [[concourse_自动系统架构师]] - Concourse
 - [[consensus-miami-easya-hackathon_ai创业黑客松]] - Consensus Miami EasyA Hackathon
+- [[第四届中国AIGC产业峰会_2026]] - 第四届中国AIGC产业峰会（36氪 · 5月20日 · Agent主题圆桌）
+- [[首届人工智能邀请赛颁奖暨2026_OPC创业大赛启动]] - 南宁AI创业新政发布与OPC创业大赛启动（2026-04-16）
+- [[番茄小说推动AI动漫上院线]] - 字节番茄小说开放头部IP改编权限，探索AI动漫院线变现
 - [[convergence_ai_记忆技能跨模态代理]] - Convergence
 - [[corelayer_运维监控_ai_智能体监控生产环境并]] - Corelayer
 - [[Cursor]] - Cursor

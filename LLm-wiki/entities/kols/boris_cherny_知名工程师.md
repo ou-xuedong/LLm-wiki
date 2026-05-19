@@ -50,6 +50,9 @@ tags:
 - 随着模型能力提升，以下安全机制的必要性降低：prompt injection 防护、静态命令验证、permission mode、human-in-the-loop 干预
 
 ## 近期动态
+- 2026-05-19: Claude Code's creator says his setup involves thousands of AI sub-agents doing 'deeper work' overnight Business Insider
+- 2026-05-19: Salesforce and Hugging Face execs co-found Sustainable AI Group Trellis Group (formerly GreenBiz)
+- 2026-05-19: Boris FX Continuum Pairs AI Precision and Advanced Creative Controls SHOOTonline
 - 2026-05-17: Claude Code's creator says his setup involves thousands of AI sub-agents doing 'deeper work' overnight Business Insider
 - 2026-05-17: Salesforce and Hugging Face execs co-found Sustainable AI Group Trellis Group (formerly GreenBiz)
 - 2026-05-17: Boris FX Continuum Pairs AI Precision and Advanced Creative Controls SHOOTonline

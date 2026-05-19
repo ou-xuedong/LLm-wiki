@@ -23,6 +23,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-19: Jim Cramer says it's time to trim this volatile AI chipmaker CNBC
+- 2026-05-19: Billionaire Jim Goodnight Built An Analytics Profit Machine. AI Is Forcing Its Reinvention Forbes
+- 2026-05-19: Jim Cramer Says Buy 2 Artificial Intelligence (AI) Stocks Down 24% and 46% Before They Soar The Motley Fool
 - 2026-05-17: Jim Cramer says it's time to trim this volatile AI chipmaker CNBC
 - 2026-05-17: Billionaire Jim Goodnight Built An Analytics Profit Machine. AI Is Forcing Its Reinvention Forbes
 - 2026-05-17: Jim Cramer Says Buy 2 Artificial Intelligence (AI) Stocks Down 24% and 46% Before They Soar Yahoo Finance

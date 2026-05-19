@@ -1,7 +1,7 @@
 ---
 title: Sierra
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-19
 type: companies
 tags:
   - #公司
@@ -47,6 +47,7 @@ Sierra 是 **面向大型品牌的对话式 AI 客服平台**，由前 Google Cl
 - **成本高**：企业级对话 AI 价格不菲，中小企业难以承受
 
 ## 4. 重大事件与动态
+- [2026-05-19] 更新：AI agent startup Sierra valued at $15B in new $950M funding round（Sequoia领投，a16z跟投）。（来源：SiliconANGLE, 2026-05-05）
 - [2026-05-05] 完成 **$9.5亿新一轮融资**，估值达 **$150亿**（$15B），成为对话式 AI 客服领域最高估值公司。本轮由 Sequoia 领投，现有投资方 a16z 跟投。资金将用于扩大企业客户规模与 Agent 产品能力。（来源：SiliconANGLE）
 - [2026-04-23] **收购法国 YC 创业公司 Fragment**，Sierra 完成年内第三笔收购（另两笔：Receptive AI 3月末、Opera Tech 3月末），强化欧洲市场与运营自动化能力。Fragment 联合创始人 Olivier Moindrot（CEO）和 Guillaume Genthial（CTO）加入 Sierra 法国团队。创始人 Clay Bavor 和 Bret Taylor（联合创始人）共同宣布。
 - [2026-04-23] 补充：Sierra 估值 **$45亿美元**，投资方包括 a16z；客户包括 40% Fortune 50，25% 年收入超 $10B，50% 超 $1B

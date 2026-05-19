@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-19: He’s king of the AI boom. Why do former colleagues say he can’t be trusted? The Washington Post
+- 2026-05-19: Anthropic urges Uncle Sam to kneecap China's AI ambitions before 2028 The Register
+- 2026-05-19: Sam Altman May Control Our Future—Can He Be Trusted? The New Yorker
 - 2026-05-17: Anthropic urges Uncle Sam to kneecap China's AI ambitions before 2028 The Register
 - 2026-05-17: Sam Altman May Control Our Future—Can He Be Trusted? The New Yorker
 - 2026-05-17: Sam Altman asked GPT-5.5 to plan its own launch party. Its requests were 'beautiful' but 'strange.' Business Insider

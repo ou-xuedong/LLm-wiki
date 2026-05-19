@@ -47,6 +47,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-19: C3 AI CTO Nikhil Krishnan on Moving Government AI From Hype to Mission Impact MeriTalk
+- 2026-05-19: The Wrap: AI Profile: C3 AI’s Nikhil Krishnan; Section 702 Scramble; DOD’s $350B Gamble LinkedIn
+- 2026-05-19: Q&A: Nikhil Kolar, vp Microsoft AI scales its ‘click-to-sign’ publisher AI content marketplace Digiday
 - 2026-05-17: C3 AI CTO Nikhil Krishnan on Moving Government AI From Hype to Mission Impact MeriTalk
 - 2026-05-17: Q&A: Nikhil Kolar, vp Microsoft AI scales its ‘click-to-sign’ publisher AI content marketplace Digiday
 - 2026-05-17: Nikhil Kamath bets on voice AI as the next frontier of human connection and India's sovereignty Storyboard18
