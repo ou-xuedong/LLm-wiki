@@ -5,6 +5,7 @@
 > 操作类型：init、ingest、update、query、lint、create、archive、delete
 > 文件超过 500 条时轮换：renamed to log-YYYY.md, start fresh.
 
+## [2026-05-22] cron_refresh | 资本对接洞察自动刷新：新建 6（阶跃星辰_大模型创业公司、NanoCo_企业级AI代理、Sentinel_AI副驾驶应用、酷哇科技具身智能机器人规模化落地、新石器NeoClaw无人车管理效率跃升、36氪xPureblueAI_GEO品牌推荐力名册）；更新 1（首届人工智能邀请赛颁奖暨2026_OPC创业大赛启动）。跳过 18 条（RSS标题切片/GitHub repo handle/无具体机构名/信息不足/假阳性.git匹配）。
 ## [2026-05-19] cron_refresh | 资本对接洞察自动刷新：新建 3（第四届中国AIGC产业峰会_2026、首届人工智能邀请赛颁奖暨2026_OPC创业大赛启动、番茄小说推动AI动漫上院线）；更新 1（Sierra_对话式AI客服支持）。跳过 22 条（RSS标题切片/GitHub repo handle/信息不足/假阳性.git匹配）。
 - 新增 raw：`raw/articles/机智流-从SFT到继续预训练-2026.md`
 - 新增 entity：`entities/kols/李剑锋_机智流_大模型微调讲师.md`

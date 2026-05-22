@@ -1,7 +1,7 @@
 # Wiki Index
 
 > 内容目录。所有 wiki 页面按类型列出，附一行摘要。
-> Last updated: 2026-05-19 | Total pages: 434
+> Last updated: 2026-05-22 | Total pages: 442
 
 ## Entities（实体）
 
@@ -48,6 +48,12 @@
 - [[consensus-miami-easya-hackathon_ai创业黑客松]] - Consensus Miami EasyA Hackathon
 - [[第四届中国AIGC产业峰会_2026]] - 第四届中国AIGC产业峰会（36氪 · 5月20日 · Agent主题圆桌）
 - [[首届人工智能邀请赛颁奖暨2026_OPC创业大赛启动]] - 南宁AI创业新政发布与OPC创业大赛启动（2026-04-16）
+- [[36氪xPureblueAI_GEO品牌推荐力名册]] - 36氪×PureblueAI合作发布《2026消费品牌AI推荐力名册》，GEO成品牌竞争新维度
+- [[NanoCo_企业级AI代理]] - NanoCo开发NanoClaw企业级AI代理，获$1200万Seed轮融资（2026-05-20）
+- [[Sentinel_AI副驾驶应用]] - Sentinel：对话式AI副驾驶，帮助非程序员构建全栈应用（竞品Bolt/Lovable）
+- [[酷哇科技具身智能机器人规模化落地]] - 酷哇机器人/无人车/机器狗已上岗50+城市，以战养战数据飞轮
+- [[阶跃星辰_大模型创业公司]] - 阶跃星辰完成超50亿元融资，刷新国内AI创业公司融资纪录
+- [[新石器NeoClaw无人车管理效率跃升]] - 新石器NeoClaw：AI Agent驱动单人管理1000台无人车（效率10倍提升）
 - [[番茄小说推动AI动漫上院线]] - 字节番茄小说开放头部IP改编权限，探索AI动漫院线变现
 - [[convergence_ai_记忆技能跨模态代理]] - Convergence
 - [[corelayer_运维监控_ai_智能体监控生产环境并]] - Corelayer
