@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>小怪兽不可怕，我有 4 招 — 情绪小怪兽海报</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFD680;
+    --peach:#FFA8B8;
+    --coral:#FF6B35;
+    --milk:#FFF8F0;
+    --ink:#4A2C24;
+    --ink-soft:#7d5a4d;
+    --sky:#3FA9E0;
+    --sky-soft:#BFE3F5;
+
+    --m-anger:#FF5C47;
+    --m-anger-dk:#C8331E;
+    --m-hurt:#4FA3DC;
+    --m-hurt-dk:#246FA8;
+    --m-fear:#C9B0E8;
+    --m-fear-dk:#A48BC8;
+    --m-sad:#A5ABBA;
+    --m-sad-dk:#6E7480;
+
+    --w: 297mm;             /* A3 portrait exact */
+    --h: 420mm;             /* A3 portrait exact */
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+
+  html,body{
+    background:#e9e2d6;
+    font-family:"Noto Sans SC","Source Han Sans SC",system-ui,sans-serif;
+    color:var(--ink);
+    min-height:100vh;
+  }
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:24px 0;
+  }
+
+  .poster{
+    width:var(--w);
+    height:var(--h);
+    background:var(--milk);
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 30px 80px rgba(93,64,55,.18), 0 8px 24px rgba(93,64,55,.08);
+    /* dotted dot grid bg */
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(150,100,200,.10) 1px, transparent 0);
+    background-size: 28px 28px;
+    background-color:#FBF5FF;
+  }
+
+  /* Decorative paper edge — purple-to-pink gradient washes */
+  .poster::before{
+    content:"";
+    position:absolute;inset:0;
+    background:
+      /* dominant purple wash, top-left */
+      radial-gradient(ellipse 90% 60% at 5%  0%,   rgba(196,168,232,.85), transparent 65%),
+      radial-gradient(ellipse 75% 50% at 0%  35%,  rgba(210,184,235,.75), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 30% 10%,  rgba(186,156,224,.55), transparent 60%),
+      /* mid lavender blend */
+      radial-gradient(ellipse 70% 50% at 50% 50%,  rgba(228,210,240,.55), transparent 65%),
+      /* pink wash, bottom-right */
+      radial-gradient(ellipse 80% 55% at 100% 100%, rgba(255,184,210,.85), transparent 65%),
+      radial-gradient(ellipse 65% 45% at 90% 70%,  rgba(255,200,220,.70), transparent 60%),
+      radial-gradient(ellipse 55% 40% at 70% 95%,  rgba(255,170,200,.55), transparent 60%);
+    pointer-events:none;
+  }
+  /* floating confetti — corners only, avoid middle section */
+  .poster::after{
+    content:"";
+    position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 6%  18%, #b794d6 5px, transparent 6px),
+      radial-gradient(circle at 94% 20%, #d6a8ce 5px, transparent 6px),
+      radial-gradient(circle at 5%  82%, #ddc4f0 4px, transparent 5px),
+      radial-gradient(circle at 95% 84%, #ffa8c8 4px, transparent 5px);
+    opacity:.6;
+    pointer-events:none;
+  }
+
+  /* ============ SECTIONS ============ */
+  .sections{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:grid;
+    /* 12 / 26 / 20 / 33 / 9  =  100% */
+    grid-template-rows: minmax(0,12fr) minmax(0,26fr) minmax(0,20fr) minmax(0,33fr) minmax(0,9fr);
+    padding:34px 48px 22px;
+    gap:9px;
+  }
+  section{ min-height:0; overflow:hidden; }
+  .s-title, .s-tools{ overflow:visible; }
+  section{position:relative;}
+
+  .section-label{
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-size:34px;
+    color:var(--coral);
+    letter-spacing:.04em;
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:10px;
+    white-space:nowrap;
+  }
+  .section-label::before{
+    content:"";
+    width:48px;height:12px;
+    background:var(--cream);
+    border-radius:6px;
+    box-shadow:inset 0 -2px 0 rgba(255,107,53,.4);
+  }
+  .section-label::after{
+    content:none;
+  }
+
+  /* ============ SECTION 1 — TITLE ============ */
+  .s-title{
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    text-align:center;
+    position:relative;
+  }
+  .ai-tag, .stamp{
+    position:absolute;top:0;
+    font-family:"Fredoka","Noto Sans SC",sans-serif;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.16em;
+  }
+  .ai-tag{
+    left:10px;
+    top:10px;
+    background:var(--ink);
+    color:var(--milk);
+    padding:7px 12px;
+    border-radius:4px;
+    transform:rotate(-3deg);
+    z-index:5;
+    white-space:nowrap;
+  }
+  .ai-tag::before{
+    content:"●";
+    color:var(--coral);
+    margin-right:6px;
+  }
+  .stamp{
+    right:24px;
+    top:14px;
+    width:112px;height:112px;
+    border:3px solid var(--coral);
+    color:var(--coral);
+    border-radius:50%;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    line-height:1.15;
+    font-size:17px;
+    letter-spacing:.02em;
+    transform:rotate(6deg);
+    background:rgba(255,248,240,.92);
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-weight:400;
+    white-space:nowrap;
+    z-index:5;
+  }
+  .stamp::before{
+    content:"";
+    position:absolute;inset:6px;
+    border:1.5px dashed var(--coral);
+    border-radius:50%;
+    opacity:.55;
+  }
+
+  .title-row{
+    display:flex;align-items:center;justify-content:center;gap:18px;
+    margin-top:6px;
+  }
+  h1.main-title{
+    font-family:"ZCOOL QingKe HuangYou","ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-weight:400;
+    font-size:76px;
+    line-height:1;
+    color:var(--ink);
+    letter-spacing:.01em;
+    white-space:nowrap;
+    -webkit-text-stroke: 0;
+    text-shadow:
+      3px 3px 0 var(--cream),
+      6px 6px 0 var(--coral);
+  }
+  h1 .accent{ color:var(--coral); }
+  h1 .num{
+    display:inline-block;
+    background:var(--coral);
+    color:var(--milk);
+    padding:0 8px;
+    border-radius:14px;
+    transform:rotate(-4deg);
+    margin:0 2px;
+    text-shadow:none;
+  }
+  .subtitle{
+    margin-top:14px;
+    font-size:28px;
+    color:var(--ink-soft);
+    letter-spacing:.12em;
+    font-weight:500;
+  }
+  .subtitle .dot{color:var(--coral);margin:0 8px;}
+
+  /* ============ SECTION 2 — SCENES ============ */
+  .s-scenes{ display:flex; flex-direction:column; }
+  .s-scenes .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:12px;
+    flex:1;
+    min-height:0;
+    padding-bottom:8px;
+  }
+  .scene{
+    background:rgba(255,248,240,.85);
+    border:2.5px solid var(--ink);
+    border-radius:22px;
+    padding:10px 14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    position:relative;
+    box-shadow:5px 5px 0 var(--cream);
+    min-width:0;
+    min-height:0;
+  }
+  .scene.alt-1{box-shadow:5px 5px 0 var(--peach);}
+  .scene.alt-2{box-shadow:5px 5px 0 var(--cream);}
+  .scene.alt-3{box-shadow:5px 5px 0 #cfe4f5;}
+  .scene.alt-4{box-shadow:5px 5px 0 #e6e2ea;}
+
+  .scene .mon{
+    width:124px;height:124px;
+    flex-shrink:0;
+  }
+  .scene .body{flex:1;min-width:0;}
+  .scene .name{
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-size:23px;
+    color:var(--ink);
+    margin-bottom:6px;
+    display:flex;align-items:baseline;gap:8px;
+    flex-wrap:wrap;
+    line-height:1.1;
+  }
+  .scene .name .nick{
+    color:var(--coral);
+    font-size:28px;
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-weight:400;
+    background:var(--cream);
+    padding:0 9px;
+    border-radius:10px;
+    line-height:1.2;
+  }
+  .scene .name .chip{
+    font-size:13px;
+    background:var(--ink);
+    color:var(--milk);
+    padding:2px 9px;
+    border-radius:10px;
+    font-family:"Noto Sans SC",sans-serif;
+    letter-spacing:.08em;
+    font-weight:500;
+  }
+  .bubble{
+    background:#fff;
+    border:2.5px solid var(--ink);
+    border-radius:16px;
+    padding:9px 12px;
+    font-size:16px;
+    color:var(--ink);
+    position:relative;
+    line-height:1.55;
+    font-weight:500;
+  }
+  .bubble b{color:var(--coral);font-weight:700;}
+  .bubble::before{
+    content:"";
+    position:absolute;
+    left:-10px;top:14px;
+    width:0;height:0;
+    border:8px solid transparent;
+    border-right-color:#fff;
+    z-index:2;
+  }
+  .bubble::after{
+    content:"";
+    position:absolute;
+    left:-14px;top:13px;
+    width:0;height:0;
+    border:9px solid transparent;
+    border-right-color:var(--ink);
+    z-index:1;
+  }
+
+  /* ============ SECTION 3 — BRAIN SCIENCE ============ */
+  .s-brain{ display:flex; flex-direction:column; }
+  .s-brain .knowledge{
+    display:grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap:20px;
+    align-items:end;
+    flex:1;
+    min-height:0;
+    padding-bottom:8px;
+  }
+  .k-card{
+    border:2.5px solid var(--ink);
+    border-radius:24px;
+    padding:12px 18px 10px;
+    background:#fff;
+    position:relative;
+    height:auto;
+    align-self:start;
+    display:flex;flex-direction:column;
+    box-shadow:5px 5px 0 var(--peach);
+  }
+  .k-card.right{background:#FFF6E1; box-shadow:-5px 5px 0 var(--cream);}
+  .k-card .corner{
+    position:absolute;
+    top:-8px;left:18px;
+    background:var(--coral);
+    color:var(--milk);
+    font-family:"Fredoka","Noto Sans SC",sans-serif;
+    font-weight:700;
+    padding:6px 16px;
+    border-radius:14px;
+    font-size:17px;
+    letter-spacing:.06em;
+    white-space:nowrap;
+  }
+  .k-card.right .corner{background:var(--sky);}
+  .k-card.right .corner{background:var(--ink);}
+  .k-icon{
+    width:46px;height:46px;
+    border-radius:50%;
+    background:var(--cream);
+    border:2.5px solid var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    margin-top:20px;
+    margin-bottom:4px;
+  }
+  .k-card.right .k-icon{background:var(--peach);}
+  .k-title{
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-size:23px;
+    line-height:1.25;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+  .k-title em{
+    background:linear-gradient(transparent 55%, var(--cream) 55%);
+    font-style:normal;
+    padding:0 2px;
+  }
+  .k-card.right .k-title em{
+    background:linear-gradient(transparent 55%, var(--peach) 55%);
+  }
+  .k-text{
+    font-size:16px;
+    line-height:1.6;
+    color:var(--ink);
+    flex:0 0 auto;
+  }
+  .k-text b{ color:var(--coral); font-weight:700;}
+  .k-tag{
+    margin-top:6px;
+    font-size:13px;
+    color:var(--ink-soft);
+    letter-spacing:.08em;
+    border-top:1.5px dashed rgba(74,44,36,.25);
+    padding-top:6px;
+  }
+
+  .brain-wrap{
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:flex-end;
+    gap:8px;
+    position:relative;
+    height:auto;
+    padding-top:6px;
+  }
+  .brain-wrap svg.brain-svg{width:200px;height:auto;display:block;}
+  /* fun callouts around brain */
+  .brain-callout{
+    position:absolute;
+    background:#fff;
+    border:2.5px solid var(--ink);
+    border-radius:16px;
+    padding:6px 12px;
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-size:17px;
+    color:var(--ink);
+    white-space:nowrap;
+    box-shadow:3px 3px 0 var(--peach);
+    z-index:2;
+  }
+  .brain-callout.tl{top:14px;left:-12px;transform:rotate(-6deg);}
+  .brain-callout.br{position:relative;bottom:auto;right:auto;transform:rotate(3deg);box-shadow:3px 3px 0 #d6c4ec;align-self:flex-end;margin-right:20px;margin-top:4px;}
+  .brain-callout .pop{color:var(--coral);}
+  .brain-caption{
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-size:20px;
+    color:var(--ink);
+    background:var(--milk);
+    border:2px dashed var(--coral);
+    padding:6px 18px;
+    border-radius:14px;
+    text-align:center;
+    white-space:nowrap;
+    align-self:center;
+    margin-top:-60px;
+  }
+
+  /* ============ SECTION 4 — TECHNIQUES ============ */
+  .s-tools{ display:flex; flex-direction:column; overflow:visible; }
+  .s-tools .stack{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    flex:1;
+    min-height:0;
+    padding-bottom:8px;
+  }
+  .s-tools .grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:12px;
+    flex:1;
+    min-height:0;
+  }
+  .banner{
+    background:#fff;
+    border:3px solid var(--coral);
+    border-radius:24px;
+    padding:18px 22px 14px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    box-shadow:6px 6px 0 var(--cream);
+    position:relative;
+    flex-shrink:0;
+    overflow:visible;
+  }
+  .banner .step{
+    position:absolute;
+    top:-19px;left:14px;
+    z-index:3;
+  }
+  .banner .b-icon{
+    width:68px;height:68px;
+    border-radius:50%;
+    background:var(--cream);
+    border:2.5px solid var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+    margin-left:54px;
+  }
+  .banner .b-icon svg{width:48px;height:48px;}
+  .banner .b-body{flex:1;min-width:0;}
+  .banner .b-name{
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-size:28px;
+    color:var(--ink);
+    line-height:1.15;
+    margin-bottom:5px;
+    display:flex;align-items:center;gap:8px;
+    flex-wrap:wrap;
+  }
+  .banner .b-name .en{
+    color:var(--coral);
+    font-family:"Fredoka","Noto Sans SC",sans-serif;
+    font-size:15px;
+    background:#FFF1E0;
+    padding:2px 10px;
+    border-radius:10px;
+    letter-spacing:.04em;
+  }
+  .banner .b-text{
+    font-size:16px;
+    line-height:1.55;
+    color:var(--ink);
+  }
+  .banner .b-text b{color:var(--coral);}
+  .banner .b-mons{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+  }
+  .banner .b-mons svg{
+    width:54px;height:54px;
+    margin-left:-10px;
+    filter:drop-shadow(0 2px 0 rgba(74,44,36,.15));
+  }
+  .tool{
+    background:#fff;
+    border:3px solid var(--coral);
+    border-radius:24px;
+    padding:16px 14px 12px;
+    position:relative;
+    display:flex;
+    gap:12px;
+    box-shadow:6px 6px 0 var(--cream);
+    overflow:visible;
+    min-height:0;
+  }
+  /* unified number-only badge */
+  .step{
+    width:38px;height:38px;
+    border-radius:50%;
+    background:var(--coral);
+    color:var(--milk);
+    border:2.5px solid var(--ink);
+    display:flex;
+    align-items:center;justify-content:center;
+    font-family:"Fredoka","Noto Sans SC",sans-serif;
+    font-weight:700;
+    font-size:20px;
+    line-height:1;
+    box-shadow:2px 2px 0 var(--cream);
+    flex-shrink:0;
+  }
+  .step::before, .step::after{ content:none; }
+  /* tool cards: badge half-out top edge (half-circle look) */
+  .tool .step{
+    position:absolute;
+    top:-19px;left:14px;
+    z-index:3;
+  }
+  .tool .glyph{
+    width:60px;height:60px;
+    border-radius:50%;
+    background:var(--cream);
+    border:2.5px solid var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+    margin-top:6px;
+  }
+  .tool .glyph svg{width:42px;height:42px;}
+  .tool .body{flex:1;padding-top:4px;min-width:0;}
+  .tool .body .mini-mons{
+    float:right;
+    margin:0 -2px 4px 10px;
+    display:block;
+    line-height:0;
+  }
+  .tool .body .mini-mons svg{
+    width:48px;height:48px;
+    filter:drop-shadow(0 2px 0 rgba(74,44,36,.15));
+  }
+  .tool .t-name{
+    font-family:"ZCOOL KuaiLe","Noto Sans SC",sans-serif;
+    font-size:28px;
+    color:var(--ink);
+    margin-bottom:6px;
+    line-height:1.1;
+  }
+  .tool .t-how{
+    font-size:16px;
+    line-height:1.55;
+    color:var(--ink);
+  }
+  .tool .t-how b{color:var(--coral);}
+  .tool .target{
+    margin-top:9px;
+    display:flex;align-items:center;gap:8px;
+    font-size:15.5px;
+    color:var(--ink-soft);
+    flex-wrap:wrap;
+  }
+  .tool .target .tag{
+    background:var(--milk);
+    border:1.5px solid var(--ink-soft);
+    border-radius:10px;
+    padding:2.5px 10px;
+    font-size:15px;
+    white-space:nowrap;
+  }
+  .tool > .mini-mons{
+    display:none;
+  }
+
+  /* ============ SECTION 5 — SLOGAN + AUTHOR ============ */
+  .s-foot{
+    display:flex;flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    border-top:3px dashed rgba(93,64,55,.25);
+    padding-top:10px;
+  }
+  .slogan{
+    font-family:"ZCOOL QingKe HuangYou","Noto Sans SC",sans-serif;
+    font-size:56px;
+    color:var(--ink);
+    line-height:1;
+    text-shadow:
+      3px 3px 0 var(--peach),
+      5px 5px 0 var(--coral);
+    display:flex;align-items:center;gap:14px;
+    white-space:nowrap;
+  }
+  .slogan .burst{
+    display:inline-block;
+    background:var(--coral);
+    color:var(--milk);
+    padding:4px 14px;
+    border-radius:16px;
+    text-shadow:none;
+    font-size:50px;
+    transform:rotate(-3deg);
+    white-space:nowrap;
+  }
+  .author-bar{
+    margin-top:16px;
+    width:100%;
+    display:flex;justify-content:space-between;
+    font-size:15px;
+    color:var(--ink-soft);
+    letter-spacing:.05em;
+    white-space:nowrap;
+  }
+  .author-bar b{color:var(--ink); font-weight:700;}
+
+  /* small monster silhouettes near title */
+  .title-mon{
+    width:68px;height:68px;
+    flex-shrink:0;
+  }
+
+  /* ============ PRINT ============ */
+  @page{ size: A3 portrait; margin:0; }
+  @media print{
+    html,body{background:#fff;padding:0;}
+    body{display:block;}
+    .poster{
+      width:297mm;
+      height:420mm;
+      box-shadow:none;
+      page-break-after:avoid;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Reusable monster SVG definitions -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- ============= ANGER MONSTER (cute) ============= -->
+    <symbol id="mon-anger" viewBox="0 0 200 200">
+      <!-- soft flame hair: rounded puffs -->
+      <g fill="var(--m-anger)" stroke="#4A2C24" stroke-width="3" stroke-linejoin="round">
+        <path d="M48 92 C40 70 56 50 70 64 C68 44 96 42 100 62 C104 42 132 44 130 64 C144 50 162 70 152 90 Z"/>
+      </g>
+      <!-- tiny flame highlights -->
+      <ellipse cx="78" cy="62" rx="4" ry="7" fill="#ffd4cc" opacity=".7"/>
+      <ellipse cx="120" cy="62" rx="4" ry="7" fill="#ffd4cc" opacity=".7"/>
+      <!-- round chubby body -->
+      <ellipse cx="100" cy="124" rx="60" ry="52" fill="var(--m-anger)" stroke="#4A2C24" stroke-width="3.5"/>
+      <!-- belly highlight -->
+      <ellipse cx="100" cy="140" rx="38" ry="22" fill="#ffc4b8" opacity=".55"/>
+      <!-- little arms (curled up, pouting pose) -->
+      <path d="M48 124 q-12 -2 -14 10 q-2 10 8 12" stroke="#4A2C24" stroke-width="3.5" fill="var(--m-anger)" stroke-linejoin="round"/>
+      <path d="M152 124 q12 -2 14 10 q2 10 -8 12" stroke="#4A2C24" stroke-width="3.5" fill="var(--m-anger)" stroke-linejoin="round"/>
+      <!-- little feet -->
+      <ellipse cx="78" cy="174" rx="15" ry="9" fill="var(--m-anger-dk)" stroke="#4A2C24" stroke-width="3"/>
+      <ellipse cx="122" cy="174" rx="15" ry="9" fill="var(--m-anger-dk)" stroke="#4A2C24" stroke-width="3"/>
+      <!-- small downturned brows (cute pout, not angry V) -->
+      <path d="M70 110 Q82 106 90 112" stroke="#4A2C24" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M130 110 Q118 106 110 112" stroke="#4A2C24" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <!-- BIG round shiny eyes -->
+      <circle cx="82" cy="128" r="11" fill="#fff" stroke="#4A2C24" stroke-width="3"/>
+      <circle cx="118" cy="128" r="11" fill="#fff" stroke="#4A2C24" stroke-width="3"/>
+      <circle cx="83" cy="130" r="6.5" fill="#4A2C24"/>
+      <circle cx="119" cy="130" r="6.5" fill="#4A2C24"/>
+      <!-- eye sparkles -->
+      <circle cx="86" cy="126" r="2.5" fill="#fff"/>
+      <circle cx="122" cy="126" r="2.5" fill="#fff"/>
+      <circle cx="80" cy="132" r="1.5" fill="#fff"/>
+      <circle cx="116" cy="132" r="1.5" fill="#fff"/>
+      <!-- cute small pout mouth -->
+      <ellipse cx="100" cy="150" rx="6" ry="5" fill="#4A2C24"/>
+      <ellipse cx="100" cy="151" rx="3" ry="2" fill="#ff8a96"/>
+      <!-- tiny tooth peeking -->
+      <rect x="98" y="146" width="4" height="3" fill="#fff" stroke="#4A2C24" stroke-width="1"/>
+      <!-- big round cheeks -->
+      <circle cx="66" cy="142" r="8" fill="#ff6b80" opacity=".55"/>
+      <circle cx="134" cy="142" r="8" fill="#ff6b80" opacity=".55"/>
+      <!-- little anger puff symbols (cute "#" anger marks) -->
+      <g stroke="#4A2C24" stroke-width="2.5" fill="none" stroke-linecap="round">
+        <path d="M34 84 l6 -6 M30 90 l8 0 M40 78 l0 8"/>
+        <path d="M166 84 l-6 -6 M170 90 l-8 0 M160 78 l0 8"/>
+      </g>
+    </symbol>
+
+    <!-- ============= HURT (WRONGED) MONSTER ============= -->
+    <symbol id="mon-hurt" viewBox="0 0 200 200">
+      <!-- teardrop body -->
+      <path d="M100 28 C70 80 50 110 50 140 C50 174 78 188 100 188 C122 188 150 174 150 140 C150 110 130 80 100 28 Z"
+            fill="var(--m-hurt)" stroke="#5D4037" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- highlight -->
+      <ellipse cx="80" cy="90" rx="10" ry="22" fill="#fff" opacity=".55" transform="rotate(-15 80 90)"/>
+      <!-- arms -->
+      <path d="M58 130 q-12 6 -10 22" stroke="#5D4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M142 130 q12 6 10 22" stroke="#5D4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <circle cx="46" cy="156" r="6" fill="var(--m-hurt)" stroke="#5D4037" stroke-width="3"/>
+      <circle cx="154" cy="156" r="6" fill="var(--m-hurt)" stroke="#5D4037" stroke-width="3"/>
+      <!-- droopy brows -->
+      <path d="M76 128 Q82 122 90 128" stroke="#5D4037" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M124 128 Q118 122 110 128" stroke="#5D4037" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- eyes (closed, sad) -->
+      <path d="M76 142 Q83 150 90 142" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M110 142 Q117 150 124 142" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- single tear -->
+      <path d="M124 148 Q128 158 124 164 Q120 158 124 148 Z" fill="#9ad0ec" stroke="#5D4037" stroke-width="2"/>
+      <!-- pursed mouth -->
+      <path d="M92 162 Q100 158 108 162" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- cheeks -->
+      <circle cx="74" cy="156" r="6" fill="#ff9bb0" opacity=".55"/>
+      <circle cx="126" cy="156" r="6" fill="#ff9bb0" opacity=".55"/>
+    </symbol>
+
+    <!-- ============= FEAR MONSTER ============= -->
+    <symbol id="mon-fear" viewBox="0 0 200 200">
+      <!-- vertical wavy trembling lines beside body -->
+      <g stroke="var(--m-fear-dk)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".6">
+        <path d="M28 68 q-4 8 0 16 q4 8 0 16 q-4 8 0 16 q4 8 0 16"/>
+        <path d="M20 76 q-4 8 0 16 q4 8 0 16 q-4 8 0 16"/>
+        <path d="M172 68 q4 8 0 16 q-4 8 0 16 q4 8 0 16 q-4 8 0 16"/>
+        <path d="M180 76 q4 8 0 16 q-4 8 0 16 q4 8 0 16"/>
+      </g>
+      <!-- body -->
+      <circle cx="100" cy="110" r="62" fill="var(--m-fear)" stroke="#5D4037" stroke-width="3.5"/>
+      <!-- belly highlight -->
+      <ellipse cx="100" cy="126" rx="38" ry="22" fill="#e4d4f4" opacity=".5"/>
+      <!-- antenna -->
+      <path d="M100 48 Q96 34 100 28" stroke="#5D4037" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="100" cy="24" r="7" fill="var(--m-fear-dk)" stroke="#5D4037" stroke-width="2.5"/>
+      <circle cx="98" cy="22" r="2" fill="#fff" opacity=".7"/>
+      <!-- big round cute eyes -->
+      <circle cx="82" cy="105" r="17" fill="#fff" stroke="#5D4037" stroke-width="2.5"/>
+      <circle cx="118" cy="105" r="17" fill="#fff" stroke="#5D4037" stroke-width="2.5"/>
+      <circle cx="84" cy="108" r="8" fill="#5D4037"/>
+      <circle cx="120" cy="108" r="8" fill="#5D4037"/>
+      <!-- eye sparkles (bigger for cute look) -->
+      <circle cx="87" cy="104" r="3" fill="#fff"/>
+      <circle cx="123" cy="104" r="3" fill="#fff"/>
+      <circle cx="82" cy="110" r="1.8" fill="#fff"/>
+      <circle cx="118" cy="110" r="1.8" fill="#fff"/>
+      <!-- gentle worried brows (softer curve) -->
+      <path d="M70 88 Q80 82 90 88" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M130 88 Q120 82 110 88" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- small "o" mouth (cute surprised) -->
+      <ellipse cx="100" cy="138" rx="7" ry="6" fill="#5D4037"/>
+      <ellipse cx="100" cy="139" rx="4" ry="3" fill="#d4a8d0"/>
+      <!-- rosy cheeks -->
+      <circle cx="64" cy="120" r="8" fill="#d8b0e8" opacity=".6"/>
+      <circle cx="136" cy="120" r="8" fill="#d8b0e8" opacity=".6"/>
+      <!-- little feet -->
+      <ellipse cx="82" cy="170" rx="14" ry="7" fill="var(--m-fear-dk)" stroke="#5D4037" stroke-width="3"/>
+      <ellipse cx="118" cy="170" rx="14" ry="7" fill="var(--m-fear-dk)" stroke="#5D4037" stroke-width="3"/>
+    </symbol>
+
+    <!-- ============= SAD (CLOUD) MONSTER ============= -->
+    <symbol id="mon-sad" viewBox="0 0 200 200">
+      <!-- cloud body -->
+      <path d="M52 110 C40 110 32 96 44 84 C40 64 70 56 80 70 C88 50 122 50 130 72 C150 60 172 80 162 96 C176 104 168 124 152 122 C152 138 122 144 110 130 C100 144 70 142 64 128 C46 132 42 116 52 110 Z"
+            fill="#e7e9ee" stroke="#5D4037" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- droopy brows -->
+      <path d="M72 92 Q80 86 90 92" stroke="#5D4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M128 92 Q120 86 110 92" stroke="#5D4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <!-- eyes -->
+      <circle cx="82" cy="104" r="5" fill="#5D4037"/>
+      <circle cx="118" cy="104" r="5" fill="#5D4037"/>
+      <!-- frown -->
+      <path d="M86 120 Q100 110 114 120" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- cheeks -->
+      <circle cx="68" cy="114" r="5" fill="#b9c3d4" opacity=".7"/>
+      <circle cx="132" cy="114" r="5" fill="#b9c3d4" opacity=".7"/>
+      <!-- raindrops -->
+      <g fill="var(--m-hurt)" stroke="#5D4037" stroke-width="2">
+        <path d="M70 150 Q66 160 70 168 Q74 160 70 150 Z"/>
+        <path d="M100 158 Q96 168 100 176 Q104 168 100 158 Z"/>
+        <path d="M130 150 Q126 160 130 168 Q134 160 130 150 Z"/>
+      </g>
+    </symbol>
+
+    <!-- mini silhouettes for title decor -->
+    <symbol id="sil-anger" viewBox="0 0 200 200">
+      <use href="#mon-anger"/>
+    </symbol>
+    <symbol id="sil-sad" viewBox="0 0 200 200">
+      <use href="#mon-sad"/>
+    </symbol>
+
+  <!-- ============= BRAIN (cute, with face) ============= -->
+    <symbol id="brain" viewBox="0 0 280 280">
+      <!-- bouncing motion lines -->
+      <g stroke="#FF6B35" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85">
+        <path d="M30 90 l-10 -6"/>
+        <path d="M28 110 l-12 0"/>
+        <path d="M250 90 l10 -6"/>
+        <path d="M252 110 l12 0"/>
+      </g>
+      <!-- little floating hearts -->
+      <g fill="#FF6B35" stroke="#4A2C24" stroke-width="2" stroke-linejoin="round">
+        <path d="M40 40 q-6 -8 -12 0 q-6 8 12 16 q18 -8 12 -16 q-6 -8 -12 0 Z"/>
+        <path d="M242 36 q-5 -6 -10 0 q-5 6 10 14 q15 -8 10 -14 q-5 -6 -10 0 Z"/>
+      </g>
+      <!-- headphones band -->
+      <path d="M76 95 Q140 38 204 95" stroke="#4A2C24" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <!-- brain body -->
+      <path d="M76 122 C54 122 48 96 70 90 C60 68 100 56 110 78 C118 58 156 56 168 78 C186 62 218 78 208 100 C230 110 226 140 204 142 C212 166 184 184 162 170 C158 196 118 200 108 174 C96 198 64 192 60 168 C38 168 36 138 54 132 C46 124 60 116 76 122 Z"
+            fill="#FFD9C9" stroke="#4A2C24" stroke-width="4.5" stroke-linejoin="round"/>
+      <!-- soft inner shading -->
+      <ellipse cx="140" cy="170" rx="60" ry="22" fill="#ffc7b3" opacity=".45"/>
+      <!-- gyri curves (subtle, fewer to make room for face) -->
+      <g stroke="#4A2C24" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".55">
+        <path d="M82 100 Q92 110 88 124"/>
+        <path d="M188 100 Q198 112 192 124"/>
+        <path d="M72 154 Q88 164 82 178"/>
+        <path d="M198 154 Q210 164 204 180"/>
+      </g>
+      <!-- BIG SMILEY FACE -->
+      <g>
+        <!-- cheeks -->
+        <circle cx="100" cy="152" r="10" fill="#FF8FA8" opacity=".85"/>
+        <circle cx="180" cy="152" r="10" fill="#FF8FA8" opacity=".85"/>
+        <!-- eyes (closed smile arcs) -->
+        <path d="M108 132 Q116 124 124 132" stroke="#4A2C24" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M156 132 Q164 124 172 132" stroke="#4A2C24" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <!-- eye sparkles -->
+        <circle cx="126" cy="126" r="2" fill="#FF6B35"/>
+        <circle cx="174" cy="126" r="2" fill="#FF6B35"/>
+        <!-- mouth — open smile -->
+        <path d="M122 150 Q140 168 158 150 Q150 156 140 156 Q130 156 122 150 Z" fill="#4A2C24" stroke="#4A2C24" stroke-width="2.5" stroke-linejoin="round"/>
+        <!-- tongue -->
+        <path d="M134 156 Q140 162 146 156 L146 158 Q140 162 134 158 Z" fill="#FF6B35"/>
+      </g>
+      <!-- little arms holding the bell -->
+      <path d="M70 130 q-14 4 -16 18" stroke="#4A2C24" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <circle cx="54" cy="152" r="7" fill="#FFD9C9" stroke="#4A2C24" stroke-width="3"/>
+      <path d="M210 130 q14 4 16 18" stroke="#4A2C24" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <circle cx="226" cy="152" r="7" fill="#FFD9C9" stroke="#4A2C24" stroke-width="3"/>
+      <!-- headphone cups -->
+      <rect x="50" y="112" width="24" height="38" rx="10" fill="#FF6B35" stroke="#4A2C24" stroke-width="3.5"/>
+      <rect x="206" y="112" width="24" height="38" rx="10" fill="#FF6B35" stroke="#4A2C24" stroke-width="3.5"/>
+      <!-- little music note above -->
+      <g transform="translate(72 56) rotate(-12)">
+        <line x1="0" y1="-2" x2="0" y2="14" stroke="#3FA9E0" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="-3" cy="14" rx="5" ry="4" fill="#3FA9E0" stroke="#4A2C24" stroke-width="2"/>
+        <path d="M0 -2 q8 -2 8 8" stroke="#3FA9E0" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- bell badge with shine -->
+      <g transform="translate(140 46)">
+        <path d="M-14 0 Q-14 -18 0 -18 Q14 -18 14 0 L16 8 L-16 8 Z" fill="#FFD680" stroke="#4A2C24" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="0" cy="12" r="3.5" fill="#FF6B35" stroke="#4A2C24" stroke-width="2"/>
+        <line x1="0" y1="-18" x2="0" y2="-26" stroke="#4A2C24" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="-6" cy="-8" rx="3" ry="5" fill="#fff" opacity=".6"/>
+      </g>
+      <!-- ding sparkles -->
+      <g stroke="#FF6B35" stroke-width="3" fill="none" stroke-linecap="round">
+        <path d="M104 42 l4 -4"/>
+        <path d="M100 56 l-7 0"/>
+        <path d="M176 42 l-4 -4"/>
+        <path d="M180 56 l7 0"/>
+      </g>
+      <!-- amygdala speech bubble (drawn last = on top of everything) -->
+      <g transform="translate(210,100)">
+        <path d="M-4 0 Q-14 0 -14 12 L-14 24 Q-14 36 -4 36 L-4 36 L-14 50 L6 36 L72 36 Q84 36 84 24 L84 12 Q84 0 72 0 Z"
+              fill="#fff" stroke="#4A2C24" stroke-width="2.5" stroke-linejoin="round"/>
+        <text x="39" y="18" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" font-family="'ZCOOL KuaiLe','Noto Sans SC',sans-serif" fill="#FF6B35">我在这里哦！</text>
+      </g>
+    </symbol>
+
+    <!-- ============= TOOL GLYPHS ============= -->
+    <!-- name tag -->
+    <symbol id="g-tag" viewBox="0 0 64 64">
+      <path d="M8 14 L34 8 Q40 6 44 12 L56 36 Q58 40 54 44 L34 56 Q30 58 26 54 L10 28 Q6 22 8 14 Z"
+            fill="#FFE3A3" stroke="#5D4037" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="18" cy="20" r="4" fill="#fff" stroke="#5D4037" stroke-width="2.5"/>
+      <line x1="22" y1="30" x2="44" y2="42" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="28" y1="24" x2="48" y2="36" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+    </symbol>
+    <!-- balloon -->
+    <symbol id="g-balloon" viewBox="0 0 64 64">
+      <path d="M32 6 C18 6 12 18 12 28 C12 38 20 46 30 48 L30 52 L34 52 L34 48 C44 46 52 38 52 28 C52 18 46 6 32 6 Z"
+            fill="#FFB5C2" stroke="#5D4037" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M30 48 L28 56 M34 48 L36 56" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M28 56 Q32 62 36 56" stroke="#5D4037" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="24" cy="20" rx="4" ry="8" fill="#fff" opacity=".55" transform="rotate(-20 24 20)"/>
+    </symbol>
+    <!-- stopwatch -->
+    <symbol id="g-clock" viewBox="0 0 64 64">
+      <circle cx="32" cy="36" r="22" fill="#fff" stroke="#5D4037" stroke-width="3"/>
+      <rect x="27" y="6" width="10" height="6" rx="2" fill="#FF8B5C" stroke="#5D4037" stroke-width="2.5"/>
+      <line x1="32" y1="14" x2="32" y2="18" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="32" y1="36" x2="32" y2="22" stroke="#5D4037" stroke-width="3" stroke-linecap="round"/>
+      <line x1="32" y1="36" x2="42" y2="40" stroke="#FF8B5C" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="36" r="2.5" fill="#5D4037"/>
+      <text x="32" y="56" text-anchor="middle" font-size="9" font-family="Fredoka, sans-serif" font-weight="700" fill="#5D4037">6</text>
+    </symbol>
+    <!-- speech -->
+    <symbol id="g-speech" viewBox="0 0 64 64">
+      <path d="M10 14 Q10 8 16 8 L48 8 Q54 8 54 14 L54 36 Q54 42 48 42 L28 42 L18 52 L20 42 L16 42 Q10 42 10 36 Z"
+            fill="#FFB5C2" stroke="#5D4037" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="22" cy="25" r="2.5" fill="#5D4037"/>
+      <circle cx="32" cy="25" r="2.5" fill="#5D4037"/>
+      <circle cx="42" cy="25" r="2.5" fill="#5D4037"/>
+    </symbol>
+
+    <!-- snowflake / cool AC for 火火 -->
+    <symbol id="g-snow" viewBox="0 0 64 64">
+      <!-- center -->
+      <circle cx="32" cy="32" r="5" fill="#BFE3F5" stroke="#4A2C24" stroke-width="2.5"/>
+      <!-- 6 arms -->
+      <g stroke="#3FA9E0" stroke-width="3.5" fill="none" stroke-linecap="round">
+        <line x1="32" y1="6"  x2="32" y2="58"/>
+        <line x1="9"  y1="19" x2="55" y2="45"/>
+        <line x1="9"  y1="45" x2="55" y2="19"/>
+      </g>
+      <!-- arm tips -->
+      <g stroke="#3FA9E0" stroke-width="3" fill="none" stroke-linecap="round">
+        <path d="M32 10 l-4 5 M32 10 l4 5"/>
+        <path d="M32 54 l-4 -5 M32 54 l4 -5"/>
+        <path d="M11 20 l1 6 M11 20 l6 -1"/>
+        <path d="M53 44 l-1 -6 M53 44 l-6 1"/>
+        <path d="M11 44 l1 -6 M11 44 l6 1"/>
+        <path d="M53 20 l-1 6 M53 20 l-6 -1"/>
+      </g>
+    </symbol>
+
+    <!-- heart-hug for 泡泡 -->
+    <symbol id="g-hug" viewBox="0 0 64 64">
+      <!-- heart -->
+      <path d="M32 54 C8 38 8 18 22 18 Q32 18 32 28 Q32 18 42 18 C56 18 56 38 32 54 Z"
+            fill="#FFB5C2" stroke="#4A2C24" stroke-width="3" stroke-linejoin="round"/>
+      <!-- arms hugging -->
+      <path d="M14 36 Q4 32 8 24" stroke="#4A2C24" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M50 36 Q60 32 56 24" stroke="#4A2C24" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- shine -->
+      <ellipse cx="24" cy="28" rx="3" ry="5" fill="#fff" opacity=".6" transform="rotate(-25 24 28)"/>
+      <!-- sparkles -->
+      <g stroke="#FF6B35" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M10 12 l3 3 M13 12 l-3 3"/>
+        <path d="M52 10 l3 3 M55 10 l-3 3"/>
+      </g>
+    </symbol>
+
+    <!-- microphone for 抖抖 -->
+    <symbol id="g-mic" viewBox="0 0 64 64">
+      <!-- mic head -->
+      <rect x="22" y="8" width="20" height="30" rx="10" fill="#FF6B35" stroke="#4A2C24" stroke-width="3"/>
+      <!-- grille lines -->
+      <g stroke="#4A2C24" stroke-width="2" fill="none" stroke-linecap="round" opacity=".55">
+        <line x1="26" y1="16" x2="38" y2="16"/>
+        <line x1="26" y1="22" x2="38" y2="22"/>
+        <line x1="26" y1="28" x2="38" y2="28"/>
+      </g>
+      <!-- highlight -->
+      <ellipse cx="28" cy="16" rx="2" ry="6" fill="#fff" opacity=".55"/>
+      <!-- arc stand -->
+      <path d="M14 36 Q14 50 32 50 Q50 50 50 36" stroke="#4A2C24" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <line x1="32" y1="50" x2="32" y2="58" stroke="#4A2C24" stroke-width="3" stroke-linecap="round"/>
+      <rect x="22" y="56" width="20" height="4" rx="2" fill="#4A2C24"/>
+      <!-- sound waves -->
+      <g stroke="#FF6B35" stroke-width="2.5" fill="none" stroke-linecap="round">
+        <path d="M46 14 q4 -2 6 4"/>
+        <path d="M50 8 q6 0 8 8"/>
+      </g>
+    </symbol>
+
+    <!-- rainbow for 雨雨 -->
+    <symbol id="g-rainbow" viewBox="0 0 64 64">
+      <!-- rainbow arcs -->
+      <path d="M8 50 A24 24 0 0 1 56 50" stroke="#FF6B35" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M13 50 A19 19 0 0 1 51 50" stroke="#FFD680" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M18 50 A14 14 0 0 1 46 50" stroke="#7DC97D" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M23 50 A9 9 0 0 1 41 50"   stroke="#3FA9E0" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- clouds -->
+      <ellipse cx="10" cy="52" rx="9" ry="5" fill="#fff" stroke="#4A2C24" stroke-width="2.5"/>
+      <ellipse cx="54" cy="52" rx="9" ry="5" fill="#fff" stroke="#4A2C24" stroke-width="2.5"/>
+      <!-- sparkle -->
+      <g stroke="#FFD680" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M32 16 l0 6 M29 19 l6 0"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+
+<div class="poster">
+ <div class="sections">
+
+  <!-- ===================== SECTION 1: TITLE ===================== -->
+  <section class="s-title">
+    <div class="ai-tag">AI POSTER</div>
+    <div class="stamp"><span>心理健康月</span><span style="font-size:11px;letter-spacing:.15em;margin-top:3px;">2026.5.25</span></div>
+
+    <div class="title-row">
+      <h1 class="main-title">
+        小怪兽不可怕<span class="accent">，</span>我有<span class="num">5</span>招
+      </h1>
+    </div>
+    <div class="subtitle">
+      认识情绪 <span class="dot">·</span> 驯服情绪 <span class="dot">·</span> 和情绪做朋友
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 2: SCENES ===================== -->
+  <section class="s-scenes">
+    <div class="section-label">这些小怪兽，我都见过……</div>
+    <div class="grid">
+      <div class="scene alt-1">
+        <svg class="mon" viewBox="0 0 200 200"><use href="#mon-anger"/></svg>
+        <div class="body">
+          <div class="name"><span class="nick">火火</span> 愤怒怪兽 <span class="chip">脱毛炸毛</span></div>
+          <div class="bubble">下课时同桌把我刚画好的画撕坏了，还拿走了我的橡皮。<b>"他抢了我的东西！"</b>我气得脸都红了，拳头握得紧紧的。</div>
+        </div>
+      </div>
+      <div class="scene alt-2">
+        <svg class="mon" viewBox="0 0 200 200"><use href="#mon-hurt"/></svg>
+        <div class="body">
+          <div class="name"><span class="nick">泡泡</span> 委屈怪兽 <span class="chip">软软泡泡</span></div>
+          <div class="bubble">同桌上课讲话，老师却把我叫起来批评。<b>"明明不是我的错……"</b>我嘴巴抿紧紧的，眼泪在眼眶里打转。</div>
+        </div>
+      </div>
+      <div class="scene alt-3">
+        <svg class="mon" viewBox="0 0 200 200"><use href="#mon-fear"/></svg>
+        <div class="body">
+          <div class="name"><span class="nick">抖抖</span> 害怕怪兽 <span class="chip">心怦怦跳</span></div>
+          <div class="bubble">演讲马上轮到我了。<b>"马上要上台了，心怦怦跳！"</b>腿软软的，手心都是汗，好怕讲错被同学笑。</div>
+        </div>
+      </div>
+      <div class="scene alt-4">
+        <svg class="mon" viewBox="0 0 200 200"><use href="#mon-sad"/></svg>
+        <div class="body">
+          <div class="name"><span class="nick">雨雨</span> 难过怪兽 <span class="chip">小雨云</span></div>
+          <div class="bubble">数学测验只考了 68 分。<b>"考试没考好，爸妈不高兴。"</b>我低着头不敢说话，心里像压着一块小石头。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3: BRAIN SCIENCE ===================== -->
+  <section class="s-brain">
+    <div class="section-label">为什么会有这些怪兽？</div>
+    <div class="knowledge">
+
+      <div class="k-card">
+        <div class="corner">脑科学 · 杏仁核 Amygdala</div>
+        <div class="k-icon">
+          <!-- bell -->
+          <svg width="34" height="34" viewBox="0 0 64 64">
+            <path d="M16 40 Q16 18 32 18 Q48 18 48 40 L52 46 L12 46 Z" fill="#FF6B35" stroke="#4A2C24" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="32" cy="52" r="4" fill="#FFD680" stroke="#4A2C24" stroke-width="2.5"/>
+            <line x1="32" y1="18" x2="32" y2="10" stroke="#4A2C24" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="32" cy="8" r="3" fill="#4A2C24"/>
+            <path d="M6 22 q-3 4 -3 10 M58 22 q3 4 3 10" stroke="#FF6B35" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="k-title">大脑里的情绪<em>”小老师”</em>，它叫杏仁核！</div>
+        <div class="k-text">
+          生气时，我会<b>脸红耳赤、拳头握紧、心里热热的</b>。这是大脑里的<b>杏仁核小老师</b>在叫：<b>“你在不舒服啦！”</b>他提醒我们去保护自己，也提醒我们<b>别伤到别人</b>。
+        </div>
+        <div class="k-tag">⚙️ 杏仁核 = 大脑里管情绪的小老师，他是你的小保镖 🛡️</div>
+      </div>
+
+      <div class="brain-wrap">
+        <div class="brain-callout tl">生气了！<span class="pop">杏仁核召唤～</span></div>
+        <svg class="brain-svg" viewBox="0 0 280 280"><use href="#brain"/></svg>
+        <div class="brain-caption">🧠 杏仁核小老师</div>
+        <div class="brain-callout br"><span class="pop">别怕</span>，我是你的小保镖！</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 4: 5 TECHNIQUES ===================== -->
+  <section class="s-tools">
+    <div class="section-label">我有 5 招，把怪兽变朋友！</div>
+    <div class="stack">
+
+      <!-- BANNER: 招 1, applies to all -->
+      <div class="banner">
+        <div class="step">1</div>
+        <div class="b-icon"><svg viewBox="0 0 64 64"><use href="#g-tag"/></svg></div>
+        <div class="b-body">
+          <div class="b-name">给怪兽起名字 <span class="en">Name it to tame it · 全脑教养法</span></div>
+          <div class="b-text">说出来：<b>"我现在很 ___"</b>。心理学家 <b>Dan Siegel</b> 发现，当你能说出情绪的名字 —— 火火、泡泡、抖抖、雨雨 —— 那一刻，大脑就<b>冷静下来一半</b>！</div>
+        </div>
+        <div class="b-mons">
+          <svg viewBox="0 0 200 200"><use href="#mon-anger"/></svg>
+          <svg viewBox="0 0 200 200"><use href="#mon-hurt"/></svg>
+          <svg viewBox="0 0 200 200"><use href="#mon-fear"/></svg>
+          <svg viewBox="0 0 200 200"><use href="#mon-sad"/></svg>
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <!-- 招 2: 火火 -->
+        <div class="tool">
+          <div class="step">2</div>
+          <div class="glyph"><svg viewBox="0 0 64 64"><use href="#g-snow"/></svg></div>
+          <div class="body">
+            <div class="mini-mons">
+              <svg viewBox="0 0 200 200"><use href="#mon-anger"/></svg>
+            </div>
+            <div class="t-name">给火火开空调 ❄️</div>
+            <div class="t-how">想发火时（"他抢了我的东西！"），<b>吸气数 4、吐气数 6</b>，连吹 <b>5</b> 次 —— 像给火火吹冷风，火苗就慢慢凉下来。</div>
+          </div>
+          <div class="mini-mons">
+            <svg viewBox="0 0 200 200"><use href="#mon-anger"/></svg>
+          </div>
+        </div>
+
+        <!-- 招 3: 泡泡 -->
+        <div class="tool">
+          <div class="step">3</div>
+          <div class="glyph"><svg viewBox="0 0 64 64"><use href="#g-hug"/></svg></div>
+          <div class="body">
+            <div class="mini-mons">
+              <svg viewBox="0 0 200 200"><use href="#mon-hurt"/></svg>
+            </div>
+            <div class="t-name">给泡泡一个抱抱 💗</div>
+            <div class="t-how">委屈来了别忍着 —— 把<b>"明明不是我的错"</b>轻轻说给爸妈、老师或好朋友听。说出来，泡泡就慢慢消下去啦。</div>
+          </div>
+          <div class="mini-mons">
+            <svg viewBox="0 0 200 200"><use href="#mon-hurt"/></svg>
+          </div>
+        </div>
+
+        <!-- 招 4: 抖抖 -->
+        <div class="tool">
+          <div class="step">4</div>
+          <div class="glyph"><svg viewBox="0 0 64 64"><use href="#g-mic"/></svg></div>
+          <div class="body">
+            <div class="mini-mons">
+              <svg viewBox="0 0 200 200"><use href="#mon-fear"/></svg>
+            </div>
+            <div class="t-name">给抖抖一个话筒 🎤</div>
+            <div class="t-how">上台前心怦怦跳？双脚踩稳地板，握住小话筒，小声对自己说 <b>"我可以的，我能行！"</b> —— 抖抖就会变成<b>小勇士</b>。</div>
+          </div>
+          <div class="mini-mons">
+            <svg viewBox="0 0 200 200"><use href="#mon-fear"/></svg>
+          </div>
+        </div>
+
+        <!-- 招 5: 雨雨 -->
+        <div class="tool">
+          <div class="step">5</div>
+          <div class="glyph"><svg viewBox="0 0 64 64"><use href="#g-rainbow"/></svg></div>
+          <div class="body">
+            <div class="mini-mons">
+              <svg viewBox="0 0 200 200"><use href="#mon-sad"/></svg>
+            </div>
+            <div class="t-name">陪雨雨等彩虹 🌈</div>
+            <div class="t-how">考试没考好别藏起来 —— 告诉<b>爱我的人</b>，再做一件喜欢的事（画画、骑车、抱抱小狗）。<b>雨过总会有彩虹～</b></div>
+          </div>
+          <div class="mini-mons">
+            <svg viewBox="0 0 200 200"><use href="#mon-sad"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 5: SLOGAN + AUTHOR ===================== -->
+  <section class="s-foot">
+    <div class="slogan">
+      怪兽不可怕，<span class="burst">5 招</span>变朋友！
+    </div>
+    <div class="author-bar">
+      <div>作者：<b>麓城外国语小学 · 三年级 7 班 · 欧以诺</b>｜指导老师：<b>谷老师</b></div>
+      <div>AI 工具：Claude Design ｜ 2026 麓城外国语小学</div>
+    </div>
+  </section>
+
+ </div>
+</div>
+
+</body>
+</html>
