@@ -7,6 +7,7 @@
 #   - 其他位置                      → 报错退出
 
 set -e
+unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
 ACTION="${1:-both}"
 AILAB="$HOME/Desktop/AILab"
 PWD_NOW="$(pwd -P)"
