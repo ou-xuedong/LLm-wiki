@@ -23,6 +23,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: Earthworm Jim creator calls his design "slop," says AI does it better Gamereactor UK
+- 2026-05-26: James Daunt Looks to Clarify B&N’s Position on AI-Generated Books Publishers Weekly
+- 2026-05-26: Jim Chanos Says Investors Are Confusing Cyclical AI Earnings With Permanent Growth The Acquirer's Multiple
 - 2026-05-19: Jim Cramer says it's time to trim this volatile AI chipmaker CNBC
 - 2026-05-19: Billionaire Jim Goodnight Built An Analytics Profit Machine. AI Is Forcing Its Reinvention Forbes
 - 2026-05-19: Jim Cramer Says Buy 2 Artificial Intelligence (AI) Stocks Down 24% and 46% Before They Soar The Motley Fool

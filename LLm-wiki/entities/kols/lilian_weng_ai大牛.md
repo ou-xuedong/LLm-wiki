@@ -19,6 +19,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: Apple hires ex-Google executive to head AI marketing amid push to improve Siri Reuters
+- 2026-05-26: Apple Recruits Google Veteran Lilian Rincon to Lead AI Product Marketing MLQ.ai
+- 2026-05-26: Former Google VP to lead Apple's AI product marketing AppleInsider
 - 2026-05-19: Apple Recruits Google Veteran Lilian Rincon to Lead AI Product Marketing MLQ.ai
 - 2026-05-19: Former Google VP to lead Apple's AI product marketing AppleInsider
 - 2026-05-19: Apple hires ex-Google executive to head AI marketing amid push to improve Siri Reuters

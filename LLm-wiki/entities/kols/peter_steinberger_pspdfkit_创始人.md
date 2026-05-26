@@ -44,6 +44,9 @@ Peter 是从 PSPDFKit 创始人转型为 OpenClaw 核心贡献者的典型硅谷
 
 
 ## 近期动态
+- 2026-05-26: From card catalogues to AI: Peter Webster named Saint Mary’s University’s first Librarian Emeritus Saint Mary's Universi
+- 2026-05-26: AI-powered bank founded by Peter Thiel protégé wants to replace humans with code — will it work? AOL.com
+- 2026-05-26: Peter Thiel-Backed Startup Bets Its AI Can Boost Hiring WSJ
 - 2026-05-19: Peter Diamandis: How AI Will Redesign Every Job in the Next 3 Years (Transcript) The Singju Post
 - 2026-05-19: Peter Jackson Talks Upcoming Projects, AI's Role in Filmmaking: "It's Just a Tool Like Any Other" The Hollywood Reporter
 - 2026-05-19: For $1.3 million a month, OpenClaw founder Peter Steinberger runs 100 AI agents that code, review PRs, and find bugs the

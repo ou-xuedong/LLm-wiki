@@ -62,6 +62,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: AI: The Promise and the Peril with Sen. Bernie Sanders and Geoffrey Hinton - Institute of Politics and Public Service In
+- 2026-05-26: 'Godfather Of AI' Geoffrey Hinton Said AI Would Replace Radiologists—A Decade Later, Demand Is Surging, Salaries Are Soa
+- 2026-05-26: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
 - 2026-05-19: Time to apply the brakes to runaway AI, says pioneer UN News
 - 2026-05-19: AI godfather Geoffrey Hinton says we must convince AI that it’s our mother BetaKit
 - 2026-05-19: AI: The Promise and the Peril with Sen. Bernie Sanders and Geoffrey Hinton Institute of Politics and Public Service

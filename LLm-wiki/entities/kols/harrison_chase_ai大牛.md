@@ -19,6 +19,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: Jardine Matheson to buy Australia's I-MED at $2.4 billion enterprise value in healthcare push Reuters
+- 2026-05-26: Harrison.ai Continues to Grow Open Platform Ecosystem, Welcomes Four New AI Partners Business Wire
+- 2026-05-26: A provocative proposal asks the FDA to let some AI devices on the market without review statnews.com
 - 2026-05-19: A provocative proposal asks the FDA to let some AI devices on the market without review statnews.com
 - 2026-05-19: Harrison.ai Continues to Grow Open Platform Ecosystem, Welcomes Four New AI Partners Business Wire
 - 2026-05-19: Q&A with entrepreneur Harrison Painter on AI, marketing and feeling claustrophobic Indianapolis Business Journal

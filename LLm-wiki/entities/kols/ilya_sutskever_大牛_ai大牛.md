@@ -22,6 +22,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: Microsoft’s Ilya Bukshteyn on the Era of the Agentic Co-Worker AVIXA
+- 2026-05-26: Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’ WIRED
+- 2026-05-26: Ilya Sutskever Testifies He Holds $7 Billion OpenAI Stake—Second New Billionaire Revealed In Musk-Altman Trial Forbes
 - 2026-05-19: After Failed Attempt To Acquire Ilya Sutskever's $32B AI Startup, Meta Poaches Its Top Boss: Report MSN
 - 2026-05-19: Ilya Sutskever Stands by His Role in Sam Altman’s OpenAI Ouster: ‘I Didn’t Want It to Be Destroyed’ WIRED
 - 2026-05-19: Ilya Sutskever Testifies He Holds $7 Billion OpenAI Stake—Second New Billionaire Revealed In Musk-Altman Trial Forbes

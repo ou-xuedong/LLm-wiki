@@ -19,6 +19,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: College Students, Professors are Making Their Own AI Rules. They Don't Always Agree KQED
+- 2026-05-26: Why AI is CCISD's big man on campus this school year KRIS 6 News Corpus Christi
+- 2026-05-26: Beyond Model Benchmarks: Algolia CTO Xavier Grand Joins AI Day France 2026 Panel on Algolia’s Role in the GenAI UX Revol
 - 2026-05-19: College Students, Professors are Making Their Own AI Rules. They Don't Always Agree KQED
 - 2026-05-19: For Cyprien Clément-Delmas, with the Rise of AI, Reality and Authenticity Have Become Even More Valuable Little Black Bo
 - 2026-05-19: How One Art Shipping Company Is Pairing A.I.-Driven Efficiencies With Hands-On Human Attention observer.com

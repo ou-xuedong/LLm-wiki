@@ -65,6 +65,9 @@ tags:
 - "Agency > Intelligence" — [@karpathy 2025-02-25](https://x.com/karpathy)
 
 ## 近期动态
+- 2026-05-26: OpenAI Cofounder Andrej Karpathy Joins Rival Anthropic Forbes
+- 2026-05-26: Anthropic hires OpenAI co-founder Andrej Karpathy, former Tesla AI leader CNBC
+- 2026-05-26: OpenAI co-founder Andrej Karpathy joins Anthropic Axios
 - 2026-05-19: Andrej Karpathy, Tesla's AI director announces his departure Not a Tesla App
 - 2026-05-19: The man who coined the term 'vibe coding' says code written by AI can still be 'awkward' and 'gross' Business Insider
 - 2026-05-19: “Enough with the Walls of Text” — Andrej Karpathy’s Simple Lifehack: Just Ask AI for HTML quasa.io

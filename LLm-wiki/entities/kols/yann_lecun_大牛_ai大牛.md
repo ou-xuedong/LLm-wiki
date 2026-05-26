@@ -22,6 +22,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: In lecture at Brown, Yann LeCun discusses a new approach to AI Brown University
+- 2026-05-26: AI godfather Yann LeCun's advice on college, work and breaking through AI hype Axios
+- 2026-05-26: The False Glorification of Yann LeCun Marcus on AI | Substack
 - 2026-05-19: AI godfather Yann LeCun's advice on college, work and breaking through AI hype Axios
 - 2026-05-19: Yann LeCun argues LLMs will drive real-world applications, but not human-level thinking Crypto Briefing
 - 2026-05-19: In lecture at Brown, Yann LeCun discusses a new approach to AI Brown University

@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: Berkshire Hathaway Rebalances Under Greg Abel With Bigger AI And Tech Bet Yahoo Finance
+- 2026-05-26: Digital PR Hasn’t Changed – AI Search Just Made The Fundamentals More Important Search Engine Journal
+- 2026-05-26: Billionaire Bill Ackman Sold This Stock While Warren Buffett Successor Greg Abel Bought It. Who's Right? The Globe and M
 - 2026-05-19: Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shake-Up WIRED
 - 2026-05-19: OpenAI co-founder Greg Brockman takes charge of product strategy TechCrunch
 - 2026-05-19: Warren Buffett's Successor, Greg Abel, Just Sold 16 Stocks, but Piled Into an AI Titan That's Now a Top-5 Position for B

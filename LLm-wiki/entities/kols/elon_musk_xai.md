@@ -18,6 +18,9 @@ tags:
 
 
 ## 近期动态
+- 2026-05-26: Grok schlock panned by fed flock The Verge
+- 2026-05-26: Elon Musk’s Dreams of Interplanetary Profit | Technology for May 24 WSJ
+- 2026-05-26: Tesla Model S Sparked Elon Musk's AI, Robotics And Space Revolution: 'Little Did We Know,' Says Cathie Wood Yahoo Financ
 - 2026-05-19: Jury Rejects Musk’s Claims Against OpenAI WSJJury dismisses all claims in Elon Musk’s lawsuit against OpenAI CEO Sam Alt
 - 2026-05-19: Elon Musk Offered to Pay Employees for Their Tax Returns, You Can Probably Guess What Happened Next Gizmodo
 - 2026-05-19: Elon Musk loses US lawsuit against OpenAI Al Jazeera
