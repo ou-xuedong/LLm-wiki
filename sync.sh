@@ -8,9 +8,36 @@
 
 set -e
 unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
+export GIT_TERMINAL_PROMPT=0   # 禁止 git 弹出交互式凭证提示，避免钩子挂起
 ACTION="${1:-both}"
 AILAB="$HOME/Desktop/AILab"
 PWD_NOW="$(pwd -P)"
+GIT_NET_TIMEOUT="${GIT_NET_TIMEOUT:-20}"   # 单个网络操作最长等待秒数
+
+# 选择可用的 timeout 命令（GNU coreutils）
+if command -v timeout >/dev/null 2>&1; then
+    TIMEOUT_BIN="timeout"
+elif command -v gtimeout >/dev/null 2>&1; then
+    TIMEOUT_BIN="gtimeout"
+else
+    TIMEOUT_BIN=""
+fi
+
+# 包装网络型 git 操作：套超时、缩进输出、失败/超时仅警告不中断
+run_git_net() {
+    if [[ -n "$TIMEOUT_BIN" ]]; then
+        "$TIMEOUT_BIN" "$GIT_NET_TIMEOUT" git "$@" 2>&1 | sed "s/^/  /"
+    else
+        git "$@" 2>&1 | sed "s/^/  /"
+    fi
+    local rc=${PIPESTATUS[0]}
+    if [[ "$rc" -eq 124 ]]; then
+        echo "  ⚠️ 超时 ${GIT_NET_TIMEOUT}s 跳过（远程无响应，变更已存本地，下次再推）"
+    elif [[ "$rc" -ne 0 ]]; then
+        echo "  ⚠️ 失败跳过（退出码 $rc，变更已存本地）"
+    fi
+    return 0
+}
 
 # ── 决定同步范围 ──
 if [[ "$PWD_NOW" == "$AILAB" || "$PWD_NOW" == "$HOME" ]]; then
@@ -54,7 +81,7 @@ sync_one() {
     # pull
     if [[ "$ACTION" == "pull" || "$ACTION" == "both" ]]; then
         echo "[$label] 拉取..."
-        git pull --rebase 2>&1 | sed "s/^/  /"
+        run_git_net pull --rebase
     fi
 
     # push（修复旧 bug：检查 ahead 而不仅是 dirty）
@@ -63,10 +90,10 @@ sync_one() {
             echo "[$label] 提交本地变更..."
             git add -A
             git commit -m "auto-sync: $(date '+%Y-%m-%d %H:%M')" 2>&1 | sed "s/^/  /"
-            git push 2>&1 | sed "s/^/  /"
+            run_git_net push
         elif [[ "$(git rev-list @{u}..HEAD 2>/dev/null | wc -l)" -gt 0 ]]; then
             echo "[$label] 推送已提交的本地变更..."
-            git push 2>&1 | sed "s/^/  /"
+            run_git_net push
         else
             echo "[$label] 无变更"
         fi
