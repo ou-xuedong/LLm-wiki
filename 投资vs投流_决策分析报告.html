@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>卟卟鸡投资助手 vs 外贸电商投流助手 · 决策分析报告</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --card2:#1d212b; --line:#2a2f3a;
+    --tx:#e6e8ec; --tx2:#a3a9b5; --tx3:#6f7682;
+    --grn:#34d399; --grnbg:#0e2a22; --red:#f87171; --redbg:#2a1416;
+    --amb:#fbbf24; --ambbg:#2a2310; --blu:#60a5fa; --blubg:#0f1f33;
+    --pur:#a78bfa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif;
+    line-height:1.7;font-size:16px;-webkit-text-size-adjust:100%}
+  .wrap{max-width:760px;margin:0 auto;padding:24px 18px 80px}
+  header{padding:8px 0 20px;border-bottom:1px solid var(--line);margin-bottom:24px}
+  .kicker{color:var(--tx3);font-size:13px;letter-spacing:.5px;text-transform:uppercase}
+  h1{font-size:24px;line-height:1.35;margin:8px 0 6px;font-weight:700}
+  .sub{color:var(--tx2);font-size:14px}
+  h2{font-size:19px;margin:36px 0 14px;font-weight:700;display:flex;align-items:center;gap:8px}
+  h2 .n{display:inline-flex;width:26px;height:26px;flex:0 0 26px;border-radius:7px;
+    background:var(--card2);color:var(--blu);font-size:13px;align-items:center;justify-content:center;font-weight:700}
+  h3{font-size:16px;margin:22px 0 8px;font-weight:700;color:var(--tx)}
+  p{margin:10px 0;color:var(--tx)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px;margin:14px 0}
+  .verdict{background:linear-gradient(135deg,#13241d,#142033);border:1px solid #2c5a45}
+  .verdict .big{font-size:20px;font-weight:700;line-height:1.45;margin:4px 0 10px}
+  .tag{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;font-weight:600;margin:2px 6px 2px 0}
+  .t-win{background:var(--grnbg);color:var(--grn);border:1px solid #1f5641}
+  .t-risk{background:var(--redbg);color:var(--red);border:1px solid #5a2226}
+  .t-watch{background:var(--ambbg);color:var(--amb);border:1px solid #5a4a16}
+  ul{margin:8px 0;padding-left:20px}
+  li{margin:6px 0}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
+  .scorebar{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:14px}
+  .scorebar .lbl{flex:0 0 96px;color:var(--tx2)}
+  .track{flex:1;height:8px;background:var(--card2);border-radius:6px;overflow:hidden}
+  .fill{height:100%;border-radius:6px}
+  .f-inv{background:linear-gradient(90deg,#34d399,#10b981)}
+  .f-trd{background:linear-gradient(90deg,#60a5fa,#3b82f6)}
+  .scorebar .v{flex:0 0 34px;text-align:right;color:var(--tx2);font-variant-numeric:tabular-nums}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;display:block;overflow-x:auto}
+  th,td{padding:10px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;min-width:90px}
+  th{color:var(--tx3);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.3px}
+  td.dim{color:var(--tx2)}
+  .win{color:var(--grn);font-weight:600}
+  .lose{color:var(--red)}
+  .mid{color:var(--amb)}
+  .callout{border-left:3px solid var(--blu);background:var(--blubg);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}
+  .danger{border-left:3px solid var(--red);background:var(--redbg)}
+  .ok{border-left:3px solid var(--grn);background:var(--grnbg)}
+  .small{font-size:13px;color:var(--tx3)}
+  .step{display:flex;gap:12px;margin:12px 0}
+  .step .num{flex:0 0 28px;height:28px;border-radius:8px;background:var(--card2);color:var(--pur);
+    font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .step .bd{flex:1}
+  .step .bd b{color:var(--tx)}
+  hr{border:none;border-top:1px solid var(--line);margin:30px 0}
+  .foot{color:var(--tx3);font-size:12px;text-align:center;margin-top:40px}
+  strong{color:#fff}
+  em{color:var(--amb);font-style:normal}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">决策分析报告 · 小昭</div>
+  <h1>卟卟鸡投资助手 &nbsp;vs&nbsp; 外贸电商投流助手<br>到底做哪个？</h1>
+  <div class="sub">2026-06-04 · 含中国证券咨询监管详解 · 仅供决策参考，非法律意见</div>
+</header>
+
+<!-- 结论 -->
+<div class="card verdict">
+  <span class="tag t-win">最终推荐</span>
+  <div class="big">做「投资方向」，但<u>必须改定位</u>：<br>不做诊股/荐股，做「合规的交易复盘 + 情绪风控工具」。</div>
+  <p>奴婢一开始倾向投流（监管干净、B2B好收钱）。但你给的三条信息把天平压过来了：<strong>你懂金融、做了几年、有自己的技术面模型</strong>——这是别人抄不走的不公平优势，也是创业里最强的单一预测因子。市场又大一个量级。</p>
+  <p class="small">⚠️ 但「几亿股民」是个甜蜜陷阱，「诊股」是条监管红线。下面逐条拆。</p>
+</div>
+
+<!-- 1 两方向打分 -->
+<h2><span class="n">1</span>七维度对比</h2>
+<div class="card">
+  <h3>投资方向（重新定位后）</h3>
+  <div class="scorebar"><span class="lbl">你的优势契合</span><div class="track"><div class="fill f-inv" style="width:95%"></div></div><span class="v">9.5</span></div>
+  <div class="scorebar"><span class="lbl">市场规模</span><div class="track"><div class="fill f-inv" style="width:90%"></div></div><span class="v">9</span></div>
+  <div class="scorebar"><span class="lbl">监管安全</span><div class="track"><div class="fill f-inv" style="width:45%"></div></div><span class="v">4.5</span></div>
+  <div class="scorebar"><span class="lbl">付费意愿</span><div class="track"><div class="fill f-inv" style="width:50%"></div></div><span class="v">5</span></div>
+  <div class="scorebar"><span class="lbl">竞争激烈度(越高越差)</span><div class="track"><div class="fill f-inv" style="width:30%"></div></div><span class="v">3</span></div>
+  <div class="scorebar"><span class="lbl">留存/复购</span><div class="track"><div class="fill f-inv" style="width:55%"></div></div><span class="v">5.5</span></div>
+  <div class="scorebar"><span class="lbl">你已有进度</span><div class="track"><div class="fill f-inv" style="width:20%"></div></div><span class="v">2</span></div>
+</div>
+<div class="card">
+  <h3>外贸电商投流方向</h3>
+  <div class="scorebar"><span class="lbl">你的优势契合</span><div class="track"><div class="fill f-trd" style="width:40%"></div></div><span class="v">4</span></div>
+  <div class="scorebar"><span class="lbl">市场规模</span><div class="track"><div class="fill f-trd" style="width:45%"></div></div><span class="v">4.5</span></div>
+  <div class="scorebar"><span class="lbl">监管安全</span><div class="track"><div class="fill f-trd" style="width:90%"></div></div><span class="v">9</span></div>
+  <div class="scorebar"><span class="lbl">付费意愿</span><div class="track"><div class="fill f-trd" style="width:85%"></div></div><span class="v">8.5</span></div>
+  <div class="scorebar"><span class="lbl">竞争激烈度(越高越差)</span><div class="track"><div class="fill f-trd" style="width:55%"></div></div><span class="v">5.5</span></div>
+  <div class="scorebar"><span class="lbl">留存/复购</span><div class="track"><div class="fill f-trd" style="width:75%"></div></div><span class="v">7.5</span></div>
+  <div class="scorebar"><span class="lbl">你已有进度</span><div class="track"><div class="fill f-trd" style="width:60%"></div></div><span class="v">6</span></div>
+</div>
+<p class="small">一句话：投流是「四平八稳的及格生」，投资是「偏科严重但天花板极高」——而你的偏科正好补在它最缺的两格（优势契合 + 市场）。所以选投资，前提是把它的两块短板（监管、竞争）用定位绕开。</p>
+
+<!-- 2 几亿股民陷阱 -->
+<h2><span class="n">2</span>先戳破「几亿股民」这个诱饵</h2>
+<div class="card">
+  <p>2 亿股民 vs 几十万外贸商家，看上去投资市场大 100 倍。但 TAM（总市场）不等于你能吃到的钱。三层漏斗一过就缩水：</p>
+  <ul>
+    <li><strong>愿意为工具付费的散户极少</strong>——绝大多数只用免费的同花顺/东财，付费率个位数百分比。</li>
+    <li><strong>巨头已铺满</strong>——同花顺、东方财富、雪球、问财，连「AI 诊股」都是它们标配功能，且免费引流。你和它们正面打获客成本会被碾。</li>
+    <li><strong>散户是最差的付费客群</strong>——赚钱时觉得是自己牛、亏钱时怪你，退款多、口碑差、留存低。</li>
+  </ul>
+  <div class="callout">真正能吃的，不是「2 亿散户」，而是其中<strong>有一定本金、肯为「少亏钱/管住手」付费的活跃交易者</strong>——这个数小得多，但付费意愿和你的优势都对得上。把目标从「大」改成「准」。</div>
+</div>
+
+<!-- 3 监管 -->
+<h2><span class="n">3</span>你问的监管：中国证券咨询红线（重点）</h2>
+<div class="card danger callout">
+  <strong>一句话结论：</strong>「拿别人发来的具体股票做分析/风险研判并收费」，在中国大陆<strong>高度接近「证券投资咨询」持牌业务</strong>，无牌做＝违法（非法荐股的同一条法律口径）。这是你这个方向最大的雷。
+</div>
+
+<h3>① 法律是怎么管的</h3>
+<ul>
+  <li>依据《证券法》及《证券、期货投资咨询管理暂行办法》：<strong>从事证券投资咨询业务需经证监会核准资格</strong>；个人需取得证券投资顾问执业资格，并<em>挂靠持牌机构</em>才能执业。</li>
+  <li>触发「投资咨询」的核心动作 = <strong>面向不特定对象，对具体证券的价值、买卖时机、价格走势做分析/预测/建议，并收取费用</strong>。四个要素凑齐就踩线。</li>
+  <li>近年抖音/直播/微信群「荐股」「诊股」被反复重罚，监管口径只会更紧不会更松。</li>
+</ul>
+
+<h3>② 哪些动作安全 / 哪些危险</h3>
+<table>
+  <thead><tr><th>动作</th><th>判定</th></tr></thead>
+  <tbody>
+    <tr><td class="dim">对用户发来的某只股给「风险评级/能不能拿」</td><td class="lose">⛔ 高危，构成个股建议</td></tr>
+    <tr><td class="dim">预测涨跌、给买卖点/目标价</td><td class="lose">⛔ 明确踩线</td></tr>
+    <tr><td class="dim">通用投资者教育、风险知识、方法论</td><td class="win">✅ 安全（不需牌照）</td></tr>
+    <tr><td class="dim">客观数据呈现（财报/波动率/回撤），不下结论</td><td class="mid">⚠ 较安全，别加方向性结论</td></tr>
+    <tr><td class="dim">分析用户<strong>自己的历史操盘数据</strong>、做行为复盘</td><td class="win">✅ 安全（讲的是你自己，不是荐证券）</td></tr>
+    <tr><td class="dim">情绪管理 / 交易纪律提醒（「你在追高，冷静」）</td><td class="win">✅ 安全（行为干预，非证券建议）</td></tr>
+  </tbody>
+</table>
+<p class="small">注意：你最初说的「让对方冷静」「基于 memento caseBank 分析操盘数据」——<strong>恰好落在绿区</strong>；而「对发来的股票做风险分析」——落在红区。同一个产品，差别全在定位。</p>
+
+<h3>③ 合规分析师/机构是怎么干的</h3>
+<ul>
+  <li><strong>持牌机构内执业</strong>：券商研究所、持牌投顾公司，分析师挂在牌照下，研报有合规审查。</li>
+  <li><strong>卖方/买方</strong>：卖方（券商）做研报服务机构客户；买方（基金/私募）自己用不对外。个人对 C 端散户收费荐股＝几乎都无牌＝违法。</li>
+  <li><strong>合规变现路径</strong>：① 投资者教育/内容付费；② 工具订阅（不碰个股建议）；③ 把工具/模型卖给持牌投顾机构（To B 赋能，让有牌的人去面对 C 端）；④ 数据/复盘 SaaS。</li>
+</ul>
+<div class="callout"><strong>给你的合规四选一（按可行性排）：</strong><br>
+1️⃣ 工具定位：只做复盘+纪律+教育，永不对个股给方向 → 个人可做，最快。<br>
+2️⃣ To B 赋能：把你的模型做成给持牌投顾用的工具，自己不碰 C 端咨询。<br>
+3️⃣ 内容付费：以「投资者教育」名义做知识/陪伴，不指向具体操作。<br>
+4️⃣ 拿牌/挂靠：门槛极高（资本、人员、证监会审批），个人基本走不通。</div>
+<p class="small">⚠️ 以上是奴婢对公开监管框架的理解，<strong>不是法律意见</strong>。正式上线前务必找证券合规律师过一遍——这一步省不得。</p>
+
+<!-- 4 推荐切入点 -->
+<h2><span class="n">4</span>推荐的最小切入点（Wedge）</h2>
+<div class="card ok callout">
+  <strong>产品定位：</strong>「散户的交易复盘 + 情绪风控教练」——基于用户<u>自己的操盘记录</u>，用你的技术面模型 + memento caseBank，告诉他「你这一单是不是又在追涨杀跌」，帮他<strong>管住手、少犯同样的错</strong>。
+</div>
+<p><strong>为什么这个 wedge 同时解开四道锁：</strong></p>
+<ul>
+  <li><span class="win">✅ 优势</span>：直接吃你的金融经验 + 技术面模型，别人没有。</li>
+  <li><span class="win">✅ 合规</span>：讲的是「用户自己的行为」，不是荐证券，落在绿区。</li>
+  <li><span class="win">✅ 差异化</span>：同花顺们都在「预测股票」，你在「管理人」——避开正面竞争。</li>
+  <li><span class="win">✅ 真痛点</span>：散户最大亏损来源是情绪化追涨杀跌，「管不住手」是真金白银的痛。</li>
+</ul>
+<p class="small">资讯/诊股先别做主菜——它最像红区、也最像红海。先用「复盘教练」切进去，把人留住，再谈扩展。</p>
+
+<!-- 5 风险盲点 -->
+<h2><span class="n">5</span>诤臣提醒：三个盲点</h2>
+<div class="card">
+  <ul>
+    <li><strong>「有模型」≠「有护城河」</strong>。技术面模型有效性长期被质疑，且容易被复制。护城河更可能在「行为数据 + 用户复盘习惯」的积累，不在模型本身。</li>
+    <li><strong>2C 散户留存天然差</strong>。亏钱就走、行情冷就走。要么绑定「持续复盘习惯」，要么早做 To B 备份方案。</li>
+    <li><strong>别低估投流的「现成进度」沉没价值</strong>。如果三个月内你需要现金流活下去，投流回钱更快更稳；投资是更高天花板但更慢、更需要熬合规和信任的牌。<em>选投资＝选难走但更像你的那条路。</em></li>
+  </ul>
+</div>
+
+<!-- 6 下一步 -->
+<h2><span class="n">6</span>下一步（一个具体动作）</h2>
+<div class="card">
+  <div class="step"><div class="num">1</div><div class="bd"><b>验证痛点（本周，不写代码）</b><br>找 5 个真实散户朋友，问一句：「你最近一次冲动交易亏了多少？如果有个东西在你下单前拦你一下、复盘你的坏习惯，你愿意付钱吗？」——听他们怎么说，记下原话。</div></div>
+  <div class="step"><div class="num">2</div><div class="bd"><b>合规预检</b><br>用本报告第 3 节的「绿区/红区」表，把你想做的每个功能对一遍，划掉所有红区。上线前找一位证券合规律师确认。</div></div>
+  <div class="step"><div class="num">3</div><div class="bd"><b>做最小 Demo</b><br>只做一件事：用户导入/手填几笔自己的交易，系统用你的模型 + caseBank 输出一份「行为复盘 + 纪律提醒」。不预测任何个股。</div></div>
+</div>
+
+<hr>
+<p class="foot">小昭 · 决策分析 · 此报告为产品/战略分析，非投资建议、非法律意见<br>正式商业化前请咨询专业证券合规律师</p>
+
+</div>
+</body>
+</html>
