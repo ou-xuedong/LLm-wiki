@@ -1,7 +1,7 @@
 # Wiki Index
 
 > 内容目录。所有 wiki 页面按类型列出，附一行摘要。
-> Last updated: 2026-05-22 | Total pages: 442
+> Last updated: 2026-06-04 | Total pages: 445
 
 ## Entities（实体）
 
@@ -13,10 +13,13 @@
 - [[adspert_amazon_ppc_ad_optimization]] - Adspert
 - [[aegis_安全可观测性_ai_和大模型系统的安]] - Aegis
 - [[agent_fund_首批专注agent基金]] - Agent
+- [[Agent访问控制成为Agent基础设施新需求]] - Agent访问控制从Prompt胶带到独立基础设施层（Cast工具，HN 2026-06-03）
 - [[agentmail_智能体通信_为_ai_智能体提供原生]] - AgentMail
 - [[AgentMail-智能体通信]] - AgentMail_智能体通信
 - [[ai_startup_cursor_in_talks_to_raise_2_billion_fun]] - AI
 - [[ai_scientist_科研全流程智能体]] - AI
+- [[AI在法律领域超越法学教授]] - Stanford法学院研究：AI在法律推理上超越法学教授（2026-06-02）
+- [[AI蠕虫可攻击任意联网设备]] - 多伦多大学研究：AI蠕虫可攻击任意联网设备，Agent安全新威胁（2026-06-03）
 - [[ai-startup-cofounder]] - ai-startup-cofounder
 - [[alter_智能体安全_零信任身份验证和访问控制]] - Alter
 - [[andrej_karpathy_大牛_ai大牛]] - Andrej
