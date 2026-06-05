@@ -1,0 +1,3 @@
+# 复制本文件为 .mail_config 并填入真实值（.mail_config 已被 gitignore）
+EMAIL=you@gmail.com
+APP_PASSWORD=填16位应用专用密码去掉空格

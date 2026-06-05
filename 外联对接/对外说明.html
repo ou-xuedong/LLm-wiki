@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>卟卟鸡 · 对外说明</title>
+<style>
+:root{--ink:#1a1a2e;--mut:#6b7280;--line:#e5e7eb;--accent:#c2410c;--bg:#faf8f5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:32px 22px 80px}
+.tabs{position:sticky;top:0;background:var(--bg);padding:14px 0;
+  display:flex;gap:8px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.tab{flex:1;padding:10px;border:1px solid var(--line);background:#fff;border-radius:10px;
+  text-align:center;cursor:pointer;font-weight:600;color:var(--mut)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.doc{display:none} .doc.on{display:block}
+h1{font-size:1.7rem;margin:.8em 0 .3em;line-height:1.3}
+h2{font-size:1.25rem;margin:1.6em 0 .4em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.1em 0 .3em}
+blockquote{color:var(--mut);font-size:.9rem;border-left:3px solid var(--accent);
+  margin:1em 0;padding:.4em 0 .4em 14px;background:#fff}
+ul{padding-left:1.3em} li{margin:.25em 0}
+code{background:#f0ede8;padding:1px 6px;border-radius:5px;font-size:.9em}
+strong{color:var(--accent)}
+hr{border:0;border-top:1px solid var(--line);margin:1.4em 0}
+.todo{background:#fff7ed;border:1px dashed var(--accent);color:var(--accent);
+  border-radius:10px;padding:10px 14px;margin:.8em 0;font-size:.9rem}
+.foot{margin-top:40px;color:var(--mut);font-size:.8rem;text-align:center}
+</style></head><body><div class="wrap">
+<div class="tabs">
+  <div class="tab on" onclick="sw('cn')">中文</div>
+  <div class="tab" onclick="sw('en')">English</div>
+</div>
+<div id="cn" class="doc on"><h1>卟卟鸡 · 对外说明（中文版）</h1>
+<blockquote>对外融资/对接 VC 用的一页纸说明。产品定位变更时，请同步更新本文件与 <code>对外说明_EN.md</code>。</blockquote>
+<blockquote>最后更新：2026-06-04</blockquote>
+<h2>一句话定位</h2>
+<p><strong>散户的交易复盘 + 情绪风控教练。</strong></p>
+<p>基于用户自己的操盘记录，用技术面模型 + memento caseBank，</p>
+<p>告诉他「你这一单是不是又在追涨杀跌」，帮他管住手、少犯同样的错。</p>
+<h2>我们解决什么问题</h2>
+<p>散户亏钱，多数不是不懂行情，而是<strong>管不住自己的手</strong>——追涨杀跌、重复同一类错误。</p>
+<p>市场上的产品都在「给信号、荐标的」，没人帮散户<strong>复盘自己的行为、约束自己的情绪</strong>。</p>
+<h2>我们怎么做</h2>
+<ul>
+<li><strong>交易复盘</strong>：导入用户自己的真实操盘记录，逐单回放。</li>
+<li><strong>行为诊断</strong>：用技术面模型 + 案例库（memento caseBank），识别「这一单是不是又在追高/恐慌割肉」。</li>
+<li><strong>情绪风控</strong>：在用户即将重复犯错时，做交易纪律提醒（「你在追高，冷静」）。</li>
+<li><strong>情绪价值</strong>：陪伴式教练，而非冷冰冰的信号机。</li>
+</ul>
+<h2>合规边界（重要）</h2>
+<p>卟卟鸡<strong>不是荐股工具，不碰持牌业务</strong>。我们讲的是「用户自己」，不是荐证券：</p>
+<ul>
+<li>✅ 分析用户自己的历史操盘、做行为复盘</li>
+<li>✅ 情绪管理 / 交易纪律提醒（行为干预，非证券建议）</li>
+<li>✅ 通用投资者教育、风险知识、方法论</li>
+<li>⛔ 不给个股风险评级、不预测涨跌、不给买卖点/目标价</li>
+</ul>
+<p>这条边界是产品设计的底层原则，从根上规避了荐股牌照风险。</p>
+<h2>进展 / 团队</h2>
+<div class="todo">⚠ 待补充：待主人补充：当前进展（用户数/留存/Demo链接）、团队背景、融资轮次与金额</div>
+<h2>联系方式</h2>
+<div class="todo">⚠ 待补充：待主人补充：对接邮箱、微信、官网/Demo 链接</div></div>
+<div id="en" class="doc"><h1>BuBuJi · One-Pager (English)</h1>
+<blockquote>One-pager for VC outreach. Keep in sync with <code>对外说明_CN.md</code> whenever the product definition changes.</blockquote>
+<blockquote>Last updated: 2026-06-04</blockquote>
+<h2>One-liner</h2>
+<p><strong>A trade-review and emotional risk-control coach for retail traders.</strong></p>
+<p>Built on a user&#x27;s own trading records, combining a technical-analysis model with a</p>
+<p>memento caseBank, it tells the user &quot;are you chasing highs and panic-selling again?&quot;</p>
+<p>— helping them stay disciplined and stop repeating the same mistakes.</p>
+<h2>The Problem</h2>
+<p>Retail traders mostly don&#x27;t lose money because they misread the market — they lose</p>
+<p>because they <strong>can&#x27;t control their own hands</strong>: chasing rallies, panic-selling,</p>
+<p>repeating the same class of mistakes. Every product out there pushes signals and</p>
+<p>stock picks; nobody helps the retail trader **review their own behavior and master</p>
+<p>their own emotions**.</p>
+<h2>What We Do</h2>
+<ul>
+<li><strong>Trade review</strong> — import the user&#x27;s real trading records and replay each trade.</li>
+<li><strong>Behavioral diagnosis</strong> — a technical model + case bank (memento caseBank) flags</li>
+</ul>
+<p>  &quot;is this trade chasing a high / panic-cutting again?&quot;</p>
+<ul>
+<li><strong>Emotional risk control</strong> — discipline nudges right before the user repeats a</li>
+</ul>
+<p>  mistake (&quot;you&#x27;re chasing a high — cool down&quot;).</p>
+<ul>
+<li><strong>Emotional value</strong> — a companion-style coach, not a cold signal machine.</li>
+</ul>
+<h2>Compliance Boundary (Important)</h2>
+<p>BuBuJi is <strong>not a stock-picking tool and stays out of licensed territory</strong>. We talk</p>
+<p>about the *user themselves*, not about recommending securities:</p>
+<ul>
+<li>✅ Analyze the user&#x27;s own trading history; behavioral review</li>
+<li>✅ Emotion management / trading-discipline reminders (behavioral, not investment advice)</li>
+<li>✅ General investor education, risk knowledge, methodology</li>
+<li>⛔ No per-stock risk ratings, no price predictions, no entry/exit or target prices</li>
+</ul>
+<p>This boundary is a foundational design principle that structurally avoids</p>
+<p>stock-advisory licensing risk.</p>
+<h2>Traction / Team</h2>
+<div class="todo">⚠ 待补充：TODO (owner to fill): current traction (users / retention / demo link), team background, round &amp; amount</div>
+<h2>Contact</h2>
+<div class="todo">⚠ 待补充：TODO (owner to fill): outreach email, WeChat, website / demo link</div></div>
+<div class="foot">由 build_html.py 从 md 源渲染 · 改完 md 重跑脚本即刷新</div>
+</div>
+<script>
+function sw(x){for(const d of document.querySelectorAll('.doc'))d.classList.toggle('on',d.id===x);
+const t=document.querySelectorAll('.tab');t[0].classList.toggle('on',x==='cn');t[1].classList.toggle('on',x==='en');}
+</script></body></html>
