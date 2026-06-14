@@ -6,9 +6,9 @@
 <title>手机操控千个 Agent：Boris 工作法拆解 + 主人专属落地方案</title>
 <style>
   :root{
-    --bg:#0d1117; --panel:#161b22; --panel2:#1c2430; --line:#2a3340;
-    --ink:#e6edf3; --sub:#9aa7b4; --mut:#6b7785;
-    --gold:#e3b341; --grn:#3fb950; --blu:#58a6ff; --pur:#bc8cff; --red:#f85149;
+    --bg:#fafafa; --panel:#ffffff; --panel2:#f4f6f8; --line:#e4e8ed;
+    --ink:#2b3138; --sub:#566069; --mut:#838d97;
+    --gold:#9a6b00; --grn:#137a3b; --blu:#1f6fd4; --pur:#6f48c4; --red:#c0392b;
     --r:14px;
   }
   *{box-sizing:border-box}
@@ -16,16 +16,16 @@
   body{
     margin:0; background:var(--bg); color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
-    line-height:1.7; font-size:16px; -webkit-text-size-adjust:100%;
+    line-height:1.75; font-size:16px; -webkit-text-size-adjust:100%;
   }
-  .wrap{max-width:880px; margin:0 auto; padding:28px 18px 90px}
+  .wrap{max-width:760px; margin:0 auto; padding:28px 18px 90px}
   header.hero{
-    background:linear-gradient(155deg,#1a2030 0%,#0d1117 70%);
+    background:linear-gradient(155deg,#ffffff 0%,#f1f5fa 100%);
     border:1px solid var(--line); border-radius:var(--r);
-    padding:30px 24px; margin-bottom:26px;
+    padding:30px 24px; margin-bottom:26px; box-shadow:0 1px 3px rgba(0,0,0,.04);
   }
   .kicker{color:var(--gold); font-size:13px; letter-spacing:2px; font-weight:700; margin:0 0 8px}
-  h1{font-size:27px; line-height:1.35; margin:0 0 14px; font-weight:800}
+  h1{font-size:26px; line-height:1.4; margin:0 0 14px; font-weight:800; color:#1c2127}
   h1 .hl{color:var(--gold)}
   .lead{color:var(--sub); font-size:15.5px; margin:0}
   .stats{display:flex; flex-wrap:wrap; gap:10px; margin-top:20px}
@@ -33,12 +33,12 @@
   .stat b{display:block; font-size:22px; color:var(--gold); font-weight:800}
   .stat span{font-size:12.5px; color:var(--mut)}
 
-  h2{font-size:21px; margin:40px 0 6px; font-weight:800; display:flex; align-items:center; gap:10px}
-  h2 .n{font-size:13px; color:var(--bg); background:var(--gold); border-radius:7px; padding:3px 8px; font-weight:800}
+  h2{font-size:21px; margin:40px 0 6px; font-weight:800; display:flex; align-items:center; gap:10px; color:#1c2127}
+  h2 .n{font-size:13px; color:#fff; background:var(--gold); border-radius:7px; padding:3px 8px; font-weight:800}
   .sec-sub{color:var(--mut); font-size:13.5px; margin:0 0 18px}
-  h3{font-size:17px; margin:24px 0 8px; font-weight:700; color:var(--ink)}
+  h3{font-size:17px; margin:24px 0 8px; font-weight:700; color:#1c2127}
 
-  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:18px 20px; margin:14px 0}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:18px 20px; margin:14px 0; box-shadow:0 1px 3px rgba(0,0,0,.04)}
   .card.gold{border-left:3px solid var(--gold)}
   .card.grn{border-left:3px solid var(--grn)}
   .card.blu{border-left:3px solid var(--blu)}
@@ -48,30 +48,30 @@
   p{margin:8px 0}
   .sub{color:var(--sub)}
   .mut{color:var(--mut); font-size:13.5px}
-  strong{color:#fff}
+  strong{color:#1a1f24}
   em{color:var(--gold); font-style:normal; font-weight:600}
 
   ul{margin:8px 0; padding-left:20px}
   li{margin:5px 0}
-  code{background:#0a0e14; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-family:"SF Mono",Menlo,Consolas,monospace; font-size:13.5px; color:var(--blu)}
-  pre{background:#0a0e14; border:1px solid var(--line); border-radius:10px; padding:14px 16px; overflow-x:auto; margin:12px 0}
-  pre code{background:none; border:none; padding:0; color:#c9d1d9; font-size:13px; line-height:1.6}
-  .tok{color:var(--mut)}
-  .cmd{color:var(--grn)}
+  code{background:#eef1f4; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-family:"SF Mono",Menlo,Consolas,monospace; font-size:13.5px; color:#1456a8}
+  pre{background:#f4f6f8; border:1px solid var(--line); border-radius:10px; padding:14px 16px; overflow-x:auto; margin:12px 0}
+  pre code{background:none; border:none; padding:0; color:#2f363d; font-size:13px; line-height:1.6}
+  .tok{color:#8a93a0}
+  .cmd{color:var(--grn); font-weight:600}
 
   /* 金字塔 */
   .pyr{margin:18px 0}
   .layer{display:flex; align-items:center; gap:14px; margin:7px auto; border-radius:10px; padding:13px 16px; border:1px solid var(--line)}
   .layer .lv{font-size:11px; font-weight:800; color:var(--mut); writing-mode:vertical-lr; letter-spacing:1px}
   .layer .body{flex:1}
-  .layer .t{font-weight:700; font-size:15px}
+  .layer .t{font-weight:700; font-size:15px; color:#1c2127}
   .layer .d{font-size:13px; color:var(--sub); margin-top:2px}
   .layer .scale{font-size:12px; color:var(--gold); font-weight:700; white-space:nowrap}
-  .L1{background:linear-gradient(90deg,#241d10,#161b22); width:60%}
-  .L2{background:linear-gradient(90deg,#21241a,#161b22); width:72%}
-  .L3{background:linear-gradient(90deg,#1a2230,#161b22); width:84%}
-  .L4{background:linear-gradient(90deg,#211a2e,#161b22); width:94%}
-  .L5{background:linear-gradient(90deg,#2a1a1a,#161b22); width:100%}
+  .L1{background:linear-gradient(90deg,#fbf2da,#fff); width:60%}
+  .L2{background:linear-gradient(90deg,#e7f5ec,#fff); width:72%}
+  .L3{background:linear-gradient(90deg,#e6f0fb,#fff); width:84%}
+  .L4{background:linear-gradient(90deg,#efe9fa,#fff); width:94%}
+  .L5{background:linear-gradient(90deg,#fbeae8,#fff); width:100%}
   @media(max-width:640px){.layer{width:100%!important}}
 
   table{width:100%; border-collapse:collapse; margin:12px 0; font-size:14px}
@@ -82,13 +82,13 @@
   .phase{counter-reset:none; position:relative; padding-left:18px; margin:16px 0}
   .phase::before{content:""; position:absolute; left:4px; top:6px; bottom:6px; width:2px; background:var(--line)}
   .tag{display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:20px; margin-right:6px}
-  .tag.now{background:#1d3320; color:var(--grn); border:1px solid #2a5}
-  .tag.next{background:#1d2b3a; color:var(--blu); border:1px solid #357}
-  .tag.later{background:#2a2333; color:var(--pur); border:1px solid #75c}
+  .tag.now{background:#e6f5ec; color:var(--grn); border:1px solid #bbe2c9}
+  .tag.next{background:#e6f0fb; color:var(--blu); border:1px solid #bcd6f2}
+  .tag.later{background:#efe9fa; color:var(--pur); border:1px solid #d3c4ef}
 
-  .callout{background:linear-gradient(135deg,#231d0e,#161b22); border:1px solid #3a3016; border-radius:var(--r); padding:16px 20px; margin:16px 0}
-  .callout .q{font-size:15px; color:#f0e0b0; font-style:italic}
-  .callout .a{font-size:13px; color:var(--mut); margin-top:6px}
+  .callout{background:linear-gradient(135deg,#fdf6e3,#fffdf8); border:1px solid #ecdcab; border-radius:var(--r); padding:16px 20px; margin:16px 0}
+  .callout .q{font-size:15px; color:#6b4e00; font-style:italic}
+  .callout .a{font-size:13px; color:var(--sub); margin-top:6px}
 
   .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
   @media(max-width:640px){.grid2{grid-template-columns:1fr}}
@@ -106,22 +106,22 @@
     content:attr(data-tip);
     position:absolute; left:50%; bottom:calc(100% + 10px); transform:translateX(-50%) translateY(4px);
     width:max-content; max-width:min(290px,80vw);
-    background:#0a0e14; color:var(--ink); border:1px solid var(--gold);
+    background:#2b2f36; color:#fff; border:1px solid #2b2f36;
     border-radius:9px; padding:10px 13px; font-size:12.5px; line-height:1.65;
     font-weight:400; white-space:normal; text-align:left; letter-spacing:.2px;
-    box-shadow:0 10px 30px rgba(0,0,0,.55);
+    box-shadow:0 8px 24px rgba(0,0,0,.22);
     opacity:0; visibility:hidden; transition:opacity .14s ease, transform .14s ease;
     z-index:60; pointer-events:none;
   }
   .tip::before{
     content:""; position:absolute; left:50%; bottom:calc(100% + 4px); transform:translateX(-50%);
-    border:6px solid transparent; border-top-color:var(--gold);
+    border:6px solid transparent; border-top-color:#2b2f36;
     opacity:0; visibility:hidden; transition:opacity .14s ease; z-index:61; pointer-events:none;
   }
   .tip:hover::after, .tip:focus::after, .tip.active::after{opacity:1; visibility:visible; transform:translateX(-50%) translateY(0)}
   .tip:hover::before, .tip:focus::before, .tip.active::before{opacity:1; visibility:visible}
   .tip:focus{outline:none}
-  .tiphint{font-size:12.5px; color:var(--mut); margin:10px 0 0}
+  .tiphint{font-size:12.5px; color:var(--sub); margin:14px 0 0; padding-top:12px; border-top:1px solid var(--line)}
   .tiphint b{color:var(--gold)}
 </style>
 </head>
