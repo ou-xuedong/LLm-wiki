@@ -72,3 +72,40 @@
 ```
 
 > 报告较长时，可统一在 `<head>` 放一份上述样式，正文只写 `<span class="term">` 即可。
+
+---
+
+## 规则二：HTML 报告的「护眼视觉」（强制）
+
+凡是生成 **HTML 格式的报告**，视觉上一律白色底、护眼舒服，目标是「长时间看不累、手机桌面都顺眼」。
+
+### 1. 底色与文字
+
+- **白色或接近白的浅底**（如 `#fff` / `#fafafa`），不用纯黑底、不用刺眼高饱和背景
+- 正文文字用**深灰而非纯黑**（如 `#222` / `#333`），降低对比刺激
+- 正文字号**不小于 16px**，行高 **1.6~1.8**，段落留白充足
+
+### 2. 排版与配色
+
+- 正文宽度控制在 **680~760px**，两侧留白，不顶满屏幕
+- 配色克制，强调色少量点缀，不用大面积高饱和色块
+- 字体优先系统无衬线（`-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif`）
+
+### 3. 推荐基样式（可直接复用）
+
+```html
+<style>
+  body {
+    background: #fafafa;
+    color: #333;
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 18px;
+  }
+  h1, h2, h3 { color: #222; line-height: 1.3; }
+  p { margin: 0.8em 0; }
+</style>
+```
