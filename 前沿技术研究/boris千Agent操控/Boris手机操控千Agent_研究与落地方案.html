@@ -97,6 +97,32 @@
   .src a{color:var(--blu); text-decoration:none}
   footer{margin-top:50px; padding-top:18px; border-top:1px solid var(--line); color:var(--mut); font-size:12.5px}
   .warn{color:var(--red); font-weight:700}
+
+  /* ===== 术语悬停/点按注释 ===== */
+  .tip{position:relative; cursor:help; -webkit-tap-highlight-color:transparent}
+  code.tip{border-bottom:1px dashed var(--blu)}
+  span.tip{border-bottom:1px dotted var(--gold); color:var(--gold)}
+  .tip::after{
+    content:attr(data-tip);
+    position:absolute; left:50%; bottom:calc(100% + 10px); transform:translateX(-50%) translateY(4px);
+    width:max-content; max-width:min(290px,80vw);
+    background:#0a0e14; color:var(--ink); border:1px solid var(--gold);
+    border-radius:9px; padding:10px 13px; font-size:12.5px; line-height:1.65;
+    font-weight:400; white-space:normal; text-align:left; letter-spacing:.2px;
+    box-shadow:0 10px 30px rgba(0,0,0,.55);
+    opacity:0; visibility:hidden; transition:opacity .14s ease, transform .14s ease;
+    z-index:60; pointer-events:none;
+  }
+  .tip::before{
+    content:""; position:absolute; left:50%; bottom:calc(100% + 4px); transform:translateX(-50%);
+    border:6px solid transparent; border-top-color:var(--gold);
+    opacity:0; visibility:hidden; transition:opacity .14s ease; z-index:61; pointer-events:none;
+  }
+  .tip:hover::after, .tip:focus::after, .tip.active::after{opacity:1; visibility:visible; transform:translateX(-50%) translateY(0)}
+  .tip:hover::before, .tip:focus::before, .tip.active::before{opacity:1; visibility:visible}
+  .tip:focus{outline:none}
+  .tiphint{font-size:12.5px; color:var(--mut); margin:10px 0 0}
+  .tiphint b{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -112,6 +138,7 @@
     <div class="stat"><b>数千</b><span>夜间同时跑的 Agent</span></div>
     <div class="stat"><b>100</b><span>他预测一年后 harness 只剩这么多行</span></div>
   </div>
+  <p class="tiphint">💡 文中<b>带虚线的词</b>（如 <span style="border-bottom:1px dotted var(--gold);color:var(--gold)">harness</span>、命令名等）都有大白话注释：电脑端<b>鼠标悬停</b>、手机端<b>点一下</b>即可查看。</p>
 </header>
 
 <!-- 0 速读 -->
@@ -328,5 +355,105 @@
 </footer>
 
 </div>
+
+<script>
+(function(){
+  // —— 命令 / 参数类：匹配 <code> 文本 ——
+  var codeTips = [
+    ["--dangerously-skip-permissions","跳过所有安全确认的危险开关；Boris 不用它，改用预先批准的安全清单。小白别开。"],
+    ["/remote-control","用手机远程连上你的电脑，开一个新任务。"],
+    ["claude agents","一个总览面板：把同时在跑的所有任务按「等你输入 / 运行中 / 已完成」分类列出来。"],
+    ["CLAUDE.md","项目的「规则备忘录」文件：AI 每犯一次错，就把「别这么做」写进去，以后所有任务都自动遵守，错误越积越少。"],
+    ["MEMORY.md","主人这套已有的自动记忆文件：把值得记的事写进去，下次新会话自动加载、不必重讲。"],
+    ["--teleport","把正在跑的任务从一台设备「瞬移」到另一台，比如手机发起、电脑接着看。"],
+    ["--worktree","Git 的「分身」功能：从同一个项目变出多个互不干扰的副本，让好几个 AI 同时各干各的、不会打架。"],
+    ["--add-dir","让 AI 额外能访问另一个文件夹 / 项目。"],
+    ["/schedule","云端版的定时任务：哪怕你关了电脑，它在服务器上照样按时跑。"],
+    ["/compact","对话太长时，把前面内容压缩成摘要、腾出空间，还能指定「重点保留哪一段」。"],
+    ["/effort","把 AI 调到最高「思考强度」，专门对付最难的问题（更费时）。"],
+    ["/rewind","撤销 / 回退：把 AI 刚才跑偏的那次尝试整个丢掉、当作没发生，比在对话里反复纠正更干净。"],
+    ["/focus","只显示最终结果、把中间一步步的过程藏起来，手机上看更清爽。"],
+    ["/voice","语音输入：按住说话代替打字。Boris 说，说话比打字快 3 倍。"],
+    ["/loop","让 AI 按你设的时间间隔（每天 / 每小时等）自动重复做同一件事，不用每次手动发起，最长可挂 3 天。"],
+    ["/goal","给 AI 设一个「达标条件」（比如测试全部通过），不满足就不停，直到做到为止。"],
+    ["/permissions","管理「哪些命令允许 AI 自动执行」的白名单，安全又省去反复点确认。"],
+    ["/btw","在 AI 干活时顺便问它个小问题，不打断它正在做的事。"],
+    ["--name","给会话起个名字，方便在一堆任务里一眼认出谁是谁。"],
+    ["--bare","极简启动，跳过额外配置，启动快很多。"],
+    ["@.claude","在代码评审里 @ 一下，就能把这次的教训直接写进团队规则文件，下次不再犯。"]
+  ];
+
+  // —— 正文术语类：匹配普通文字，仅首次出现处加注 ——
+  var textTips = [
+    ["Dynamic Workflows","动态工作流：你说一句话，AI 自动写好调度脚本，一次拆出几百个小助手并行干活（单次最多 1000 个），还有专门的「审查 AI」验证结果再合并。"],
+    ["上下文极简主义","只给 AI 最少的提示和最少的工具，把「怎么做」留给它自己想，而不是手把手规定每一步。"],
+    ["Agent 视图","把同时在跑的所有任务按「等你输入 / 运行中 / 已完成」分类的总览面板。"],
+    ["复利工程","像滚雪球：每修正一个错误就沉淀成一条永久规则，AI 越用越聪明、越用越少犯错。"],
+    ["子 Agent","主任务派出去的「小助手 AI」：各自负责一个独立小任务、互不干扰，最后汇总；还能层层再派，最多 5 层。"],
+    ["flaky test","「时灵时不灵」的测试：同样的代码有时通过、有时失败，很烦人，Boris 让 AI 自动修。"],
+    ["git worktree","Git 的「分身」功能：同一个项目变出多个互不干扰的副本，让多个 AI 同时各干各的。"],
+    ["PostToolUse","一种钩子的触发时机：在 AI 用完某个工具「之后」自动执行。"],
+    ["harness","AI 外面那层「外壳程序」（负责权限、安全、界面等）。模型越聪明，这层外壳越能变薄——Boris 预测一年后只剩约 100 行。"],
+    ["auto 模式","自动模式：AI 不再每一步都停下来问「可以吗」，而是自主连续干活；手机上尤其必要，靠预先批准的安全清单兜底。"],
+    ["Routine","云端常驻的定时任务：放在服务器上，关掉电脑也持续运行。"],
+    ["worktree","Git 的「分身」功能：同一个项目变出多个互不干扰的副本，让多个 AI 同时各干各的。"],
+    ["扇出","把一个大问题拆成多个角度，同时派多个 AI 分头去查，再把结果汇总——一次拿到多个独立视角。"],
+    ["rebase","Git 操作：把你的改动「嫁接」到最新的代码上，保持整洁、减少冲突。"],
+    ["cron","一种「定时器」机制：按设定的时间表（每分钟 / 每天等）自动触发任务。"],
+    ["MCP","一种「通用插头」标准：让 AI 能统一接上 Slack、数据库、日历等各种外部系统，对 AI 来说都只是数据。"],
+    ["lint","代码风格 / 质量检查工具，自动挑出不规范的写法。"],
+    ["PMF","产品市场匹配：产品真正满足了市场需求、用户离不开的状态。"],
+    ["dogfooding","「自己先吃自家狗粮」：团队自己天天用自己做的产品，第一时间发现问题。"],
+    ["PR","Pull Request：提交一批代码改动、请人（或 AI）评审后合并进主项目的标准流程。"],
+    ["CI","持续集成：每次提交代码后自动跑构建和测试，第一时间发现问题。"]
+  ];
+
+  function addTip(el, tip){
+    el.classList.add('tip');
+    el.setAttribute('data-tip', tip);
+    el.setAttribute('tabindex','0');
+  }
+
+  // 1) 行内 code（不含代码块 pre）
+  codeTips.sort(function(a,b){return b[0].length-a[0].length;});
+  Array.prototype.forEach.call(document.querySelectorAll('code'), function(c){
+    if(c.closest('pre')) return;
+    var txt=c.textContent;
+    for(var i=0;i<codeTips.length;i++){
+      if(txt.indexOf(codeTips[i][0])>=0){ addTip(c, codeTips[i][1]); break; }
+    }
+  });
+
+  // 2) 正文术语：每个词只包裹首次出现
+  textTips.sort(function(a,b){return b[0].length-a[0].length;});
+  textTips.forEach(function(pair){
+    var key=pair[0], tip=pair[1];
+    var walker=document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var node;
+    while((node=walker.nextNode())){
+      var p=node.parentNode;
+      if(!p || p.closest('code,pre,a,script,style,.tip,h1,.tiphint')) continue;
+      var idx=node.nodeValue.indexOf(key);
+      if(idx<0) continue;
+      var after=node.splitText(idx);
+      after.nodeValue=after.nodeValue.substring(key.length);
+      var span=document.createElement('span');
+      addTip(span, tip);
+      span.textContent=key;
+      p.insertBefore(span, after);
+      break;
+    }
+  });
+
+  // 3) 手机点按：轻点显示、点别处收起（桌面仍可悬停）
+  document.addEventListener('click', function(e){
+    var t=e.target.closest('.tip');
+    Array.prototype.forEach.call(document.querySelectorAll('.tip.active'), function(el){
+      if(el!==t) el.classList.remove('active');
+    });
+    if(t){ t.classList.toggle('active'); e.stopPropagation(); }
+  });
+})();
+</script>
 </body>
 </html>
