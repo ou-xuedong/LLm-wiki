@@ -25,3 +25,6 @@
 
 # macOS
 .DS_Store
+
+# 写书协作仓（独立 git，双人协作，自管推拉）
+/ai-uncertainty-book/
