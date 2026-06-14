@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手机操控千个 Agent：Boris 工作法拆解 + 主人专属落地方案</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2430; --line:#2a3340;
+    --ink:#e6edf3; --sub:#9aa7b4; --mut:#6b7785;
+    --gold:#e3b341; --grn:#3fb950; --blu:#58a6ff; --pur:#bc8cff; --red:#f85149;
+    --r:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    line-height:1.7; font-size:16px; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:28px 18px 90px}
+  header.hero{
+    background:linear-gradient(155deg,#1a2030 0%,#0d1117 70%);
+    border:1px solid var(--line); border-radius:var(--r);
+    padding:30px 24px; margin-bottom:26px;
+  }
+  .kicker{color:var(--gold); font-size:13px; letter-spacing:2px; font-weight:700; margin:0 0 8px}
+  h1{font-size:27px; line-height:1.35; margin:0 0 14px; font-weight:800}
+  h1 .hl{color:var(--gold)}
+  .lead{color:var(--sub); font-size:15.5px; margin:0}
+  .stats{display:flex; flex-wrap:wrap; gap:10px; margin-top:20px}
+  .stat{flex:1 1 130px; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:12px 14px}
+  .stat b{display:block; font-size:22px; color:var(--gold); font-weight:800}
+  .stat span{font-size:12.5px; color:var(--mut)}
+
+  h2{font-size:21px; margin:40px 0 6px; font-weight:800; display:flex; align-items:center; gap:10px}
+  h2 .n{font-size:13px; color:var(--bg); background:var(--gold); border-radius:7px; padding:3px 8px; font-weight:800}
+  .sec-sub{color:var(--mut); font-size:13.5px; margin:0 0 18px}
+  h3{font-size:17px; margin:24px 0 8px; font-weight:700; color:var(--ink)}
+
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:18px 20px; margin:14px 0}
+  .card.gold{border-left:3px solid var(--gold)}
+  .card.grn{border-left:3px solid var(--grn)}
+  .card.blu{border-left:3px solid var(--blu)}
+  .card.pur{border-left:3px solid var(--pur)}
+  .card.red{border-left:3px solid var(--red)}
+
+  p{margin:8px 0}
+  .sub{color:var(--sub)}
+  .mut{color:var(--mut); font-size:13.5px}
+  strong{color:#fff}
+  em{color:var(--gold); font-style:normal; font-weight:600}
+
+  ul{margin:8px 0; padding-left:20px}
+  li{margin:5px 0}
+  code{background:#0a0e14; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-family:"SF Mono",Menlo,Consolas,monospace; font-size:13.5px; color:var(--blu)}
+  pre{background:#0a0e14; border:1px solid var(--line); border-radius:10px; padding:14px 16px; overflow-x:auto; margin:12px 0}
+  pre code{background:none; border:none; padding:0; color:#c9d1d9; font-size:13px; line-height:1.6}
+  .tok{color:var(--mut)}
+  .cmd{color:var(--grn)}
+
+  /* 金字塔 */
+  .pyr{margin:18px 0}
+  .layer{display:flex; align-items:center; gap:14px; margin:7px auto; border-radius:10px; padding:13px 16px; border:1px solid var(--line)}
+  .layer .lv{font-size:11px; font-weight:800; color:var(--mut); writing-mode:vertical-lr; letter-spacing:1px}
+  .layer .body{flex:1}
+  .layer .t{font-weight:700; font-size:15px}
+  .layer .d{font-size:13px; color:var(--sub); margin-top:2px}
+  .layer .scale{font-size:12px; color:var(--gold); font-weight:700; white-space:nowrap}
+  .L1{background:linear-gradient(90deg,#241d10,#161b22); width:60%}
+  .L2{background:linear-gradient(90deg,#21241a,#161b22); width:72%}
+  .L3{background:linear-gradient(90deg,#1a2230,#161b22); width:84%}
+  .L4{background:linear-gradient(90deg,#211a2e,#161b22); width:94%}
+  .L5{background:linear-gradient(90deg,#2a1a1a,#161b22); width:100%}
+  @media(max-width:640px){.layer{width:100%!important}}
+
+  table{width:100%; border-collapse:collapse; margin:12px 0; font-size:14px}
+  th,td{text-align:left; padding:9px 11px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--gold); font-size:12.5px; font-weight:700}
+  td:first-child{white-space:nowrap; color:var(--ink); font-weight:600}
+
+  .phase{counter-reset:none; position:relative; padding-left:18px; margin:16px 0}
+  .phase::before{content:""; position:absolute; left:4px; top:6px; bottom:6px; width:2px; background:var(--line)}
+  .tag{display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:20px; margin-right:6px}
+  .tag.now{background:#1d3320; color:var(--grn); border:1px solid #2a5}
+  .tag.next{background:#1d2b3a; color:var(--blu); border:1px solid #357}
+  .tag.later{background:#2a2333; color:var(--pur); border:1px solid #75c}
+
+  .callout{background:linear-gradient(135deg,#231d0e,#161b22); border:1px solid #3a3016; border-radius:var(--r); padding:16px 20px; margin:16px 0}
+  .callout .q{font-size:15px; color:#f0e0b0; font-style:italic}
+  .callout .a{font-size:13px; color:var(--mut); margin-top:6px}
+
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+
+  .src{font-size:12.5px; color:var(--mut)}
+  .src a{color:var(--blu); text-decoration:none}
+  footer{margin-top:50px; padding-top:18px; border-top:1px solid var(--line); color:var(--mut); font-size:12.5px}
+  .warn{color:var(--red); font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">前沿技术研究 · AGENT 编排</p>
+  <h1>手机就是工位：<span class="hl">Boris 操控上千 Agent</span> 的工作法拆解，与主人专属落地方案</h1>
+  <p class="lead">基于 Claude Code 之父 Boris Cherny 在 Sequoia AI Ascent 2026 的访谈、其公开的 howborisusesclaudecode.com，以及业界多 Agent 编排实践，整理出可直接照搬的命令与分阶段方案。</p>
+  <div class="stats">
+    <div class="stat"><b>150</b><span>单日 PR 纪录 · 一行没手写</span></div>
+    <div class="stat"><b>5–10</b><span>手机端并行会话</span></div>
+    <div class="stat"><b>数千</b><span>夜间同时跑的 Agent</span></div>
+    <div class="stat"><b>100</b><span>他预测一年后 harness 只剩这么多行</span></div>
+  </div>
+</header>
+
+<!-- 0 速读 -->
+<div class="card gold">
+  <h3 style="margin-top:0">🎯 一句话结论</h3>
+  <p class="sub">Boris 不是"手速快"，而是把自己从"写代码的人"升级成"<strong>调度 Agent 的人</strong>"。靠三样东西放大产能：<em>并行会话 + 子 Agent</em>（横向铺开）、<em>/loop 与 Routines</em>（时间轴上自动循环）、<em>CLAUDE.md + 验证回路</em>（让 Agent 不用盯也能干对）。手机只是入口——真正的杠杆是这套"<strong>发起→自动循环→自我验证</strong>"的闭环。</p>
+</div>
+
+<!-- 1 手机怎么工作 -->
+<h2><span class="n">01</span>他到底怎么"用手机工作"</h2>
+<p class="sec-sub">手机不是用来打字写代码，而是用来"发起任务 + 巡检状态 + 拍板"。</p>
+
+<div class="card blu">
+  <p><strong>物理动线（他现场演示的）：</strong></p>
+  <ul class="sub">
+    <li>打开 <strong>Claude App</strong> → 左侧 <code>Code</code> 标签页</li>
+    <li>里面同时跑 <strong>5–10 个会话</strong>，每个会话下面再挂一堆<strong>子 Agent</strong> → 合计几百个在跑</li>
+    <li>白天用手机<strong>发起</strong>任务，回到电脑上<strong>接力</strong>（session 在设备间无缝流转，<code>--teleport</code>）</li>
+    <li>晚上放<strong>几千个 Agent</strong> 跑更深的任务，睡一觉醒来收结果</li>
+  </ul>
+  <p class="mut">关键不是"屏幕小也能写代码"，而是任务被拆成可异步跑的小单元后，<strong>人只需要在"需要输入"时介入</strong>——靠系统通知提醒，靠 Agent 视图（<code>claude agents</code>）按 <em>需要输入 / 运行中 / 已完成</em> 三态扫一眼。</p>
+</div>
+
+<h3>三个让手机够用的细节</h3>
+<div class="grid2">
+  <div class="card">
+    <p><strong>🎙 语音代替打字</strong></p>
+    <p class="mut">他大部分编程靠"说"。理由：说话比打字快 3 倍，而且<strong>口述的 prompt 反而更详细</strong>。手机用 iOS 听写，CLI 里按住空格 <code>/voice</code>。</p>
+  </div>
+  <div class="card">
+    <p><strong>🤖 auto 模式 + focus</strong></p>
+    <p class="mut">手机上不可能频繁点"允许"。他全程 <strong>auto 模式</strong>（不停下来要权限），配 <code>/focus</code> 只看最终结果、隐藏中间工具调用。安全靠预授权白名单而非 <code>--dangerously-skip-permissions</code>。</p>
+  </div>
+  <div class="card">
+    <p><strong>🔁 /rewind 而非纠正</strong></p>
+    <p class="mut">Agent 跑偏时，<strong>双击 Esc → /rewind</strong> 丢掉这次尝试，而不是在聊天里掰扯。坏上下文不进窗口，质量才稳。</p>
+  </div>
+  <div class="card">
+    <p><strong>📲 手机发起 → 电脑接力</strong></p>
+    <p class="mut"><code>/remote-control</code> 从手机连本机起新会话；<code>&</code> 把任务转后台。碎片时间发任务，整块时间审结果。</p>
+  </div>
+</div>
+
+<!-- 2 控制上千Agent的机制 -->
+<h2><span class="n">02</span>"上千个 Agent"是怎么控住的</h2>
+<p class="sec-sub">不是一个个手动开。靠一座五层金字塔——越往下放大倍数越大，人盯的越少。</p>
+
+<div class="pyr">
+  <div class="layer L1"><span class="lv">L1</span><div class="body"><div class="t">单会话 + 子 Agent</div><div class="d">一个会话内派子 Agent 做隔离子任务，最近还嵌套到 5 层（agent 开 agent，管理上下文）</div></div><span class="scale">×几十</span></div>
+  <div class="layer L2"><span class="lv">L2</span><div class="body"><div class="t">并行会话 + git worktree</div><div class="d"><code>claude --worktree</code> 同时开 3–5 个隔离工作树，别名 za/zb/zc 一键跳；claude.ai/code 上再挂 5–10 个</div></div><span class="scale">×数百</span></div>
+  <div class="layer L3"><span class="lv">L3</span><div class="body"><div class="t">/loop 定时循环</div><div class="d">Claude 用 cron 调度，每分钟/每5分钟/每小时跑一次，最长挂 3 天。同时跑几十个 loop</div></div><span class="scale">×全天候</span></div>
+  <div class="layer L4"><span class="lv">L4</span><div class="body"><div class="t">Routines / /schedule 云端</div><div class="d">服务器端的 loop，关掉笔记本照跑；可由 cron、GitHub 事件、API webhook 触发</div></div><span class="scale">×离线持续</span></div>
+  <div class="layer L5"><span class="lv">L5</span><div class="body"><div class="t">Dynamic Workflows（动态工作流）</div><div class="d">说一句"use a workflow"，编排器写脚本，一次会话拆出几百个并行子 Agent（单次最多 1000，同时 16 个），各自在独立 worktree 干、审查 Agent 验、再合并</div></div><span class="scale">×上千</span></div>
+</div>
+
+<div class="card grn">
+  <h3 style="margin-top:0">让 Agent "不用盯"的三根支柱</h3>
+  <p><strong>1️⃣ CLAUDE.md = 复利工程（Compounding Engineering）</strong><br>
+  <span class="sub">"每次 Claude 犯错，我不在聊天里纠正它，而是让它把规则写进 CLAUDE.md。" 口头纠正只修这一次，写成规则修<strong>所有未来</strong>。团队每周更新多次，PR 里 <code>@.claude</code> 直接把教训沉淀成规则。</span></p>
+  <p><strong>2️⃣ 验证回路 = 质量 2–3 倍</strong><br>
+  <span class="sub">"给 Claude 一个能自我验证的方式，它会把最终质量提高 2–3 倍。" 浏览器插件实测 UI、跑测试套件、<code>/goal</code> 设定"测试全过+lint干净才准停"的完成条件。</span></p>
+  <p><strong>3️⃣ 上下文极简主义（Context Minimalism）</strong><br>
+  <span class="sub">"给最小的系统提示、最小的工具集，然后让模型自己想办法。" 告诉它目标，而不是每一步。模型越强，harness 越该缩小。</span></p>
+</div>
+
+<div class="callout">
+  <p class="q">"我的 Claude 们全天在跑。遇到不确定的问题时，它们会通过 Slack 跟别人的 Claude 对话来解决。"</p>
+  <p class="a">—— Agent 之间用 Slack MCP 自主通信协作。4.7 模型甚至会<strong>自发</strong>用 loop：发现数据在变，主动说"我每 30 分钟给你发份报告"，还自己调 Slack MCP 推送。</p>
+</div>
+
+<h3>Boris 真实在跑的 loop（可直接抄）</h3>
+<table>
+  <tr><th>命令</th><th>干什么</th></tr>
+  <tr><td><code>/loop 5m /babysit</code></td><td>看护 PR：自动改 code review 意见、自动 rebase、推进合并</td></tr>
+  <tr><td><code>/loop 30m /slack-feedback</code></td><td>每 30 分钟从 Slack/X 抓反馈 → 聚类 → 自动开 PR</td></tr>
+  <tr><td><code>/loop 1h /pr-pruner</code></td><td>每小时关掉过时、没必要的 PR</td></tr>
+  <tr><td><code>/loop /post-merge-sweeper</code></td><td>补上合并后漏掉的 review 评论</td></tr>
+  <tr><td><code>/goal …</code></td><td>设完成条件（如"test/auth 全过且 lint 干净"），不达成不停</td></tr>
+</table>
+
+<!-- 3 其他人做法 -->
+<h2><span class="n">03</span>其他人怎么玩多 Agent</h2>
+<p class="sec-sub">同一套思路，业界已有标杆案例和开源工具。</p>
+
+<div class="card pur">
+  <p><strong>🦀 Bun：Zig → Rust 整库重写</strong></p>
+  <p class="sub">Jarred Sumner 用 Dynamic Workflows 把 Bun 移植到 Rust：<strong>75 万行 Rust、测试通过率 99.8%、11 天</strong>。做法 = 拆成单元 → 每单元一个子 Agent 在独立 worktree 干 → 每个文件配 <strong>2 个审查 Agent</strong> 验证 → 合并。这就是 L5 的极致样板。</p>
+</div>
+
+<div class="grid2">
+  <div class="card">
+    <p><strong>🌲 Parallel Worktrees 开源技能</strong></p>
+    <p class="mut">把 git worktree（共享一个 .git、隔离工作目录）+ N 个并行 Agent 组合：跑 N 个就有 N 个有效解，挑最好的。把"LLM 的不确定性"当成特性用。</p>
+  </div>
+  <div class="card">
+    <p><strong>🧠 pro-workflow / 自纠错记忆</strong></p>
+    <p class="mut">社区方案把"从纠正中学习"做成系统：自纠错记忆跨 50+ 会话复利、上下文工程、Agent 团队、十几个实战技能——本质都是 Boris 那套 CLAUDE.md 复利的工程化。</p>
+  </div>
+</div>
+
+<div class="card">
+  <p><strong>📜 确定性编排（Deterministic Workflows）</strong></p>
+  <p class="mut">业界共识：把"该并行什么、该验证什么、该合并什么"写进脚本，用<strong>确定性的控制流</strong>（循环、条件、扇出）管 Agent，而不是让模型自由发挥。这正是 Claude Code 内置 Workflow 的设计——一个脚本调度上千 Agent。</p>
+</div>
+
+<!-- 4 主人方案 -->
+<h2><span class="n">04</span>主人专属落地方案</h2>
+<p class="sec-sub">主人是手机优先的单兵研究者，不是带团队刷 150 PR/天。所以不照搬规模，照搬<strong>结构</strong>：先把"发起→循环→验证"闭环搭起来，再逐层加并行。</p>
+
+<div class="card gold">
+  <p style="margin-top:0"><strong>核心取舍：</strong>主人多数任务是<em>调研 / 写作 / 前沿技术拆解</em>，不是大型代码库重写。所以重点放在 <strong>L3（/loop 定时调研）+ L1（子 Agent 拆研究）+ 三支柱（记忆复利）</strong>，L5 的千 Agent 留给真正的大工程。先把杠杆用在刀刃上。</p>
+</div>
+
+<div class="phase">
+  <p><span class="tag now">第一周 · 现在就做</span><strong>搭好"记忆复利 + 验证"地基</strong></p>
+  <ul class="sub">
+    <li><strong>用好已有的 memory 机制</strong>：主人这套已有 <code>MEMORY.md</code> 自动记忆——继续坚持"每次纠正→写成规则"，而不是口头改。这就是 Boris 的复利工程，主人已经在做了。</li>
+    <li><strong>给每类任务定 /goal</strong>：调研任务 → "回答完这 5 个问题、每条有出处才算完"；写作 → "读者是谁、交付什么格式才算完"。把模糊任务变成可验证目标（正好契合主人 CLAUDE.md 的"目标驱动"）。</li>
+    <li><strong>手机三件套</strong>：auto 模式 + <code>/focus</code> + 语音口述。碎片时间用语音发起任务。</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <p><span class="tag next">第二～三周 · 加循环</span><strong>上 2–3 个 /loop 把重复劳动自动化</strong></p>
+  <p class="sub">挑主人真实重复的活，先跑这几个（举例，按需改）：</p>
+  <table>
+    <tr><th>主人的 loop</th><th>作用</th></tr>
+    <tr><td><code>/loop 1d /tech-radar</code></td><td>每天扫指定信源（X / arXiv / 微信公众号）抓前沿动态 → 聚类 → 出一页简报</td></tr>
+    <tr><td><code>/loop 12h /inbox-research</code></td><td>把主人攒的待研究清单逐条深挖，每条产出带出处的小结</td></tr>
+    <tr><td><code>/loop 1d /repo-watch</code></td><td>盯几个 GitHub 项目的更新，有大改动就拆解能借鉴什么（呼应主人的 borrow-github-module 技能）</td></tr>
+  </table>
+  <p class="mut">关掉电脑也想跑的，升级成 <code>/schedule</code>（云端 Routine）。结果让它推到主人能扫读的地方（如固定一个汇总文件 / 通知）。</p>
+</div>
+
+<div class="phase">
+  <p><span class="tag later">一个月后 · 铺并行</span><strong>L1 子 Agent 拆研究 + L5 留给大工程</strong></p>
+  <ul class="sub">
+    <li><strong>调研用扇出</strong>：一个大题目 → 派多个子 Agent 各查一个角度（已有 deep-research 技能正是这个），主 Agent 汇总。一次得多个独立视角，再挑最好的。</li>
+    <li><strong>真遇到大工程才上 Workflow</strong>：比如"把某开源模块整体移植/重构进自己项目"——这时说"use a workflow"，让它拆单元、并行子 Agent、配审查 Agent 验证再合并（Bun 那套）。日常调研别杀鸡用牛刀。</li>
+    <li><strong>多会话巡检</strong>：手机上同时挂 3–5 个会话，靠通知 + Agent 视图三态扫一眼，只在"需要输入"时介入。</li>
+  </ul>
+</div>
+
+<div class="card red">
+  <p style="margin-top:0"><span class="warn">⚠ 三条避坑（诤臣之言）</span></p>
+  <ul class="sub">
+    <li><strong>别一上来追"上千 Agent"的数字。</strong>Boris 有团队 CLAUDE.md、成熟 CI、海量预授权命令托底；主人单兵直接铺千 Agent 只会失控烧钱。先把闭环跑顺，规模自然长。</li>
+    <li><strong>auto 模式 ≠ 裸奔。</strong>务必用<strong>预授权白名单</strong>（<code>/permissions</code> 存到 settings.json）而不是 <code>--dangerously-skip-permissions</code>；重大/不可逆操作仍要人来拍板。</li>
+    <li><strong>验证回路是质量的命门。</strong>没有自我验证的 loop，跑得越多错得越多。每个自动任务都要带一个"怎么算对"的检查。</li>
+  </ul>
+</div>
+
+<!-- 5 命令速查 -->
+<h2><span class="n">05</span>命令 & 配置速查卡</h2>
+<p class="sec-sub">手机/电脑通用，按需取用。</p>
+
+<h3>并行与会话</h3>
+<pre><code><span class="tok"># 开隔离工作树并行干活</span>
+<span class="cmd">claude --worktree</span> my_feature
+<span class="tok"># 命名会话，方便 Agent 视图里扫读</span>
+<span class="cmd">claude --name</span> "tech-radar"
+<span class="tok"># 给多仓库访问权</span>
+<span class="cmd">claude --add-dir</span> /path/to/other-repo
+<span class="tok"># 看所有并发会话（需要输入/运行中/已完成）</span>
+<span class="cmd">claude agents</span>
+<span class="tok"># 手机连本机起新会话</span>
+/remote-control</code></pre>
+
+<h3>循环与目标</h3>
+<pre><code><span class="tok"># 定时循环（最长挂 3 天），间隔可 5m / 30m / 1h / 1d</span>
+/loop 1d /tech-radar
+<span class="tok"># 云端 Routine：关电脑照跑，可被 cron / GitHub / webhook 触发</span>
+/schedule …
+<span class="tok"># 设完成条件，不达成不停</span>
+/goal 这5个问题都回答完且每条有出处
+<span class="tok"># 大工程：拆单元→并行子Agent→审查Agent验证→合并</span>
+"use a workflow"</code></pre>
+
+<h3>质量与上下文</h3>
+<pre><code><span class="tok"># 跑偏了：丢掉这次尝试（双击 Esc）</span>
+/rewind
+<span class="tok"># 长会话压缩并给方向</span>
+/compact 聚焦 auth 重构，丢掉测试调试那段
+<span class="tok"># 隐藏中间工具调用，只看结果（手机友好）</span>
+/focus
+<span class="tok"># 最难的问题给最大推理预算（仅当前会话）</span>
+/effort max</code></pre>
+
+<h3>PostToolUse 自动格式化 Hook（settings.json）</h3>
+<pre><code>{
+  "matcher": "Write|Edit",
+  "hooks": [{ "type": "command",
+    "command": "bun run format || true" }]
+}</code></pre>
+
+<!-- 收尾 -->
+<div class="card gold">
+  <h3 style="margin-top:0">📌 主人三步起手</h3>
+  <p class="sub"><strong>① 今天：</strong>把一类重复调研任务定成 <code>/goal</code> + 试跑一个 <code>/loop 1d</code>。<br>
+  <strong>② 本周：</strong>坚持"纠正即写规则"，让 memory 复利起来。<br>
+  <strong>③ 本月：</strong>遇到大题目用子 Agent 扇出（deep-research），遇到真·大工程才上 workflow。</p>
+  <p class="mut" style="margin-bottom:0">规模是结果，不是目标。先把"发起→循环→验证"这个闭环跑顺，主人自然也能从"做事的人"变成"调度 Agent 的人"。</p>
+</div>
+
+<footer>
+  <p><strong>资料来源：</strong></p>
+  <p class="src">
+    · 原访谈整理：AGI Hunt《Claude Code 之父最新访谈》（微信公众号，2026-05-07）<br>
+    · <a href="https://howborisusesclaudecode.com/">howborisusesclaudecode.com</a> — Boris 官方使用法<br>
+    · <a href="https://www.youtube.com/watch?v=SlGRN8jh2RI">Sequoia AI Ascent 2026 对谈视频</a><br>
+    · <a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/">InfoQ：Claude Code Dynamic Workflows</a>、<a href="https://github.com/spillwavesolutions/parallel-worktrees">Parallel Worktrees 技能</a>、<a href="https://github.com/rohitg00/pro-workflow">pro-workflow</a>、<a href="https://alexop.dev/posts/claude-code-workflows-deterministic-orchestration/">确定性多 Agent 编排</a>
+  </p>
+  <p style="margin-top:14px; color:var(--mut)">小昭整理 · 2026-06-14 · 供主人参考。设定方案部分为推荐方案，主人定夺。</p>
+</footer>
+
+</div>
+</body>
+</html>
