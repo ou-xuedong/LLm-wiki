@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用 Slack 跑通第一个多 Agent 协作 —— 傻瓜式教程</title>
+<style>
+  :root{
+    --bg:#fafafa; --panel:#fff; --panel2:#f4f6f8; --line:#e4e8ed;
+    --ink:#2b3138; --sub:#566069; --mut:#838d97;
+    --gold:#9a6b00; --grn:#137a3b; --blu:#1f6fd4; --pur:#6f48c4; --red:#c0392b;
+    --r:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    line-height:1.75; font-size:16px; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:26px 18px 90px}
+  header.hero{
+    background:linear-gradient(155deg,#fff 0%,#f1f5fa 100%);
+    border:1px solid var(--line); border-radius:var(--r);
+    padding:28px 22px; margin-bottom:24px; box-shadow:0 1px 3px rgba(0,0,0,.04);
+  }
+  .kicker{color:var(--gold); font-size:13px; letter-spacing:2px; font-weight:700; margin:0 0 8px}
+  h1{font-size:24px; line-height:1.42; margin:0 0 12px; font-weight:800; color:#1c2127}
+  h1 .hl{color:var(--gold)}
+  .lead{color:var(--sub); font-size:15px; margin:0}
+  .stats{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
+  .stat{flex:1 1 130px; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:11px 14px}
+  .stat b{display:block; font-size:20px; color:var(--gold); font-weight:800}
+  .stat span{font-size:12.5px; color:var(--mut)}
+
+  h2{font-size:20px; margin:38px 0 6px; font-weight:800; display:flex; align-items:center; gap:10px; color:#1c2127}
+  h2 .n{font-size:13px; color:#fff; background:var(--gold); border-radius:7px; padding:3px 9px; font-weight:800}
+  .sec-sub{color:var(--mut); font-size:13.5px; margin:0 0 16px}
+  h3{font-size:16.5px; margin:22px 0 8px; font-weight:700; color:#1c2127}
+
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; margin:13px 0; box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .card.gold{border-left:3px solid var(--gold)}
+  .card.grn{border-left:3px solid var(--grn)}
+  .card.blu{border-left:3px solid var(--blu)}
+  .card.pur{border-left:3px solid var(--pur)}
+  .card.red{border-left:3px solid var(--red)}
+
+  p{margin:8px 0}
+  .sub{color:var(--sub)}
+  .mut{color:var(--mut); font-size:13.5px}
+  strong{color:#1a1f24}
+  ul{margin:8px 0; padding-left:20px}
+  li{margin:5px 0}
+  code{background:#eef1f4; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-family:"SF Mono",Menlo,Consolas,monospace; font-size:13.5px; color:#1456a8; word-break:break-all}
+  pre{background:#f4f6f8; border:1px solid var(--line); border-radius:10px; padding:13px 15px; overflow-x:auto; margin:12px 0}
+  pre code{background:none; border:none; padding:0; color:#2f363d; font-size:13px; line-height:1.65; word-break:normal; white-space:pre}
+  .tok{color:#8a93a0}
+  .cmd{color:var(--grn); font-weight:600}
+
+  /* 术语悬停 / 手机点击 */
+  .term{border-bottom:1px dashed #b08a2e; cursor:help; position:relative; color:#7a5a00}
+  .term::after{
+    content:attr(data-tip); position:absolute; left:0; top:135%;
+    width:max-content; max-width:250px; padding:8px 10px;
+    background:#262b30; color:#fff; font-size:12.5px; line-height:1.5;
+    border-radius:7px; white-space:normal; opacity:0; pointer-events:none;
+    transition:opacity .15s; z-index:20; box-shadow:0 4px 14px rgba(0,0,0,.18);
+  }
+  .term:hover::after,.term:focus::after{opacity:1}
+
+  /* 步骤条 */
+  .step{display:flex; gap:14px; margin:14px 0}
+  .step .badge{flex:0 0 34px; height:34px; border-radius:50%; background:var(--gold); color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:15px}
+  .step .body{flex:1; min-width:0}
+  .step .body h3{margin-top:3px}
+
+  /* 架构图 */
+  .arch{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:16px; margin:14px 0; text-align:center}
+  .arch .lead-box{display:inline-block; background:#fbf2da; border:1px solid #e7d6a6; border-radius:10px; padding:9px 16px; font-weight:700; color:#7a5a00}
+  .arch .row{display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin:12px 0}
+  .arch .ag{flex:1 1 130px; max-width:180px; background:#fff; border:1px solid var(--line); border-radius:10px; padding:9px 8px; font-size:13px; color:var(--sub)}
+  .arch .ag b{display:block; color:var(--blu); font-size:13.5px}
+  .arch .arrow{color:var(--mut); font-size:20px; margin:2px 0}
+  .arch .slack-box{display:inline-block; background:#efe9fa; border:1px solid #d4c6ef; border-radius:10px; padding:10px 18px; font-weight:700; color:#5a3da8}
+  .arch .you{font-size:13px; color:var(--mut); margin-top:8px}
+
+  .tip{background:#eef7f0; border:1px solid #cfe8d6; border-radius:10px; padding:11px 14px; margin:12px 0; font-size:14px; color:#1d5e36}
+  .warn{background:#fdf3ec; border:1px solid #f3d8c2; border-radius:10px; padding:11px 14px; margin:12px 0; font-size:14px; color:#9a5a1e}
+  .copy{font-size:12px; color:var(--mut); margin:2px 0 0}
+  a{color:var(--blu); text-decoration:none; border-bottom:1px solid #cfe0f6}
+  hr{border:none; border-top:1px solid var(--line); margin:30px 0}
+  .foot{color:var(--mut); font-size:12.5px; margin-top:30px; line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">前沿技术研究 · 动手教程</p>
+  <h1>用 <span class="hl">Slack</span> 跑通你的第一个<span class="hl">多 Agent 协作任务</span></h1>
+  <p class="lead">先看 Anthropic 内部真实玩法，再用最傻瓜的 Webhook 方式，让本地 Claude Code「队长」派出 3 个子 Agent，把成果一条条汇进你手机的 Slack 频道。全程约 15 分钟。</p>
+  <div class="stats">
+    <div class="stat"><b>~5 分钟</b><span>建 Slack 通道</span></div>
+    <div class="stat"><b>1 段</b><span>复制即用的指令</span></div>
+    <div class="stat"><b>3 个</b><span>并行子 Agent</span></div>
+  </div>
+</header>
+
+<!-- ========== §1 ========== -->
+<h2><span class="n">1</span> Anthropic 内部怎么用 Slack 协作</h2>
+<p class="sec-sub">一句话：把 Slack 频道当成「人和一群 Agent 共用的工作台」。</p>
+
+<div class="card gold">
+  <p><strong>① Slack = 共享上下文的协作面</strong><br>
+  人和多个
+  <span class="term" tabindex="0" data-tip="Agent = 能自己拆任务、调工具、一步步干活的 AI，不只是聊天">Agent</span>
+  泡在同一个频道/线程里，看的是<strong>同一份上下文</strong>。@一下
+  <span class="term" tabindex="0" data-tip="Claude Code = Anthropic 官方的命令行 AI 编程/干活助手，就是你现在用的这个">Claude Code</span>
+  ，它就能就地读取这条讨论的来龙去脉接着干——不用你复制粘贴搬运信息。</p>
+</div>
+
+<div class="card grn">
+  <p><strong>② 官方刚把这条路产品化：Claude Code in Slack</strong><br>
+  Anthropic 推出了
+  <span class="term" tabindex="0" data-tip="研究预览 = 提前开放的试用版，功能可能还在打磨、未必对所有人开放">研究预览</span>
+  ——在 Slack 里 @Claude，就能<strong>就地拉起</strong>一个 Claude Code 会话，把频道里的 bug 报告、需求讨论直接喂进去开干，多人还能在同一线程里围观、接力。</p>
+</div>
+
+<div class="card pur">
+  <p><strong>③ 多 Agent 的核心范式：一个队长 + 一群分身</strong><br>
+  官方
+  <span class="term" tabindex="0" data-tip="Agent Teams = Claude Code 实验功能，一个会话当队长，派出多个分身并行干、共享任务清单、自己互相协调">Agent Teams</span>
+  （2026-02 随 Opus 4.6 推出）让<strong>一个会话当「队长」</strong>，派出多个
+  <span class="term" tabindex="0" data-tip="子 Agent / 分身 = 队长临时派出去干一小块活的独立 AI，干完把结果交回来">子 Agent</span>
+  并行干活、共享一张任务清单、彼此通气。Slack 在这套里扮演的，就是大家<strong>把进度和成果同步出来的「公告板」</strong>。</p>
+</div>
+
+<div class="warn">⚠️ 真相提醒：官方的「Claude Code in Slack」是研究预览、可能要排队或需工作区管理员安装，不一定对你开放。所以下面我们走<strong>你今天就能完全自己跑通</strong>的等价路线。</div>
+
+<!-- ========== §2 ========== -->
+<h2><span class="n">2</span> 你要跑的「第一个」长什么样</h2>
+<p class="sec-sub">本地 Claude Code 当队长，派 3 个子 Agent，成果通过 Webhook 汇进 Slack 频道，你在手机上围观。</p>
+
+<div class="arch">
+  <div class="lead-box">🧠 队长 Agent（你的 Claude Code）</div>
+  <div class="arrow">↓ 拆任务 · 并行派活</div>
+  <div class="row">
+    <div class="ag"><b>子 Agent 1</b>方向 A 调研</div>
+    <div class="ag"><b>子 Agent 2</b>方向 B 调研</div>
+    <div class="ag"><b>子 Agent 3</b>方向 C 调研</div>
+  </div>
+  <div class="arrow">↓ 各自把要点 POST 出来</div>
+  <div class="slack-box">💬 Slack 频道 #ai-agents</div>
+  <div class="you">📱 你在手机 Slack 里，看 3 条成果 + 1 条队长汇总，陆续冒出来</div>
+</div>
+
+<div class="card blu">
+  <p>把成果送进 Slack 用的是
+  <span class="term" tabindex="0" data-tip="Webhook = Slack 给你的一个专属网址，往它发一条消息，就会出现在指定频道。最简单的『只发不读』通道">Incoming Webhook</span>
+  ——Slack 给你一个专属网址，往它发消息就出现在频道里。<strong>只发不读，所以最简单、零审批</strong>，最适合跑通「第一个」。两周后想升级成 Agent 能<strong>读也能写</strong>的双向协作，再换
+  <span class="term" tabindex="0" data-tip="MCP = 模型上下文协议，AI 连接外部工具/数据的统一标准接口，装上 Slack MCP 后 Agent 能读频道也能发消息">MCP</span>
+  方案（见文末「下一步」）。</p>
+</div>
+
+<!-- ========== §3 ========== -->
+<h2><span class="n">3</span> 傻瓜式 5 步跑通</h2>
+<p class="sec-sub">照着点、照着粘贴即可。文件都已放在本文件夹里。</p>
+
+<div class="step">
+  <div class="badge">1</div>
+  <div class="body">
+    <h3>建一个 Slack App + 频道（约 3 分钟）</h3>
+    <ul>
+      <li>先在 Slack 里建一个频道，名字叫 <code>#ai-agents</code>（左侧「频道」旁 ➕ → 创建）。</li>
+      <li>电脑浏览器打开 <a href="https://api.slack.com/apps" target="_blank">api.slack.com/apps</a> → <strong>Create New App</strong> → <strong>From scratch</strong>。</li>
+      <li>名字随便填（如 <code>AgentBus</code>），选中你自己的工作区 → Create。</li>
+    </ul>
+  </div>
+</div>
+
+<div class="step">
+  <div class="badge">2</div>
+  <div class="body">
+    <h3>打开 Incoming Webhook，拿到专属网址</h3>
+    <ul>
+      <li>左侧菜单 → <strong>Incoming Webhooks</strong> → 把开关 <strong>Activate</strong> 打开。</li>
+      <li>页面底部 <strong>Add New Webhook to Workspace</strong> → 选频道 <code>#ai-agents</code> → Allow。</li>
+      <li>复制生成的网址，形如 <code>https://hooks.slack.com/services/T000/B000/xxxx</code>。</li>
+    </ul>
+    <div class="warn">⚠️ 这串网址 = 谁拿到谁能往你频道发消息，<strong>当密码保管</strong>，别提交到 git、别发群里。</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="badge">3</div>
+  <div class="body">
+    <h3>把网址存好 + 发一条测试（约 1 分钟）</h3>
+    <p class="sub">在<strong>本文件夹</strong>里打开终端，把网址存进一个文件（脚本会自动读它）：</p>
+<pre><code><span class="tok"># 把下面的 https://hooks.slack.com/... 换成你刚复制的网址</span>
+<span class="cmd">echo</span> "https://hooks.slack.com/services/T000/B000/xxxx" &gt; .slack_webhook
+
+<span class="tok"># 发一条 hello 验证通道（看手机 Slack 是否冒出消息）</span>
+./slack_post.sh "✅ 通道打通：Agent 总线已上线"</code></pre>
+    <div class="tip">📱 手机 Slack 的 <code>#ai-agents</code> 里看到这条消息 = 通道成功。看不到就回查第 2 步选的频道是否一致。</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="badge">4</div>
+  <div class="body">
+    <h3>把这段指令整段复制给 Claude Code</h3>
+    <p class="sub">在<strong>本文件夹</strong>里启动 <code>claude</code>，把下面整段粘进去回车。它会让队长派 3 个子 Agent，各自把成果发进 Slack：</p>
+<pre><code>你现在是"队长 Agent"。目标：为我的"前沿技术研究"
+文件夹提 3 个值得做的新选题方向。请这样做：
+
+1. 用 Task 工具<span class="cmd">并行</span>派出 3 个子 Agent，各自独立
+   提 1 个方向，每个给出：方向名 / 为什么值得研究
+   / 一句话切入点（≤80 字）。
+
+2. 每个子 Agent 结果一回来，<span class="cmd">立刻</span>用 Bash 执行（在本
+   文件夹下）：
+   ./slack_post.sh "子Agent-N · 方向名" "该方向的要点"
+
+3. 三个都发完后，你作为队长再发一条总结：
+   ./slack_post.sh "队长 · 汇总" "三个方向各一句 + 你最推荐哪个及理由"
+
+4. 全程让我在 Slack #ai-agents 里看到这 4 条消息陆续出现。
+   每发一条，在终端也告诉我发了什么。</code></pre>
+    <p class="copy">↑ 这段指令也存成了同目录的 <code>demo指令.txt</code>，手机上也能复制。</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="badge">5</div>
+  <div class="body">
+    <h3>掏出手机，看多 Agent 成果落地</h3>
+    <p class="sub">打开手机 Slack 的 <code>#ai-agents</code>，你会看到 <strong>3 条子 Agent 成果 + 1 条队长汇总</strong> 陆续冒出来——这就是一次完整的「多 Agent 经由 Slack 协作」。</p>
+    <div class="tip">🎯 跑通的标志：频道里出现 4 条带不同 *标题* 的消息，且队长那条对 3 个方向做了取舍推荐。</div>
+  </div>
+</div>
+
+<!-- ========== §4 ========== -->
+<h2><span class="n">4</span> 跑通之后，怎么升级</h2>
+<p class="sec-sub">从"只发不读"进阶到"能读能写"的真双向协作。</p>
+
+<div class="card">
+  <ul>
+    <li><strong>升级一·双向协作（贴近 Anthropic 范式）</strong>：把 Webhook 换成
+      <span class="term" tabindex="0" data-tip="Slack MCP server = 一个让 Claude 能读频道消息、也能回帖的连接器，装一次长期用">Slack MCP server</span>
+      ，Agent 就能<strong>读你在频道里的追问、并回帖</strong>。届时你在手机上 @它一句"方向 B 再深挖"，子 Agent 能接着干。</li>
+    <li><strong>升级二·定时自动</strong>：把这段队长指令挂成定时任务（如每早 9 点），每天自动给频道推一批新选题。</li>
+    <li><strong>升级三·真·Agent Teams</strong>：在支持的版本里改用官方 Agent Teams，让子 Agent 之间也能直接通气、共享任务清单，而不只是各自汇报。</li>
+  </ul>
+  <p class="mut">想做哪个升级，跟我说一声，我再给你出对应的傻瓜步骤。</p>
+</div>
+
+<hr>
+<p class="foot">
+<strong>本文件夹配套文件</strong><br>
+· <code>slack_post.sh</code> —— 发消息到 Slack 的傻瓜脚本（已可执行）<br>
+· <code>demo指令.txt</code> —— 第 4 步那段队长指令，方便手机复制<br>
+· <code>.slack_webhook</code> —— 你第 3 步自己生成，存 Webhook 网址（勿外传）<br><br>
+<strong>资料来源</strong><br>
+· Salesforce News：<a href="https://www.salesforce.com/news/stories/claude-code-in-slack/" target="_blank">Anthropic Previews Claude Code for Slack</a><br>
+· laozhang.ai：<a href="https://blog.laozhang.ai/en/posts/claude-4-6-agent-teams" target="_blank">Claude 4.6 Agent Teams</a>（2026-02-05 随 Opus 4.6 发布）<br>
+· Composio：<a href="https://composio.dev/toolkits/slack/framework/claude-code" target="_blank">Slack MCP Integration with Claude Code</a><br>
+· Anthropic 官方文档：<a href="https://code.claude.com/docs/en/agent-sdk/mcp" target="_blank">Connect to external tools with MCP</a><br><br>
+小昭整理 · 2026-06-15
+</p>
+
+</div>
+</body>
+</html>
