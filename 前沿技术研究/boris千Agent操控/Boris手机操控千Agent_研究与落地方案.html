@@ -206,7 +206,24 @@
 
 <div class="callout">
   <p class="q">"我的 Claude 们全天在跑。遇到不确定的问题时，它们会通过 Slack 跟别人的 Claude 对话来解决。"</p>
-  <p class="a">—— Agent 之间用 Slack MCP 自主通信协作。4.7 模型甚至会<strong>自发</strong>用 loop：发现数据在变，主动说"我每 30 分钟给你发份报告"，还自己调 Slack MCP 推送。</p>
+  <p class="a">—— 这是 Boris 全场最被低估的一句。4.7 模型甚至会<strong>自发</strong>用 loop：发现数据在变，主动说"我每 30 分钟给你发份报告"，还自己把结果推到 Slack。下面把这套"Slack 沟通"到底怎么实现讲透。</p>
+</div>
+
+<h3>🔗 Claude 到底怎么"通过 Slack 沟通"</h3>
+<div class="card blu">
+  <p style="margin-top:0"><strong>一句话：Slack 被当成 Agent 们的「消息总线 / 共享黑板」。</strong>每个 Claude 在自己的 loop 里轮询读消息、发消息，于是几十个 Agent 共用一个频道就能异步协作。拆成两个真实场景：</p>
+  <p><strong>场景一 · Claude → 人（推送结果）</strong><br>
+  <span class="sub">你说"每 30 分钟把报告发我 Slack"，Claude 在循环里调 Slack 连接器的 <code>chat.postMessage</code> 发到频道。这是日常最常用、最稳的用法。</span></p>
+  <p><strong>场景二 · Claude ↔ Claude（Boris 说的"同事的 Claude"）</strong><br>
+  <span class="sub">A 的 Claude 遇到搞不定的问题 → 往某个 Slack 频道发问 → B 的 Claude 在自己 loop 里轮询到这条消息 → 回帖解答 → A 轮询到回复继续干。Slack 在这里<strong>不是聊天，而是异步任务队列 + 共享记忆</strong>，几十个 agent loop 共用一根总线。</span></p>
+  <p class="mut"><span class="warn">⚠ 一处要纠正 Boris：</span>他口中的"<strong>Slack MCP</strong>"，官方主路径其实是 <strong>Claude for Slack 官方连接器（App 集成）</strong>，不是自建 MCP server——能力一样，叫法他说顺了嘴。两条路都能把 Slack 接进来。</p>
+  <p><strong>主人怎么用：</strong></p>
+  <ul class="sub">
+    <li>管理员在 Slack 应用市场装 <strong>Claude App</strong> → 个人在 App Home 绑定 Claude 账号</li>
+    <li>频道里 <code>@Claude 帮我…</code> 即触发，进度/结果回帖在 thread 里</li>
+    <li>想让自动任务发 Slack：在 <code>/loop</code> 或 Routine 里直接写明"结果发到 #某频道"即可</li>
+    <li>需要 Pro / Max / Team 及以上，且 repo 已连 GitHub</li>
+  </ul>
 </div>
 
 <h3>Boris 真实在跑的 loop（可直接抄）</h3>
@@ -218,6 +235,28 @@
   <tr><td><code>/loop /post-merge-sweeper</code></td><td>补上合并后漏掉的 review 评论</td></tr>
   <tr><td><code>/goal …</code></td><td>设完成条件（如"test/auth 全过且 lint 干净"），不达成不停</td></tr>
 </table>
+
+<h3>访谈还点名、但容易被忽略的几样新发明</h3>
+<p class="mut">访谈里 Boris 一带而过、原文没展开的，逐一核实真伪后补上（标注是否已正式发布）。</p>
+<div class="grid2">
+  <div class="card grn">
+    <p><strong>👥 Agent Teams 子团队</strong> <span class="mut">实验性</span></p>
+    <p class="mut">比 Slack 总线更直接的多 Claude 协作：多个独立会话<strong>组队</strong>，队友之间能直接发消息、共享任务清单。开启：环境变量 <code>CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1</code>，再说"组个团队并行 review 这个 PR"。区别于子 Agent（子 Agent 只回报主会话、不互相说话）。</p>
+  </div>
+  <div class="card blu">
+    <p><strong>🖱 Computer Use 计算机操控</strong> <span class="mut">preview · 仅 macOS</span></p>
+    <p class="mut">没有 API / MCP 的软件就靠它兜底：<strong>截图 → 点击 → 输入</strong>，直接操作 GUI。<code>/mcp</code> 里启用并授予 macOS 权限。慢但完成度高（4.7 明显变强），Anthropic 在这块领先。</p>
+  </div>
+  <div class="card pur">
+    <p><strong>🔌 官方连接器 Connectors</strong> <span class="mut">已发布</span></p>
+    <p class="mut">一个口子接 Salesforce / Google Docs / Calendar / Linear / Slack。在 <code>claude.ai/customize/connectors</code> 配置，CLI / 桌面 / web 各端通用；Routine 也能绑定，自动任务里就能发消息、开 ticket。底层就是 <strong>MCP</strong>。</p>
+  </div>
+  <div class="card">
+    <p><strong>🎨 Claude Design</strong> <span class="warn">存疑</span></p>
+    <p class="mut">Boris 说"现在已不错、未来会异常强大"。但官方暂无名为 Claude Design 的产品页，<strong>疑为访谈时的内部代号</strong>。设计能力目前体现在 Figma 集成 + 设计系统/token 维护上，待正式发布确认。</p>
+  </div>
+</div>
+<p class="mut" style="margin-top:10px">📌 另：Boris 口中的 <code>/batch</code>「批处理」官方<strong>没有</strong>这个命令——他指的应是本报告 L5 讲的 <strong>Dynamic Workflows</strong>（脚本一次编排上百到上千子 Agent），术语已更新。</p>
 
 <!-- 3 其他人做法 -->
 <h2><span class="n">03</span>其他人怎么玩多 Agent</h2>
@@ -346,12 +385,13 @@
 <footer>
   <p><strong>资料来源：</strong></p>
   <p class="src">
-    · 原访谈整理：AGI Hunt《Claude Code 之父最新访谈》（微信公众号，2026-05-07）<br>
+    · 原访谈整理：AGI Hunt《Claude Code 之父最新访谈》（微信公众号，2026-05-07）；<a href="https://mp.weixin.qq.com/s/VkDq1xI-_xuGchxBDWt8mQ">瓜哥AI新知《红杉专访 Claude Code 作者 Boris》</a>（2026-05-05）<br>
+    · Slack 机制与新功能真伪：经 Claude Code 官方文档核实<br>
     · <a href="https://howborisusesclaudecode.com/">howborisusesclaudecode.com</a> — Boris 官方使用法<br>
     · <a href="https://www.youtube.com/watch?v=SlGRN8jh2RI">Sequoia AI Ascent 2026 对谈视频</a><br>
     · <a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/">InfoQ：Claude Code Dynamic Workflows</a>、<a href="https://github.com/spillwavesolutions/parallel-worktrees">Parallel Worktrees 技能</a>、<a href="https://github.com/rohitg00/pro-workflow">pro-workflow</a>、<a href="https://alexop.dev/posts/claude-code-workflows-deterministic-orchestration/">确定性多 Agent 编排</a>
   </p>
-  <p style="margin-top:14px; color:var(--mut)">小昭整理 · 2026-06-14 · 供主人参考。设定方案部分为推荐方案，主人定夺。</p>
+  <p style="margin-top:14px; color:var(--mut)">小昭整理 · 2026-06-14 · 2026-06-15 补全 Slack 沟通机制与新发明核实 · 供主人参考。设定方案部分为推荐方案，主人定夺。</p>
 </footer>
 
 </div>
